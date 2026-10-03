@@ -1,46 +1,84 @@
-# Tao Digital Twin Roadmap
+# TAO Digital Twin Platform Roadmap
 
-## Foundation
+## Phase 0 - Foundation
 
 - [x] React + TypeScript frontend
-- [x] Vite development environment
-- [x] Three.js / React Three Fiber
+- [x] Three.js / React Three Fiber prototype
 - [x] FastAPI backend
 - [x] REST API
 - [x] WebSocket realtime telemetry
-- [x] GitHub repository workflow
+- [x] GitHub PR workflow
 - [x] Semantic version tags
-- [x] Modular project directory structure
+- [x] Modular repository structure
 
-## Visualization
+## Phase 1 - Platform Core
 
-- [ ] GLB / glTF model loading
-- [ ] Scene hierarchy
-- [ ] Asset metadata
-- [ ] Camera presets
+- [ ] Canonical Entity model
+- [ ] Device Registry
+- [ ] State Manager
+- [ ] Command Router
+- [ ] Event Bus
+- [ ] Adapter interface
+- [ ] Simulator adapter
+- [ ] Versioned REST API
+- [ ] Stable realtime event schema
 
-## Data
+## Phase 2 - Smart Home Pilot
 
-- [ ] Historical telemetry
-- [ ] PostgreSQL
-- [ ] TimescaleDB
-- [ ] MQTT ingestion
+- [ ] Home Assistant adapter
+- [ ] MQTT adapter
+- [ ] Import first real building model
+- [ ] Map 3D scene nodes to TAO entities
+- [ ] Control one real light from the digital twin
+- [ ] Synchronize physical wall-switch changes back to the twin
+- [ ] Add television / curtain / socket examples
 
-## Operations
+## Phase 3 - Unreal Engine Client
 
-- [ ] Alarm system
-- [ ] Device health rules
-- [ ] Event logging
+- [ ] UE5 project/client skeleton
+- [ ] REST client
+- [ ] WebSocket client
+- [ ] TAO Entity actor/component
+- [ ] Runtime state synchronization
+- [ ] Interactive device controls
+- [ ] High-fidelity building visualization
 
-## Spatial
+## Phase 4 - Edge Hardware
 
-- [ ] GIS integration
-- [ ] CesiumJS
-- [ ] Geographic digital twins
+- [ ] ESP32 firmware foundation
+- [ ] MQTT device identity
+- [ ] Relay output
+- [ ] Physical switch input
+- [ ] Sensor telemetry
+- [ ] Availability / heartbeat
+- [ ] OTA strategy
+- [ ] STM32 gateway strategy
 
-## Intelligence
+## Phase 5 - Agriculture Pilot
 
-- [ ] AI-assisted diagnostics
+- [ ] Farm / greenhouse domain model
+- [ ] Soil-moisture sensors
+- [ ] Water-level sensors
+- [ ] Pump model
+- [ ] Solenoid valve model
+- [ ] Irrigation-zone model
+- [ ] Manual irrigation from UE5/Web
+- [ ] Physical feedback confirmation
+- [ ] Safe automatic irrigation rules
+
+## Phase 6 - Automation Protocols
+
+- [ ] Modbus adapter
+- [ ] OPC UA adapter
+- [ ] PLC integration
+- [ ] Historical telemetry storage
+- [ ] Alarm and event logging
+
+## Phase 7 - Intelligence
+
+- [ ] Rule engine
+- [ ] Scheduling
 - [ ] Anomaly detection
 - [ ] Predictive maintenance
-- [ ] Natural-language twin interface
+- [ ] Natural-language assistant
+- [ ] AI-assisted operation with permission boundaries
