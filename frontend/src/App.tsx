@@ -151,8 +151,10 @@ export default function App() {
 
   useEffect(() => {
     let active = true;
+    let socket: WebSocket | null = null;
+    let reconnectTimer: number | undefined;
 
-    const loadDevices = async () => {
+    const loadInitialDevices = async () => {
       try {
         const response = await fetch("http://127.0.0.1:8000/api/devices");
 
@@ -165,21 +167,59 @@ export default function App() {
         if (!active) return;
 
         setDevices(data);
-        setConnected(true);
         setLastUpdate(new Date().toLocaleTimeString());
       } catch {
-        if (!active) return;
         setConnected(false);
       }
     };
 
-    loadDevices();
+    const connectWebSocket = () => {
+      socket = new WebSocket(
+        "ws://127.0.0.1:8000/ws/telemetry",
+      );
 
-    const timer = window.setInterval(loadDevices, 2000);
+      socket.onopen = () => {
+        if (!active) return;
+        setConnected(true);
+      };
+
+      socket.onmessage = (event) => {
+        if (!active) return;
+
+        const payload = JSON.parse(event.data) as {
+          devices: Device[];
+        };
+
+        setDevices(payload.devices);
+        setLastUpdate(new Date().toLocaleTimeString());
+      };
+
+      socket.onerror = () => {
+        socket?.close();
+      };
+
+      socket.onclose = () => {
+        if (!active) return;
+
+        setConnected(false);
+        reconnectTimer = window.setTimeout(
+          connectWebSocket,
+          2000,
+        );
+      };
+    };
+
+    loadInitialDevices();
+    connectWebSocket();
 
     return () => {
       active = false;
-      window.clearInterval(timer);
+
+      if (reconnectTimer !== undefined) {
+        window.clearTimeout(reconnectTimer);
+      }
+
+      socket?.close();
     };
   }, []);
 
