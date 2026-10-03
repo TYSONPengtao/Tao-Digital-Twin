@@ -414,3 +414,422 @@ button {
     overflow: visible;
   }
 }
+.house-layout {
+  height: calc(100vh - 86px);
+  min-height: 680px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+}
+
+.house-scene-panel {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #172530;
+}
+
+.house-sidebar {
+  padding: 22px;
+  background: #080f15;
+  overflow-y: auto;
+}
+
+.house-device-card {
+  margin-top: 22px;
+  padding: 18px;
+  border: 1px solid #1b2c38;
+  background: #0a141c;
+}
+
+.house-room-name {
+  color: #4cffb0;
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.house-device-card h2 {
+  margin: 8px 0 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.house-power-state {
+  font-family: monospace;
+  font-size: 36px;
+  color: #607786;
+}
+
+.house-power-state.on {
+  color: #4cffb0;
+}
+
+.house-toggle-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px;
+  cursor: pointer;
+  border: 1px solid #365062;
+  background: #0d1b24;
+  color: #dbe8ef;
+  font-family: monospace;
+}
+
+.house-toggle-button:hover {
+  border-color: #4cffb0;
+}
+
+.house-device-card p {
+  margin-top: 18px;
+  color: #607786;
+  font-family: monospace;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+.house-device-card strong {
+  color: #a9bdc9;
+  font-weight: 400;
+}
+
+.house-device-label {
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 7px 10px;
+  border: 1px solid #415361;
+  background: rgba(5, 11, 16, 0.9);
+  color: #9eb2be;
+  font-family: monospace;
+  font-size: 9px;
+}
+
+.house-device-label.on {
+  border-color: #4cffb0;
+  color: #4cffb0;
+}
+
+.house-coming-next {
+  margin-top: 24px;
+  color: #607786;
+  font-family: monospace;
+  font-size: 9px;
+}
+
+.house-coming-next ul {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .house-layout {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .house-scene-panel {
+    height: 70vh;
+    min-height: 560px;
+    border-right: 0;
+    border-bottom: 1px solid #172530;
+  }
+}
+/* ===== TAO DEVICE PANEL V2 ===== */
+
+.selected-device-label {
+  padding: 7px 10px;
+  border: 1px solid #19cfff;
+  background: rgba(3, 12, 18, 0.92);
+  color: #8eeaff;
+  font-family: monospace;
+  font-size: 9px;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow:
+    0 0 18px rgba(25, 207, 255, 0.18);
+}
+
+.sensor-readonly {
+  margin-top: 18px;
+  padding: 12px;
+  border: 1px solid #263d49;
+  color: #6e8794;
+  background: #081219;
+  font-family: monospace;
+  font-size: 9px;
+  text-align: center;
+}
+
+.device-properties {
+  margin-top: 20px;
+  border-top: 1px solid #172a35;
+}
+
+.device-property-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid #13242e;
+  font-family: monospace;
+  font-size: 9px;
+}
+
+.device-property-row span {
+  color: #607786;
+  text-transform: uppercase;
+}
+
+.device-property-row strong {
+  color: #c2d6df;
+  font-weight: 400;
+}
+
+.device-list-section {
+  margin-top: 26px;
+}
+
+.device-list-title {
+  display: flex;
+  justify-content: space-between;
+  color: #607786;
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.device-list-title span {
+  color: #4cffb0;
+}
+
+.device-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.device-list-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #172a35;
+  background: #081219;
+  color: #8ba0ac;
+  text-align: left;
+}
+
+.device-list-button:hover {
+  border-color: #315467;
+  background: #0b1820;
+}
+
+.device-list-button.selected {
+  border-color: #19cfff;
+  background: #0b1b24;
+}
+
+.device-list-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.device-list-main strong {
+  overflow: hidden;
+  color: #b6cbd5;
+  font-family: monospace;
+  font-size: 9px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.device-list-main small {
+  color: #536b78;
+  font-family: monospace;
+  font-size: 8px;
+}
+
+.device-list-state {
+  flex: 0 0 auto;
+  color: #536b78;
+  font-family: monospace;
+  font-size: 8px;
+}
+
+.device-list-state.active {
+  color: #4cffb0;
+}
+
+/* ===== TAO ENVIRONMENT ANALYSIS V1 ===== */
+
+.environment-analysis {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid #1a2b35;
+}
+
+.analysis-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: #8ca3ae;
+}
+
+.analysis-model {
+  color: #4cffb0;
+  font-size: 8px;
+}
+
+.environment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.environment-grid label,
+.analysis-wide-input {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 8px;
+  padding: 9px;
+  border: 1px solid #172b36;
+  background: #071218;
+  font-family: monospace;
+}
+
+.environment-grid label span,
+.analysis-wide-input span {
+  grid-column: 1 / -1;
+  color: #58717e;
+  font-size: 7px;
+  letter-spacing: 0.08em;
+}
+
+.environment-grid input,
+.analysis-wide-input input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #d4e4eb;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.environment-grid small {
+  color: #55717e;
+  font-family: monospace;
+  font-size: 8px;
+  align-self: center;
+}
+
+.pet-result {
+  margin-top: 10px;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #21404d;
+  background: #08161d;
+}
+
+.pet-result div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pet-result span {
+  color: #5e7783;
+  font-family: monospace;
+  font-size: 7px;
+}
+
+.pet-result strong {
+  color: #eff9fb;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.pet-comfort-label {
+  color: #4cffb0;
+  font-family: monospace;
+  font-size: 9px;
+  text-align: right;
+}
+
+.analysis-error {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #714141;
+  color: #ff9a9a;
+  font-family: monospace;
+  font-size: 8px;
+}
+
+.analysis-divider {
+  height: 1px;
+  margin: 22px 0;
+  background: #172a34;
+}
+
+.analysis-wide-input {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.analysis-wide-input input {
+  margin-top: 8px;
+}
+
+.solar-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.solar-metrics div {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #172b36;
+  background: #071218;
+}
+
+.solar-metrics span {
+  display: block;
+  color: #526a76;
+  font-family: monospace;
+  font-size: 6px;
+}
+
+.solar-metrics strong {
+  display: block;
+  margin-top: 5px;
+  color: #cce1e9;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.analysis-note {
+  margin: 10px 0 0;
+  color: #506873;
+  font-family: monospace;
+  font-size: 7px;
+  line-height: 1.6;
+}

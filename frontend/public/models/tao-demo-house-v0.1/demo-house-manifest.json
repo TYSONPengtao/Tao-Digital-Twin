@@ -1,0 +1,125 @@
+{
+  "model": "demo-house",
+  "version": "0.1.0",
+  "units": "meters",
+  "coordinate_system": "Z-up source; GLB consumer may convert as needed",
+  "rooms": [
+    {
+      "id": "living-room",
+      "scene_node": "ROOM_LivingRoom_Floor"
+    },
+    {
+      "id": "bedroom",
+      "scene_node": "ROOM_Bedroom_Floor"
+    },
+    {
+      "id": "kitchen",
+      "scene_node": "ROOM_Kitchen_Floor"
+    },
+    {
+      "id": "balcony",
+      "scene_node": "ROOM_Balcony_Floor"
+    }
+  ],
+  "devices": [
+    {
+      "id": "living-room-light-main",
+      "scene_node": "DEV_Light_Living_Main",
+      "type": "light",
+      "capabilities": [
+        "power",
+        "brightness"
+      ],
+      "default_state": {
+        "power": false,
+        "brightness": 80
+      }
+    },
+    {
+      "id": "living-room-tv",
+      "scene_node": "DEV_TV_Living",
+      "type": "television",
+      "capabilities": [
+        "power",
+        "volume"
+      ],
+      "default_state": {
+        "power": false,
+        "volume": 30
+      }
+    },
+    {
+      "id": "living-room-curtain",
+      "scene_node": "DEV_Curtain_Living",
+      "type": "curtain",
+      "capabilities": [
+        "open_close",
+        "position"
+      ],
+      "default_state": {
+        "position": 0
+      }
+    },
+    {
+      "id": "bedroom-light-main",
+      "scene_node": "DEV_Light_Bedroom",
+      "type": "light",
+      "capabilities": [
+        "power",
+        "brightness"
+      ],
+      "default_state": {
+        "power": false,
+        "brightness": 70
+      }
+    },
+    {
+      "id": "bedroom-ac",
+      "scene_node": "DEV_AC_Bedroom",
+      "type": "air_conditioner",
+      "capabilities": [
+        "power",
+        "temperature_setpoint"
+      ],
+      "default_state": {
+        "power": false,
+        "temperature_setpoint": 24
+      }
+    },
+    {
+      "id": "kitchen-light-main",
+      "scene_node": "DEV_Light_Kitchen",
+      "type": "light",
+      "capabilities": [
+        "power"
+      ],
+      "default_state": {
+        "power": false
+      }
+    },
+    {
+      "id": "kitchen-smoke-sensor",
+      "scene_node": "DEV_SmokeSensor_Kitchen",
+      "type": "smoke_sensor",
+      "capabilities": [
+        "alarm"
+      ],
+      "default_state": {
+        "alarm": false
+      }
+    },
+    {
+      "id": "balcony-irrigation",
+      "scene_node": "DEV_Irrigation_Balcony",
+      "type": "irrigation",
+      "capabilities": [
+        "power",
+        "flow"
+      ],
+      "default_state": {
+        "power": false,
+        "flow": 0
+      }
+    }
+  ]
+}

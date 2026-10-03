@@ -1,398 +1,519 @@
-import { Canvas } from "@react-three/fiber";
-import { Html, OrbitControls } from "@react-three/drei";
-import { useEffect, useMemo, useState } from "react";
+import {
+  Canvas,
+} from "@react-three/fiber";
+
+import {
+  OrbitControls,
+} from "@react-three/drei";
+
+import {
+  Suspense,
+  useState,
+} from "react";
+
+import {
+  DemoHouse,
+} from "./scene/house/DemoHouse";
+
+import {
+  demoDevices,
+  demoDeviceMap,
+} from "./data/demoDevices";
+
+import type {
+  DemoDevice,
+  DeviceProperties,
+  DeviceStateMap,
+} from "./types/device";
+
+import { EnvironmentPanel } from "./components/environment/EnvironmentPanel";
+import { SolarLighting } from "./scene/environment/SolarLighting";
 import "./App.css";
 
-type DeviceStatus = "online" | "warning";
+function getDeviceStatus(
+  device: DemoDevice,
+  properties: DeviceProperties,
+) {
+  if (
+    device.type === "smoke_sensor"
+  ) {
+    return String(
+      properties.status ?? "UNKNOWN",
+    ).toUpperCase();
+  }
 
-type Device = {
-  id: string;
-  name: string;
-  status: DeviceStatus;
-  temperature: number;
-  load: number;
-  timestamp: string;
-};
+  if (
+    device.type === "curtain"
+  ) {
+    return properties.open === true
+      ? "OPEN"
+      : "CLOSED";
+  }
 
-const devicePositions: [number, number, number][] = [
-  [-4, 0.65, -2],
-  [-2, 0.65, 2],
-  [0, 0.65, -1],
-  [2, 0.65, 2],
-  [4, 0.65, -2],
-];
+  if (
+    typeof properties.power ===
+    "boolean"
+  ) {
+    return properties.power
+      ? "ON"
+      : "OFF";
+  }
 
-function TwinDevice({
-  device,
-  position,
-  selected,
-  onSelect,
-}: {
-  device: Device;
-  position: [number, number, number];
-  selected: boolean;
-  onSelect: () => void;
-}) {
-  const color = device.status === "warning" ? "#ffad33" : "#4cffb0";
-
-  return (
-    <group position={position}>
-      <mesh
-        castShadow
-        receiveShadow
-        scale={selected ? 1.14 : 1}
-        onClick={(event) => {
-          event.stopPropagation();
-          onSelect();
-        }}
-      >
-        <boxGeometry args={[1.5, 0.9, 1.5]} />
-        <meshStandardMaterial
-          color={color}
-          emissive={color}
-          emissiveIntensity={selected ? 0.55 : 0.16}
-          metalness={0.45}
-          roughness={0.35}
-        />
-      </mesh>
-
-      <mesh position={[0, -0.55, 0]} receiveShadow>
-        <cylinderGeometry args={[0.85, 1, 0.22, 32]} />
-        <meshStandardMaterial color="#1b2530" metalness={0.7} roughness={0.35} />
-      </mesh>
-
-      <Html position={[0, 1.25, 0]} center distanceFactor={11}>
-        <button
-          className={`device-label ${selected ? "selected" : ""}`}
-          onClick={onSelect}
-        >
-          <span className="status-dot" style={{ background: color }} />
-          {device.name}
-        </button>
-      </Html>
-    </group>
-  );
+  return "READY";
 }
 
-function Scene({
-  devices,
-  selectedId,
-  onSelect,
-}: {
-  devices: Device[];
-  selectedId: string | null;
-  onSelect: (id: string | null) => void;
-}) {
-  return (
-    <Canvas
-      shadows
-      camera={{ position: [8, 7, 10], fov: 45 }}
-      onPointerMissed={() => onSelect(null)}
-    >
-      <color attach="background" args={["#071018"]} />
+function getActionLabel(
+  device: DemoDevice,
+  properties: DeviceProperties,
+) {
+  if (
+    device.type === "curtain"
+  ) {
+    return properties.open === true
+      ? "CLOSE CURTAIN"
+      : "OPEN CURTAIN";
+  }
 
-      <ambientLight intensity={1.1} />
+  if (
+    typeof properties.power ===
+    "boolean"
+  ) {
+    return properties.power
+      ? "TURN OFF"
+      : "TURN ON";
+  }
 
-      <directionalLight
-        castShadow
-        position={[8, 12, 7]}
-        intensity={2.5}
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
-      />
-
-      <pointLight position={[-8, 5, -5]} intensity={18} color="#1677ff" />
-
-      <mesh
-        rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, 0, 0]}
-        receiveShadow
-      >
-        <planeGeometry args={[30, 24]} />
-        <meshStandardMaterial
-          color="#0b1620"
-          metalness={0.15}
-          roughness={0.85}
-        />
-      </mesh>
-
-      <gridHelper
-        args={[24, 24, "#24475e", "#142b3a"]}
-        position={[0, 0.012, 0]}
-      />
-
-      {devices.map((device, index) => (
-        <TwinDevice
-          key={device.id}
-          device={device}
-          position={devicePositions[index] ?? [0, 0.65, 0]}
-          selected={selectedId === device.id}
-          onSelect={() => onSelect(device.id)}
-        />
-      ))}
-
-      <OrbitControls
-        makeDefault
-        enableDamping
-        dampingFactor={0.07}
-        minDistance={6}
-        maxDistance={22}
-        maxPolarAngle={Math.PI / 2.05}
-      />
-    </Canvas>
-  );
+  return "NO CONTROL";
 }
 
 export default function App() {
-  const [devices, setDevices] = useState<Device[]>([]);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [connected, setConnected] = useState(false);
-  const [lastUpdate, setLastUpdate] = useState<string>("--");
-
-  useEffect(() => {
-    let active = true;
-    let socket: WebSocket | null = null;
-    let reconnectTimer: number | undefined;
-
-    const loadInitialDevices = async () => {
-      try {
-        const response = await fetch("http://127.0.0.1:8000/api/devices");
-
-        if (!response.ok) {
-          throw new Error("API request failed");
-        }
-
-        const data: Device[] = await response.json();
-
-        if (!active) return;
-
-        setDevices(data);
-        setLastUpdate(new Date().toLocaleTimeString());
-      } catch {
-        setConnected(false);
-      }
-    };
-
-    const connectWebSocket = () => {
-      socket = new WebSocket(
-        "ws://127.0.0.1:8000/ws/telemetry",
-      );
-
-      socket.onopen = () => {
-        if (!active) return;
-        setConnected(true);
-      };
-
-      socket.onmessage = (event) => {
-        if (!active) return;
-
-        const payload = JSON.parse(event.data) as {
-          devices: Device[];
-        };
-
-        setDevices(payload.devices);
-        setLastUpdate(new Date().toLocaleTimeString());
-      };
-
-      socket.onerror = () => {
-        socket?.close();
-      };
-
-      socket.onclose = () => {
-        if (!active) return;
-
-        setConnected(false);
-        reconnectTimer = window.setTimeout(
-          connectWebSocket,
-          2000,
-        );
-      };
-    };
-
-    loadInitialDevices();
-    connectWebSocket();
-
-    return () => {
-      active = false;
-
-      if (reconnectTimer !== undefined) {
-        window.clearTimeout(reconnectTimer);
-      }
-
-      socket?.close();
-    };
-  }, []);
-
-  const selectedDevice = useMemo(
-    () => devices.find((device) => device.id === selectedId) ?? null,
-    [devices, selectedId],
+  const [
+    selectedDeviceId,
+    setSelectedDeviceId,
+  ] = useState(
+    "living-room-light-main",
   );
 
-  const onlineCount = devices.filter(
-    (device) => device.status === "online",
-  ).length;
+  const [
+    deviceStates,
+    setDeviceStates,
+  ] = useState<DeviceStateMap>(() => {
+    return Object.fromEntries(
+      demoDevices.map((device) => [
+        device.id,
+        {
+          ...device.properties,
+        },
+      ]),
+    ) as DeviceStateMap;
+  });
 
-  const warningCount = devices.filter(
-    (device) => device.status === "warning",
-  ).length;
+  const selectedDevice =
+    demoDeviceMap.get(
+      selectedDeviceId,
+    ) ?? demoDevices[0];
 
-  const averageTemperature =
-    devices.length > 0
-      ? (
-          devices.reduce((sum, device) => sum + device.temperature, 0) /
-          devices.length
-        ).toFixed(1)
-      : "--";
+  const selectedProperties =
+    deviceStates[selectedDevice.id] ??
+    selectedDevice.properties;
+
+  const selectedStatus =
+    getDeviceStatus(
+      selectedDevice,
+      selectedProperties,
+    );
+
+  const toggleSelectedDevice = () => {
+    if (
+      !selectedDevice.controllable
+    ) {
+      return;
+    }
+
+    setDeviceStates((current) => {
+      const currentProperties =
+        current[selectedDevice.id] ?? {
+          ...selectedDevice.properties,
+        };
+
+      const nextProperties = {
+        ...currentProperties,
+      };
+
+      if (
+        typeof nextProperties.power ===
+        "boolean"
+      ) {
+        nextProperties.power =
+          !nextProperties.power;
+
+        if (
+          selectedDevice.type ===
+          "irrigation"
+        ) {
+          nextProperties.flow =
+            nextProperties.power
+              ? 2.4
+              : 0;
+        }
+      } else if (
+        typeof nextProperties.open ===
+        "boolean"
+      ) {
+        nextProperties.open =
+          !nextProperties.open;
+      }
+
+      return {
+        ...current,
+        [selectedDevice.id]:
+          nextProperties,
+      };
+    });
+  };
 
   return (
     <main className="app-shell">
       <header className="topbar">
         <div>
           <div className="brand-line">
-            <span className="brand-mark">TAO</span>
-            <span className="brand-separator">/</span>
-            <span>DIGITAL TWIN</span>
+            <span className="brand-mark">
+              TAO
+            </span>
+
+            <span className="brand-separator">
+              /
+            </span>
+
+            <span>
+              DIGITAL TWIN
+            </span>
           </div>
-          <p>Realtime spatial monitoring prototype</p>
+
+          <p>
+            Demo House  Device Simulation
+          </p>
         </div>
 
         <div className="connection">
-          <span className={`connection-dot ${connected ? "online" : "offline"}`} />
-          {connected ? "API CONNECTED" : "API OFFLINE"}
+          <span className="connection-dot online" />
+          LOCAL SIMULATION
         </div>
       </header>
 
-      <section className="dashboard">
-        <div className="scene-panel">
+      <section className="house-layout">
+        <section className="house-scene-panel">
           <div className="panel-heading">
             <div>
-              <span className="panel-kicker">LIVE SCENE</span>
-              <h1>Facility Twin</h1>
+              <span className="panel-kicker">
+                DIGITAL SPACE
+              </span>
+
+              <h1>
+                Demo House
+              </h1>
             </div>
 
             <div className="scene-meta">
-              <span>5 DEVICES</span>
-              <span>UPDATE {lastUpdate}</span>
+              <span>
+                4 ROOMS
+              </span>
+
+              <span>
+                8 DEVICES
+              </span>
             </div>
           </div>
 
           <div className="canvas-wrap">
-            <Scene
-              devices={devices}
-              selectedId={selectedId}
-              onSelect={setSelectedId}
-            />
+            <Canvas
+              shadows
+              camera={{
+                position: [
+                  11,
+                  10,
+                  13,
+                ],
+                fov: 42,
+              }}
+            >
+              <color
+                attach="background"
+                args={[
+                  "#071018",
+                ]}
+              />
+
+                            <SolarLighting />
+
+              <ambientLight
+                intensity={0.4}
+              />
+
+              <directionalLight
+                position={[
+                  8,
+                  12,
+                  8,
+                ]}
+                intensity={1.2}
+                castShadow
+              />
+
+              <mesh
+                rotation={[
+                  -Math.PI / 2,
+                  0,
+                  0,
+                ]}
+                position={[
+                  0,
+                  -0.04,
+                  0,
+                ]}
+                receiveShadow
+              >
+                <planeGeometry
+                  args={[
+                    32,
+                    32,
+                  ]}
+                />
+
+                <meshStandardMaterial
+                  color="#071118"
+                  roughness={0.96}
+                />
+              </mesh>
+
+              <gridHelper
+                args={[
+                  32,
+                  32,
+                  "#23495d",
+                  "#102b38",
+                ]}
+                position={[
+                  0,
+                  0.01,
+                  0,
+                ]}
+              />
+
+              <Suspense fallback={null}>
+                <DemoHouse
+                  selectedDeviceId={
+                    selectedDeviceId
+                  }
+                  deviceStates={
+                    deviceStates
+                  }
+                  onSelectDevice={
+                    setSelectedDeviceId
+                  }
+                />
+              </Suspense>
+
+              <OrbitControls
+                makeDefault
+                target={[
+                  0,
+                  1,
+                  0,
+                ]}
+                enableDamping
+                dampingFactor={0.07}
+                minDistance={5}
+                maxDistance={28}
+              />
+            </Canvas>
 
             <div className="scene-help">
-              DRAG TO ROTATE / SCROLL TO ZOOM / CLICK DEVICE
+              CLICK DEVICE / DRAG TO ROTATE /
+              SCROLL TO ZOOM
             </div>
           </div>
-        </div>
+        </section>
 
-        <aside className="sidebar">
-          <section className="summary-grid">
-            <article className="metric-card">
-              <span>ONLINE</span>
-              <strong>{onlineCount}</strong>
-            </article>
+        <aside className="house-sidebar">
+          <div className="detail-heading">
+            <span>
+              SELECTED DEVICE
+            </span>
 
-            <article className="metric-card warning">
-              <span>WARNING</span>
-              <strong>{warningCount}</strong>
-            </article>
+            <span>
+              {
+                selectedDevice.room
+              }
+            </span>
+          </div>
 
-            <article className="metric-card wide">
-              <span>AVG TEMP</span>
-              <strong>{averageTemperature} C</strong>
-            </article>
-          </section>
+          <section className="house-device-card">
+            <span className="house-room-name">
+              {
+                selectedDevice.type
+                  .replaceAll("_", " ")
+                  .toUpperCase()
+              }
+            </span>
 
-          <section className="detail-panel">
-            <div className="detail-heading">
-              <span>DEVICE INSPECTOR</span>
-              <span>{selectedDevice ? selectedDevice.id : "--"}</span>
+            <h2>
+              {
+                selectedDevice.name
+              }
+            </h2>
+
+            <div
+              className={`house-power-state ${
+                selectedStatus === "ON" ||
+                selectedStatus === "OPEN" ||
+                selectedStatus === "NORMAL"
+                  ? "on"
+                  : ""
+              }`}
+            >
+              {selectedStatus}
             </div>
 
-            {selectedDevice ? (
-              <>
-                <div className="selected-title">
-                  <div
-                    className={`large-status ${
-                      selectedDevice.status === "warning"
-                        ? "warning"
-                        : "online"
-                    }`}
-                  />
-                  <div>
-                    <h2>{selectedDevice.name}</h2>
-                    <p>{selectedDevice.status.toUpperCase()}</p>
-                  </div>
-                </div>
-
-                <div className="telemetry">
-                  <div>
-                    <span>TEMPERATURE</span>
-                    <strong>{selectedDevice.temperature} C</strong>
-                  </div>
-
-                  <div>
-                    <span>LOAD</span>
-                    <strong>{selectedDevice.load}%</strong>
-                  </div>
-                </div>
-
-                <div className="load-block">
-                  <div className="load-header">
-                    <span>DEVICE LOAD</span>
-                    <span>{selectedDevice.load}%</span>
-                  </div>
-
-                  <div className="load-track">
-                    <div
-                      className="load-value"
-                      style={{
-                        width: `${Math.min(selectedDevice.load, 100)}%`,
-                      }}
-                    />
-                  </div>
-                </div>
-
-                <div className="timestamp">
-                  LAST TELEMETRY
-                  <br />
-                  {new Date(selectedDevice.timestamp).toLocaleString()}
-                </div>
-              </>
+            {selectedDevice.controllable ? (
+              <button
+                className="house-toggle-button"
+                onClick={
+                  toggleSelectedDevice
+                }
+              >
+                {getActionLabel(
+                  selectedDevice,
+                  selectedProperties,
+                )}
+              </button>
             ) : (
-              <div className="empty-state">
-                <div className="empty-symbol">+</div>
-                <p>Select a device in the 3D scene to inspect live telemetry.</p>
+              <div className="sensor-readonly">
+                SENSOR  READ ONLY
               </div>
             )}
-          </section>
 
-          <section className="device-list">
-            <div className="detail-heading">
-              <span>ASSETS</span>
-              <span>{devices.length}</span>
+            <div className="device-properties">
+              {Object.entries(
+                selectedProperties,
+              ).map(
+                ([key, value]) => (
+                  <div
+                    className="device-property-row"
+                    key={key}
+                  >
+                    <span>
+                      {key}
+                    </span>
+
+                    <strong>
+                      {String(value)}
+                    </strong>
+                  </div>
+                ),
+              )}
             </div>
 
-            {devices.map((device) => (
-              <button
-                key={device.id}
-                className={selectedId === device.id ? "active" : ""}
-                onClick={() => setSelectedId(device.id)}
-              >
-                <span
-                  className={`list-dot ${
-                    device.status === "warning" ? "warning" : "online"
-                  }`}
-                />
-                <span>{device.name}</span>
-                <small>{device.temperature} C</small>
-              </button>
-            ))}
+            <p>
+              TAO Entity
+              <br />
+
+              <strong>
+                {
+                  selectedDevice.id
+                }
+              </strong>
+            </p>
+
+            <p>
+              Scene Node
+              <br />
+
+              <strong>
+                {
+                  selectedDevice.sceneNode
+                }
+              </strong>
+            </p>
           </section>
+
+          <section className="device-list-section">
+            <div className="device-list-title">
+              DEVICE REGISTRY
+              <span>
+                {demoDevices.length}
+              </span>
+            </div>
+
+            <div className="device-list">
+              {demoDevices.map(
+                (device) => {
+                  const properties =
+                    deviceStates[
+                      device.id
+                    ];
+
+                  const status =
+                    getDeviceStatus(
+                      device,
+                      properties,
+                    );
+
+                  return (
+                    <button
+                      key={
+                        device.id
+                      }
+                      className={`device-list-button ${
+                        device.id ===
+                        selectedDeviceId
+                          ? "selected"
+                          : ""
+                      }`}
+                      onClick={() =>
+                        setSelectedDeviceId(
+                          device.id,
+                        )
+                      }
+                    >
+                      <span className="device-list-main">
+                        <strong>
+                          {
+                            device.name
+                          }
+                        </strong>
+
+                        <small>
+                          {
+                            device.room
+                          }
+                        </small>
+                      </span>
+
+                      <span
+                        className={`device-list-state ${
+                          status ===
+                            "ON" ||
+                          status ===
+                            "OPEN" ||
+                          status ===
+                            "NORMAL"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        {status}
+                      </span>
+                    </button>
+                  );
+                },
+              )}
+            </div>
+          </section>
+                  <EnvironmentPanel
+  selectedRoom={selectedDevice.room}
+  deviceStates={deviceStates}
+/>
         </aside>
       </section>
     </main>

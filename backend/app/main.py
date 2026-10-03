@@ -70,3 +70,12 @@ async def telemetry(websocket: WebSocket):
 
     except WebSocketDisconnect:
         pass
+
+
+# ============================================================
+# TAO Environment Analysis API
+# ============================================================
+
+from backend.app.api.environment import router as environment_router
+
+app.include_router(environment_router)
