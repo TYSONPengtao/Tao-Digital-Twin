@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "id": "living-room-light-main",
+      "domain": "smart_home",
+      "space_id": "living-room",
+      "type": "light",
+      "capabilities": ["power", "brightness"],
+      "adapter": "home_assistant",
+      "binding": {
+        "ha_entity_id": "light.living_room_main"
+      },
+      "scene_bindings": {
+        "web": "LivingRoom_Light_Main",
+        "unreal": "BP_LivingRoomLight"
+      }
+    },
+    {
+      "id": "irrigation-zone-01-valve",
+      "domain": "agriculture",
+      "space_id": "irrigation-zone-01",
+      "type": "valve",
+      "capabilities": ["open_close"],
+      "adapter": "mqtt",
+      "binding": {
+        "command_topic": "tao/agriculture/farm01/valve01/set",
+        "state_topic": "tao/agriculture/farm01/valve01/state"
+      },
+      "scene_bindings": {
+        "unreal": "BP_Valve_01"
+      }
+    }
+  ]
+}
