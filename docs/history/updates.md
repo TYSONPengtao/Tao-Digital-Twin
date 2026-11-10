@@ -10,12 +10,17 @@
 - 补记大门等不清晰结构的处理流程，包括实景参考、GPT Image 整体与分解图、倾斜摄影模型量取与 AI 测算，以及整理为 Codex 改模指令。[结构参考与尺寸来源](reconstruction.md#结构参考与尺寸来源)
 - 从 Rhino/Datasmith 首次导入接到 22 个 ModelSync 目录，分开记录 21 次保存通过和 1 个候选。另登记门窗、日照、风场与软件设备准备的本地验收。[智慧家台账](smart-home.md)
 - 记录全开风场与三向切片的已核验范围。主工程安装的切片蓝图与隔离 PIE 候选文件校验一致。[风环境与三向切片](../case-studies/reconstruction-to-smart-home.zh-CN.md#4-风环境与三向切片)
+- 给 82 个重建版本、5 条资料来源和 39 条智慧家记录逐项配图，补齐原图与核验记录的出处。[台账配图出处](media/README.md)
+
+| 门楼与厨房交接 | 储藏房入口台阶 | UE5 三向切片 |
+| --- | --- | --- |
+| [<img src="media/reconstruction/v24-03.jpg" width="166" alt="V24.03 门楼与厨房接合">](media/reconstruction/v24-03.jpg) | [<img src="media/reconstruction/v26-20.jpg" width="166" alt="V26.20 储藏房入口台阶同机位前后对照">](media/reconstruction/v26-20.jpg) | [<img src="../case-studies/media/reconstruction-to-smart-home/ue-three-slice-panel.png" width="166" alt="UE5 三向切片位置控制">](../case-studies/media/reconstruction-to-smart-home/ue-three-slice-panel.png) |
 
 ## 每次更新怎么记
 
 1. **从原工程找变更**。读取当轮交付说明、ModelSync 请求与结果、保存后核验或分析报告。按原编号区分新版本、同版补记、候选和备份。
 2. **记录差异与证据**。写实际发生日期、前后版本、对象、单位和依据、结果及局限。新增的现场测量、照片估算、建模目标、模拟和物理反馈分别标明。
-3. **准备公开内容**。向相应版本台账增加一行，补本页日期条目，按需选用同机位模型截图。原始场地信息、照片、生产模型、完整日志和设备连接配置在本地管理。
+3. **准备公开内容**。向相应版本台账增加一行，补本页日期条目并附图。优先用同轮模型图、同机位对照或核验截图。只有过程报告时可按记录数据制作核验图，并注明类型和原文件。原始场地信息、照片、生产模型、完整日志和设备连接配置在本地管理。
 4. **核对后更新主分支**。检查相对链接、图源、报告与摘要一致性。读取最新远端 `main`，以其为父提交，使用快进更新。若远端已前进，先按最新内容整合再提交。没有新证据时以已有台账为准。
 
 每轮较复杂的交付可沿用已有核验模板。 [发布与核验模板](../templates/building-twin-release.zh-CN.md)

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" role="img">
+<title>亭子屋檐重做</title>
+<rect width="880" height="460" rx="18" fill="#edf3f1"/>
+<path d="M0 18a18 18 0 0 1 18-18h844a18 18 0 0 1 18 18v153H0z" fill="#153e40"/>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<text x="44" y="55" font-size="23" fill="#9fcebc" font-weight="650">ModelSync · 核验记录图</text>
+<text x="44" y="112" font-size="42" fill="#fff" font-weight="750">亭子屋檐重做</text>
+<text x="44" y="150" font-size="23" fill="#d9eeea" font-weight="400">20261027_220406_52128d92</text>
+<text x="697" y="59" font-size="23" fill="#e4f5ea" font-weight="700">PASS</text>
+<rect x="44" y="213" width="189" height="140" rx="12" fill="#fff" stroke="#d5e3e1"/>
+<text x="62" y="257" font-size="24" fill="#42605f" font-weight="600">新增</text>
+<text x="62" y="314" font-size="42" fill="#0e514e" font-weight="750">10</text>
+<rect x="245" y="213" width="189" height="140" rx="12" fill="#fff" stroke="#d5e3e1"/>
+<text x="263" y="257" font-size="24" fill="#42605f" font-weight="600">删除</text>
+<text x="263" y="314" font-size="42" fill="#0e514e" font-weight="750">10</text>
+<rect x="446" y="213" width="189" height="140" rx="12" fill="#fff" stroke="#d5e3e1"/>
+<text x="464" y="257" font-size="24" fill="#42605f" font-weight="600">几何</text>
+<text x="464" y="314" font-size="42" fill="#0e514e" font-weight="750">7</text>
+<rect x="647" y="213" width="189" height="140" rx="12" fill="#fff" stroke="#d5e3e1"/>
+<text x="665" y="257" font-size="24" fill="#42605f" font-weight="600">材质</text>
+<text x="665" y="314" font-size="42" fill="#0e514e" font-weight="750">428</text>
+<text x="44" y="407" font-size="23" fill="#42605f" font-weight="400">保存后登记 798 个构件 · 四项数字为请求中的计划差异</text>
+</g></svg>

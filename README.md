@@ -15,9 +15,9 @@
 | 入口 | 内容 |
 | --- | --- |
 | [项目总台账](docs/history/README.md) | 两个过程项目在同一条住宅数字孪生时间线中的衔接与来源。 |
-| [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 条可追溯的模型迭代。 |
-| [智慧家逐版记录](docs/history/smart-home.md) | Rhino / Datasmith 转换，21 次保存通过与 1 个候选，附场景和环境功能演进。 |
-| [日常更新](docs/history/updates.md) | 按实际过程文件续记，统一更新 `main`。 |
+| [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 个版本各有可展开的过程图。 |
+| [智慧家逐版记录](docs/history/smart-home.md) | 从 Rhino / Datasmith 转换到 UE5 交互与环境分析，共 39 条带图记录。 |
+| [日常更新](docs/history/updates.md) | 按实际过程文件和对应图源续记，统一更新 `main`。 |
 | [图文案例](docs/case-studies/reconstruction-to-smart-home.zh-CN.md) | 台阶前后、构件交接、昼夜场景、三工况和三向风场切片。 |
 
 ## 当前进度
