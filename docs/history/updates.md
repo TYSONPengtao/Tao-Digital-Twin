@@ -6,6 +6,7 @@
 
 - 整理首版到 V26.20 的 82 条建筑重建记录，注明 V24.02 归档与 V26 的来源底稿。[建筑重建台账](reconstruction.md)
 - 根据采集者补记，标明 Insta360 全景相机用于地面细节视频，DJI Mini 2 无人机用于地理信息和屋顶鸟瞰照片。[采集资料与建模基线](reconstruction.md#源资料与建模基线)
+- 补记原设计图纸、ContextCapture 航拍实景和地面资料各自的用途，记录从 V5 室内校正到 V6 空地配准的过程。[空地融合建模](reconstruction.md#空地融合建模)
 - 从 Rhino/Datasmith 首次导入接到 22 个 ModelSync 目录，分开记录 21 次保存通过和 1 个候选。另登记门窗、日照、风场与软件设备准备的本地验收。[智慧家台账](smart-home.md)
 - 记录全开风场与三向切片的已核验范围。主工程安装的切片蓝图与隔离 PIE 候选文件校验一致。[风环境与三向切片](../case-studies/reconstruction-to-smart-home.zh-CN.md#4-风环境与三向切片)
 
