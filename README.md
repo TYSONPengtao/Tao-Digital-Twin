@@ -136,6 +136,8 @@ Physical solenoid valve
 - [Communication protocols](docs/protocols.md)
 - [Safety and security](docs/security.md)
 - [Roadmap](docs/roadmap.md)
+- [Building digital twin field guide (中文)](docs/case-studies/ue5-building-twin.zh-CN.md) — a UE5 case study covering modeling, controlled reimport, interaction, and CFD visualization.
+- [Building twin release checklist (中文)](docs/templates/building-twin-release.zh-CN.md)
 
 ## Author
 

@@ -2,6 +2,8 @@
 
 UE5 is the planned high-fidelity visualization and interaction client.
 
+The [building digital twin field guide (中文)](../../docs/case-studies/ue5-building-twin.zh-CN.md) documents a separately verified local UE5 workflow. It covers asset identity, Datasmith reimport, scene interaction, and CFD. The responsibilities below describe the planned connection to TAO Core.
+
 ## Responsibilities
 
 - Load real building, farm or facility scenes
