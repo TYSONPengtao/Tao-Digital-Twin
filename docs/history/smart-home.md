@@ -6,6 +6,8 @@
 
 储藏房有实景取样、旧材质与修后同机位图。厨房后墙有源模型剖面、重导入前后关卡截图，以及独立的 UV 和门轴复核记录。 [材质取样过程](codex-methods.md#从实景取样到可用材质) · [Rhino 与 UE5 的交接和复核](codex-methods.md#让-blenderrhino-和-ue5-按同一问题记录接力) · [过程图档](process/README.md)
 
+转换、ModelSync 和环境研究的实现按原日期与发布号排列。 [智慧家逐轮研究实现](research/smart-home.md) · [凉亭坐标图复算](research/pavilion.md)
+
 ## 从 V26.20 到第一版 UE 场景
 
 | 环节与配图 | 迭代与核验 | 过程文件 |

@@ -18,6 +18,7 @@
 | [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 个版本各有可展开的过程图。 |
 | [智慧家逐版记录](docs/history/smart-home.md) | 从 Rhino / Datasmith 转换到 UE5 交互与环境分析，共 39 条带图记录。 |
 | [Codex 改模方法与过程图档](docs/history/codex-methods.md) | 用户圈画如何定位到坐标和对象，如何取样与制作材质，以及 Blender、Rhino、UE5 的操作和保存后核验。 |
+| [按迭代查研究方法](docs/history/research/README.md) | 82 个建筑版本与 39 条智慧家记录的输入、算法、出图和核验。凉亭散点图有原数据复算。 |
 | [日常更新](docs/history/updates.md) | 按实际过程文件和对应图源续记，统一更新 `main`。 |
 | [图文案例](docs/case-studies/reconstruction-to-smart-home.zh-CN.md) | 台阶前后、构件交接、昼夜场景、三工况和三向风场切片。 |
 
