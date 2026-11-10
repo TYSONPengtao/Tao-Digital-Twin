@@ -2,6 +2,8 @@
 
 同一套家庭住宅从实景资料和可编辑模型开始，经 Blender、Rhino 和 Datasmith 进入 UE5，逐轮完善漫游、门窗、日照、夜间照明与风环境。设备登记与本地软件灯作为接入准备，Web 端用于模拟遥测。
 
+地面细节由 Insta360 全景相机拍成视频，场地地理信息和屋顶鸟瞰照片由 DJI Mini 2 无人机采集。[采集资料与建模基线](docs/history/reconstruction.md#源资料与建模基线)
+
 | 建筑重建 | 智慧家场景 |
 | --- | --- |
 | ![V24.26 内院围墙瓦顶转角的 Blender 渲染](docs/case-studies/media/reconstruction-to-smart-home/blender-v24-26-courtyard-wall.jpg) | ![UE5 人物在住宅木构檐廊下漫游](docs/case-studies/media/reconstruction-to-smart-home/ue-day-walkthrough.jpg) |
