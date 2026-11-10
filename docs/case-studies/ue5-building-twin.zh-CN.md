@@ -2,6 +2,8 @@
 
 本案例从一套带院落的建筑场景出发，在 Blender 和 Rhino 中维护模型，经 Datasmith 发布到 Unreal Engine 5，再加入漫游、门窗、全年日照和风环境对照。以下记录取自项目的建模、发布、求解与播放核验。项目方法面向可持续迭代的建筑场景，平台接口见 [TAO 架构](../architecture.md) 和 [UE 客户端](../../clients/unreal/README.md)。
 
+重建基线、模型交接与风场截图见 [从建筑重建到智慧家数字孪生](reconstruction-to-smart-home.zh-CN.md)。
+
 ```mermaid
 flowchart LR
     A["实景参考、尺寸与问题清单"] --> B["Blender 或 Rhino 主编辑源"]

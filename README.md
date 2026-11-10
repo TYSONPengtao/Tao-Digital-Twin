@@ -4,6 +4,14 @@ A modular digital twin platform that connects 3D virtual environments with real-
 
 The long-term goal is to let a user view a real space in Web or Unreal Engine, inspect live state, and safely control physical equipment from the digital twin.
 
+## From reconstruction to a smart-home twin
+
+The illustrated case study follows a verified Blender reconstruction through Rhino and Datasmith into UE5, with before-and-after model views, day and night scenes, and wind comparisons. [从建筑重建到智慧家数字孪生（中文）](docs/case-studies/reconstruction-to-smart-home.zh-CN.md)
+
+[![AI-generated cover illustration of a courtyard becoming a digital mesh](docs/case-studies/media/reconstruction-to-smart-home/cover-concept.jpg)](docs/case-studies/reconstruction-to-smart-home.zh-CN.md)
+
+*AI-generated concept illustration.*
+
 ## Vision
 
 TAO Digital Twin Platform separates visualization from physical-device protocols.
