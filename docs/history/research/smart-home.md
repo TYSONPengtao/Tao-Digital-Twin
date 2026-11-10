@@ -72,3 +72,11 @@
 | --- | --- | --- | --- |
 | 全场地门窗全开 | 从 19 组门与 19 组窗的绑定表读 52 个活动段，按最大开启姿态重建占用几何。四个代表来流分别求解和导入，残差阈值与网格扩展检查分开记录。 | `WindAnalysis/AllOpen_20261109/Scripts/audit_openings.py` · `WindAnalysis/AllOpen_20261109/Scripts/build_geometry.py` · `WindAnalysis/AllOpen_20261109/Scripts/run_native.py`<br />`WindAnalysis/AllOpen_20261109/Reports/delivery_validation.json` | [PB5871BC4](../process/ue-01.md) · [原版配图](../../case-studies/media/reconstruction-to-smart-home/cfd-opening-comparison.png) |
 | 三向切片面板 | 为 Z、X、Y 建独立的位置和显示状态，同步每组切片与迹线。隔离 PIE 校验滑杆、漫游换季及退出恢复，安装时比对候选蓝图哈希。 | `Scripts/home_wind_slice.py` · `Scripts/home_wind_panel.py` · `WindAnalysis/Reports/three_slice_panel_validation.json`<br />`WindAnalysis/Reports/three_slice_panel_validation.json` · `WindAnalysis/Updates/WindDisplay/installed.json` | [PB5871BC4](../process/ue-01.md) · [原版配图](../../case-studies/media/reconstruction-to-smart-home/ue-three-slice-panel.png) |
+
+## 编号场景与开场漫游
+
+| 本地日期与记录 | 实现与验证依据 | 可回查脚本与报告 | 配图 |
+| --- | --- | --- | --- |
+| 2026-11-09 · 五个参考机位与影片 | 用门柱、窗框和屋檐匹配参考构图，记录 UE 相机锚点与视场。按 16:9 扩展横向画面，Sequencer 从各预览锚点沿视线轻推。回读保存的切点为第 0、108、216、327、435、543 帧。对三组同机位同日照时刻的 PIE 图，在相同归一化矩形内计算 8 位显示亮度中位数，另统计整幅图亮度 ≥253 的像素比例。用静态网格 Actor 指纹复核场景几何。 | `InteractionUpgrade/ReferenceViews/video-spec.md` · `InteractionUpgrade/ReferenceViews/verification.json` · `InteractionUpgrade/ReferenceViews/installation.json` | [镜头顺序](../media/smart-home/reference-views-sequence.jpg) · [曝光取样对照](../media/smart-home/reference-views-exposure.jpg) |
+| 2026-11-10 · 场景切换与控制台 | 编号预览调用零时长镜头切换，处理尚在混合中的相机目标。用录屏的 07 过渡帧定位问题，在隔离 PIE 用按钮和键盘触发切换，逐 tick 读 Camera Manager 的位置并计算到目标的距离。从运行中的界面读取默认收起、按钮入口、影片隐藏与退出后恢复状态。 | `Scripts/home_tour_runtime.py` · `Scripts/home_console_ui.py` · `InteractionUpgrade/ConsoleReview_20261110/verification.json` | [切换前后](../media/smart-home/console-review-cut.jpg) · [人物漫游](../media/smart-home/console-review-roam.jpg) |
+| 2026-11-10 · 03 开场与临时视角 | 启动时把 03 设为首个视图目标。复制相机组件的预设旋转，将右键与滑块合到同一套临时偏角，偏航限幅 ±45°、俯仰 ±25°，逐帧平滑，恢复时写回原相对旋转。用首帧位置、+22.5°／−10° 的输入与实际姿态、相机 Actor 不变、重置以及漫游提示状态核验。核验所用脚本及核心资产与主工程逐文件比对 SHA-256。 | `Scripts/home_preview_look.py` · `Scripts/home_tour_runtime.py` · `InteractionUpgrade/StartView_20261110/verification.json` | [03 开场](../media/smart-home/start-view-03.jpg) · [角度调整](../media/smart-home/start-view-03-adjusted.jpg) |

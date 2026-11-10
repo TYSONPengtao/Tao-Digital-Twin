@@ -144,3 +144,8 @@
 | 厨房开启对照 | [厨房关闭与开启工况](smart-home/kitchen-open-wind.jpg) | 原报告风场图 | `WindAnalysis/OpeningComparison_20261030/Reports/annual_comparison.png` |
 | 全场地门窗全开 | [三种门窗工况同标尺](../../case-studies/media/reconstruction-to-smart-home/cfd-opening-comparison.png) | 原报告风场图 | `WindAnalysis/AllOpen_20261109/Reports/三工况同标尺_全年主导风.png` |
 | 三向切片面板 | [三向切片位置控制](../../case-studies/media/reconstruction-to-smart-home/ue-three-slice-panel.png) | 原过程截图 | `WindAnalysis/Reports/wind_three_slice_panel.png` |
+| 五个参考机位与影片 | [影片镜头顺序](smart-home/reference-views-sequence.jpg) | UE 影片截图，取原对照图的影片栏 | `InteractionUpgrade/ReferenceViews/五个机位对照.jpg` |
+| 五个参考机位与影片 | [三组曝光前后](smart-home/reference-views-exposure.jpg) | 同机位同日照时刻的隔离 PIE 截图 | `InteractionUpgrade/ReferenceViews/曝光调整前后.jpg` |
+| 场景切换与控制台 | [07 切换前后](smart-home/console-review-cut.jpg) | 原录屏中间帧与修后 UE 视口截图，旧侧栏已遮盖 | `InteractionUpgrade/ConsoleReview_20261110/控制台前后对比.jpg` |
+| 场景切换与控制台 | [第三人称漫游](smart-home/console-review-roam.jpg) | 隔离 PIE 截图 | `InteractionUpgrade/ConsoleReview_20261110/人物漫游.jpg` |
+| 03 开场与临时视角 | [03 开场](smart-home/start-view-03.jpg) · [角度调整](smart-home/start-view-03-adjusted.jpg) | 隔离 PIE 截图，原图已去编辑器边框 | `InteractionUpgrade/StartView_20261110/03_开场.png`、`InteractionUpgrade/StartView_20261110/03_角度调整.png` |

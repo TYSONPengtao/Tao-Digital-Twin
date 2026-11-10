@@ -68,4 +68,16 @@
 
 EPW 代表风、场景渲染、软件灯反馈和未来的现场观测分别登记。日照用于预览太阳方向与阴影。风场用于稳态 CFD 的工况交互，现场校准与网格独立性仍待核验。设备层当前是本地模拟和登记准备。
 
+## 编号场景与开场漫游
+
+三次记录按本地核验日期排列，沿用场景发布号 **20261030_025240_41748228**。表中的机位误差和画面亮度来自隔离的 UE 5.8 Play In Editor（PIE）核验。亮度使用 8 位显示值。
+
+| 日期与配图 | 迭代与核验 | 过程文件 |
+| --- | --- | --- |
+| 2026-11-09 · 五个参考机位与影片<br />[<img src="media/smart-home/reference-views-sequence.jpg" width="138" alt="UE 影片的五个镜头与时间段">](media/smart-home/reference-views-sequence.jpg) [<img src="media/smart-home/reference-views-exposure.jpg" width="166" alt="同一机位与时刻的三组曝光前后对照">](media/smart-home/reference-views-exposure.jpg)<br /><sub>五个镜头与三组曝光对照 · UE 视口截图</sub> | **已保存 · 隔离 PIE 通过。** 按 04 外铁门、02 雕花院门、03 瓦檐、05 一层窗边、07 二层窗边设置 Q 巡游。影片 543 帧、30 帧/秒、18.1 秒。02、05、07 分别增加 0.8、1.7、1.25 EV，暗部取样区中位亮度分别为 28.43→57.60、20.66→80.77、37.43→90.07。该批画面的近白像素占比为 0%，951 个静态网格 Actor 的指纹相同。 | `InteractionUpgrade/ReferenceViews/video-spec.md`、`InteractionUpgrade/ReferenceViews/verification.json`、`InteractionUpgrade/ReferenceViews/installation.json` |
+| 2026-11-10 · 场景切换与控制台<br />[<img src="media/smart-home/console-review-cut.jpg" width="166" alt="切换到 07 的旧录屏中间帧与修正后的视口">](media/smart-home/console-review-cut.jpg) [<img src="media/smart-home/console-review-roam.jpg" width="166" alt="控制台调整后的人物第三人称漫游">](media/smart-home/console-review-roam.jpg)<br /><sub>07 切换前后与人物漫游 · UE 视口截图</sub> | **隔离 PIE 通过。** 点击 1–7 后首个采样 tick 的机位位置误差均为 0 cm，键盘 6、7 在第 2 个采样 tick 到位。日期面板默认收起，日期、曝光、夜景分别打开。核验了人物漫游菜单开关、影片隐藏控制台、退出风场恢复预览与返回总览。 | `InteractionUpgrade/ConsoleReview_20261110/verification.json` |
+| 2026-11-10 · 03 开场与临时视角<br />[<img src="media/smart-home/start-view-03.jpg" width="166" alt="Play 启动后的 03 瓦檐望主楼">](media/smart-home/start-view-03.jpg) [<img src="media/smart-home/start-view-03-adjusted.jpg" width="166" alt="通过视角滑块偏转后的 03 瓦檐望主楼">](media/smart-home/start-view-03-adjusted.jpg)<br /><sub>默认开场与角度调整 · UE 视口截图</sub> | **项目脚本及核心资产校验一致 · 隔离 PIE 通过。** Play 开场为 03 瓦檐望主楼，首个采样帧位置误差 0 cm。右键或滑块调整临时角度，恢复预设后姿态与基线一致。0 进入漫游，V 切换第一／第三人称。稳定漫游显示 WASD，按 6 回厨房首个采样帧已到位并隐藏提示，Tab 返回环绕总览。 | `InteractionUpgrade/StartView_20261110/核验与操作.md`、`InteractionUpgrade/StartView_20261110/verification.json` |
+
+[相机、曝光与交互核验的实现](research/smart-home.md#编号场景与开场漫游) · [截图出处](media/README.md#智慧家记录)
+
 [看 UE5 漫游与风场图](../case-studies/reconstruction-to-smart-home.zh-CN.md#3-智慧家场景) · [风场与重导入实战](../case-studies/ue5-building-twin.zh-CN.md) · [日常更新记录](updates.md)
