@@ -7,6 +7,8 @@
 | [建筑重建逐版台账](reconstruction.md) | 从实景和图纸整理开始，82 个模型版本逐条配图。 |
 | [智慧家模型与交互逐版台账](smart-home.md) | V26.20 转换入 UE5，21 次 ModelSync 保存结果、1 个候选及交互与环境专题均有配图。 |
 | [台账配图出处](media/README.md) | 按条目查找原过程图和核验记录文件。 |
+| [Codex 改模方法](codex-methods.md) | 用户标注、坐标剖切、材质取样、软件交接与保存后复核。 |
+| [过程图档](process/README.md) | 按工序展开用户标注、诊断、材质、视口及验收图，按图号查询原文件与同图副本。 |
 | [日常更新](updates.md) | 实际更新日、改动范围与主分支更新方法。 |
 | [两阶段图文对照](../case-studies/reconstruction-to-smart-home.zh-CN.md) | 构件、前后对照、昼夜场景和风场。两幅 AI 概念图在图注中标明。 |
 
