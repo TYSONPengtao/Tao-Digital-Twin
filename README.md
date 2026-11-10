@@ -4,6 +4,8 @@
 
 原有设计图纸提供轴网与尺寸基线。DJI Mini 2 采集的航拍照片经 ContextCapture（CC）生成倾斜摄影实景模型，Insta360 地面全景视频与实景照片补足室内和近地面细节，再按现场证据和逐轮指令修订可编辑模型。[采集资料与空地融合](docs/history/reconstruction.md#源资料与建模基线)
 
+结构看不清时，用 GPT Image 根据实景照片制作整体设计图和构件分解图。具体建模尺寸结合倾斜摄影模型量取与 AI 辅助测算，再将图、尺寸和改动要求整理成 Codex 改模指令。[大门改模示例](docs/case-studies/residential-reconstruction.zh-CN.md#大门结构推敲与改模)
+
 | 建筑重建 | 智慧家场景 |
 | --- | --- |
 | ![V24.26 内院围墙瓦顶转角的 Blender 渲染](docs/case-studies/media/reconstruction-to-smart-home/blender-v24-26-courtyard-wall.jpg) | ![UE5 人物在住宅木构檐廊下漫游](docs/case-studies/media/reconstruction-to-smart-home/ue-day-walkthrough.jpg) |
