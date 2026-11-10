@@ -1,6 +1,6 @@
 # Safety and Security
 
-TAO Digital Twin Platform can issue commands that affect the physical world.
+These requirements apply when TAO Home Digital Twin connects to physical devices. The current prototype uses simulated state and local software-light tests.
 
 ## Principles
 
@@ -15,7 +15,7 @@ TAO Digital Twin Platform can issue commands that affect the physical world.
 
 ## Physical safety
 
-Pumps, valves, heaters, motors and similar equipment require safeguards such as:
+Household lights, heaters, door and window motors, and similar equipment require safeguards such as:
 
 - Maximum run time
 - Automatic timeout
@@ -30,8 +30,8 @@ Pumps, valves, heaters, motors and similar equipment require safeguards such as:
 Requested state and confirmed physical state are different.
 
 ```text
-Requested: valve OPEN
-Confirmed: valve OPEN
+Requested: window OPEN
+Confirmed: window OPEN
 ```
 
 If feedback is missing, the twin must not pretend that the action succeeded.

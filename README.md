@@ -1,153 +1,38 @@
-# TAO Digital Twin Platform
+# TAO 家庭数字孪生
 
-A modular digital twin platform that connects 3D virtual environments with real-world devices, sensors and control systems.
+同一套家庭住宅从实景资料和可编辑模型开始，经 Blender、Rhino 和 Datasmith 进入 UE5，逐轮完善漫游、门窗、日照、夜间照明与风环境。设备登记与本地软件灯作为接入准备，Web 端用于模拟遥测。
 
-The long-term goal is to let a user view a real space in Web or Unreal Engine, inspect live state, and safely control physical equipment from the digital twin.
+| 建筑重建 | 智慧家场景 |
+| --- | --- |
+| ![V24.26 内院围墙瓦顶转角的 Blender 渲染](docs/case-studies/media/reconstruction-to-smart-home/blender-v24-26-courtyard-wall.jpg) | ![UE5 人物在住宅木构檐廊下漫游](docs/case-studies/media/reconstruction-to-smart-home/ue-day-walkthrough.jpg) |
 
-## From reconstruction to a smart-home twin
+## 迭代与日常更新
 
-The illustrated case study follows a verified Blender reconstruction through Rhino and Datasmith into UE5, with before-and-after model views, day and night scenes, and wind comparisons. [从建筑重建到智慧家数字孪生（中文）](docs/case-studies/reconstruction-to-smart-home.zh-CN.md)
+| 入口 | 内容 |
+| --- | --- |
+| [项目总台账](docs/history/README.md) | 两个过程项目在同一条住宅数字孪生时间线中的衔接与来源。 |
+| [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 条可追溯的模型迭代。 |
+| [智慧家逐版记录](docs/history/smart-home.md) | Rhino / Datasmith 转换，21 次保存通过与 1 个候选，附场景和环境功能演进。 |
+| [日常更新](docs/history/updates.md) | 按实际过程文件续记，统一更新 `main`。 |
+| [图文案例](docs/case-studies/reconstruction-to-smart-home.zh-CN.md) | 台阶前后、构件交接、昼夜场景、三工况和三向风场切片。 |
 
-[![AI-generated cover illustration of a courtyard becoming a digital mesh](docs/case-studies/media/reconstruction-to-smart-home/cover-concept.jpg)](docs/case-studies/reconstruction-to-smart-home.zh-CN.md)
+## 当前进度
 
-*AI-generated concept illustration.*
+- **建筑与场景**。V26.20 是住宅重建交付基线。UE5 当前模型发布号 `20261030_025240_41748228`，登记 819 个构件，处于编辑器与 PIE 迭代阶段。
+- **环境**。可切换门窗关闭、厨房四窗双门开启、全场地门窗全开，查看 OpenFOAM 代表风与三个方向的切片。日照是场景预览，CFD 用于对照和交互。
+- **设备**。本地已验证设备目录与软件灯路径。真实灯具、电机、传感器和监控码流处于绑定准备阶段。 [智慧家领域](domains/smart_home/README.md)
+- **Web**。React/Three.js 场景和 FastAPI 提供模拟设备与 WebSocket 遥测。 [本地演示](frontend/README.md)
 
-## Vision
+## 工程文档
 
-TAO Digital Twin Platform separates visualization from physical-device protocols.
+| 内容 | 文档 |
+| --- | --- |
+| 资料、构件和漫游 | [住宅建模方法](docs/case-studies/residential-reconstruction.zh-CN.md) |
+| Datasmith 重导入、UE5 交互与 CFD | [建筑数字孪生制作实战](docs/case-studies/ue5-building-twin.zh-CN.md) |
+| 场景、状态、命令和设备接入 | [家庭孪生架构](docs/architecture.md) · [UE 客户端](clients/unreal/README.md) · [领域模型](docs/domain-model.md) |
+| 协议、设备闭环与安全 | [协议](docs/protocols.md) · [安全](docs/security.md) · [家庭路线图](docs/roadmap.md) |
+| 下一轮建模与发布 | [发布与核验模板](docs/templates/building-twin-release.zh-CN.md) |
 
-```text
-Web / Three.js       Unreal Engine / VR / AR
-       \                    /
-        \                  /
-         +---- TAO Core ---+
-               |
-      Device / State / Command / Event
-               |
-     +---------+---------+---------+
-     |         |         |         |
-Home Assistant MQTT    Modbus    OPC UA
-     |         |         |         |
- Smart Home   ESP32    PLC/IO   Industrial
-```
+项目过程来源为“整理建筑重建资料”和“准备数学孪生智慧家庭模型”。公开仓库记录精选图文、核验摘要与 Web 模拟原型。 [来源索引](docs/history/README.md#过程来源)
 
-The same core can support:
-
-- Smart homes
-- Building automation
-- Automatic irrigation
-- Agriculture digital twins
-- Energy systems
-- Future industrial and environmental twins
-
-## Current Foundation
-
-The existing prototype already provides:
-
-- React + TypeScript frontend
-- Three.js / React Three Fiber scene
-- FastAPI backend
-- REST API
-- WebSocket realtime telemetry
-- Interactive virtual devices
-- GitHub PR and semantic-version workflow
-- Modular project structure
-
-Current stable foundation: **v0.2.1**
-
-## Platform Principles
-
-1. **TAO Core is the center.** UE5, Web, Home Assistant and microcontrollers are clients or adapters.
-2. **One canonical device model.** A virtual object never depends directly on a hardware brand or protocol.
-3. **Bidirectional synchronization.** Virtual controls affect reality, and physical state changes update every client.
-4. **Adapters isolate protocols.** MQTT, Home Assistant, Modbus and OPC UA remain outside domain logic.
-5. **Safety before automation.** Commands to physical equipment must support validation, permissions, timeouts and fail-safe behavior.
-6. **Local-first architecture.** The platform should continue to operate on a local network whenever possible.
-
-## Repository Direction
-
-```text
-Tao-Digital-Twin/
-├── frontend/                   # Existing Web / Three.js client
-├── backend/
-│   └── app/
-│       ├── core/               # Device registry, state, commands, events
-│       ├── api/                # REST interface
-│       ├── websocket/          # Realtime synchronization
-│       ├── models/             # Canonical domain models
-│       ├── services/           # Application services
-│       └── adapters/           # External protocols/platforms
-├── clients/
-│   └── unreal/                 # Future UE5 client
-├── firmware/
-│   ├── esp32/                  # Edge devices and smart switches
-│   └── stm32/
-├── domains/
-│   ├── smart_home/
-│   └── agriculture/
-├── config/
-├── assets/
-└── docs/
-```
-
-## Example: Smart Home
-
-```text
-Click light in UE5
-        |
-        v
-TAO Core command
-        |
-        v
-Home Assistant or MQTT adapter
-        |
-        v
-Physical light ON
-        |
-        v
-State event returns to TAO Core
-        |
-        +--> UE5 updates
-        +--> Web updates
-```
-
-## Example: Agriculture
-
-```text
-Soil sensor / water level / valve state
-        |
-      ESP32
-        |
-       MQTT
-        |
-     TAO Core
-        |
-        +--> UE5 farm twin
-        +--> Web dashboard
-        +--> Automation
-
-User opens irrigation valve in the twin
-        |
-     TAO Core
-        |
-       MQTT
-        |
-      ESP32
-        |
-Physical solenoid valve
-```
-
-## Documentation
-
-- [Architecture](docs/architecture.md)
-- [Domain model](docs/domain-model.md)
-- [Communication protocols](docs/protocols.md)
-- [Safety and security](docs/security.md)
-- [Roadmap](docs/roadmap.md)
-- [Residential reconstruction workflow (中文)](docs/case-studies/residential-reconstruction.zh-CN.md) — from site references to a verified Blender model and walkthrough.
-- [Building digital twin field guide (中文)](docs/case-studies/ue5-building-twin.zh-CN.md) — a UE5 case study covering modeling, controlled reimport, interaction, and CFD visualization.
-- [Building twin release checklist (中文)](docs/templates/building-twin-release.zh-CN.md)
-
-## Author
-
-TYSON Pengtao
+维护者 TYSON Pengtao

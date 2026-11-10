@@ -76,6 +76,7 @@
 
 ## 项目资料
 
+- 逐版改动、源文件与保存结果。[建筑重建台账](../history/reconstruction.md) · [智慧家迭代台账](../history/smart-home.md) · [日常更新](../history/updates.md)
 - 建模、几何修复、同机位复核和 Fast 漫游交付。[建筑重建方法](residential-reconstruction.zh-CN.md)
 - Rhino 发布、Datasmith 重导入、UE5 交互和 OpenFOAM 工作流。[建筑数字孪生制作实战](ue5-building-twin.zh-CN.md)
 - 每张配图的来源、处理及两张生成图的原始提示词。[配图来源](media/reconstruction-to-smart-home/README.md)

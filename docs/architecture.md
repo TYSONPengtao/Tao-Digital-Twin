@@ -1,10 +1,10 @@
-# TAO Digital Twin Platform Architecture
+# TAO Home Digital Twin Architecture
 
 ## Goal
 
-TAO Digital Twin Platform is a protocol-independent bridge between digital 3D environments and the physical world.
+TAO brings the residential model, UE5 interactions, environment data and household device states into one home digital twin.
 
-The platform must support multiple visualization clients, multiple device ecosystems and multiple application domains without coupling them together.
+The local UE5 project has verified scene and environment workflows. The repository's Web client displays simulated telemetry. The layers below describe how both clients can share household state and commands when device adapters are ready. [Project history](history/README.md)
 
 ## Five-layer architecture
 
@@ -30,7 +30,7 @@ The platform must support multiple visualization clients, multiple device ecosys
                     |
                     v
 5. Physical World
-   Lights / pumps / valves / motors / sensors / cameras / equipment
+   Lights / door and window motors / switches / sensors / cameras
 ```
 
 ## Core rule
@@ -111,23 +111,13 @@ Future adapters may include Matter, BACnet, CAN, Zigbee gateways or vendor APIs.
 The existing React + Three.js frontend remains the fast browser-based visualization and development client.
 
 ### Unreal Engine
-UE5 will become the high-fidelity 3D client for real buildings, farms and other physical environments.
+The local UE5 scene supports walkthroughs, door and window poses, sun and night lighting, and wind data. The runtime connection to TAO Core is planned.
 
 UE5 should use REST for queries/commands and WebSocket for realtime state synchronization.
 
-## Domain modules
+## Home domain
 
-Initial domains:
-
-- Smart Home
-- Agriculture
-
-Later domains may include:
-
-- Building automation
-- Energy
-- Factory
-- Environment
+Spaces represent the home, floors, rooms and courtyard. An observable device can be bound to a space and to one or more scene nodes. Geometry revisions, precomputed CFD data and device telemetry each retain their own source and validity. [Home domain](../domains/smart_home/README.md)
 
 ## Asset model
 

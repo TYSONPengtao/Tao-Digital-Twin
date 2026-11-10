@@ -251,9 +251,9 @@ export default function App() {
           <div className="brand-line">
             <span className="brand-mark">TAO</span>
             <span className="brand-separator">/</span>
-            <span>DIGITAL TWIN</span>
+            <span>HOME DIGITAL TWIN</span>
           </div>
-          <p>Realtime spatial monitoring prototype</p>
+          <p>Simulated home telemetry</p>
         </div>
 
         <div className="connection">
@@ -266,8 +266,8 @@ export default function App() {
         <div className="scene-panel">
           <div className="panel-heading">
             <div>
-              <span className="panel-kicker">LIVE SCENE</span>
-              <h1>Facility Twin</h1>
+              <span className="panel-kicker">SIMULATED SCENE</span>
+              <h1>Home Twin</h1>
             </div>
 
             <div className="scene-meta">

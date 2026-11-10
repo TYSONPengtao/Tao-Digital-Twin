@@ -1,84 +1,23 @@
-# TAO Digital Twin Platform Roadmap
+# 家庭数字孪生路线图
 
-## Phase 0 - Foundation
+## 已有过程与核验
 
-- [x] React + TypeScript frontend
-- [x] Three.js / React Three Fiber prototype
-- [x] FastAPI backend
-- [x] REST API
-- [x] WebSocket realtime telemetry
-- [x] GitHub PR workflow
-- [x] Semantic version tags
-- [x] Modular repository structure
+- [x] 从图纸、摄影测量和地面资料建立可编辑住宅，形成 V26.20 交付基线。[建筑重建台账](history/reconstruction.md)
+- [x] 经 Rhino / Datasmith 导入 UE5，按构件身份受控重导入，核验漫游、碰撞和门窗。
+- [x] 在本地编辑器核验全年日照、夜间照明、三种门窗状态的风环境与三向切片。
+- [x] 建立设备登记与软件灯验证路径，保留 Web 模拟遥测客户端。[智慧家台账](history/smart-home.md)
 
-## Phase 1 - Platform Core
+## 场景与环境的下一轮
 
-- [ ] Canonical Entity model
-- [ ] Device Registry
-- [ ] State Manager
-- [ ] Command Router
-- [ ] Event Bus
-- [ ] Adapter interface
-- [ ] Simulator adapter
-- [ ] Versioned REST API
-- [ ] Stable realtime event schema
+- [ ] 补测门窗、窗台与亭子等仍依照片拟合的尺寸。
+- [ ] 模型修订后按新几何复核开口和 CFD 数据。补齐网格敏感性、现场风速与开口流量对照。
+- [ ] 把依赖编辑器的交互迁入运行时，并在独立打包程序复验。
 
-## Phase 2 - Smart Home Pilot
+## 家庭设备闭环
 
-- [ ] Home Assistant adapter
-- [ ] MQTT adapter
-- [ ] Import first real building model
-- [ ] Map 3D scene nodes to TAO entities
-- [ ] Control one real light from the digital twin
-- [ ] Synchronize physical wall-switch changes back to the twin
-- [ ] Add television / curtain / socket examples
+- [ ] 补全空间、门窗与设备候选的身份绑定，分别登记命令、确认状态和反馈时间。
+- [ ] 先验证一组实物状态反馈和一盏灯的安全闭环，再扩展至受控门窗和一条监控码流。
+- [ ] 验证授权、断线、超时、过期状态和本地手动接管。
+- [ ] 由 UE 和 Web 使用同一实体与事件契约。[家庭设备领域](domain-model.md)
 
-## Phase 3 - Unreal Engine Client
-
-- [ ] UE5 project/client skeleton
-- [ ] REST client
-- [ ] WebSocket client
-- [ ] TAO Entity actor/component
-- [ ] Runtime state synchronization
-- [ ] Interactive device controls
-- [ ] High-fidelity building visualization
-
-## Phase 4 - Edge Hardware
-
-- [ ] ESP32 firmware foundation
-- [ ] MQTT device identity
-- [ ] Relay output
-- [ ] Physical switch input
-- [ ] Sensor telemetry
-- [ ] Availability / heartbeat
-- [ ] OTA strategy
-- [ ] STM32 gateway strategy
-
-## Phase 5 - Agriculture Pilot
-
-- [ ] Farm / greenhouse domain model
-- [ ] Soil-moisture sensors
-- [ ] Water-level sensors
-- [ ] Pump model
-- [ ] Solenoid valve model
-- [ ] Irrigation-zone model
-- [ ] Manual irrigation from UE5/Web
-- [ ] Physical feedback confirmation
-- [ ] Safe automatic irrigation rules
-
-## Phase 6 - Automation Protocols
-
-- [ ] Modbus adapter
-- [ ] OPC UA adapter
-- [ ] PLC integration
-- [ ] Historical telemetry storage
-- [ ] Alarm and event logging
-
-## Phase 7 - Intelligence
-
-- [ ] Rule engine
-- [ ] Scheduling
-- [ ] Anomaly detection
-- [ ] Predictive maintenance
-- [ ] Natural-language assistant
-- [ ] AI-assisted operation with permission boundaries
+每轮从原项目过程文件整理差异、结果和证据，更新同一个 `main`。 [日常更新](history/updates.md)

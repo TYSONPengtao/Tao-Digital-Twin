@@ -1,4 +1,4 @@
-# TAO Canonical Domain Model
+# TAO Home Domain Model
 
 ## Why a canonical model
 
@@ -14,10 +14,8 @@ Examples:
 - building
 - floor
 - room
-- greenhouse
-- farm
-- field
-- irrigation zone
+- courtyard
+- utility room
 
 ## Entity
 
@@ -70,7 +68,7 @@ Examples:
 ```json
 {
   "command_id": "cmd-001",
-  "entity_id": "irrigation-zone-01-valve",
+  "entity_id": "kitchen-window-motor",
   "action": "open",
   "parameters": {},
   "source": "unreal"
@@ -109,11 +107,11 @@ MQTT example:
 
 ```json
 {
-  "entity_id": "irrigation-zone-01-valve",
+  "entity_id": "kitchen-window-motor",
   "adapter": "mqtt",
   "binding": {
-    "command_topic": "tao/farm/zone01/valve/set",
-    "state_topic": "tao/farm/zone01/valve/state"
+    "command_topic": "tao/smart_home/home/kitchen-window-motor/set",
+    "state_topic": "tao/smart_home/home/kitchen-window-motor/state"
   }
 }
 ```

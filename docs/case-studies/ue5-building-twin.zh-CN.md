@@ -4,6 +4,8 @@
 
 重建基线、模型交接与风场截图见 [从建筑重建到智慧家数字孪生](reconstruction-to-smart-home.zh-CN.md)。
 
+ModelSync 发布、场景改动和环境核验按原编号归档。[智慧家逐版台账](../history/smart-home.md)
+
 ```mermaid
 flowchart LR
     A["实景参考、尺寸与问题清单"] --> B["Blender 或 Rhino 主编辑源"]

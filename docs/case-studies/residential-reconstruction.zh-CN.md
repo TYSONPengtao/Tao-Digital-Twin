@@ -4,6 +4,8 @@
 
 重建版本的同机位对照与后续 UE5 场景见 [从建筑重建到智慧家数字孪生](reconstruction-to-smart-home.zh-CN.md)。
 
+各版改动按过程文件登记。[建筑重建逐版台账](../history/reconstruction.md)
+
 ## 1. 整理资料和坐标基准
 
 ```mermaid

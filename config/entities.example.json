@@ -16,18 +16,18 @@
       }
     },
     {
-      "id": "irrigation-zone-01-valve",
-      "domain": "agriculture",
-      "space_id": "irrigation-zone-01",
-      "type": "valve",
+      "id": "kitchen-window-motor",
+      "domain": "smart_home",
+      "space_id": "kitchen",
+      "type": "window_motor",
       "capabilities": ["open_close"],
       "adapter": "mqtt",
       "binding": {
-        "command_topic": "tao/agriculture/farm01/valve01/set",
-        "state_topic": "tao/agriculture/farm01/valve01/state"
+        "command_topic": "tao/smart_home/home/kitchen-window-motor/set",
+        "state_topic": "tao/smart_home/home/kitchen-window-motor/state"
       },
       "scene_bindings": {
-        "unreal": "BP_Valve_01"
+        "unreal": "BP_KitchenWindowMotor"
       }
     }
   ]

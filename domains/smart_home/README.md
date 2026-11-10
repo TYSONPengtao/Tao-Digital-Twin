@@ -1,6 +1,6 @@
-# Smart Home Domain
+# Home Digital Twin Domain
 
-The first real-world pilot domain.
+The home is the scope of the repository. The local scene provides residential spaces, geometry and interaction. Device registration and software-light tests prepare the bindings. [Scene and device history](../../docs/history/smart-home.md)
 
 Example entities:
 
@@ -13,6 +13,6 @@ Example entities:
 - Doors
 - Temperature/humidity sensors
 
-Target milestone:
+First physical integration milestone:
 
 Click a light inside a real 3D building model, switch on the physical light, then synchronize the confirmed physical state back to UE5 and Web.

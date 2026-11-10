@@ -1,4 +1,6 @@
-# Communication Protocols
+# Home Device Protocols
+
+The Web simulator currently uses REST and WebSocket. The table describes the planned routes for connecting the local UE scene and household equipment.
 
 | Connection | Primary protocol | Purpose |
 | --- | --- | --- |
@@ -7,7 +9,7 @@
 | Home Assistant -> TAO Core | REST + WebSocket | Smart-home integration |
 | ESP32 -> TAO Core | MQTT | Sensors, switches, relays, actuators |
 | STM32 -> gateway/core | MQTT or serial gateway | Embedded control |
-| PLC -> TAO Core | Modbus / OPC UA | Automation and industrial devices |
+| Local control gateway -> TAO Core | Modbus / OPC UA | Household equipment that already uses a wired controller |
 | Cameras | RTSP/WebRTC + TAO control API | Video plus device control |
 
 ## REST
