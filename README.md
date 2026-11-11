@@ -15,7 +15,7 @@
 | 入口 | 内容 |
 | --- | --- |
 | [项目总台账](docs/history/README.md) | 两个过程项目在同一条住宅数字孪生时间线中的衔接与来源。 |
-| [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 个版本各有可展开的过程图。 |
+| [建筑重建逐版记录](docs/history/reconstruction.md) | 从首版到 V26.20，82 个版本各有技术文章和可回查的过程图。 |
 | [智慧家逐版记录](docs/history/smart-home.md) | 从 Rhino / Datasmith 转换到 UE5 交互与环境分析，共 42 条带图记录。 |
 | [Codex 改模方法与过程图档](docs/history/codex-methods.md) | 用户圈画如何定位到坐标和对象，如何取样与制作材质，以及 Blender、Rhino、UE5 的操作和保存后核验。 |
 | [按迭代查研究方法](docs/history/research/README.md) | 82 个建筑版本与 42 条智慧家记录的输入、算法、出图和核验。凉亭散点图有原数据复算。 |
