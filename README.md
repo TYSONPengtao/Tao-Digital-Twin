@@ -51,6 +51,8 @@
 
 ## 按版本查证据
 
+- [**专业方法与完整过程**](docs/history/research/methodology.md) — 解释坐标、采样、配准、局部保护、材质、动作与风场；[按版查全部过程](docs/history/research/process-coverage.md)。
+
 - [**建筑重建：82 篇独立技术文章**](docs/history/research/versions/README.md) — 每版的问题、输入、实现、过程图、核验和出处；对应[建筑逐版台账](docs/history/reconstruction.md)。
 - [**每版原实现脚本**](docs/history/research/source-code/README.md) — 共 2,272 个脚本与启动文件，按版提供阅读入口、原路径及双 SHA-256；含站点坐标的 31 项附明确脱敏说明。
 - [**智慧家：逐版场景与交互记录**](docs/history/smart-home.md) — Rhino / Datasmith、ModelSync、UE5、环境分析与设备准备沿同一时间线记录。

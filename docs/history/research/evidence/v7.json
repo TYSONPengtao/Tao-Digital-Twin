@@ -1,0 +1,1611 @@
+{
+  "version": "V7",
+  "source_folder": "Rebuild_V7_Hybrid",
+  "primary": {
+    "relative": "Rebuild_V7_Hybrid/使用说明.md",
+    "sha256": "bb17dbf5f36252ac11b671ae1ab021fb5308f61a67a762fc86d68f19ef3a6592"
+  },
+  "source_files": 26,
+  "trace": [
+    {
+      "file": "history/prepare_v7_exports.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 12,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 3
+        },
+        {
+          "call": "write_text",
+          "line": 4
+        },
+        {
+          "call": "read_text",
+          "line": 5
+        },
+        {
+          "call": "write_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "write_text",
+          "line": 11
+        }
+      ],
+      "file_literals": [],
+      "functions": []
+    },
+    {
+      "file": "history/build_scene_v7.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 176,
+      "operations": [
+        {
+          "call": "q.difference",
+          "line": 41,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "np.cross",
+          "line": 143,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 170
+        },
+        {
+          "call": "write_text",
+          "line": 171
+        },
+        {
+          "call": "write_text",
+          "line": 172
+        },
+        {
+          "call": "write_text",
+          "line": 175
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "DJI_0623.JPG",
+          "line": 21
+        },
+        {
+          "name": "DJI_0100.JPG",
+          "line": 21
+        },
+        {
+          "name": "DJI_0429.JPG",
+          "line": 68
+        },
+        {
+          "name": "DJI_0478.JPG",
+          "line": 93
+        },
+        {
+          "name": "DJI_0106.JPG",
+          "line": 93
+        },
+        {
+          "name": "DJI_0038.JPG",
+          "line": 165
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 170
+        },
+        {
+          "name": "Changes_V7.json",
+          "line": 171
+        },
+        {
+          "name": "V7_Changed_Nodes.json",
+          "line": 175
+        }
+      ],
+      "functions": [
+        {
+          "name": "record",
+          "line": 16,
+          "end": 16
+        },
+        {
+          "name": "add",
+          "line": 17,
+          "end": 18
+        },
+        {
+          "name": "part",
+          "line": 19,
+          "end": 19
+        },
+        {
+          "name": "box",
+          "line": 20,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "file": "history/build_v7_patch.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 74,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 39,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 19
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "read_text",
+          "line": 23
+        },
+        {
+          "call": "read_text",
+          "line": 68
+        },
+        {
+          "call": "write_text",
+          "line": 70
+        },
+        {
+          "call": "write_text",
+          "line": 71
+        },
+        {
+          "call": "write_text",
+          "line": 72
+        },
+        {
+          "call": "write_text",
+          "line": 73
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 10
+        },
+        {
+          "name": "V7_Incremental_Nodes.json",
+          "line": 12
+        },
+        {
+          "name": "V7_Changed_Nodes.json",
+          "line": 12
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 16
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 17
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 18
+        },
+        {
+          "name": "Materials.json",
+          "line": 23
+        },
+        {
+          "name": "Base_Index.json",
+          "line": 68
+        },
+        {
+          "name": "Patch_Incremental_Revision_V7.json",
+          "line": 73
+        },
+        {
+          "name": "Patch_Revision_V7.json",
+          "line": 73
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/finish_v7_ridge.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 9,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "p.read_text",
+          "line": 3
+        },
+        {
+          "call": "p.write_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 3
+        },
+        {
+          "name": "DJI_0429.JPG",
+          "line": 6
+        },
+        {
+          "name": "Changes_V7.json",
+          "line": 7
+        },
+        {
+          "name": "V7_Incremental_Nodes.json",
+          "line": 7
+        },
+        {
+          "name": "V7_Changed_Nodes.json",
+          "line": 8
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/prepare_v7_final_qa.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 32,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 11,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 10
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 11
+        },
+        {
+          "call": "read_bytes",
+          "line": 16
+        },
+        {
+          "call": "write_text",
+          "line": 21
+        },
+        {
+          "call": "local.read_text",
+          "line": 23
+        },
+        {
+          "call": "read_text",
+          "line": 24
+        },
+        {
+          "call": "local.write_text",
+          "line": 31
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V6_Exchange_Photo_Readback.json",
+          "line": 8
+        },
+        {
+          "name": "V7_Exchange_Photo_Readback.json",
+          "line": 8
+        },
+        {
+          "name": "Reality_Hybrid_V7.3dm",
+          "line": 11
+        },
+        {
+          "name": "Native_Embedded_Texture_QA.json",
+          "line": 21
+        },
+        {
+          "name": "Editable_Local_Native_QA.json",
+          "line": 22
+        },
+        {
+          "name": "Editable_Rhino_Kernel_QA.json",
+          "line": 24
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/check_v7_delivery.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 62,
+      "operations": [
+        {
+          "call": "checks.append",
+          "line": 10,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12,
+          "meaning": "Rhino 原生读写"
+        },
+        {
+          "call": "np.cross",
+          "line": 30,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "cov.difference",
+          "line": 31,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "union.intersection",
+          "line": 35,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_bytes",
+          "line": 11
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 26
+        },
+        {
+          "call": "read_text",
+          "line": 26
+        },
+        {
+          "call": "np.load",
+          "line": 28
+        },
+        {
+          "call": "read_text",
+          "line": 36
+        },
+        {
+          "call": "read_text",
+          "line": 37
+        },
+        {
+          "call": "read_text",
+          "line": 43
+        },
+        {
+          "call": "read_text",
+          "line": 56
+        },
+        {
+          "call": "write_text",
+          "line": 62
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "纯场地版本.3dm",
+          "line": 8
+        },
+        {
+          "name": "Reality_Hybrid_V7.3dm",
+          "line": 8
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 13
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 26
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 26
+        },
+        {
+          "name": "Plain_White_Finish_Revision.json",
+          "line": 37
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 43
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 56
+        },
+        {
+          "name": "Independent_V7_QA.json",
+          "line": 62
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 10,
+          "end": 10
+        },
+        {
+          "name": "sha",
+          "line": 11,
+          "end": 11
+        },
+        {
+          "name": "occupied",
+          "line": 44,
+          "end": 45
+        }
+      ]
+    },
+    {
+      "file": "history/package_v7_rhino.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 70,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 23
+        },
+        {
+          "call": "write_text",
+          "line": 37
+        },
+        {
+          "call": "readme.write_text",
+          "line": 54
+        },
+        {
+          "call": "mp.write_text",
+          "line": 56
+        },
+        {
+          "call": "write_text",
+          "line": 68
+        },
+        {
+          "call": "write_text",
+          "line": 69
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Independent_V7_QA.json",
+          "line": 24
+        },
+        {
+          "name": "Reality_Hybrid_V7.3dm",
+          "line": 26
+        },
+        {
+          "name": "Native_Hybrid_QA.json",
+          "line": 27
+        },
+        {
+          "name": "Editable_Rhino_Kernel_QA.json",
+          "line": 28
+        },
+        {
+          "name": "Editable_Rhino_Alignment_QA.json",
+          "line": 30
+        },
+        {
+          "name": "Architecture_Edit_V7_ALIGNED_ENU.3dm",
+          "line": 32
+        },
+        {
+          "name": "Actual_Source_Rim_3D_QA.json",
+          "line": 33
+        },
+        {
+          "name": "V7_Exchange_Photo_Readback.json",
+          "line": 34
+        },
+        {
+          "name": "Native_Embedded_Texture_QA.json",
+          "line": 35
+        },
+        {
+          "name": "Delivery_Preflight_QA.json",
+          "line": 37
+        },
+        {
+          "name": "Delivery_Package_QA.json",
+          "line": 40
+        },
+        {
+          "name": "文件校验_SHA256.json",
+          "line": 55
+        },
+        {
+          "name": "_Delivery_QA.json",
+          "line": 69
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 8,
+          "end": 12
+        },
+        {
+          "name": "register",
+          "line": 13,
+          "end": 16
+        },
+        {
+          "name": "copy",
+          "line": 17,
+          "end": 22
+        },
+        {
+          "name": "report",
+          "line": 23,
+          "end": 23
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P51C14B8A",
+      "source_sha256": "51c14b8acd717128c26bf43160d5d5fbd125e3f06b01b1b8c29d3d19f125ba7d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Wide_L0_0205s_Y+00.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PDD63D4E3",
+      "source_sha256": "dd63d4e30470e8658d55f81321ab50f618a1d120e04347ed4ce2262cbf99fc80",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-003.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Wide_L1_0205s_Y+00.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PBCF62963",
+      "source_sha256": "bcf62963e409757e9a20666d656d61bc27cb2be057d0756cda847dd6ca522d88",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_Building.png"
+        }
+      ]
+    },
+    {
+      "id": "PFBFAB5F6",
+      "source_sha256": "fbfab5f6a2aa247d964060e2e21e495011956404942bfa3b836b884d90f9d8e9",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_Closed_Gable.png"
+        }
+      ]
+    },
+    {
+      "id": "P2B0D3F96",
+      "source_sha256": "2b0d3f96747a84faa29217d87366870713dd3ce29b0d619fd6a895d0569c8ef4",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_F2_Stair_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "PDE4407E9",
+      "source_sha256": "de4407e939cd927e18c9d5722b63c64f4a1c8ba627921d5a00087b80a5d7b402",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_Individual_Tiles.png"
+        }
+      ]
+    },
+    {
+      "id": "P18CA5717",
+      "source_sha256": "18ca57170c798dde6c773f6f8d9643c4689b987b8a41a5f90dd572e0414bcaee",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_Terrace_Door.png"
+        }
+      ]
+    },
+    {
+      "id": "P555E20B4",
+      "source_sha256": "555e20b40173d8870e238d619be170e2284cf8acf0999089540bc2d5a11b074a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/06_Report/V7_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "P33F3ABFE",
+      "source_sha256": "33f3abfe0e950a189c8443f052c1137c4d84350d3b5eac1d872d6534f3234705",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P071B615A",
+      "source_sha256": "071b615a9cca03ee39ebc8256aeee9c4522a6479a7dd6b745d2406f5b4461c1f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P160F908A",
+      "source_sha256": "160f908a73480c72689c667cac11d3d936a9ff511d6ce30ba8eee9ecd9a3061d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_03.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P1EC66BF4",
+      "source_sha256": "1ec66bf4ac0e094aab00ef9cc4c2c9d3cde6fe9be20732319f2c398d3f88958b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_04.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PCEB183F9",
+      "source_sha256": "ceb183f910816a26edf1fcccb00ab4eb0d41425240bc21f4bf9e6f31c4ae9561",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PB49268E2",
+      "source_sha256": "b49268e27997b6775423bb2d81a0995a59a17f0b768f0c7d1361041fbf45f32a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_06.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA79CDA11",
+      "source_sha256": "a79cda11ffe8f1b04128fe4e84ab0a691369006401c3eb836abb49fbd1f289bd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_07.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P7191DA50",
+      "source_sha256": "7191da50ff89d319114a1ebe59e03261a0c6b528f2bfe215a0b725827f058f07",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_08.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PFD5A3AA3",
+      "source_sha256": "fd5a3aa3cd4f59cebd0cab260faa61a56698722e481b6ac693642081250a1f88",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_09.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P3DC64479",
+      "source_sha256": "3dc644791cc56f6d4097b8028ca2c4c13a1cebc892512595c473dc833ca56d3d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_10.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PF6834DB7",
+      "source_sha256": "f6834db7f8fcb3d0f7a2e1316dd180a185f3d1a86d642f0967674559214ef25c",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0002_Page_11.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PAF013B7A",
+      "source_sha256": "af013b7aebbdead3337b7e582599324264b22d5da2f0c2a7ef8c6a70db98fb5a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0003_Page_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PC9A38CFF",
+      "source_sha256": "c9a38cff92eeda97d1666167d7e319e52dae3ea0bc6d55fce56352932e46b5fc",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/DJI_All_Target_Images/ALL_0003_Page_02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P281F88F5",
+      "source_sha256": "281f88f5c9e62f9de9c0df6ab91cdc92d43d8f9c7de72df6e8068a024b831a27",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0038.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PEED7A9B0",
+      "source_sha256": "eed7a9b0b44fd6ede5f51379c464a72203d7d996c1f163b620a6a5dc436837a0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0041.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P05DBE649",
+      "source_sha256": "05dbe6494690a403756c35e07405e3c057380cdea01d2e8c59681df2a3d2d483",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0096.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PF1251EDF",
+      "source_sha256": "f1251edf71c1acf7f665f479ea02d934da5d772b5a83f8188326afb82afbfce1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0153.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P211049A5",
+      "source_sha256": "211049a5cda7d35a4a6e702f93e1d6a30d2e07c57c6c0ed8fd007f86343a49f3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0158.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P4D89B8E5",
+      "source_sha256": "4d89b8e56417bf36d34c05d50c59d053559f1b8227d2461bb1d99f3efd2cd9e5",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0282.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P255022DC",
+      "source_sha256": "255022dcf894e2d0344a2769718d62eb1ea5ed0b463f60834460826d2270ffe8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0410.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PA89E1B3B",
+      "source_sha256": "a89e1b3b1023e3bcc5f4eb03e7eb162bca898a0ed497e24628b1b022a192681c",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0429.JPG"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/03_Textures/Patch/DJI_0002_0429_GABLE_ORIGINAL.JPG"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/05_Export/DJI_0002_0429_GABLE_ORIGINAL.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P0061937D",
+      "source_sha256": "0061937dff8ed8a452c468d4e0b38dad0430751d3cd07a724cb2be03bb8bc6bd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0478.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PA2CBB6CA",
+      "source_sha256": "a2cbb6cac35f2f03cf3a1e0e16bb923c4cae4d35b700c15959aabdb5af3ba737",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0508.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P3221EBFA",
+      "source_sha256": "3221ebfac7f2a9d3b1c8eefaef9270ef12d78b5a4028f07e0b7ec73633d8e03d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0509.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P030F3F7E",
+      "source_sha256": "030f3f7ea2befc4457ef62b8fcdf138ac0ed08850b6d9928f98761e00624b633",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0002_0623.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PAE878383",
+      "source_sha256": "ae878383b1725772f2b5294bb6c5f81db5dd96114233832a20fab82885768ae6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0003_0100.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PA6E40AA1",
+      "source_sha256": "a6e40aa149f494aaeacece8da05fb2728093ea316fae4ac19c855b0de86d3922",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0003_0103.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P50B82A0F",
+      "source_sha256": "50b82a0f055fba672211dd374cb8b0e3faea8cba8025824089b6b2e43d0252cb",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0003_0106.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P4992E16A",
+      "source_sha256": "4992e16aca3d57dfccb33abc7b0a5cc1d5da60db4cdf5e5e93adb0ba57f3ddc6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Selected/DJI_0003_0109.JPG"
+        }
+      ]
+    },
+    {
+      "id": "PD4C26291",
+      "source_sha256": "d4c2629174c1b47dedf8e36cf15fbf76b1c179229c882c1f3e030482c84958ad",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/User_Annotations/屏幕截图 2026-10-08 211428.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P3F09E87B",
+      "source_sha256": "3f09e87b986b308fb0e37b1cac5cacd0264dd28d6fa41f13dce2c8935628355f",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/User_Annotations/屏幕截图 2026-10-08 212249.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PE6299D5C",
+      "source_sha256": "e6299d5cf8644d7aa3b66fbe4180c47537e56b8fa86be2095eab208cd7a57326",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/User_Annotations/屏幕截图 2026-10-08 212307.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P2EAB0289",
+      "source_sha256": "2eab0289138dc730aa6dd626d9e73fbc9dd5014e6a7d9cdacd4c7047b6aec2a2",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Center_L0_0165s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PE2F282A0",
+      "source_sha256": "e2f282a0f318de1df45da5b58bebb23b840b3714018bea80fbf912e9e274d64a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 2,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Center_L0_0200s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P4C6261BE",
+      "source_sha256": "4c6261be27e00bbda77658de9383478499da7923dfb5303d10316edba9d545c5",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 2,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Center_L1_0165s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PEB5C6650",
+      "source_sha256": "eb5c6650caeea7b53526f893ac9e5e0983c660949edcdd5d5aa7986664502644",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 2,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V7_Hybrid/07_Evidence/Video/Center_L1_0200s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PCA9AA68F",
+      "source_sha256": "ca9aa68f364760a1d6f53f050af62c2a1cf3a9e6dc4817662adaa12a45d8b9f6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v8_terrain_clear/V7_Plan_Local_Initial.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Actual_Source_Rim_3D_QA.json",
+      "bytes": 7111,
+      "sha256": "80afa2dc8c9dd21aac2a79a0fe421947403be63d86092c269a9b495757f814b8",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Blender_Hybrid_Export_QA.json",
+      "bytes": 391,
+      "sha256": "f2ae1a47cb80fbdd29a898dbe4f6a25457c3ca97f7c62e576b44f794253fe7d8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Changes_V7.json",
+      "bytes": 6236,
+      "sha256": "315322bed184f2b13a468e91fa3ffe6181f1ee0a414223ac7806503bee2d4dc0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Delivery_Package_QA.json",
+      "bytes": 1087,
+      "sha256": "6c18d59c1646c9af244d08fe41f6289d23788e159781df472a42b2e5aa98f3ce",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Delivery_Preflight_QA.json",
+      "bytes": 551,
+      "sha256": "2cf3b563021185f8219c4f62798b5d00df0c4fb2cb6a57f9c4e1c5342e9c935d",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Door_Registry_V7.json",
+      "bytes": 16014,
+      "sha256": "84f786622cf5e721c9c403eb18e56dbcd5a1e89ee1cf112741f42a3edd1c199f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Editable_Local_Native_QA.json",
+      "bytes": 645,
+      "sha256": "e22c40afde657a8fc2b81b55ea2165bbd2a6c24a71674ba8f59e9d09c7cd8fe5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Editable_Rhino_Alignment_QA.json",
+      "bytes": 3421,
+      "sha256": "9e39e5fbdcd725b3381d4ed9233bef9b867c1d10903ca148cd70f8946a23dfc3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Editable_Rhino_Kernel_QA.json",
+      "bytes": 160,
+      "sha256": "0c5b8b3a6235ba193e12af6675ebae2236dba82a1bd1fb0e5e64c7bc5f3a4131",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Gable_DJI_Texture_QA.json",
+      "bytes": 662,
+      "sha256": "a3cb09db3dfca57e6163ac920d0f350fbbff9da7274b16ec317d450a068265b3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Independent_V7_QA.json",
+      "bytes": 151732,
+      "sha256": "780998212c6ace38bb2cda1a34980ad08470782827dee77273f049229449646d",
+      "status": null,
+      "failure_count": null,
+      "check_count": 1301
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Native_Embedded_Texture_QA.json",
+      "bytes": 2903,
+      "sha256": "2586627c5506299eb8ee6d52f54112ff7de76cfd0b9cd6f37eb38a2d89418e1e",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Native_Hybrid_QA.json",
+      "bytes": 539,
+      "sha256": "843d285be9e89abab69539219ed80391695e4ea1f221611c9569f536e771ca8a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Patch_Incremental_Revision_V7.json",
+      "bytes": 327,
+      "sha256": "c489e51ae57ece4bf9c90ef70cb860925d619b01c0f2fadfd29301550fc98543",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Patch_Revision_V7.json",
+      "bytes": 3223,
+      "sha256": "2e00df51676eb2d40a8fb407b7abc9befa33becccefb2209ce358506ce7d01ad",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Plain_White_Finish_Revision.json",
+      "bytes": 5263,
+      "sha256": "52316fa8c2d490fcdc4662d7f1082ead5f5a686527b2eb5d6e681f80a4cd5857",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/Room_Registry_V7.json",
+      "bytes": 15992,
+      "sha256": "51e7ebbd1c8950e1c2942c53ac351ea55834c5c6c80df7644a23e036aa4e9be5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/V7_Exchange_Photo_Readback.json",
+      "bytes": 23172,
+      "sha256": "30a412a75bfbd2140530c0b533c019a3f0e0dbc6a04773514014506a746596a7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/前期需求汇总_V6留档.md",
+      "bytes": 5534,
+      "sha256": "87f57d3e46ad3a4eb52d0243ce53c81b1192ef200a7d4aa5aced5a4ad89381a5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/本次关键补测上传清单.csv",
+      "bytes": 999,
+      "sha256": "a94326718b3e85764d35a20df79dbd5c000bd1c484d2775ddee2bf18cd5515c4",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/06_Report/需求汇总与修模依据_V7.md",
+      "bytes": 4591,
+      "sha256": "bfb2342e633033428e1bddf1095ac73be9a7a4d23a47d4b4c9f4c6ff49930332",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V7_Hybrid/使用说明.md",
+      "bytes": 1512,
+      "sha256": "bb17dbf5f36252ac11b671ae1ab021fb5308f61a67a762fc86d68f19ef3a6592",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

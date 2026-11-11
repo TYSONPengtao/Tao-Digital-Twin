@@ -45,11 +45,11 @@ Codex 先按对象名读出六组墙体网格，包含厨房与储藏房连体�
 
 **原有投影与现场照片。** 原实景网格已有 UV 与贴图时先复用。V7 的封闭山墙用 DJI 0429 照片投射 UV，色块来自错误的门或阴影投影时按实景改为统一饰面。新建局部构件则另查对应的原照片和视频帧。
 
-**V18 储藏房外墙。** Codex 在实景照片上给毛石、条石和栏板分别圈出四点采样区，把透视斜面展开成矩形。毛石和条石做周期边界校正，减轻平铺时的亮度接缝，再派生灰度微凹凸图；石栏按实际雕花片做图集。原木纹调色和路肩程序纹理在记录中另列。取样区、步骤、贴图通道和模型参数见 `Rebuild_V18/08_Editable_Source/V18_Scripts/v18_design.py`。照片中的光照仍会影响颜色，粗糙度与凹凸强度按外观匹配。
+**V18 储藏房外墙。** Codex 在实景照片上给毛石、条石和栏板分别圈出四点采样区，按原脚本的 QUAD 四角采样展开成矩形。毛石和条石做周期边界校正，减轻平铺时的亮度接缝，再派生灰度微凹凸图；石栏按实际雕花片做图集。原木纹调色和路肩程序纹理在记录中另列。取样区、步骤、贴图通道和模型参数见 `Rebuild_V18/08_Editable_Source/V18_Scripts/v18_design.py`。照片中的光照仍会影响颜色，粗糙度与凹凸强度按外观匹配。
 
 | 取样依据 | 毛石颜色贴图 | 微凹凸图 | 模型外观复核 |
 | --- | --- | --- | --- |
-| [<img src="process/media/focus/v18-material-photo.jpg" width="208" alt="V18 毛石与栏板的实景取样照片">](process/media/focus/v18-material-photo.jpg) | [<img src="process/media/focus/v18-rubble-color.jpg" width="208" alt="透视校正和接边处理后的毛石颜色贴图">](process/media/focus/v18-rubble-color.jpg) | [<img src="process/media/focus/v18-rubble-height.jpg" width="208" alt="从毛石照片派生的微凹凸图">](process/media/focus/v18-rubble-height.jpg) | [<img src="process/media/focus/v18-material-result.jpg" width="208" alt="贴图映射到储藏房外墙和石栏后的核对视图">](process/media/focus/v18-material-result.jpg) |
+| [<img src="process/media/focus/v18-material-photo.jpg" width="208" alt="V18 毛石与栏板的实景取样照片">](process/media/focus/v18-material-photo.jpg) | [<img src="process/media/focus/v18-rubble-color.jpg" width="208" alt="四角采样和接边处理后的毛石颜色贴图">](process/media/focus/v18-rubble-color.jpg) | [<img src="process/media/focus/v18-rubble-height.jpg" width="208" alt="从毛石照片派生的微凹凸图">](process/media/focus/v18-rubble-height.jpg) | [<img src="process/media/focus/v18-material-result.jpg" width="208" alt="贴图映射到储藏房外墙和石栏后的核对视图">](process/media/focus/v18-material-result.jpg) |
 
 **V26.11 大门石浮雕。** 把用户提供的图整理成灰度高度图，用深浅控制浮雕网格起伏，再看近景和边缘。高度图与石材颜色分开管理，起伏属于建模设定。原过程见 `Rebuild_V26_11/Sources/v26_11_gate_relief_prepare.py` 及同轮 `Reports/`。
 

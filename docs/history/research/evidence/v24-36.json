@@ -1,0 +1,1064 @@
+{
+  "version": "V24.36",
+  "source_folder": "Rebuild_V24_36",
+  "primary": {
+    "relative": "Rebuild_V24_36/Reports/V24_36_Changes.json",
+    "sha256": "c53ece38470f8cf97bf1228d287de05b927f82fcdda3b6eddd6a037780049e98"
+  },
+  "source_files": 30,
+  "trace": [
+    {
+      "file": "history/v24_36_register.py",
+      "publication": "site-coordinate-redacted",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 32,
+      "operations": [
+        {
+          "call": "np.linalg.svd",
+          "line": 12,
+          "meaning": "奇异值分解"
+        },
+        {
+          "call": "np.cross",
+          "line": 23,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "np.linalg.lstsq",
+          "line": 28,
+          "meaning": "最小二乘求解"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "np.load",
+          "line": 21
+        },
+        {
+          "call": "read_text",
+          "line": 30
+        },
+        {
+          "call": "write_text",
+          "line": 32
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Landmarks_3D.json",
+          "line": 10
+        },
+        {
+          "name": "Registration_Clouds.npz",
+          "line": 21
+        },
+        {
+          "name": "Coordinate_Seed.json",
+          "line": 30
+        },
+        {
+          "name": "PTJIA6_Registration.json",
+          "line": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "fit",
+          "line": 11,
+          "end": 14
+        },
+        {
+          "name": "samples",
+          "line": 22,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "file": "history/v24_36_plan_walkable_routes.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 44,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4
+        },
+        {
+          "call": "np.load",
+          "line": 4
+        },
+        {
+          "call": "np.load",
+          "line": 4
+        },
+        {
+          "call": "write_text",
+          "line": 44
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_36.blend",
+          "line": 4
+        },
+        {
+          "name": "Final_Collision.npz",
+          "line": 4
+        },
+        {
+          "name": "Roam_Ground_Grid.npz",
+          "line": 4
+        },
+        {
+          "name": "Planned_Routes.json",
+          "line": 44
+        }
+      ],
+      "functions": [
+        {
+          "name": "closest",
+          "line": 6,
+          "end": 7
+        },
+        {
+          "name": "edge",
+          "line": 8,
+          "end": 16
+        },
+        {
+          "name": "route",
+          "line": 17,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "file": "history/v24_36_probe_views.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 15,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4
+        },
+        {
+          "call": "write_text",
+          "line": 15
+        },
+        {
+          "call": "read_text",
+          "line": 15
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_36.blend",
+          "line": 4
+        },
+        {
+          "name": "V24_36_Context_Top.png",
+          "line": 15
+        },
+        {
+          "name": "Top_Projection.json",
+          "line": 15
+        },
+        {
+          "name": "V24_36_Collision_Index.json",
+          "line": 15
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/v24_36_build.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 53,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 11,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "BVHTree.FromPolygons",
+          "line": 11,
+          "meaning": "空间加速结构"
+        },
+        {
+          "call": "me.from_pydata",
+          "line": 21,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "me.polygons.foreach_set",
+          "line": 21,
+          "meaning": "批量写入属性"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 36,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 53,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 10
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 11
+        },
+        {
+          "call": "write_text",
+          "line": 11
+        },
+        {
+          "call": "write_text",
+          "line": 11
+        },
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "np.load",
+          "line": 13
+        },
+        {
+          "call": "np.load",
+          "line": 15
+        },
+        {
+          "call": "bpy.data.images.load",
+          "line": 25
+        },
+        {
+          "call": "write_text",
+          "line": 44
+        },
+        {
+          "call": "write_text",
+          "line": 45
+        },
+        {
+          "call": "read_text",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 49
+        },
+        {
+          "call": "write_text",
+          "line": 49
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 53
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_36.blend",
+          "line": 6
+        },
+        {
+          "name": "Architecture_Complete_V24_35.blend",
+          "line": 6
+        },
+        {
+          "name": "Before_Snapshot.json",
+          "line": 11
+        },
+        {
+          "name": "Source.json",
+          "line": 11
+        },
+        {
+          "name": "Missing_Exterior_Index.json",
+          "line": 11
+        },
+        {
+          "name": "Final_Collision.npz",
+          "line": 40
+        },
+        {
+          "name": "V24_36_Changes.json",
+          "line": 49
+        },
+        {
+          "name": "V24_36_Collision_Index.json",
+          "line": 49
+        },
+        {
+          "name": "Views.json",
+          "line": 49
+        },
+        {
+          "name": "Final_Exterior_Index.json",
+          "line": 49
+        },
+        {
+          "name": "3MX_Inventory.json",
+          "line": 50
+        },
+        {
+          "name": "Scene_Metadata.json",
+          "line": 50
+        },
+        {
+          "name": "PTJIA6_Registration.json",
+          "line": 50
+        },
+        {
+          "name": "Clip_Report.json",
+          "line": 50
+        },
+        {
+          "name": "V24_36_Build.json",
+          "line": 53
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 8,
+          "end": 9
+        },
+        {
+          "name": "write",
+          "line": 10,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "file": "history/v24_36_route_debug_plot.py",
+      "publication": "verbatim",
+      "role": "过程出图",
+      "reading_order": 3,
+      "line_count": 8,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "np.load",
+          "line": 5
+        },
+        {
+          "call": "read_text",
+          "line": 5
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_36_Context_Top.png",
+          "line": 5
+        },
+        {
+          "name": "Roam_Ground_Grid.npz",
+          "line": 5
+        },
+        {
+          "name": "Top_Projection.json",
+          "line": 5
+        },
+        {
+          "name": "Route_Local_Debug.png",
+          "line": 8
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/v24_36_verify.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 31,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 7,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "checks.append",
+          "line": 8,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "np.cross",
+          "line": 18,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "np.load",
+          "line": 15
+        },
+        {
+          "call": "np.load",
+          "line": 27
+        },
+        {
+          "call": "np.load",
+          "line": 27
+        },
+        {
+          "call": "read_text",
+          "line": 28
+        },
+        {
+          "call": "read_text",
+          "line": 29
+        },
+        {
+          "call": "read_text",
+          "line": 30
+        },
+        {
+          "call": "write_text",
+          "line": 31
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_36.blend",
+          "line": 4
+        },
+        {
+          "name": "Before_Snapshot.json",
+          "line": 7
+        },
+        {
+          "name": "Missing_Exterior_Index.json",
+          "line": 13
+        },
+        {
+          "name": "Final_Exterior_Index.json",
+          "line": 13
+        },
+        {
+          "name": "Final_Collision.npz",
+          "line": 27
+        },
+        {
+          "name": "V24_36_Collision_Index.json",
+          "line": 28
+        },
+        {
+          "name": "Source.json",
+          "line": 30
+        },
+        {
+          "name": "V24_36_Native_QA.json",
+          "line": 31
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 5,
+          "end": 6
+        },
+        {
+          "name": "ck",
+          "line": 8,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "file": "history/v24_36_surface_qa.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 27,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 8,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "shapely.intersection",
+          "line": 9,
+          "meaning": "交集限域"
+        },
+        {
+          "call": "checks.append",
+          "line": 14,
+          "meaning": "判据与回归检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "np.load",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 19
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "read_bytes",
+          "line": 24
+        },
+        {
+          "call": "write_text",
+          "line": 27
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_36.blend",
+          "line": 6
+        },
+        {
+          "name": "Final_Exterior_Index.json",
+          "line": 6
+        },
+        {
+          "name": "3MX_Inventory.json",
+          "line": 17
+        },
+        {
+          "name": "PTJIA6_Registration.json",
+          "line": 19
+        },
+        {
+          "name": "Decoded_L99_Index.json",
+          "line": 20
+        },
+        {
+          "name": "V24_36_Surface_QA.json",
+          "line": 27
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 14,
+          "end": 14
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P3FE63A5F",
+      "source_sha256": "3fe63a5f51163d6418285594344090a162b71e889cc22731de19a5719feacfc5",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_36/References/屏幕截图 2026-10-21 135627.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P9E743CD2",
+      "source_sha256": "9e743cd280426389124804ff2332401cf221cf0cd57448f05e0368e8e1073b5b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_36/Reports/V24_36_Context_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P798DC16E",
+      "source_sha256": "798dc16e366ec3ceca3b2845107420830ec9aad0385622723c4609944ed2a83a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-07.md",
+        "sheet": "rebuild-032.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_36/Existing_Context_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P946FFED5",
+      "source_sha256": "946ffed5df1867b8d39f22dd2290387f8f494d4e763463424c2470b204110070",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-07.md",
+        "sheet": "rebuild-032.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_36/PTJIA6_Geographic_Seed_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P91276E0A",
+      "source_sha256": "91276e0aacee2b76348bc660e1dd9455ab048ae879e56e9d6b12b8901ad6cfde",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-07.md",
+        "sheet": "rebuild-032.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_36/Registration_Matches.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PF37D0919",
+      "source_sha256": "f37d0919319be8fb4fcfd309aba81d7f6d3f7f61b6701eda4dab706d83d77abf",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-04.md",
+        "sheet": "locate-016.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_36/Route_Local_Debug.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Build.json",
+      "bytes": 391,
+      "sha256": "98f3a766bac08f9676e6f94bcb63c2bf5b5006d7f31bea1084c3341f0713f0ab",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Changes.json",
+      "bytes": 337926,
+      "sha256": "c53ece38470f8cf97bf1228d287de05b927f82fcdda3b6eddd6a037780049e98",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Collision_Index.json",
+      "bytes": 24061,
+      "sha256": "970e9f65e073efb7ee7a7e48e9afb39ab8a3bffa0264bdfd9d9681859aa4ff01",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Native_QA.json",
+      "bytes": 3548,
+      "sha256": "68b2ec78c18bce471f6aa87e801b156479b7325fca57b9494bfc1bef0e845246",
+      "status": "FAIL",
+      "failure_count": 3,
+      "check_count": 15
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Repair_QA.json",
+      "bytes": 3588,
+      "sha256": "29bfd6ecc273c07bb598c7462701a61093e7531343614abe0baa13a963d7df31",
+      "status": "PASS_ANNOTATED_WALL_AND_EAVE_REPAIR",
+      "failure_count": 0,
+      "check_count": 13
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Reports/V24_36_Surface_QA.json",
+      "bytes": 1416,
+      "sha256": "993a66e99abdddea4b403b0dcd7e1b8d1dd43cd0a9b3e9c7d6c2ac1941bced3f",
+      "status": "PASS_MISSING_PTJIA6_ONLY_AND_COMPLETE_NATIVE_ENVELOPE",
+      "failure_count": 0,
+      "check_count": 6
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_36/Source_Metadata/Clip_Report.json",
+      "bytes": 3698,
+      "sha256": "6013c5b93853a55acb1c1b970882a26bab1f95739583c9d3cefd496507fe2d07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/3MX_Inventory.json",
+      "bytes": 7783375,
+      "sha256": "ae4a912378d52fb0d152e1506b92af604d5b63e9619bcdbe322dfa54fef10934",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Before_Snapshot.json",
+      "bytes": 1173068,
+      "sha256": "355ee73721da68507a3b821dd7f512ee0e19c3f0954352084c301880b96e98d9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Clip_Report.json",
+      "bytes": 3698,
+      "sha256": "6013c5b93853a55acb1c1b970882a26bab1f95739583c9d3cefd496507fe2d07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Coordinate_Seed.json",
+      "bytes": 925,
+      "sha256": "ef3c02678d4ae193034d90a7e8b7ba032024e5c2e85bc5f6d04a4cb30d7d5700",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Decoded_L21_Index.json",
+      "bytes": 1406153,
+      "sha256": "56ac9d4155d1f2b5e5575f8cd13df57c483155f8ebba2d105fea3e615c10acac",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Decoded_L99_Index.json",
+      "bytes": 1601272,
+      "sha256": "a0ec6a86c4a6f38f6248fcb298f4d3ce463950ca1deaab7b0392fc5e4a0bb6fe",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Final_Exterior_Index.json",
+      "bytes": 428993,
+      "sha256": "aec1c4a92c947894063cfd105da453a83c2ac91e9d689355663f116e34df5140",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_17.json",
+      "bytes": 104,
+      "sha256": "40a493a73e1fc36f934f840bb2f7c1ce0438906678e3e932931b565a039c00d9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_18.json",
+      "bytes": 378,
+      "sha256": "179f553b614a028d6ed64f771695fa93b087c9014d2098a3b67f303632f73789",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_19.json",
+      "bytes": 1450,
+      "sha256": "cceb09de23a13afb6ce28e288159b062b99baafcbfb0be628330f23965b0b187",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_20.json",
+      "bytes": 5447,
+      "sha256": "a98dc4f3aa40c1386a2f792c7b3b9e92c8a95bbe6ca55ae0ad32c086ba43ba8d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_21.json",
+      "bytes": 23494,
+      "sha256": "52c1e23bfb09269962ab56a6bc22c437da174761b509f7bd00bfdee5745674fb",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_22.json",
+      "bytes": 53662,
+      "sha256": "00e0550383a90c73f43d3e6a3072b022936ac892a13e4b73beb84c84b1b72615",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_23.json",
+      "bytes": 57090,
+      "sha256": "c2bf9f193652b3837e35493fdc7c9e0af59ca6ac0400927ed520fe8446b23904",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_27.json",
+      "bytes": 62648,
+      "sha256": "fe217d4c469309bcb2c74774e866301658508c7df045d68c5729b89791d66d71",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Frontier_99.json",
+      "bytes": 63226,
+      "sha256": "174943d151771eef1ecbab5c32d0373a6319de61a30240a673ee7adb229b7e54",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Geometry_Index.json",
+      "bytes": 5460,
+      "sha256": "8862cc2e1967d54394faee29a121397f42f520e5dfb6175879a21be26d76c076",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Landmarks_3D.json",
+      "bytes": 8409,
+      "sha256": "17d338c50ed1ba818472cd55dc2e25f3f2004dda5f32868f1110eb5936ccfe8d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Missing_Exterior_Index.json",
+      "bytes": 1846303,
+      "sha256": "d2851d3d67f8b1c5c654087a854885a98f6845edc6f4d629a9df1b5fdc27d80d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/New_Roam_Presets.json",
+      "bytes": 152,
+      "sha256": "a51a1596904d45ba9a9c65a997b72bf0087c547e9f37b9df8cdbff6ecdafbced",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Outline_Patch.json",
+      "bytes": 990,
+      "sha256": "cbe37de806bb80de9486e32a923fafbab93ca3aae444ec62bcdcfe97acdd89f2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/PTJIA6_Registration.json",
+      "bytes": 8449,
+      "sha256": "862cb7e77c05ee07093a9162fbeccdaa41e4d7d7d1377a9221188b00324eef71",
+      "status": "REGISTERED_PHOTOGRAMMETRIC_OVERLAP",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Planned_Routes.json",
+      "bytes": 19662,
+      "sha256": "d7d1b89bee3470d774bbc465e877cfb6fe48982b4a49ea669cdbdec3f6c4fa3f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Registration_Projection.json",
+      "bytes": 371,
+      "sha256": "0694d56b85dd837630bb18994cd4fb0715c227797f20100342628d2e40b6c2fb",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Registration_Source_Index.json",
+      "bytes": 227486,
+      "sha256": "704ccb1ba647e5796dee448f446c532c0a47203bea27ee2311df9b6f5692e1ad",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/SIFT_Matches.json",
+      "bytes": 2811,
+      "sha256": "eee1bc658d1012f3f73bc08c3308093c21eee3722b3330e83e5ff7877d097f07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Scene_Metadata.json",
+      "bytes": 685,
+      "sha256": "3eac200d8bba2c78909b7bdf9c9fc6d78d81eec925081e0f609b77fdd13ca468",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Source.json",
+      "bytes": 163,
+      "sha256": "9be2b398e82205fa00658fb76a85d9fde7c2065d8c2f673f9b10258b9034a44a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Top_Projection.json",
+      "bytes": 118,
+      "sha256": "0c1d8b81f18318496474ca9dea658fd6d4815c12c5090ac1cef6ccb5504359af",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Views.json",
+      "bytes": 507,
+      "sha256": "e6a5d8d6aaf0559a8cc787a4c7a601af727399230a5a613c8ddb2fe65339e552",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_36/Yaw_Only_Initial.json",
+      "bytes": 213,
+      "sha256": "a54ef30ae562675735632639cfbcf4a58fa7249c16840927c2ae13304ad8ce19",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

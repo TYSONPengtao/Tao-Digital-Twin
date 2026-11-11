@@ -1,0 +1,1316 @@
+{
+  "version": "V6",
+  "source_folder": "Rebuild_V6_Hybrid",
+  "primary": {
+    "relative": "Rebuild_V6_Hybrid/使用说明.md",
+    "sha256": "ef40384d300d7b4506e50fd92c4ede11d9a73a31007765cfc270f4a9cb008445"
+  },
+  "source_files": 32,
+  "trace": [
+    {
+      "file": "history/probe_v6_embed.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 13,
+      "operations": [
+        {
+          "call": "r.File3dm.Read",
+          "line": 4,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "r.File3dm.Read",
+          "line": 4
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "纯场地版本.3dm",
+          "line": 4
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/prepare_v6_base.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 21,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "write_text",
+          "line": 14
+        },
+        {
+          "call": "write_text",
+          "line": 15
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "纯场地版本.3dm",
+          "line": 7
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 8
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 13
+        },
+        {
+          "name": "Base_Index.json",
+          "line": 14
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 15
+        },
+        {
+          "name": "Pure_Baseline_Hashes.json",
+          "line": 16
+        },
+        {
+          "name": "Pure_Texture_Map.csv",
+          "line": 16
+        },
+        {
+          "name": "All_Reality_Model_Files.csv",
+          "line": 16
+        },
+        {
+          "name": "New_Rhino_Summary.json",
+          "line": 16
+        },
+        {
+          "name": "Old_JIA_Texture_Source.json",
+          "line": 16
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/repair_v6_ground.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 102,
+      "operations": [
+        {
+          "call": "H.difference",
+          "line": 28,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "np.cross",
+          "line": 34,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "read_text",
+          "line": 16
+        },
+        {
+          "call": "read_text",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "snapshot.write_text",
+          "line": 24
+        },
+        {
+          "call": "snapshot.read_text",
+          "line": 25
+        },
+        {
+          "call": "save",
+          "line": 62
+        },
+        {
+          "call": "save",
+          "line": 64
+        },
+        {
+          "call": "np.load",
+          "line": 68
+        },
+        {
+          "call": "save",
+          "line": 73
+        },
+        {
+          "call": "np.load",
+          "line": 78
+        },
+        {
+          "call": "save",
+          "line": 92
+        },
+        {
+          "call": "write_text",
+          "line": 97
+        },
+        {
+          "call": "read_text",
+          "line": 98
+        },
+        {
+          "call": "write_text",
+          "line": 101
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Coordinate.json",
+          "line": 13
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 16
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 20
+        },
+        {
+          "name": "Patch_Index_Before_Ground_Repair.json",
+          "line": 23
+        },
+        {
+          "name": "Patch_Clip_And_Photo_QA.json",
+          "line": 98
+        }
+      ],
+      "functions": [
+        {
+          "name": "save",
+          "line": 55,
+          "end": 60
+        }
+      ]
+    },
+    {
+      "file": "history/build_v6_patch.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 111,
+      "operations": [
+        {
+          "call": "p.intersection",
+          "line": 37,
+          "meaning": "交集限域"
+        },
+        {
+          "call": "np.cross",
+          "line": 37,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "H.difference",
+          "line": 96,
+          "meaning": "差集裁切"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "save",
+          "line": 94
+        },
+        {
+          "call": "save",
+          "line": 106
+        },
+        {
+          "call": "write_text",
+          "line": 109
+        },
+        {
+          "call": "write_text",
+          "line": 109
+        },
+        {
+          "call": "write_text",
+          "line": 109
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Refined_Main_Hole_Polygon.json",
+          "line": 11
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 12
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 109
+        },
+        {
+          "name": "Materials.json",
+          "line": 109
+        },
+        {
+          "name": "Patch_Clip_And_Photo_QA.json",
+          "line": 109
+        }
+      ],
+      "functions": [
+        {
+          "name": "polys",
+          "line": 19,
+          "end": 22
+        },
+        {
+          "name": "polygon_tris",
+          "line": 23,
+          "end": 25
+        },
+        {
+          "name": "clip_half",
+          "line": 26,
+          "end": 32
+        },
+        {
+          "name": "clipped",
+          "line": 33,
+          "end": 53
+        },
+        {
+          "name": "split",
+          "line": 54,
+          "end": 58
+        },
+        {
+          "name": "save",
+          "line": 60,
+          "end": 66
+        }
+      ]
+    },
+    {
+      "file": "history/export_v6_native.py",
+      "publication": "site-coordinate-redacted",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 60,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 8,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "rh.EmbeddedFile.Read",
+          "line": 15
+        },
+        {
+          "call": "np.load",
+          "line": 37
+        },
+        {
+          "call": "F.Write",
+          "line": 55
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 55
+        },
+        {
+          "call": "write_text",
+          "line": 59
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "纯场地版本.3dm",
+          "line": 8
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 8
+        },
+        {
+          "name": "Materials.json",
+          "line": 8
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 8
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 54
+        },
+        {
+          "name": "Reality_Hybrid_V6.3dm",
+          "line": 55
+        },
+        {
+          "name": "Native_Hybrid_QA.json",
+          "line": 59
+        }
+      ],
+      "functions": [
+        {
+          "name": "make_mesh",
+          "line": 22,
+          "end": 31
+        },
+        {
+          "name": "attrs",
+          "line": 32,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "file": "history/stitch_v6_rim.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 79,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 58,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "np.linalg.lstsq",
+          "line": 61,
+          "meaning": "最小二乘求解"
+        },
+        {
+          "call": "difference",
+          "line": 73,
+          "meaning": "差集裁切"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "read_text",
+          "line": 14
+        },
+        {
+          "call": "np.load",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "np.load",
+          "line": 23
+        },
+        {
+          "call": "write_text",
+          "line": 75
+        },
+        {
+          "call": "write_text",
+          "line": 75
+        },
+        {
+          "call": "write_text",
+          "line": 77
+        },
+        {
+          "call": "write_text",
+          "line": 78
+        },
+        {
+          "call": "read_text",
+          "line": 78
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Coordinate.json",
+          "line": 11
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 12
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 14
+        },
+        {
+          "name": "Base_Index.json",
+          "line": 20
+        },
+        {
+          "name": "Materials.json",
+          "line": 20
+        },
+        {
+          "name": "Patch_Rim_Transition.npz",
+          "line": 67
+        },
+        {
+          "name": "Rim_Transition_Repair.json",
+          "line": 77
+        },
+        {
+          "name": "Patch_Clip_And_Photo_QA.json",
+          "line": 78
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/package_v6_rhino.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 54,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 15
+        },
+        {
+          "call": "read_text",
+          "line": 16
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "manifestpath.write_text",
+          "line": 46
+        },
+        {
+          "call": "write_text",
+          "line": 54
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Native_Hybrid_QA.json",
+          "line": 15
+        },
+        {
+          "name": "Actual_Source_Rim_3D_QA.json",
+          "line": 16
+        },
+        {
+          "name": "Hybrid_V6_Independent_QA.json",
+          "line": 17
+        },
+        {
+          "name": "Reality_Hybrid_V6.3dm",
+          "line": 18
+        },
+        {
+          "name": "Architecture_Edit_V5_ALIGNED_ENU.3dm",
+          "line": 19
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 20
+        },
+        {
+          "name": "Hole_Polygon.json",
+          "line": 24
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 24
+        },
+        {
+          "name": "Base_Index.json",
+          "line": 24
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 24
+        },
+        {
+          "name": "Materials.json",
+          "line": 24
+        },
+        {
+          "name": "Editable_Architecture_V5_LOCAL.json",
+          "line": 26
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 26
+        },
+        {
+          "name": "Hybrid_Boundary_Height_QA.json",
+          "line": 30
+        },
+        {
+          "name": "Hybrid_Boundary_Height_Samples.csv",
+          "line": 30
+        },
+        {
+          "name": "Hybrid_XY_Residual.json",
+          "line": 30
+        },
+        {
+          "name": "Fast_Ground_Edge_Height_V6.json",
+          "line": 30
+        },
+        {
+          "name": "Fast_Ground_Edge_Height_V6.csv",
+          "line": 30
+        },
+        {
+          "name": "V6_Exchange_Photo_Readback.json",
+          "line": 32
+        },
+        {
+          "name": "FBX_Patch_UV_Readback.json",
+          "line": 32
+        },
+        {
+          "name": "Geometry_QA_V5.json",
+          "line": 35
+        },
+        {
+          "name": "Native_Model_QA.json",
+          "line": 35
+        },
+        {
+          "name": "Exchange_Readback_QA.json",
+          "line": 35
+        },
+        {
+          "name": "Interface_Repair_Check.json",
+          "line": 41
+        },
+        {
+          "name": "Construction_Geometry_Checks_V4.csv",
+          "line": 41
+        },
+        {
+          "name": "CASES_Inventory_V3.json",
+          "line": 43
+        },
+        {
+          "name": "CASES_Reference_Audit.csv",
+          "line": 43
+        },
+        {
+          "name": "CC_SDK_Projects_V3.json",
+          "line": 43
+        },
+        {
+          "name": "OBJ_Metadata.json",
+          "line": 43
+        },
+        {
+          "name": "文件校验_SHA256.json",
+          "line": 46
+        },
+        {
+          "name": "Delivery_Package_QA.json",
+          "line": 54
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 7,
+          "end": 11
+        },
+        {
+          "name": "copy",
+          "line": 12,
+          "end": 14
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "PBFFDE801",
+      "source_sha256": "bffde801f0fbaafcb7f00676be207fc6858c179dd597a1817e0815fcf6b073d8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 2,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Hybrid_Building.png"
+        }
+      ]
+    },
+    {
+      "id": "P2D5164E6",
+      "source_sha256": "2d5164e686f93b03d0340c3ceb90b55e627b28085a2d6757dcb277ebbc95641d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 2,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Hybrid_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "PD501879F",
+      "source_sha256": "d501879f9ff2239191afcf215768a8d7ad615ed1a17892f1e408a49b9915a934",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 2,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Hybrid_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "P0E0DC34D",
+      "source_sha256": "0e0dc34d68ec678afb857726d433c09e111df6ad89912e54b3f6f090b74829cb",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 2,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Main_Hole_Local_Overlay.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/Main_Hole_Local_Overlay.png"
+        }
+      ]
+    },
+    {
+      "id": "P3076FBE5",
+      "source_sha256": "3076fbe56e0c0a89e5566b74500d9c0e0d381fddd57d4be3f66972f33bcb42d8",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Main_Hole_Raster_Mask.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/Main_Hole_Raster_Mask.png"
+        }
+      ]
+    },
+    {
+      "id": "P26410650",
+      "source_sha256": "2641065055a316e46007dd4f4c1f69686be3f1626d1e5ed0e7e9c2b4f3e6a698",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 3,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Pure_XY_Face_Coverage.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/Pure_XY_Face_Coverage.png"
+        }
+      ]
+    },
+    {
+      "id": "PABBFACA1",
+      "source_sha256": "abbfaca1da5c1757d55355c58968926859f1400ff2bdc88268ba01230c171947",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 2,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Pure_vs_OldCC_vs_V5_Registration_Plan.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/Pure_vs_OldCC_vs_V5_Registration_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "PFEE75318",
+      "source_sha256": "fee75318e954b3ec49ada7aee57a14ab7208f9b98683eca78099ee109a9e87ef",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V6_Hybrid/06_Report/Refined_Main_Hole_Local_Overlay.png"
+        }
+      ]
+    },
+    {
+      "id": "P2C63D19D",
+      "source_sha256": "2c63d19d7c4aa72f536384d7310098f7e4d68435c47b8d46288a70a725ed04cb",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-012.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/Refined_Main_Hole_Local_Overlay.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Actual_Source_Rim_3D_QA.json",
+      "bytes": 7111,
+      "sha256": "80afa2dc8c9dd21aac2a79a0fe421947403be63d86092c269a9b495757f814b8",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Blender_Hybrid_Export_QA.json",
+      "bytes": 391,
+      "sha256": "0eab121ef59fc8fa94cf85375156aead28e770d256c53a1dbcc1fe9526865cb1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Delivery_Package_QA.json",
+      "bytes": 471,
+      "sha256": "97fd09fc441288fc2f953cae2be25171f42d10e4a54fad58ab01e2a3c4cdefe2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Editable_Rhino_Alignment_QA.json",
+      "bytes": 3421,
+      "sha256": "e3848fea630882c54108a6e0c4221785b20a0a4fb9b75afb4d3a8cf298f1346e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Existing_Alignment_Evidence.json",
+      "bytes": 6948,
+      "sha256": "849f4db4605a7c1ee798d2e8ef6c2a1802c23e23656b65968df0711a0e80d397",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_All_Reality_Model_Files.csv",
+      "bytes": 181013,
+      "sha256": "8d93c707f75cb7671bbda357cb6b85f73fd206179b352947f83f35c4d5876e90",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_New_Rhino_Summary.json",
+      "bytes": 6574,
+      "sha256": "0f89fe2cfd8c109e5d82594a56363354bb2e83eedcfbcf804a67fa6c49f1db36",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_Old_JIA_Texture_Source.json",
+      "bytes": 3374,
+      "sha256": "bcca3fbf81f712f20b938a6c6c3352694ab744faa380f2dc07458414f5bdeb07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_Pure_Baseline_Hashes.json",
+      "bytes": 7621,
+      "sha256": "191bda50ae20d38d0f3d3b04a7cdfec6cff2e3b4eeae6880bbc1f29a0b0e5ec7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_Pure_Texture_Map.csv",
+      "bytes": 965,
+      "sha256": "f7fc89179c202f46e620b37ff4ba5a2ff0c8037f1da0950bc54dec0bdc2ee35d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Inventory_README.md",
+      "bytes": 2786,
+      "sha256": "1004b1b7096dd38ab2ea719341328f9461f70654bf728a96a020a15a814f5d46",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Main_Hole_Polygon.json",
+      "bytes": 22826,
+      "sha256": "48eaa06159b6c31ed348b8aaf813b62667aa6dae096ea0400c7714d668433c25",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Main_Hole_Topological_Polygon.json",
+      "bytes": 424,
+      "sha256": "f90b20d4428c22eb9822322ede6e2610be1cf29700f09cc134d5c46a206613db",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Native_Hybrid_QA.json",
+      "bytes": 505,
+      "sha256": "03c3f44e910a7025cc6736abf2a6b319230ec8fca1ca3c4fd4b6ce7e768d8778",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/New_Pure_Mesh_Alignment.json",
+      "bytes": 2959,
+      "sha256": "e1b4a0bb12a82169fe655b0d1275f0e78723a3cc52b4486fbf412074425e9763",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Patch_Clip_And_Photo_QA.json",
+      "bytes": 20102,
+      "sha256": "6fe42149fba0ba823af710876ac3f548cc05a832c3ed60f9716fa7e388572d96",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Refined_Main_Hole_Polygon.json",
+      "bytes": 117850,
+      "sha256": "faca340661a98bf23463e977291a67aa54ff199a9f840c1b4f539049f9798422",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Rim_Transition_Repair.json",
+      "bytes": 479,
+      "sha256": "34fef6d76b3d365e966c28c748e1f159da5fe6712d9eff6557116bdfd60c4bc3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/Roof_Photo_Repair.json",
+      "bytes": 4602,
+      "sha256": "df536b8b66909ce4d273187ab9987880d8736fa44f0db375e431578921d2ba8b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/06_Report/需求汇总与修模依据.md",
+      "bytes": 5534,
+      "sha256": "87f57d3e46ad3a4eb52d0243ce53c81b1192ef200a7d4aa5aced5a4ad89381a5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V6_Hybrid/使用说明.md",
+      "bytes": 3041,
+      "sha256": "ef40384d300d7b4506e50fd92c4ede11d9a73a31007765cfc270f4a9cb008445",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Alignment_and_Strict_Hole_Clip_Method.md",
+      "bytes": 3702,
+      "sha256": "ed96e83897ee689ee6f5ca2146ebb85dc61a8a8d844abd3d3daa37aa24726b4d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Existing_Alignment_Evidence.json",
+      "bytes": 6948,
+      "sha256": "849f4db4605a7c1ee798d2e8ef6c2a1802c23e23656b65968df0711a0e80d397",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Fast_Ground_Edge_Height_V6.csv",
+      "bytes": 157006,
+      "sha256": "1c7ee522f1a1b7f4cfe9535386ef448bc54117f27be70a1149ead4af3cbcc066",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Fast_Ground_Edge_Height_V6.json",
+      "bytes": 198235,
+      "sha256": "22077c9cee7c008c7e53324023f57a862a60f55bcaf0729aa0167ac9eeed134a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Fast_Ground_Edge_Run_Log.json",
+      "bytes": 198237,
+      "sha256": "94bcc88ba2e82bea12b68b4d5a6f5348a9419c6da1ef79875a01b47e10d6323f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Hybrid_Boundary_Height_QA.json",
+      "bytes": 8379,
+      "sha256": "e7bd55be6dd10270c2e23692225a4740b35bb211263ceb938d6d0d4525188176",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Hybrid_Boundary_Height_Samples.csv",
+      "bytes": 119592,
+      "sha256": "a093f163b7cd2efab3e7e60bfc576408d5a635ae56ed5af2a374bf44b323d4d5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Hybrid_V6_Independent_QA.json",
+      "bytes": 116047,
+      "sha256": "7832598985f1f7474c26752f9ba60fea1fe95e3b65d973874cf7616806a6edbd",
+      "status": null,
+      "failure_count": null,
+      "check_count": 365
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Hybrid_V6_Independent_QA.md",
+      "bytes": 7566,
+      "sha256": "f27200a64edada63f6cc640c7afcc45b10c5fefc9057c99be579b9349ea224d2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Hybrid_XY_Residual.json",
+      "bytes": 8576,
+      "sha256": "92e855b16547eaa80ed1f1b2780ae9f14065aee8645279339a1dab0a368fc5b5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Main_Hole_Polygon.json",
+      "bytes": 22826,
+      "sha256": "48eaa06159b6c31ed348b8aaf813b62667aa6dae096ea0400c7714d668433c25",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Main_Hole_Topological_Polygon.json",
+      "bytes": 424,
+      "sha256": "f90b20d4428c22eb9822322ede6e2610be1cf29700f09cc134d5c46a206613db",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/New_Pure_Mesh_Alignment.json",
+      "bytes": 2959,
+      "sha256": "e1b4a0bb12a82169fe655b0d1275f0e78723a3cc52b4486fbf412074425e9763",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_alignment_audit/Refined_Main_Hole_Polygon.json",
+      "bytes": 117958,
+      "sha256": "69262b0d2c94403d08fa1529da7df22db08505f4479c8eb1fd7aefe8b4f007f9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/All_Reality_Model_Files.csv",
+      "bytes": 181013,
+      "sha256": "8d93c707f75cb7671bbda357cb6b85f73fd206179b352947f83f35c4d5876e90",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Extension_Counts.json",
+      "bytes": 107,
+      "sha256": "96c409826ecdbf5c8effb62761a27075921e437316f90bd3c101885927d4f9c4",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/FBX_Patch_UV_Readback.json",
+      "bytes": 55698,
+      "sha256": "27a521fdeab1be87bedb5279b91f1c352bcf355a2f88e4adc93853fa4de84a24",
+      "status": null,
+      "failure_count": null,
+      "check_count": 309
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Hybrid_Usage_Draft.md",
+      "bytes": 5464,
+      "sha256": "dfcf9f7b94000370d1080616a1576c40394797ee75ebef4fd978b29d64d0e163",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Local_Reference_Summary.json",
+      "bytes": 2700,
+      "sha256": "bb4f44451184fafb53ced11673a95f19edb1f556cfa28f03bfb8493a6753da0d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/New_Rhino_Inventory.json",
+      "bytes": 44272317,
+      "sha256": "4032964d7a12486191461caa68b4ba861398b3c2890a27e56cb6aed929275602",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/New_Rhino_Summary.json",
+      "bytes": 6574,
+      "sha256": "0f89fe2cfd8c109e5d82594a56363354bb2e83eedcfbcf804a67fa6c49f1db36",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Old_JIA_Texture_Source.json",
+      "bytes": 3374,
+      "sha256": "bcca3fbf81f712f20b938a6c6c3352694ab744faa380f2dc07458414f5bdeb07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Projection_Helper_QA.json",
+      "bytes": 933,
+      "sha256": "a414d05e9a7c29bceae0c6c251a6082cc75dd550701511e0160f9059b476600b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Projection_OBJ_Helper_QA.json",
+      "bytes": 1791,
+      "sha256": "e56b1abe3b9a3a54753e94918b29c165be96d16900ab0ed7b4ba3e3948702618",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Pure_Baseline_Hashes.json",
+      "bytes": 7621,
+      "sha256": "191bda50ae20d38d0f3d3b04a7cdfec6cff2e3b4eeae6880bbc1f29a0b0e5ec7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/Pure_Texture_Map.csv",
+      "bytes": 965,
+      "sha256": "f7fc89179c202f46e620b37ff4ba5a2ff0c8037f1da0950bc54dec0bdc2ee35d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/README.md",
+      "bytes": 4108,
+      "sha256": "329292cd3227c1f0c2c96cb2ae2643ebfa9312691742356ea132753602cb6893",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v6_reality_inventory/V6_Exchange_Photo_Readback.json",
+      "bytes": 21502,
+      "sha256": "4d680df7a1a5a7002ae5dce0a1003e5fb8ecf99407d02ad82cd3560c8b4f1817",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

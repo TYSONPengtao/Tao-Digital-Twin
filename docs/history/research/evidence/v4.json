@@ -1,0 +1,1761 @@
+{
+  "version": "V4",
+  "source_folder": "Rebuild_V4",
+  "primary": {
+    "relative": "Rebuild_V4/09_Report/REPORT_V4.md",
+    "sha256": "7963a8d73b791f39316c8ef4862ea8a3809ac0cbef508e937f957d96c3f8205e"
+  },
+  "source_files": 46,
+  "trace": [
+    {
+      "file": "project/11_Construction_Reference/v4_audit_junction/audit.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 69,
+      "operations": [
+        {
+          "call": "P.intersection",
+          "line": 38,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 68
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 25
+        },
+        {
+          "name": "Junction_Audit_V3.json",
+          "line": 68
+        }
+      ],
+      "functions": [
+        {
+          "name": "tris",
+          "line": 7,
+          "end": 14
+        },
+        {
+          "name": "vertical",
+          "line": 15,
+          "end": 22
+        },
+        {
+          "name": "bb",
+          "line": 23,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "file": "project/11_Construction_Reference/v4_audit_codes/write_audit.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 89,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 24
+        },
+        {
+          "call": "write_text",
+          "line": 25
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Applicable_Constraints.csv",
+          "line": 23
+        },
+        {
+          "name": "Applicable_Constraints.json",
+          "line": 24
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/prepare_exports_v4.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 17,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 4
+        },
+        {
+          "call": "write_text",
+          "line": 16
+        }
+      ],
+      "file_literals": [],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/build_scene_v4.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 255,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 26,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "p.difference",
+          "line": 53,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "repaired.boundary.intersection",
+          "line": 235,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "write_text",
+          "line": 241
+        },
+        {
+          "call": "write_text",
+          "line": 253
+        },
+        {
+          "call": "write_text",
+          "line": 254
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 12
+        },
+        {
+          "name": "Stair_Interface_Overlap_QA.json",
+          "line": 241
+        },
+        {
+          "name": "Applicable_Constraints.json",
+          "line": 252
+        },
+        {
+          "name": "Construction_Changes_V4.json",
+          "line": 254
+        }
+      ],
+      "functions": [
+        {
+          "name": "part",
+          "line": 18,
+          "end": 18
+        },
+        {
+          "name": "box",
+          "line": 19,
+          "end": 19
+        },
+        {
+          "name": "pg",
+          "line": 20,
+          "end": 20
+        },
+        {
+          "name": "body",
+          "line": 21,
+          "end": 21
+        },
+        {
+          "name": "add",
+          "line": 22,
+          "end": 23
+        },
+        {
+          "name": "record",
+          "line": 24,
+          "end": 24
+        },
+        {
+          "name": "tube",
+          "line": 25,
+          "end": 34
+        },
+        {
+          "name": "crown_at",
+          "line": 170,
+          "end": 174
+        },
+        {
+          "name": "court_top",
+          "line": 206,
+          "end": 206
+        }
+      ]
+    },
+    {
+      "file": "history/pending_v4.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 12,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 3
+        },
+        {
+          "call": "write_text",
+          "line": 12
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Construction_Geometry_QA_V4.json",
+          "line": 3
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/geometry_qa_v4.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 23,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 14,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 22
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Geometry_QA_V4.json",
+          "line": 22
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/package_v4.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 31,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 4
+        },
+        {
+          "call": "read_text",
+          "line": 4
+        },
+        {
+          "call": "read_text",
+          "line": 4
+        },
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Native_Model_QA.json",
+          "line": 4
+        },
+        {
+          "name": "Exchange_Readback_QA.json",
+          "line": 4
+        },
+        {
+          "name": "Geometry_QA_V4.json",
+          "line": 4
+        },
+        {
+          "name": "Interface_Repair_Check.json",
+          "line": 11
+        },
+        {
+          "name": "Construction_Geometry_QA_V4.json",
+          "line": 12
+        },
+        {
+          "name": "Stair_Interface_Overlap_QA.json",
+          "line": 13
+        },
+        {
+          "name": "Deliverable_Manifest.csv",
+          "line": 24
+        }
+      ],
+      "functions": [
+        {
+          "name": "ignore",
+          "line": 15,
+          "end": 15
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P03324F98",
+      "source_sha256": "03324f98b09b1fdf04738e2a0729d3932daca433b2c2b69588681fc0f8bc4322",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/ARCH_CAM_02_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "P5A3AEE62",
+      "source_sha256": "5a3aee6297c0cd9ed43b4131133487c9448487cda8a8edbebd53e98f1f9e323e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_02_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "P02E05075",
+      "source_sha256": "02e0507537f0870932e981a9e5351d21dfbd0068ce1b9968585a3bc5883fb21b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_06_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "PE3970254",
+      "source_sha256": "e3970254263d7ee7e46ad5ed674fd6638f3cbd4888d1505d46be3d11255b8b41",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_07_Column.png"
+        }
+      ]
+    },
+    {
+      "id": "P187A06F7",
+      "source_sha256": "187a06f71fa4ac4592e4fd3ea1395f05b4d72af48b2b208d4d008b057e65edc9",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_08_Junction.png"
+        }
+      ]
+    },
+    {
+      "id": "P5BCA953B",
+      "source_sha256": "5bca953b27758d9658cb128fcec0a830fbb850f61565e86a11f4143587dbd78e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_10_Screenwall.png"
+        }
+      ]
+    },
+    {
+      "id": "P1E2A597A",
+      "source_sha256": "1e2a597a0a5cbd211fc3d5614b34dc6c33c84db74035b9ccc8e091cdda20cffa",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_11_Chinese_Kitchen.png"
+        }
+      ]
+    },
+    {
+      "id": "P6ECE6297",
+      "source_sha256": "6ece629707bdabfe0fe8e03c3c5777c1b355b22b0f9a8b348e1362cbe65d776b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_12_Inner_Gate.png"
+        }
+      ]
+    },
+    {
+      "id": "P4788ED21",
+      "source_sha256": "4788ed21567155180d4cc99735c30c9d13b942c3536099ec2fd5c3ed8de083f6",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_13_Stair_Coordination.png"
+        }
+      ]
+    },
+    {
+      "id": "P1133AA92",
+      "source_sha256": "1133aa92d5eba31812e76aa32bc02cc39a8bf356fea344fefc3b252b6dc00024",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/09_Report/VIS_CAM_14_Roof_Drainage.png"
+        }
+      ]
+    },
+    {
+      "id": "P358EB94F",
+      "source_sha256": "358eb94fde04c2c036bb4609363eaeb1abb095403329798f43f4e0d54a3dd548",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55030_full_official_p20.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55030_full_official_p20.png"
+        }
+      ]
+    },
+    {
+      "id": "P2DE486A8",
+      "source_sha256": "2de486a8104db8ef325e12601e40e576d378f7b4f2da3a11db993577779bfac8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55030_full_official_p21.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55030_full_official_p21.png"
+        }
+      ]
+    },
+    {
+      "id": "PC770D474",
+      "source_sha256": "c770d4746c0f185946e68aa546cb1b50b5caa9dd711816ad5d14397b6cefdab4",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55030_full_official_p22.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55030_full_official_p22.png"
+        }
+      ]
+    },
+    {
+      "id": "PEDBDABB2",
+      "source_sha256": "edbdabb29d57971beada5cd181e849ca87381cd7a4b3003d13354cc87e6c1309",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55030_full_official_p23.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55030_full_official_p23.png"
+        }
+      ]
+    },
+    {
+      "id": "P5FFC55E2",
+      "source_sha256": "5ffc55e2e5fcdb1a957c743809ceb32067f205ac0390f28ae85f681dfbeb1edd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55030_full_official_pages.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55030_full_official_pages.png"
+        }
+      ]
+    },
+    {
+      "id": "PDB63C717",
+      "source_sha256": "db63c7170e9c4214646800f20cafeed8ca1bf582d18f41f948b6ce222187bf0f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55031_full_0_p14.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55031_full_0_p14.png"
+        }
+      ]
+    },
+    {
+      "id": "P00DECAFE",
+      "source_sha256": "00decafe97c166224345dfcc517a10c6a2d1399b01beee4c507b499e5d68e962",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55031_full_0_p15.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55031_full_0_p15.png"
+        }
+      ]
+    },
+    {
+      "id": "PDC864932",
+      "source_sha256": "dc8649325ecf0592d89f3c8750f166575f511087632d52735172291f2439ada3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55031_full_0_p20.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55031_full_0_p20.png"
+        }
+      ]
+    },
+    {
+      "id": "P93BA918B",
+      "source_sha256": "93ba918bc839c9e1d46a2cb4ff6226aa47f4182f1151e65f1821d7615d42b4fb",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55031_full_0_p21.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55031_full_0_p21.png"
+        }
+      ]
+    },
+    {
+      "id": "P35A1C523",
+      "source_sha256": "35a1c5237edbe24cd76b6defcef43eaab2c4fa91c38b6148fe487ff106ec3cab",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55031_full_0_pages.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55031_full_0_pages.png"
+        }
+      ]
+    },
+    {
+      "id": "P47DCF056",
+      "source_sha256": "47dcf0569621e6e049af08230e6e63465f0c2f3a1b48d6e7db4cad206243e5fc",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55032_full_official_p5.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55032_full_official_p5.png"
+        }
+      ]
+    },
+    {
+      "id": "P4EC4EFBD",
+      "source_sha256": "4ec4efbd9e41397f6b22ae230033f286dd7dfb275f8f8c1f46d76c99aa813915",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55032_full_official_p6.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55032_full_official_p6.png"
+        }
+      ]
+    },
+    {
+      "id": "P40930CE3",
+      "source_sha256": "40930ce34bf1d37ed3a9b43515bba00c3672dcfd024e9ec419e9a99dbe9d6e16",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55032_full_official_p7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55032_full_official_p7.png"
+        }
+      ]
+    },
+    {
+      "id": "P4DC3439A",
+      "source_sha256": "4dc3439a0e92944cf400d8342c8baae7ffa6bc18102fecfd18e503a83b4929d6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55032_full_official_p8.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55032_full_official_p8.png"
+        }
+      ]
+    },
+    {
+      "id": "PA906273C",
+      "source_sha256": "a906273c1f086261abbe520240692e6be09b719b13e384a08e6c301e690f0e02",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_p12.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_p12.png"
+        }
+      ]
+    },
+    {
+      "id": "PC7BCB030",
+      "source_sha256": "c7bcb03028723ad06a680cf2b4e77da0094fbe710dfc141cd97c119cbd6bc541",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_p13.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_p13.png"
+        }
+      ]
+    },
+    {
+      "id": "P96B53D2F",
+      "source_sha256": "96b53d2f43fc398860b37a35b901f5a49a766bc60404566e0acef5c77e9ebb9d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_p14.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_p14.png"
+        }
+      ]
+    },
+    {
+      "id": "P49E3EB42",
+      "source_sha256": "49e3eb42967f7ae82a1fb64a07a1fdc2f573606f2aa02beab4a1ec44096fe113",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 2,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_p15.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_p15.png"
+        }
+      ]
+    },
+    {
+      "id": "P2A2BF65B",
+      "source_sha256": "2a2bf65bff15190daeade4e0fa55402b5c0253255b7691e5adca0fa8c55b0ff1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_p16.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_p16.png"
+        }
+      ]
+    },
+    {
+      "id": "P5EA7BAFC",
+      "source_sha256": "5ea7bafcdb4b428f90195edd98e05cf180c4ce4247fd708fde0ab69672fa6e06",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/55038_full_official_pages.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/55038_full_official_pages.png"
+        }
+      ]
+    },
+    {
+      "id": "PDAF75F52",
+      "source_sha256": "daf75f52d186b2fe7a7af23592a4a39f0fe890019a8d4db70b12dd3e1f5758f8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D02_Envelope.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D02_Envelope.png"
+        }
+      ]
+    },
+    {
+      "id": "P3CCFB121",
+      "source_sha256": "3ccfb121cf3159117ea548b42e5ca835784a03c9fe5653125a87bb8cef0b0ec6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D02_Right_Notes.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D02_Right_Notes.png"
+        }
+      ]
+    },
+    {
+      "id": "PE7AD9530",
+      "source_sha256": "e7ad95301a4fea293e25fb133d0606cf8d42aeee257da3e7e45c27e800012bdd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D03_F1_Bath.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D03_F1_Bath.png"
+        }
+      ]
+    },
+    {
+      "id": "PEF606D64",
+      "source_sha256": "ef606d645918d23c039443d65868cb113da7643c859d1b0ce8cd6fda8b62e874",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D03_F2_Bath.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D03_F2_Bath.png"
+        }
+      ]
+    },
+    {
+      "id": "P310A55CF",
+      "source_sha256": "310a55cf35a97796475fab76041ac54941c3216566128caa3f1276b35bcedbc6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D04_F3_Bath.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D04_F3_Bath.png"
+        }
+      ]
+    },
+    {
+      "id": "P07E5D56A",
+      "source_sha256": "07e5d56a2bf76c74aa2558b04a27e54b3594fd28ec3c897fd1c8703fdb21469e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D04_Roof_Rain.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D04_Roof_Rain.png"
+        }
+      ]
+    },
+    {
+      "id": "P122598A5",
+      "source_sha256": "122598a5d128440b5c2c77b1f596c0890bbe0a33bea6342e9d1ad3ca56b4adc9",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D06_Section.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D06_Section.png"
+        }
+      ]
+    },
+    {
+      "id": "P119AB93B",
+      "source_sha256": "119ab93b5f1f1800bd72dcbaea7106c559ee80bd25e88df9dcb84650c6e5864b",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_codes/D07_Material.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_codes/D07_Material.png"
+        }
+      ]
+    },
+    {
+      "id": "PEB43EAF6",
+      "source_sha256": "eb43eaf6fedb1bd3aa42b3f135d267e715192b062fdc5c708563c6c3241303a8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_safety/D10_1175_90_Source.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_safety/D10_1175_90_Source.png"
+        }
+      ]
+    },
+    {
+      "id": "PBA86EFA6",
+      "source_sha256": "ba86efa6667b596d84437c6e134fe320de30158f6dcc4ee46f65e442d0eab440",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_safety/D10_1175_Hi.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_safety/D10_1175_Hi.png"
+        }
+      ]
+    },
+    {
+      "id": "PA1555515",
+      "source_sha256": "a15555155a99c7310b23174d142e61c14e21caaf1218ebc6b17b28323d87a873",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_safety/D10_Stair_Plan_Crop.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_safety/D10_Stair_Plan_Crop.png"
+        }
+      ]
+    },
+    {
+      "id": "P78A000DF",
+      "source_sha256": "78a000df23f5bbfa2f480005aa0e7a35087d013a5e821c7210fbc9411a67123f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_safety/D11_1175_Hi.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v4_audit_safety/D11_1175_Hi.png"
+        }
+      ]
+    },
+    {
+      "id": "P06060F7B",
+      "source_sha256": "06060f7b6e8798057ddfc37b17d2e64017c81f01bda16375e06a6315ca662586",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_video_plan/V4_F1_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P12C9DC1D",
+      "source_sha256": "12c9dc1dff7257cd5c171195fbf7f36bbfdc11c27195828bba696e59a6ae2598",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_video_plan/V4_F2_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P13918969",
+      "source_sha256": "13918969156a207347074b5a46cc2e49cf6c864295614acb47519043c840e957",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-002.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_video_plan/V4_F3_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "PFD768449",
+      "source_sha256": "fd7684496d42bcd17b4f0bded046f130c507bb8464019c3178c63a4c42d729b6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-026.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_model_audit/V4_All_Floors_Door_Plans.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PB09EED8D",
+      "source_sha256": "b09eed8dfabefeabceaab1588d85d1a612c11d3e8a572b451d2557003b19b515",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-026.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_model_audit/V4_F1_Door_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P8420FA71",
+      "source_sha256": "8420fa7124dd734649df38dd3219f9317801766854f7cb55f0bbc57a3cfc6471",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-026.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_model_audit/V4_F2_Door_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P0901CAB7",
+      "source_sha256": "0901cab79e03d1daac2b21582e46243f127b4a525aaa0ccc8edc7cf0eebc22ff",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-026.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v5_model_audit/V4_F3_Door_Plan.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Blender_ARCH_Export_QA.json",
+      "bytes": 407,
+      "sha256": "53a36be1017c72687a3164031b909163f026778699afaa71d1872a878368252d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Blender_VIS_Export_QA.json",
+      "bytes": 421,
+      "sha256": "c642f78e70c5138c10b8de4b1dd4477797404f014b6075a3a6486cc87696e160",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Construction_Changes_V4.csv",
+      "bytes": 23795,
+      "sha256": "7f1e1befe9bd7d53cfd33b00b7d554963f48d59d6facbaf622d6d77910bf0349",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Construction_Changes_V4.json",
+      "bytes": 19324,
+      "sha256": "da081ebf07b99e86f471e62a42d3dfc1057f3b08dbe7677bd3bfac8b54973d29",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Construction_Geometry_Checks_V4.csv",
+      "bytes": 64445,
+      "sha256": "e44d8162a9723ab7651a16028575a51ae735219af5fcb5a7cb8210ed1ff06c5f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Construction_Geometry_QA_V4.json",
+      "bytes": 99014,
+      "sha256": "fefa53aa0ad420ba348a8a7e753ccd0d9c76ae7fd161410e7a165be3c5ecd54e",
+      "status": null,
+      "failure_count": null,
+      "check_count": 155
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Element_Register.csv",
+      "bytes": 50311,
+      "sha256": "40b1c58c1a36de06ba39e6119bb308de368e68d911930f88aacaa01e079dd4d9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Exchange_Readback_QA.json",
+      "bytes": 3401,
+      "sha256": "88be75baae54ae8f1ede583a944f99703187750c3cb18c6717c1176164ccff31",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Exchange_Surface_Cleanup.json",
+      "bytes": 190,
+      "sha256": "0e5696bf43160b69c94663f1f56406ac04bdc54f1bea88872f6587de4c8041c0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Geometry_QA_V4.json",
+      "bytes": 1112,
+      "sha256": "06b59c031d86b2c1ba8ac741bfbb3e2ae14592a08c9441b2ad407ca448e5730a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Interface_Repair_Check.json",
+      "bytes": 10124,
+      "sha256": "a323ed88ea4afe7be430a58e657c4ddec61893223774f3c4beae2e25b30e3d4b",
+      "status": null,
+      "failure_count": 0,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Native_Model_QA.json",
+      "bytes": 2926,
+      "sha256": "71fbee1022a5767400013c72083d775f7d15716ba6323b46ba64b12310a509d7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/PENDING_ITEMS_V4.md",
+      "bytes": 13474,
+      "sha256": "80307f5b67cabc46f5a17ab32a0d0978ead326358158287da12639d837e00cf5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/REPORT_V4.md",
+      "bytes": 6103,
+      "sha256": "7963a8d73b791f39316c8ef4862ea8a3809ac0cbef508e937f957d96c3f8205e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Rhino_Kernel_Validation.json",
+      "bytes": 396,
+      "sha256": "75dc4d75136cadf7f5eeddab9c802c5c894cd21467714b59610dbbae72bb18b5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/09_Report/Stair_Interface_Overlap_QA.json",
+      "bytes": 1233,
+      "sha256": "c2f0933d885fede016bcc6b8c5eeb0ab57680f53ee680b598b0a1d4c8e8f0cb3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_junction/Apply_Module_QA.json",
+      "bytes": 6035,
+      "sha256": "e423c8ca4e73b7d4fcc53a1a00cb2abd8d033156bc9eaed334d18abcd4de8797",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_junction/Screen_Relief_Repair_QA.json",
+      "bytes": 1877,
+      "sha256": "21ca72bbf0d1b212219bfe4b3b39ead8dfefb92cbe7fdc6c4c71914399240772",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V4/11_Construction_Reference/v4_audit_safety/Safety_Proposal_QA.json",
+      "bytes": 5077,
+      "sha256": "e4bfca879efb4ee34d3fd81f1b61ca9a06d60210614277d112696e1d92d78b6c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/55030_full_official.txt",
+      "bytes": 749,
+      "sha256": "6f59bf0a499faa81cc655dcb2c92f8f5291b26932baec1a2fb8ded7deffe6677",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/55031_full_0.txt",
+      "bytes": 2341,
+      "sha256": "04269ec396d6e847809d38d00e2b4e527c6412b1bf1fcfba60ae7e61fd55c6d7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/55031_page.html",
+      "bytes": 36601,
+      "sha256": "b37bef5e6fa1017e629a6108585fa930964ed6613188f60072d511f6ade4590a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/55032_full_official.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/55038_full_official.txt",
+      "bytes": 483,
+      "sha256": "6b6740d60c03fc085077de4b8f3c8640119c62c12af4f53cf66004f4d0b59ea2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/Applicable_Constraints.csv",
+      "bytes": 3876,
+      "sha256": "8523d0286858e45f04dadf51fac763a313e6cbcc7de425658a9274511069907b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/Applicable_Constraints.json",
+      "bytes": 6258,
+      "sha256": "dd7aeee1cff6c052ae0dcc4494f637cf604fd6da43ce9ed12fc9fe1e3a474238",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/Code_And_Drawing_Audit_V4.md",
+      "bytes": 9737,
+      "sha256": "6cb1771295a4470605830b90f005cb700637d2b07dd9cc6f1cab9d61b7fb1f60",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/GB55038_2025_official.txt",
+      "bytes": 25639,
+      "sha256": "df1ac25e4ed7df6c2deb44f30db35824329fe4cad625f44814f39c76dc20ab68",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/V3_Baseline_Check/Construction_Geometry_Checks_V4.csv",
+      "bytes": 35008,
+      "sha256": "1d5eba862029212e0601c302648716aa7a5d73852ecbcefe3bb5244f807a0278",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/V3_Baseline_Check/Construction_Geometry_QA_V4.json",
+      "bytes": 57494,
+      "sha256": "666c824766e92dbb974760c375b5b84a13523dc26fb0885d2e09326b2e2027a7",
+      "status": null,
+      "failure_count": null,
+      "check_count": 108
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/V4_Current_Check/Construction_Geometry_Checks_V4.csv",
+      "bytes": 174669,
+      "sha256": "c9c3daeaa03fe886a8869a006430f23387ea6ea5ce9d6fb4e42d6df10e074941",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_codes/V4_Current_Check/Construction_Geometry_QA_V4.json",
+      "bytes": 282507,
+      "sha256": "98a01c7c11eaca9a947ac1e0477a55708c33d3b065ab33e7941a8dc0af0dbbb1",
+      "status": null,
+      "failure_count": null,
+      "check_count": 529
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Apply_Module_QA.json",
+      "bytes": 6035,
+      "sha256": "e423c8ca4e73b7d4fcc53a1a00cb2abd8d033156bc9eaed334d18abcd4de8797",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Final_Check_Dry_Run.json",
+      "bytes": 10975,
+      "sha256": "15a59f812bb748e53a1f526d6d529a236a5cf106ad3701642efea2525b2e1279",
+      "status": null,
+      "failure_count": 11,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Findings_V3.json",
+      "bytes": 7442,
+      "sha256": "4e04cd1f99716aab9e8f5f76bec885e3bf2210ebeba163821cce52ae60b1c431",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Interface_Repair_Check.json",
+      "bytes": 4632,
+      "sha256": "c8c943f7de1400d9ccb54dd944334bf245c4b67fff924588d631108d0f57e351",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Junction_Audit_V3.json",
+      "bytes": 49736,
+      "sha256": "a63baf3bebd3da3778098d4084147f4de84d6b60c8a3d49d9248828c168a0cd9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Junction_Audit_V3.md",
+      "bytes": 7689,
+      "sha256": "42485da210d2335aa0af9bcc899b8007e642657d18966bed55f38a3266d782e4",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Scene_Repair_Test.json",
+      "bytes": 4373297,
+      "sha256": "759637e4435faee124104b1ae323c9ddeb9de16883f0b8272d385d9b7014f2f2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Screen_Relief_Final_Interface_Check.json",
+      "bytes": 10199,
+      "sha256": "779ca23af83f2ce250d8769ca9ca380e8a747d9045b9a5f9f39845d02f3de8d2",
+      "status": null,
+      "failure_count": 0,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Screen_Relief_Repair_QA.json",
+      "bytes": 1877,
+      "sha256": "21ca72bbf0d1b212219bfe4b3b39ead8dfefb92cbe7fdc6c4c71914399240772",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/Screen_Relief_Repair_Test_Scene.json",
+      "bytes": 5621952,
+      "sha256": "3b1fed237df5e392f16b1ebb50fd77a50d6187417066f19bbf43c62f8a0ee8f1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/audit.txt",
+      "bytes": 13128,
+      "sha256": "2a4633462338e345fbc18eedcb89a4187e666fffaeff88afd24a85434b9f0a15",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/bbox.txt",
+      "bytes": 20541,
+      "sha256": "cfbf3a01a1ade71675e1cca40a93ca1679882f69e397ca7f03fc66da93b28266",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_junction/bboxes.json",
+      "bytes": 81466,
+      "sha256": "da362d17cbc6e0993bd42c1bea1063e1b78981ed5e52c0f019fbb4669fb498c5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_safety/Bounds_V3.json",
+      "bytes": 46221,
+      "sha256": "da21da0c9cf4a82e54337faf363b43168e3bd9c4d002fac664d95dd75bf80bb3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_safety/Safety_Audit_V3_to_V4.md",
+      "bytes": 4535,
+      "sha256": "c6de46d8b7498a711f5c802b9bf5f42af789d597a8f9973446554b5d1cd8b10e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_safety/Safety_Changes_V4.json",
+      "bytes": 4606,
+      "sha256": "34fe71605469e2fa8b117d4bf52e57c9c4b55e71e5c754ceca59f73e0f9cfeb1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v4_audit_safety/Safety_Proposal_QA.json",
+      "bytes": 5077,
+      "sha256": "e4bfca879efb4ee34d3fd81f1b61ca9a06d60210614277d112696e1d92d78b6c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v5_model_audit/V4_Model_Audit_and_V5_Method.md",
+      "bytes": 6539,
+      "sha256": "4bd3ee62e0c2e43bba60887a16850091c4ce32c8321dd717c57da76551f1d615",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v5_video_plan/V4_Doors.json",
+      "bytes": 4471,
+      "sha256": "6284855519119544d339aa5224244c29160dffdeb45fb61e9890e21df586e7b6",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

@@ -1,0 +1,2168 @@
+{
+  "version": "V25",
+  "source_folder": "Rebuild_V25",
+  "primary": {
+    "relative": "Rebuild_V25/使用说明.txt",
+    "sha256": "fb5b6cf1a7af6f1789fa6b51e6a647a1a100e11ec3ce0c399e8f4a38d71a6663"
+  },
+  "source_files": 46,
+  "trace": [
+    {
+      "file": "history/v25_material_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 8,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 3
+        },
+        {
+          "call": "write_text",
+          "line": 7
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Before_Snapshot.json",
+          "line": 3
+        },
+        {
+          "name": "Material_Probe.json",
+          "line": 7
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Conversion_Source/v25_clean_coplanar_backfaces.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 29,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 12,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "p.difference",
+          "line": 22,
+          "meaning": "差集裁切"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 9
+        },
+        {
+          "call": "read_bytes",
+          "line": 12
+        },
+        {
+          "call": "p.write_bytes",
+          "line": 25
+        },
+        {
+          "call": "write_text",
+          "line": 26
+        },
+        {
+          "call": "write_text",
+          "line": 26
+        },
+        {
+          "call": "write_text",
+          "line": 27
+        },
+        {
+          "call": "read_text",
+          "line": 27
+        },
+        {
+          "call": "p.write_text",
+          "line": 28
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Export_Index.json",
+          "line": 7
+        },
+        {
+          "name": "Coplanar_Cleanup.json",
+          "line": 8
+        },
+        {
+          "name": "Before_Coplanar_Cleanup_Export_Index.json",
+          "line": 9
+        },
+        {
+          "name": "V25_Coplanar_Cleanup_QA.json",
+          "line": 26
+        },
+        {
+          "name": "Export_Report.json",
+          "line": 27
+        },
+        {
+          "name": "V25_Blender_Export_QA.json",
+          "line": 28
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/v25_gui_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 2,
+      "operations": [],
+      "io_calls": [],
+      "file_literals": [
+        {
+          "name": "V25_Desktop_Attachment.json",
+          "line": 2
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Conversion_Source/v25_prepare_delivery.py",
+      "publication": "site-coordinate-redacted",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 80,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 24
+        },
+        {
+          "call": "write_text",
+          "line": 24
+        },
+        {
+          "call": "read_text",
+          "line": 75
+        },
+        {
+          "call": "write_text",
+          "line": 80
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Export_Index.json",
+          "line": 7
+        },
+        {
+          "name": "Material_Index.json",
+          "line": 7
+        },
+        {
+          "name": "Texture_Index.json",
+          "line": 7
+        },
+        {
+          "name": "Camera_Index.json",
+          "line": 7
+        },
+        {
+          "name": "Door_Hinges.json",
+          "line": 7
+        },
+        {
+          "name": "Source_Visible_Geometry.json",
+          "line": 7
+        },
+        {
+          "name": "Export_Report.json",
+          "line": 7
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 8
+        },
+        {
+          "name": "LOCAL_to_Original_ENU.json",
+          "line": 8
+        },
+        {
+          "name": "V24_37_Delivery_QA.json",
+          "line": 9
+        },
+        {
+          "name": "V24_37_Interior_Physics_QA.json",
+          "line": 9
+        },
+        {
+          "name": "V24_37_Exterior_Physics_QA.json",
+          "line": 9
+        },
+        {
+          "name": "V24_37_Collision_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Architecture_Complete_V25.3dm",
+          "line": 24
+        },
+        {
+          "name": "Architecture_Complete_V25_ALIGNED_ENU.3dm",
+          "line": 24
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Conversion_Source/v25_build_rhino.py",
+      "publication": "site-coordinate-redacted",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 88,
+      "operations": [
+        {
+          "call": "mesh.Transform",
+          "line": 79,
+          "meaning": "图像或几何变换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "f.Write",
+          "line": 75
+        },
+        {
+          "call": "f.Write",
+          "line": 84
+        },
+        {
+          "call": "write_text",
+          "line": 86
+        },
+        {
+          "call": "write_text",
+          "line": 86
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Export_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Texture_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Camera_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Door_Hinges.json",
+          "line": 9
+        },
+        {
+          "name": "Export_Report.json",
+          "line": 9
+        },
+        {
+          "name": "Material_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Architecture_Complete_V25.3dm",
+          "line": 75
+        },
+        {
+          "name": "_Building_LOCAL.3dm",
+          "line": 75
+        },
+        {
+          "name": "Architecture_Complete_V25_ALIGNED_ENU.3dm",
+          "line": 84
+        },
+        {
+          "name": "_Building_ENU.3dm",
+          "line": 84
+        },
+        {
+          "name": "V25_Rhino_Build_QA.json",
+          "line": 86
+        },
+        {
+          "name": "Rhino_Build_Report.json",
+          "line": 86
+        }
+      ],
+      "functions": [
+        {
+          "name": "js",
+          "line": 8,
+          "end": 8
+        },
+        {
+          "name": "sha",
+          "line": 11,
+          "end": 15
+        },
+        {
+          "name": "srgb",
+          "line": 16,
+          "end": 16
+        },
+        {
+          "name": "color",
+          "line": 17,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "file": "project/Conversion_Source/v25_verify_rhino.py",
+      "publication": "site-coordinate-redacted",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 49,
+      "operations": [
+        {
+          "call": "checks.append",
+          "line": 8,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "Rhino.FileIO.File3dm.Read",
+          "line": 15,
+          "meaning": "Rhino 原生读写"
+        },
+        {
+          "call": "p.Transform",
+          "line": 44,
+          "meaning": "图像或几何变换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "Rhino.FileIO.File3dm.Read",
+          "line": 15
+        },
+        {
+          "call": "read_text",
+          "line": 43
+        },
+        {
+          "call": "read_text",
+          "line": 47
+        },
+        {
+          "call": "write_text",
+          "line": 48
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Export_Index.json",
+          "line": 6
+        },
+        {
+          "name": "V25_Rhino_Build_QA.json",
+          "line": 6
+        },
+        {
+          "name": "Texture_Index.json",
+          "line": 6
+        },
+        {
+          "name": "Material_Index.json",
+          "line": 6
+        },
+        {
+          "name": "Architecture_Complete_V25_ALIGNED_ENU.3dm",
+          "line": 15
+        },
+        {
+          "name": "Architecture_Complete_V25.3dm",
+          "line": 15
+        },
+        {
+          "name": "Camera_Index.json",
+          "line": 43
+        },
+        {
+          "name": "Export_Report.json",
+          "line": 47
+        },
+        {
+          "name": "V25_Rhino_Readback_QA.json",
+          "line": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "check",
+          "line": 7,
+          "end": 8
+        },
+        {
+          "name": "sha",
+          "line": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "file": "project/Conversion_Source/v25_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 32,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 14
+        },
+        {
+          "call": "write_text",
+          "line": 15
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "write_text",
+          "line": 19
+        },
+        {
+          "call": "write_text",
+          "line": 32
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V25_Rhino_Build_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V25_Rhino_Readback_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V25_Companion_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V25_Rhino_Desktop_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V25_Material_Face_QA.json",
+          "line": 6
+        },
+        {
+          "name": "Architecture_Complete_V25.blend",
+          "line": 11
+        },
+        {
+          "name": "V25_Visual_Review.json",
+          "line": 14
+        },
+        {
+          "name": "V25_Delivery_QA.json",
+          "line": 15
+        },
+        {
+          "name": "Manifest_SHA256.json",
+          "line": 16
+        },
+        {
+          "name": "Texture_Index.json",
+          "line": 17
+        },
+        {
+          "name": "_Error.json",
+          "line": 18
+        },
+        {
+          "name": "Archive_QA.json",
+          "line": 32
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 4,
+          "end": 5
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P5B59E2C8",
+      "source_sha256": "5b59e2c8a2f90ac4cefb961fed7228e0e943936e9d5ef2e7e858286d8760a586",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-002.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V25/Reports/V25_Rhino_View_1.png"
+        }
+      ]
+    },
+    {
+      "id": "PF5C6ACC9",
+      "source_sha256": "f5c6acc9502f8c1a3297cffc3bca0c95a94e41a98288ea9e228c0bae4cc820b4",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-002.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V25/Reports/V25_Rhino_View_2.png"
+        }
+      ]
+    },
+    {
+      "id": "P1485DB41",
+      "source_sha256": "1485db412d9eba0646323ccbfcf5aa19fe9523b5a1665b989cbd7d977cd9eba3",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-002.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V25/Reports/V25_Rhino_View_3.png"
+        }
+      ]
+    },
+    {
+      "id": "P4C338DEA",
+      "source_sha256": "4c338deab6357b8d842af1c74e2e7701022dd2a956c65a19e5b5fbe769d76692",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-002.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V25/Reports/V25_Rhino_View_4.png"
+        }
+      ]
+    },
+    {
+      "id": "PCB37BA48",
+      "source_sha256": "cb37ba483eda08e9ec80d72b2c7a15218718d00694ba95565651592440ff58fd",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_03d2013bf6f557e5.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_03d2013bf6f557e5_cb37ba483eda.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_03d2013bf6f557e5.png"
+        }
+      ]
+    },
+    {
+      "id": "P05108AD8",
+      "source_sha256": "05108ad80788b2639283200cead468ecea669281b298207337005ccd516ed5bc",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_04c40083624b897f.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_04c40083624b897f_05108ad80788.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_04c40083624b897f.png"
+        }
+      ]
+    },
+    {
+      "id": "P796E60B7",
+      "source_sha256": "796e60b7b027db9a6d4a572f9a2b638d110d64ff38e77a60d4e57fbe2eef27a8",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_087557c07dcd07d0.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_087557c07dcd07d0_796e60b7b027.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_087557c07dcd07d0.png"
+        }
+      ]
+    },
+    {
+      "id": "PE53F485C",
+      "source_sha256": "e53f485cc387f33e39560460dc2ed305039d66a25f520e328312848309744ae6",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_0c8201f0d1515e3a.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_0c8201f0d1515e3a_e53f485cc387.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_0c8201f0d1515e3a.png"
+        }
+      ]
+    },
+    {
+      "id": "PCB4595A6",
+      "source_sha256": "cb4595a6653d4b86dee85ddd6a7f08e3a316ac33e24cc27fcfe4c485ea1cd7d5",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_10e8e36b22b0bb95.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_10e8e36b22b0bb95_cb4595a6653d.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_10e8e36b22b0bb95.png"
+        }
+      ]
+    },
+    {
+      "id": "P9BDBB009",
+      "source_sha256": "9bdbb00990cbf806245308a255c2b842e237781737e1f71ea8d60e1d04373ad1",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_23b93538404c7641.png"
+        }
+      ]
+    },
+    {
+      "id": "PC453D31E",
+      "source_sha256": "c453d31e03cdacb253d9915f82a0c4fc8600e83ed6b055193b84ee57d4ef2fe5",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_23b93538404c7641_c453d31e03cd.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_23b93538404c7641.png"
+        }
+      ]
+    },
+    {
+      "id": "P846DA01C",
+      "source_sha256": "846da01ca8c4a4f310d6c06f7c55e7c7ff5aa0503aa68192484c422eebfec03d",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_27d8eef99e60013e.png"
+        }
+      ]
+    },
+    {
+      "id": "P6C866622",
+      "source_sha256": "6c86662248bec4530fbb7a63d580c4676d81d5013fc3bce01265e01355ca1b82",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_27d8eef99e60013e_6c86662248be.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_27d8eef99e60013e.png"
+        }
+      ]
+    },
+    {
+      "id": "P77162307",
+      "source_sha256": "771623077708f424c0c5594ea3d1b960bc83fc2dddcd7d72a3cef82a65f0f58b",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_287b44080f4c89d9.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_287b44080f4c89d9_771623077708.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_287b44080f4c89d9.png"
+        }
+      ]
+    },
+    {
+      "id": "PCB42766E",
+      "source_sha256": "cb42766ea5d325518bab6c4369685d5e8dbccd47b1eb217b765a86fa773f8381",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_289c64bf059ab92b.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_289c64bf059ab92b_cb42766ea5d3.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_289c64bf059ab92b.png"
+        }
+      ]
+    },
+    {
+      "id": "P5D4C3CC8",
+      "source_sha256": "5d4c3cc803866c2a12a04e1c7d3e83da97b9d67a279bebd4d69594e8307d2304",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_2d67c1e9f3b33aee.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_2d67c1e9f3b33aee_5d4c3cc80386.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_2d67c1e9f3b33aee.png"
+        }
+      ]
+    },
+    {
+      "id": "PF9093EF4",
+      "source_sha256": "f9093ef453d70b4bc8fd71037f09537d499421d9aa6d6d55fef3bb9ece3708c4",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 2,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_34dc4d9261664228.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_34dc4d9261664228_f9093ef453d7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_34dc4d9261664228.png"
+        }
+      ]
+    },
+    {
+      "id": "P2F154B74",
+      "source_sha256": "2f154b74a1d72fc4bc06b1bedac1f64aafaaf4e984675e453cbecb72541f297f",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_3ddcbd7fae42f45c.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_3ddcbd7fae42f45c_2f154b74a1d7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_3ddcbd7fae42f45c.png"
+        }
+      ]
+    },
+    {
+      "id": "P82A8E36C",
+      "source_sha256": "82a8e36c5c91ec6b0c4c1203e90b129e95f9124d05faa7c52e45154382e7048f",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_4064602ee56095b3.png"
+        }
+      ]
+    },
+    {
+      "id": "PB2939017",
+      "source_sha256": "b2939017579a3e44c1f51bd57c7c93844a1a6c8030c7e69e64bf396dd3214bdb",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_4064602ee56095b3_b2939017579a.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_4064602ee56095b3.png"
+        }
+      ]
+    },
+    {
+      "id": "P23FAC4F3",
+      "source_sha256": "23fac4f39ac7d0b5d96dbf013aa719fcd1176dc9b1301012d19fa1c2fb3dd008",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_49b31e65655fd8ae.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_49b31e65655fd8ae_23fac4f39ac7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_49b31e65655fd8ae.png"
+        }
+      ]
+    },
+    {
+      "id": "P8A1A44A7",
+      "source_sha256": "8a1a44a752bf6207ab1b0630ed3cfb2f1388b56af7e9155ff0ddf4a05c2e433f",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_54205443e5e6e499.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_54205443e5e6e499_8a1a44a752bf.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_54205443e5e6e499.png"
+        }
+      ]
+    },
+    {
+      "id": "P4F386B3D",
+      "source_sha256": "4f386b3d187c7280c2094e1a2429ca9e859bd2f7a5c8964a6dfe83a66de63e80",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_5ddd6086ff844b44.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_5ddd6086ff844b44_4f386b3d187c.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_5ddd6086ff844b44.png"
+        }
+      ]
+    },
+    {
+      "id": "P8D6C6594",
+      "source_sha256": "8d6c65945c9598f2cd70438a416bb8885a506b45807a23e89a691289e48b11e2",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_5f3f78625d3c30f6.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_5f3f78625d3c30f6_8d6c65945c95.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_5f3f78625d3c30f6.png"
+        }
+      ]
+    },
+    {
+      "id": "P5161EC10",
+      "source_sha256": "5161ec10859879e09a1d4acc08b1612c16265faeda96a4b1cd6d0c3e441390f3",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_65fe7f3f7c53816f.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_65fe7f3f7c53816f_5161ec108598.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_65fe7f3f7c53816f.png"
+        }
+      ]
+    },
+    {
+      "id": "PA7948253",
+      "source_sha256": "a79482534873ebc9f014c089966c99a745d575c651ae88d2e0381c04265a7048",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_66259d56f2666369.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_66259d56f2666369_a79482534873.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_66259d56f2666369.png"
+        }
+      ]
+    },
+    {
+      "id": "P8A41E3E0",
+      "source_sha256": "8a41e3e013d309fb01961c072f99599a422aa3d81c4028a26181fbad6d476e28",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_71e17fa6447897f0.png"
+        }
+      ]
+    },
+    {
+      "id": "PF1A20319",
+      "source_sha256": "f1a20319f2ce75280ce98e51d4b09718a1f120559bfc593abba39b282d45ba76",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_71e17fa6447897f0_f1a20319f2ce.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_71e17fa6447897f0.png"
+        }
+      ]
+    },
+    {
+      "id": "P58A23C1E",
+      "source_sha256": "58a23c1e6ead5f715d20360c7d4c37d8a27dfb2723453a9f4fa86d2b450e0c23",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7563257dc6e1e9dc.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7563257dc6e1e9dc_58a23c1e6ead.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_7563257dc6e1e9dc.png"
+        }
+      ]
+    },
+    {
+      "id": "PCD865786",
+      "source_sha256": "cd8657866c0344fdde33432d705c0c95fdccf9aa88ecf1070639a22f5c5b294a",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7b76c29e1afa3029.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7b76c29e1afa3029_cd8657866c03.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_7b76c29e1afa3029.png"
+        }
+      ]
+    },
+    {
+      "id": "P0EF7ACBC",
+      "source_sha256": "0ef7acbc68677aa07b6976b888fc98385768db6452dba28df575229300bf0db3",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7e9492279b87662b.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_7e9492279b87662b_0ef7acbc6867.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_7e9492279b87662b.png"
+        }
+      ]
+    },
+    {
+      "id": "P0A13899A",
+      "source_sha256": "0a13899af9b2d3584b3edaf154a7fc66f567801572c3b95c7515b6579d99b71a",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_84df75c8ac297022.png"
+        }
+      ]
+    },
+    {
+      "id": "P35E6F310",
+      "source_sha256": "35e6f310fc57af5d2013e220ba5fc2ad506a5e5bb1405f4e4536559a466e27e7",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_84df75c8ac297022_35e6f310fc57.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_84df75c8ac297022.png"
+        }
+      ]
+    },
+    {
+      "id": "P3D6F4FD1",
+      "source_sha256": "3d6f4fd1bc1e46630d20293185e3d8c8e62de823b9711003c7fae4f377745555",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_8b82089022cc21f0.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_8b82089022cc21f0_3d6f4fd1bc1e.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_8b82089022cc21f0.png"
+        }
+      ]
+    },
+    {
+      "id": "P6BC5C783",
+      "source_sha256": "6bc5c7834aca26bbf41e5802b70dab7c2832c64de7adf04f7ea3cfbc605941a2",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_96344591ce3e5da8.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_96344591ce3e5da8_6bc5c7834aca.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_96344591ce3e5da8.png"
+        }
+      ]
+    },
+    {
+      "id": "P7CE8FCA7",
+      "source_sha256": "7ce8fca7872b062468efedef8185b995cce178f371de698c7cad504b5735e469",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_ROOF_UV_GRAY_CLAY.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_ROOF_UV_GRAY_CLAY_7ce8fca7872b.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_ROOF_UV_GRAY_CLAY.png"
+        }
+      ]
+    },
+    {
+      "id": "P5D5B272E",
+      "source_sha256": "5d5b272e71f0a1cf2474891ee4670550761239197bd2e084c97e0aba0c566645",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a10e1a71031879b4.png"
+        }
+      ]
+    },
+    {
+      "id": "P8CE7ED6C",
+      "source_sha256": "8ce7ed6c64d0fc1b3de74a9f209e9194525a9498d31df064aff7c7d85b11a7c1",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a10e1a71031879b4_8ce7ed6c64d0.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_a10e1a71031879b4.png"
+        }
+      ]
+    },
+    {
+      "id": "P03DF100C",
+      "source_sha256": "03df100c7ea7566a4cceece1b2a744a49c5e2bcdfb4b3fe3b1e692911d209c3a",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a7386d918db014b8.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a7386d918db014b8_03df100c7ea7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_a7386d918db014b8.png"
+        }
+      ]
+    },
+    {
+      "id": "P5788274A",
+      "source_sha256": "5788274a05d777f338d8b99bb6080c40b9a8ec7e9336319aebd789c0856560aa",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a929c0c0eaec74c0.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_a929c0c0eaec74c0_5788274a05d7.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_a929c0c0eaec74c0.png"
+        }
+      ]
+    },
+    {
+      "id": "P348F1063",
+      "source_sha256": "348f106362cb8d7df85e9a5c358da718decfc23dad44f7dcc34ae13e45301317",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_aa0d31192b0d9be8.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_aa0d31192b0d9be8_348f106362cb.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_aa0d31192b0d9be8.png"
+        }
+      ]
+    },
+    {
+      "id": "PBB08E590",
+      "source_sha256": "bb08e590c4abbc94f2441c00cc840635f795350deffe8daf0a20ac9f1343edb5",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_ab95be308ebabb83.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_ab95be308ebabb83_bb08e590c4ab.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_ab95be308ebabb83.png"
+        }
+      ]
+    },
+    {
+      "id": "P7FF665BA",
+      "source_sha256": "7ff665ba790cf50329976e4b0e385ba08336e080d3267facadb6b7f6e5d5d43e",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_aeac53fe9dcdd372.png"
+        }
+      ]
+    },
+    {
+      "id": "P85FC108A",
+      "source_sha256": "85fc108a2e70c89e300d74d85a05da43b4041e3dddabcba71cd602a135b049bf",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_aeac53fe9dcdd372_85fc108a2e70.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_aeac53fe9dcdd372.png"
+        }
+      ]
+    },
+    {
+      "id": "P0A4CF53C",
+      "source_sha256": "0a4cf53cf3ca6e1c9f8ec98d6ef89f6f8281aa68e1c1939040dbc89984ab526f",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_b14c4b6e428f72e5.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_b14c4b6e428f72e5_0a4cf53cf3ca.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_b14c4b6e428f72e5.png"
+        }
+      ]
+    },
+    {
+      "id": "PA2775299",
+      "source_sha256": "a2775299e2e82e9fc28c5ded9d434676dad47aa6642c71e8fc104dfdf40e87af",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_b48a1b966fa43dd2.png"
+        }
+      ]
+    },
+    {
+      "id": "PF87602F7",
+      "source_sha256": "f87602f761cb15ae55ad66e40d5c59f066368a9ba8f1835cff2194588e2333c6",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_b48a1b966fa43dd2_f87602f761cb.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_b48a1b966fa43dd2.png"
+        }
+      ]
+    },
+    {
+      "id": "P4ED9C34C",
+      "source_sha256": "4ed9c34c25095f9c13e3a5a0f23449ad097e97a0992ba3be6ff50b413b1e5265",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_c6597164bbecf4c3.png"
+        }
+      ]
+    },
+    {
+      "id": "P4EB72E6E",
+      "source_sha256": "4eb72e6e513a2f15ecc22b5b4253c4051f2db2839690a4232bb7bfa0e0a8af45",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_c6597164bbecf4c3_4eb72e6e513a.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_c6597164bbecf4c3.png"
+        }
+      ]
+    },
+    {
+      "id": "P2B9578DA",
+      "source_sha256": "2b9578da3eb196ad0c4df368f9262e09b223df9305968faf37593ecaee4b8c95",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_d5b4911a5c430567.png"
+        }
+      ]
+    },
+    {
+      "id": "P12E57E0F",
+      "source_sha256": "12e57e0f61821950997b66aafaf0e5b182a58e5d4844caecbe9728e3df6dadb2",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-002.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_d5b4911a5c430567_12e57e0f6182.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_d5b4911a5c430567.png"
+        }
+      ]
+    },
+    {
+      "id": "P78553F09",
+      "source_sha256": "78553f0938803e8f1bd250aa31b3565975447ce9eaac029f92eb7924deb1ad06",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_dc066e267003bea1.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_dc066e267003bea1_78553f093880.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_dc066e267003bea1.png"
+        }
+      ]
+    },
+    {
+      "id": "P282C840E",
+      "source_sha256": "282c840e94f1b233289a800f29b8cbc1ba0ecbdabd7831693bf11942d6dbcd19",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_e764ea293fb7abb1.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_e764ea293fb7abb1_282c840e94f1.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_e764ea293fb7abb1.png"
+        }
+      ]
+    },
+    {
+      "id": "P6D68A2B4",
+      "source_sha256": "6d68a2b464aa4434fe25f1615f6dbe425f8886501fbcc76eb55ed7409c556570",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_f458b371a15ffebd.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_f458b371a15ffebd_6d68a2b464aa.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_f458b371a15ffebd.png"
+        }
+      ]
+    },
+    {
+      "id": "P539A3FE2",
+      "source_sha256": "539a3fe2fc53ad599515542d32d1ca15344a845d8e104301f626c2b3fbb936f1",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_f9729de329d6458d.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_f9729de329d6458d_539a3fe2fc53.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_f9729de329d6458d.png"
+        }
+      ]
+    },
+    {
+      "id": "P77C42A3F",
+      "source_sha256": "77c42a3f08c704c37d14486e53c11b6a5d7edc0a665114c0dba2dd2638cb4746",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_fbe69e0ec08d3323.png"
+        }
+      ]
+    },
+    {
+      "id": "P4E0FDE20",
+      "source_sha256": "4e0fde203db4bcc4ce86419d2e51b594d9ae7ba1d0c033de29a6632e8f5fad43",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-003.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v25/Extracted/BAKED_fbe69e0ec08d3323_4e0fde203db4.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v25/Unused_Bake_Images/BAKED_fbe69e0ec08d3323.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Blender_Export_QA.json",
+      "bytes": 10646,
+      "sha256": "733ca72e74d7e55cd4fd635435e4342da9a28210d9614f7ca5d9929ed795e011",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Companion_QA.json",
+      "bytes": 1555,
+      "sha256": "f1124dd53a1563cea09a81bfd9e762ed7e91e2b9ead91b7f520775956fed97d2",
+      "status": "PASS_V25_SAFE_ROAM_COMPANION_PRESERVATION",
+      "failure_count": 0,
+      "check_count": 14
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Coplanar_Cleanup_QA.json",
+      "bytes": 6724,
+      "sha256": "7c2acb9714673480edd2aedb81e5bd4e305fc74dbe32f4cb56e8bbce982f5ace",
+      "status": "PASS_COPLANAR_COVERED_INTERNAL_FACE_CLEANUP",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Delivery_QA.json",
+      "bytes": 2457,
+      "sha256": "08779cec9911e1a3490422e37aa2e3749e620e322bdd059f16466939ab82d507",
+      "status": "PASS_FINAL_V25_RHINO_DELIVERY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Material_Face_QA.json",
+      "bytes": 491,
+      "sha256": "e0c54f77ece5cfe0992b04d7f7878dd0df3d390b5101d675c4c9cc3921a61ba5",
+      "status": "PASS_SOURCE_MATERIAL_FACE_PARTITIONS",
+      "failure_count": 0,
+      "check_count": 3
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Rhino_Build_QA.json",
+      "bytes": 1439,
+      "sha256": "de821d70422b404e51f032298ef1e2f5c15e976c4ed240a26bcbab623be475e2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Rhino_Desktop_Progress.json",
+      "bytes": 1191,
+      "sha256": "20e033d4b2d94a036fe85b8e002d7af24db8691cf6eb4137af579f63cb187fda",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Rhino_Desktop_QA.json",
+      "bytes": 1548,
+      "sha256": "04cfbde3ba9c94748d75260b89ce15df8e439c03082c35a4b9c481c14a95a8c8",
+      "status": "PASS_NATIVE_RHINO_DESKTOP",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Rhino_Desktop_Started.json",
+      "bytes": 146,
+      "sha256": "6b7e53826ff98b3c53115d808261d6ccf9e3156ab490ca3f9161f1f62c42438b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Rhino_Readback_QA.json",
+      "bytes": 4221,
+      "sha256": "99de94ea4f51f9a1e4ba2adc4bb9eba2c039f6d2c514379bcc390d49eb26d8f2",
+      "status": "PASS_NATIVE_RHINO_READBACK",
+      "failure_count": 0,
+      "check_count": 29
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Reports/V25_Visual_Review.json",
+      "bytes": 1627,
+      "sha256": "66cdc07540a0b088c2a31dc22e00d3f39e4ca15dd1706f3efee025b2de689a9f",
+      "status": "PASS_VISUAL_REVIEW",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Source_Metadata/Export_Report.json",
+      "bytes": 10646,
+      "sha256": "733ca72e74d7e55cd4fd635435e4342da9a28210d9614f7ca5d9929ed795e011",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Source_Metadata/Inherited_V24_37_Delivery_QA.json",
+      "bytes": 994,
+      "sha256": "11155c94f87d19fd2b2e7101c0b924e83d146201c188063e9eda323eb1aca2fc",
+      "status": "PASS_FINAL_DELIVERY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Source_Metadata/Inherited_V24_37_Exterior_Physics_QA.json",
+      "bytes": 48245,
+      "sha256": "c5b38d1433af5b5dc70e29bce30596e5351829a37d1c99562a2267397a0942b3",
+      "status": "PASS_ALL_MODEL_EXTERIOR_SUPPORT_AND_EDGE_SAFETY",
+      "failure_count": 0,
+      "check_count": 22
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/Source_Metadata/Inherited_V24_37_Interior_Physics_QA.json",
+      "bytes": 117455,
+      "sha256": "38b605f4947aa5cef88fe131228f8cddc11156eda934a94ba32e9ed418b9b0fe",
+      "status": "PASS_ACTUAL_MODEL_ROAM_PHYSICS",
+      "failure_count": 0,
+      "check_count": 35
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V25/使用说明.txt",
+      "bytes": 3267,
+      "sha256": "fb5b6cf1a7af6f1789fa6b51e6a647a1a100e11ec3ce0c399e8f4a38d71a6663",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Archive_QA.json",
+      "bytes": 263,
+      "sha256": "cec0a5530bbf0d25336c91624821c66a4e5f3acdfd3e132f6011c74fb143341f",
+      "status": "PASS_ZIP_CRC_AND_ALL_ENTRY_SHA256",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Before_Coplanar_Cleanup_Export_Index.json",
+      "bytes": 3869867,
+      "sha256": "092eb4bb82d739e3ecec439f3d6d1835c59a64ea97939abc70648adfff3428d9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Blender_Probe.json",
+      "bytes": 2303161,
+      "sha256": "b99b0ed4fd3065aef492f1789efe77e214c68aa1446a58418dbad3b8f103560e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Camera_Index.json",
+      "bytes": 132347,
+      "sha256": "40bbec13cd75af32d205a1ac950a4187b9d5ab5fc6da418f42d3a2f8f71fc0a9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Coplanar_Cleanup.json",
+      "bytes": 6724,
+      "sha256": "7c2acb9714673480edd2aedb81e5bd4e305fc74dbe32f4cb56e8bbce982f5ace",
+      "status": "PASS_COPLANAR_COVERED_INTERNAL_FACE_CLEANUP",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Desktop_Diagnostics/V25_Desktop_Attachment.json",
+      "bytes": 127,
+      "sha256": "bde5427c9bc775ea05ad82841f010d593acad244a523a1bcd4dab05627c12215",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Desktop_Diagnostics/V25_Desktop_Material_Probe.json",
+      "bytes": 449,
+      "sha256": "dbc891def9ccacc50070e8c5d0656ca06f872ebf1f461db9f899114ed91e5443",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Desktop_Diagnostics/V25_Desktop_Preview_Release.json",
+      "bytes": 134,
+      "sha256": "eae3f05cd97a54b56345890d26ed8b774c68f72cd39eee88ee4575794508aa67",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Desktop_Diagnostics/V25_Rhino_Desktop_Error.json",
+      "bytes": 406,
+      "sha256": "08938f931372fa55ec8a859f86fb15de4b35b5e252f39a5843d1640acfc4e372",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Door_Hinges.json",
+      "bytes": 55356,
+      "sha256": "8caded5511b2167a5e369bf1f062ea2f28c7c05bf8bfa8deb27f342cc7336da7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Export_Index.json",
+      "bytes": 3870176,
+      "sha256": "47d0c241561091b9af2e893c14fd7f38572ec95a590926d9322b7f3d942ce64b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Export_Report.json",
+      "bytes": 10646,
+      "sha256": "733ca72e74d7e55cd4fd635435e4342da9a28210d9614f7ca5d9929ed795e011",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Material_Index.json",
+      "bytes": 1442441,
+      "sha256": "ec062533248f5e138a54ad0407e1d5521c862961bc3b65dcf5f8dd7440a2b35b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Material_Probe.json",
+      "bytes": 572466,
+      "sha256": "dc4c4ec92f94b7118a2f6626dd25d306fb8d46567b4e7c9db03de518d843b1ff",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Native_Rays.json",
+      "bytes": 962,
+      "sha256": "66b77b5c3cb432bd51ba86826e8233ac6e66b5b7a874028aff98f38469294d29",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Object_Material_Overrides.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Rhino_API_Probe.json",
+      "bytes": 12166,
+      "sha256": "739cb246c7935cb44d144b894d9a6c7e0431fe2e99383437a3873a30d17c15b5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Rhino_Build_Report.json",
+      "bytes": 1439,
+      "sha256": "de821d70422b404e51f032298ef1e2f5c15e976c4ed240a26bcbab623be475e2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Rhino_Builder_API.json",
+      "bytes": 6566,
+      "sha256": "990b3d1f626e8961da18d644fefab6b4c512d9b25d131bde2b56407729a8601b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Source_Visible_Geometry.json",
+      "bytes": 2487808,
+      "sha256": "6e8200f9d5a5e4e607080916b16277cd27c8447ee0be4f7777426f8009b5ff07",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/Texture_Index.json",
+      "bytes": 760738,
+      "sha256": "a143afac085e040e21d02d42ba97b05672832eec8309cbfceca5a994116f298f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/rhino_desktop_final_pid.txt",
+      "bytes": 7,
+      "sha256": "9bc69e46b3919812682bd1e3c767bdbfbf4fc4ead16de7bc5a0d3d26569fbbea",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v25/rhino_desktop_pid.txt",
+      "bytes": 7,
+      "sha256": "636d2e135617ce62d860054949589ee3d01a29d5b4cf376d9a005da82e1ac1af",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

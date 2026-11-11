@@ -1,0 +1,2250 @@
+{
+  "version": "V9",
+  "source_folder": "Rebuild_V9_Hybrid",
+  "primary": {
+    "relative": "Rebuild_V9_Hybrid/使用说明.md",
+    "sha256": "52fb2e7a542aa8879e7bd38f86b3e2982ea0e01183c8fa8a973862747362bc24"
+  },
+  "source_files": 43,
+  "trace": [
+    {
+      "file": "project/07_Evidence/v9_reference_audit/final_v9_audit.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 104,
+      "operations": [
+        {
+          "call": "checks.append",
+          "line": 18,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "md.Manifold",
+          "line": 34,
+          "meaning": "实体运算对象"
+        },
+        {
+          "call": "foot.intersection",
+          "line": 67,
+          "meaning": "交集限域"
+        },
+        {
+          "call": "foot.symmetric_difference",
+          "line": 72,
+          "meaning": "差集裁切"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "PTH.read_bytes",
+          "line": 15
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 15
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 16
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 91
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 94
+        },
+        {
+          "call": "PTH.read_bytes",
+          "line": 95
+        },
+        {
+          "call": "write_text",
+          "line": 97
+        },
+        {
+          "call": "write_text",
+          "line": 103
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 13
+        },
+        {
+          "name": "Mutation.json",
+          "line": 14
+        },
+        {
+          "name": "1aeb5b24-97ff-45f0-a8e3-f2916523ffb3.png",
+          "line": 88
+        },
+        {
+          "name": "4daa4b13-ab29-4a24-81ca-0a7345c7eecb.png",
+          "line": 88
+        },
+        {
+          "name": "DJI_0113.JPG",
+          "line": 90
+        },
+        {
+          "name": "DJI_0117.JPG",
+          "line": 90
+        },
+        {
+          "name": "Final_V9_Reference_QA.json",
+          "line": 97
+        }
+      ],
+      "functions": [
+        {
+          "name": "check",
+          "line": 18,
+          "end": 18
+        },
+        {
+          "name": "body",
+          "line": 26,
+          "end": 36
+        }
+      ]
+    },
+    {
+      "file": "project/07_Evidence/v9_reference_audit/audit_v8.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 36,
+      "operations": [
+        {
+          "call": "md.Manifold",
+          "line": 16,
+          "meaning": "实体运算对象"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "SOURCE.read_text",
+          "line": 10
+        },
+        {
+          "call": "SOURCE.read_bytes",
+          "line": 34
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 34
+        },
+        {
+          "call": "write_text",
+          "line": 35
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 9
+        },
+        {
+          "name": "DJI_0059.JPG",
+          "line": 33
+        },
+        {
+          "name": "1aeb5b24-97ff-45f0-a8e3-f2916523ffb3.png",
+          "line": 33
+        },
+        {
+          "name": "4daa4b13-ab29-4a24-81ca-0a7345c7eecb.png",
+          "line": 33
+        },
+        {
+          "name": "V8_Independent_Reference_Audit.json",
+          "line": 35
+        }
+      ],
+      "functions": [
+        {
+          "name": "solid",
+          "line": 11,
+          "end": 18
+        },
+        {
+          "name": "zk",
+          "line": 28,
+          "end": 28
+        },
+        {
+          "name": "zg",
+          "line": 29,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "file": "project/07_Evidence/Chinese_Eaves/mutation.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 235,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 34,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "SOURCE.read_text",
+          "line": 12
+        },
+        {
+          "call": "write_text",
+          "line": 219
+        },
+        {
+          "call": "np.load",
+          "line": 229
+        },
+        {
+          "call": "write_text",
+          "line": 234
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 11
+        },
+        {
+          "name": "DJI_0046.JPG",
+          "line": 17
+        },
+        {
+          "name": "DJI_0110.JPG",
+          "line": 17
+        },
+        {
+          "name": "Mutation.json",
+          "line": 219
+        },
+        {
+          "name": "Donor_Roof_Samples.npz",
+          "line": 229
+        },
+        {
+          "name": "Geometry_QA.json",
+          "line": 234
+        }
+      ],
+      "functions": [
+        {
+          "name": "part",
+          "line": 14,
+          "end": 14
+        },
+        {
+          "name": "put",
+          "line": 15,
+          "end": 18
+        },
+        {
+          "name": "shell",
+          "line": 19,
+          "end": 26
+        },
+        {
+          "name": "tube",
+          "line": 27,
+          "end": 41
+        },
+        {
+          "name": "zscreen",
+          "line": 42,
+          "end": 44
+        },
+        {
+          "name": "zgate",
+          "line": 45,
+          "end": 47
+        },
+        {
+          "name": "zkitchen",
+          "line": 48,
+          "end": 53
+        },
+        {
+          "name": "cover_tile",
+          "line": 54,
+          "end": 74
+        },
+        {
+          "name": "tile_rows",
+          "line": 75,
+          "end": 82
+        },
+        {
+          "name": "curved_roof",
+          "line": 83,
+          "end": 85
+        },
+        {
+          "name": "ridge_and_eaves",
+          "line": 86,
+          "end": 110
+        },
+        {
+          "name": "orient",
+          "line": 187,
+          "end": 211
+        },
+        {
+          "name": "apply",
+          "line": 215,
+          "end": 217
+        }
+      ]
+    },
+    {
+      "file": "history/prepare_v9.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 25,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "p.read_text",
+          "line": 15
+        },
+        {
+          "call": "p.write_text",
+          "line": 15
+        },
+        {
+          "call": "p.read_bytes",
+          "line": 16
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "write_text",
+          "line": 19
+        },
+        {
+          "call": "read_text",
+          "line": 21
+        },
+        {
+          "call": "write_text",
+          "line": 24
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 8
+        },
+        {
+          "name": "1aeb5b24-97ff-45f0-a8e3-f2916523ffb3.png",
+          "line": 13
+        },
+        {
+          "name": "4daa4b13-ab29-4a24-81ca-0a7345c7eecb.png",
+          "line": 13
+        },
+        {
+          "name": "Materials.json",
+          "line": 14
+        },
+        {
+          "name": "Base_Index.json",
+          "line": 14
+        },
+        {
+          "name": "Independent_V8_QA.json",
+          "line": 17
+        },
+        {
+          "name": "Reality_Hybrid_V8.3dm",
+          "line": 18
+        },
+        {
+          "name": "V9_Baseline_Hashes.json",
+          "line": 19
+        },
+        {
+          "name": "Architecture_Edit_V8_ALIGNED_ENU.3dm",
+          "line": 19
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 19
+        },
+        {
+          "name": "Pure_Site_WORKING_V8.3dm",
+          "line": 19
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 16,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "file": "history/export_v9_native.py",
+      "publication": "site-coordinate-redacted",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 67,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 8,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "rh.EmbeddedFile.Read",
+          "line": 20
+        },
+        {
+          "call": "np.load",
+          "line": 42
+        },
+        {
+          "call": "F.Write",
+          "line": 62
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 62
+        },
+        {
+          "call": "write_text",
+          "line": 66
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V8_Current_Before_V9.3dm",
+          "line": 8
+        },
+        {
+          "name": "Patch_Index.json",
+          "line": 8
+        },
+        {
+          "name": "Materials.json",
+          "line": 8
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 8
+        },
+        {
+          "name": "V9_Changed_Nodes.json",
+          "line": 9
+        },
+        {
+          "name": "Pure_Site_WORKING_V8.3dm",
+          "line": 61
+        },
+        {
+          "name": "Pure_Site_UNMODIFIED.3dm",
+          "line": 61
+        },
+        {
+          "name": "Reality_Hybrid_V9.3dm",
+          "line": 62
+        },
+        {
+          "name": "Native_Hybrid_QA.json",
+          "line": 66
+        }
+      ],
+      "functions": [
+        {
+          "name": "make_mesh",
+          "line": 27,
+          "end": 36
+        },
+        {
+          "name": "attrs",
+          "line": 37,
+          "end": 40
+        }
+      ]
+    },
+    {
+      "file": "history/check_v9_current_baseline.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 21,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 6,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 6
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 6
+        },
+        {
+          "call": "cur.read_bytes",
+          "line": 20
+        },
+        {
+          "call": "pkg.read_bytes",
+          "line": 20
+        },
+        {
+          "call": "write_text",
+          "line": 21
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Reality_Hybrid_V8.3dm",
+          "line": 5
+        },
+        {
+          "name": "v9_current_baseline_check.json",
+          "line": 21
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/package_v9_rhino.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 54,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "write_text",
+          "line": 19
+        },
+        {
+          "call": "rp.write_text",
+          "line": 44
+        },
+        {
+          "call": "mp.write_text",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 54
+        },
+        {
+          "call": "write_text",
+          "line": 54
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Independent_V9_QA.json",
+          "line": 11
+        },
+        {
+          "name": "Reality_Hybrid_V9.3dm",
+          "line": 11
+        },
+        {
+          "name": "Native_Hybrid_QA.json",
+          "line": 12
+        },
+        {
+          "name": "Editable_Rhino_Kernel_QA.json",
+          "line": 13
+        },
+        {
+          "name": "Editable_Local_Native_QA.json",
+          "line": 14
+        },
+        {
+          "name": "Editable_Rhino_Alignment_QA.json",
+          "line": 15
+        },
+        {
+          "name": "Architecture_Edit_V9_ALIGNED_ENU.3dm",
+          "line": 15
+        },
+        {
+          "name": "V9_Exchange_Photo_Readback.json",
+          "line": 16
+        },
+        {
+          "name": "Final_V9_Reference_QA.json",
+          "line": 16
+        },
+        {
+          "name": "Delivery_Preflight_QA.json",
+          "line": 19
+        },
+        {
+          "name": "Delivery_Package_QA.json",
+          "line": 28
+        },
+        {
+          "name": "文件校验_SHA256.json",
+          "line": 45
+        },
+        {
+          "name": "_Delivery_QA.json",
+          "line": 54
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 5,
+          "end": 9
+        },
+        {
+          "name": "report",
+          "line": 10,
+          "end": 10
+        },
+        {
+          "name": "register",
+          "line": 20,
+          "end": 23
+        },
+        {
+          "name": "copy",
+          "line": 24,
+          "end": 25
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P66B22F29",
+      "source_sha256": "66b22f2994dc13e033a308fd3014b2ced0b12c2b038200dc446d67fbc1fe9238",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-003.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Wide_L0_0350s_Y-40.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P5234181E",
+      "source_sha256": "5234181ef2c5e592f9fdf9807e2cb73d25282cc398ebd6c4af32bd6e8375987f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-003.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Wide_L0_0450s_Y-40.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P33F3ABFE",
+      "source_sha256": "33f3abfe0e950a189c8443f052c1137c4d84350d3b5eac1d872d6534f3234705",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P071B615A",
+      "source_sha256": "071b615a9cca03ee39ebc8256aeee9c4522a6479a7dd6b745d2406f5b4461c1f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P160F908A",
+      "source_sha256": "160f908a73480c72689c667cac11d3d936a9ff511d6ce30ba8eee9ecd9a3061d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_03.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P1EC66BF4",
+      "source_sha256": "1ec66bf4ac0e094aab00ef9cc4c2c9d3cde6fe9be20732319f2c398d3f88958b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_04.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PCEB183F9",
+      "source_sha256": "ceb183f910816a26edf1fcccb00ab4eb0d41425240bc21f4bf9e6f31c4ae9561",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PB49268E2",
+      "source_sha256": "b49268e27997b6775423bb2d81a0995a59a17f0b768f0c7d1361041fbf45f32a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_06.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA79CDA11",
+      "source_sha256": "a79cda11ffe8f1b04128fe4e84ab0a691369006401c3eb836abb49fbd1f289bd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_07.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P7191DA50",
+      "source_sha256": "7191da50ff89d319114a1ebe59e03261a0c6b528f2bfe215a0b725827f058f07",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_08.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PFD5A3AA3",
+      "source_sha256": "fd5a3aa3cd4f59cebd0cab260faa61a56698722e481b6ac693642081250a1f88",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_09.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P3DC64479",
+      "source_sha256": "3dc644791cc56f6d4097b8028ca2c4c13a1cebc892512595c473dc833ca56d3d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_10.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PF6834DB7",
+      "source_sha256": "f6834db7f8fcb3d0f7a2e1316dd180a185f3d1a86d642f0967674559214ef25c",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0002_Page_11.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PAF013B7A",
+      "source_sha256": "af013b7aebbdead3337b7e582599324264b22d5da2f0c2a7ef8c6a70db98fb5a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0003_Page_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PC9A38CFF",
+      "source_sha256": "c9a38cff92eeda97d1666167d7e319e52dae3ea0bc6d55fce56352932e46b5fc",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/ALL_0003_Page_02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA89E1B3B",
+      "source_sha256": "a89e1b3b1023e3bcc5f4eb03e7eb162bca898a0ed497e24628b1b022a192681c",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-004.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/03_Textures/Patch/DJI_0002_0429_GABLE_ORIGINAL.JPG"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/05_Export/DJI_0002_0429_GABLE_ORIGINAL.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P498CAEDA",
+      "source_sha256": "498caeda6b1e1d49de52274aec3199331c8968d00935e4c5c81e9466f66ee0d9",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Chinese_Eaves/Donor_Roof_Points.png"
+        }
+      ]
+    },
+    {
+      "id": "P21E81B54",
+      "source_sha256": "21e81b54a22212d1a955c822914dbf2975bcaf387a560c21a4765455ddc405f1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Chinese_Eaves/V8_Kitchen_Gate_Roofs.png"
+        }
+      ]
+    },
+    {
+      "id": "PC2AFD49C",
+      "source_sha256": "c2afd49cf29fde7ab15e06a9102c87bf10c9947e6820f18550129312eacec68d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Chinese_Eaves/V8_Screenwall_Flying_Eaves.png"
+        }
+      ]
+    },
+    {
+      "id": "P13B042AB",
+      "source_sha256": "13b042aba7af933aa2caf155cd17dfd41a68fcb1ef886e5e0947f53412083b43",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/DJI_0046.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P18C97A45",
+      "source_sha256": "18c97a458ff647fa4d724b43433a3688d3a8fd9f432a78c988c9e720ff1850d0",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/DJI_0110.JPG"
+        }
+      ]
+    },
+    {
+      "id": "P822AD469",
+      "source_sha256": "822ad469fc67c3d2d72e82665f220e4dead666509a243f15fb5ffb9c4e7c52e1",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001244.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P09E696C4",
+      "source_sha256": "09e696c4f78fea7eb0945642750fb1dfcad24272cfb84be2af4fa12e145d5b64",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001317.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PFC62BBEA",
+      "source_sha256": "fc62bbead9e18b65da8c221ad64d4b972730fe3037ac3a073d7e766d2cf9de9c",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001423.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P622406CC",
+      "source_sha256": "622406cc32e6dad41c20b2d5a4c918d2f88bb12b30d74e4fb70bd8e4029edfa4",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001456.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P5733EBDC",
+      "source_sha256": "5733ebdc9f1768e31523b82e8320ac81b32bd2331f2ab1061994a35ee304fc5b",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001538.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P0B8648BD",
+      "source_sha256": "0b8648bd9b6db90cf67e27fe1b129c07c5bfd1b9dc13e06f1177939fc4e60627",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001628.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P5DC14806",
+      "source_sha256": "5dc14806bad1efb084c50161b16d010d9e3fad30f3cd59d5744f777034cf278d",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Current_Annotations/屏幕截图 2026-10-09 001738.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P9E0D5F6A",
+      "source_sha256": "9e0d5f6aa0c1bde011daffe2b7a4cca17f5c0bc5cddc1377b8c0b7bd3dc6112e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L0_0100s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P605E5B02",
+      "source_sha256": "605e5b0216fc9d5fdcdf3487167f86eaabe60a0aafbeb39680abe8644b3c0f80",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L0_0110s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P89515559",
+      "source_sha256": "895155590c6ffd9bd2ab70dc571bd79b3c493232fdcc1638d4a93aae2f7d4fc8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L0_0115s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PEC7A9784",
+      "source_sha256": "ec7a9784dce376040e8f090b788c52343cd12bbd71b76a9136c052e50216d379",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L0_0505s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P89EBA61D",
+      "source_sha256": "89eba61d016876269442373805f2b9dc54a61a11818eb3842b5cb3f4d77d9c56",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L1_0115s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA76ACF5B",
+      "source_sha256": "a76acf5bd646d227aa44ac8c2d75d845a4b7c6caca38b8c36f377f3f2725493f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/Center_L1_0120s.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P642EB1F6",
+      "source_sha256": "642eb1f6aef20638a15d70cd8d618949d15ac5024ad0a402f43bf22d99b9c99f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/References/D03.png"
+        }
+      ]
+    },
+    {
+      "id": "P8B9DB39E",
+      "source_sha256": "8b9db39e1a91d2608e7aac3d943baee65e138bc07bcdd552e2bddb76a91c32f6",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/V8_Interior_Plan_Review.png"
+        }
+      ]
+    },
+    {
+      "id": "P7DB06045",
+      "source_sha256": "7db06045b7e18259222d17940a9e0612e1ab8fce06a957b25b95f3b62177e3b1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/V8_Stair_Door_Candidate_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P723EEE4C",
+      "source_sha256": "723eee4c67bcc1c42bb8b87939053f5c0a89c6c2e05805fdcc8160a35c9e2c08",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/V8_Stair_Geometry_Review.png"
+        }
+      ]
+    },
+    {
+      "id": "PAAF62EEA",
+      "source_sha256": "aaf62eea9a1d9127ebbae8660a688ff200e87d5f3b09d80b6fb1086b2ddb0995",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0001_DCIM_100MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P8C485B33",
+      "source_sha256": "8c485b3304b4ee1e08c8b605b6af9e1bdca38e76f7244ce468ec9f72cdcd7298",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0001_DCIM_101MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P2576318C",
+      "source_sha256": "2576318c18291a6307b8ddbe08b9fbb9051fa3c31f474217e51fbb261b31e6f1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0002_DCIM_100MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P2C71AAF2",
+      "source_sha256": "2c71aaf23a69b3267ae70c5e322d983bcd98f51ffd3dbbf3faea83a56e37773a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0002_DCIM_101MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P7B4F6371",
+      "source_sha256": "7b4f63719f3b9279cfa8bfc8a04059ac0a8ebb042453eafec663929e21dc0a8e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0003_DCIM_100MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PBE43A1FE",
+      "source_sha256": "be43a1fef90362327f0c90ae7624890b50ecc0db5f4a749d275df7baf0913bdd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_0003_DCIM_101MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PC3AC01FC",
+      "source_sha256": "c3ac01fc422bece0ca9c1ff767bd3064a16d829fa753ae6b2b1bbd18c7765d49",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_003_DCIM_100MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P4E3B90D9",
+      "source_sha256": "4e3b90d90b8b9f68f8598a1cb156e23adbd017991a363e5bc6272b9758edea92",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Previous_Photo_Audit/Collection_DCIM_100MEDIA.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P64323DCF",
+      "source_sha256": "64323dcf4bcb5c45a698f17bc1de2e10a0aec9c596774137d9e4f2974a3523bd",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-001.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/Redline_Calibration_Overlay.png"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/V8_West_Clearance/Redline_Calibration_Overlay.png"
+        }
+      ]
+    },
+    {
+      "id": "PCA9AA68F",
+      "source_sha256": "ca9aa68f364760a1d6f53f050af62c2a1cf3a9e6dc4817662adaa12a45d8b9f6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/V7_Plan_Local_Initial.png"
+        }
+      ]
+    },
+    {
+      "id": "PCB7AB3AF",
+      "source_sha256": "cb7ab3af04b8936cb0694dbd2050a3e37e006dc3abef04cf96cde3c918be498e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/V8_West_Terrain_Ground_Classification.png"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/V8_West_Clearance/V8_West_Terrain_Ground_Classification.png"
+        }
+      ]
+    },
+    {
+      "id": "P5B17C15A",
+      "source_sha256": "5b17c15a27bfd2073ab3060d151f900a1afeb54c4efac2b89c9894b373a19fdc",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/V8_West_Terrain_Only_Plan.png"
+        },
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/V8_West_Clearance/V8_West_Terrain_Only_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "PD55EBCB0",
+      "source_sha256": "d55ebcb02c0d165b3ebdd303703141f930d6d6379ccc6f70c1758ab912d68d08",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/06_Report/V9_Gate_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "PC12BB378",
+      "source_sha256": "c12bb378e8303ca4558cd682ed93eeb26830a843ba38d27efe7592c736bf6d42",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/06_Report/V9_Gate_Kitchen_Joint.png"
+        }
+      ]
+    },
+    {
+      "id": "P8165D164",
+      "source_sha256": "8165d164bf43c74ebff00d29c484923808a6085d929cde9b9d400a2b52df4024",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-005.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/06_Report/V9_Joint_Underside.png"
+        }
+      ]
+    },
+    {
+      "id": "P8AF91294",
+      "source_sha256": "8af912942fc256222e4978b1d84a0dd2fd9a8e88944a7d50f20723ce11e31965",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-006.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/06_Report/V9_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "PECEB7E6C",
+      "source_sha256": "eceb7e6c56116df0f7158156083ab8689371f78f8e0b1f36a96a69faf29eb2d2",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-006.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/V9_User_Relation_Diagrams/1aeb5b24-97ff-45f0-a8e3-f2916523ffb3.png"
+        }
+      ]
+    },
+    {
+      "id": "P574CB737",
+      "source_sha256": "574cb737c40766257b6634fde7e06c58a7e8164ea7e2cd25f13669c6668c077f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-006.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V9_Hybrid/07_Evidence/V9_User_Relation_Diagrams/4daa4b13-ab29-4a24-81ca-0a7345c7eecb.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Blender_Hybrid_Export_QA.json",
+      "bytes": 391,
+      "sha256": "f91047f06e55c7e6866b2e0e575664a9395edada715d1c68501decf8fe2b055a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Delivery_Package_QA.json",
+      "bytes": 1299,
+      "sha256": "bafcfb24e33cf21909b4ead795476d2fbdb22cb90ef40ca7fc217bc9af800aa3",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Delivery_Preflight_QA.json",
+      "bytes": 757,
+      "sha256": "c699dbfbd9a433339477536d265b48d2d609e9c2dfd1adfd5578d0b555f48c8f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Editable_Changed_Solids_QA.json",
+      "bytes": 193,
+      "sha256": "ba5aea043ecef8527e8cbbab3dfaba0b0a059477ac52cd7517537c43d32e7685",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Editable_Local_Native_QA.json",
+      "bytes": 199341,
+      "sha256": "f541a83aaf5cd1204688fa25f2dcbec236f9abae682ef7d02ecdf7daa1095fd0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Editable_Rhino_Alignment_QA.json",
+      "bytes": 3421,
+      "sha256": "f892cdd92f534bac5c58926c0a2f43f9beb5790c707cdeef7f41f12d78af22fb",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Editable_Rhino_Kernel_QA.json",
+      "bytes": 161,
+      "sha256": "c739008d1261b3f02be8c7d89a315a5f00a5b6e7089d500448035f690caa4841",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Final_V9_Reference_QA.json",
+      "bytes": 33173,
+      "sha256": "93bcfe7cec5ac7e281fe77f38077fba3045a7e6fa56c52da44a2720be6c5e442",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 14
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Final_V9_Reference_QA.md",
+      "bytes": 4778,
+      "sha256": "665662eed538dc02676f656ac6ec379130092e5e0756b769f9bdb3ba7d90f329",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Independent_V9_QA.json",
+      "bytes": 761144,
+      "sha256": "a04eaee57e4022f8ad22bbef9b31021c3258a3fa78bc7070ef353a6cc7e6941f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 5121
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Native_Conversion_Repair_Diagnostic.json",
+      "bytes": 297,
+      "sha256": "b0fd41b07e43224a87e661d9adf7d8cce62d95f170f72e771b6d65f47aa39815",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Native_Hybrid_QA.json",
+      "bytes": 613,
+      "sha256": "f9d7d3065634a9f7843572322a546c44f41bb5ffa8151372e591c6ab73506f99",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Patch_Incremental_Revision_V9.json",
+      "bytes": 2440,
+      "sha256": "bbfacbe03a77cbde27ce0354b7f0bc42da594118f11ac1e6da4194211429a665",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Roof_Relation_Geometry_QA.json",
+      "bytes": 249334,
+      "sha256": "daba1138ee815d89f928f6e6089ebbb605a4e409ba3f0f932fb9447bcb5ce610",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 2050
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/V8_Current_Versus_Delivered.json",
+      "bytes": 663,
+      "sha256": "b80e97778e8cb5705762312635d1ebf9fa6ffea6cf8387f52301989a8d87da9d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/V9_Baseline_Hashes.json",
+      "bytes": 1178,
+      "sha256": "22db07de924df6e18c00c6a3c50e12e67304ee4040c825fdd524ac6fa9a3ca82",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/V9_Exchange_Photo_Readback.json",
+      "bytes": 23189,
+      "sha256": "37125dba74c515d97c79a5a777c263c428ade68552501f36b4631466418f6712",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/V9_Material_and_Texture_QA.json",
+      "bytes": 1895,
+      "sha256": "8178a275c4dd050009b05358da87b6f5165e6c06d55c4a90e88162feea79e5a5",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/V9_Merge_Manifest.json",
+      "bytes": 2417,
+      "sha256": "48119dbc0d2cc08378e3f47d91002f28f28024259a3dc5cf7082989c1eb5acf9",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/Visible_Eave_Layers_Geometry_QA.json",
+      "bytes": 2597,
+      "sha256": "250b49255e8a6080cba2ae48efe03da0a3ad95ab2ae63639fd81ecf20135139f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/06_Report/需求汇总与修模依据_V9.md",
+      "bytes": 8633,
+      "sha256": "65de35f1c40ddbb3b8291312e8e438212baac79297f0a6e04a01bcc7a1ac811b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Chinese_Eaves/Geometry_QA.json",
+      "bytes": 5040,
+      "sha256": "c9273f611ae03be634bfa81e6b311c850576b3a3569d96b1cc7bc97b1c35a6e0",
+      "status": "PASS_CLOSED_MANIFOLD_GEOMETRY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Chinese_Eaves/README.md",
+      "bytes": 1729,
+      "sha256": "53a15e7bc1b36032b531d82641653f7ff03d52ab79b8f6e529ffc12608b72357",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Column_Arch/Column_Arch_QA.json",
+      "bytes": 1459,
+      "sha256": "a9a84c5a78271a2e75616ec9506dc82aee32f3393a3128372cfe0762dac4ce04",
+      "status": null,
+      "failure_count": null,
+      "check_count": 8
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Final_Contact_Ground_Repair/Contact_Gap_Ground_QA.json",
+      "bytes": 5063,
+      "sha256": "20e1fde46e87e3d005d98fc4766c434306a205b17aa946d1265a5e0e59fc81a0",
+      "status": "PASS_STABLE_PROVISIONAL_TERRAIN_CANDIDATE",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Final_Contact_Ground_Repair/Existing_Base_Ground_Coverage_QA.json",
+      "bytes": 1346,
+      "sha256": "4f3761bf6d41d8ff96d18241e92f047d1181c21288527ec9c9f04483120b064e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/Final_Merged_Interior_QA.json",
+      "bytes": 20464,
+      "sha256": "0830ad9cf07bd94d66b0c2826583f96e4877fc1e9b2b3a06ee2ad44424b9d821",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 67
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/Interior_QA_V8.json",
+      "bytes": 3809,
+      "sha256": "fbb9c6c2188ce57699154142123e034ceb52421ebee32c2b373d238eb194d44b",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 41
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Interior/README.md",
+      "bytes": 3295,
+      "sha256": "f2f5743fcfc8ae53af547e8560a887669dcddb4c71bd0a898a4b899f9d317410",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Blender_Hybrid_Export_QA.json",
+      "bytes": 516,
+      "sha256": "743df0a8de83509c1dd92c0d59141dc8928ad65cd6476246ee6c97eb56e768a3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Chinese_Eaves_Geometry_QA.json",
+      "bytes": 5040,
+      "sha256": "c9273f611ae03be634bfa81e6b311c850576b3a3569d96b1cc7bc97b1c35a6e0",
+      "status": "PASS_CLOSED_MANIFOLD_GEOMETRY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Column_Arch_QA.json",
+      "bytes": 1459,
+      "sha256": "a9a84c5a78271a2e75616ec9506dc82aee32f3393a3128372cfe0762dac4ce04",
+      "status": null,
+      "failure_count": null,
+      "check_count": 8
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Contact_Gap_Ground_Integration_QA.json",
+      "bytes": 5616,
+      "sha256": "02575a2b88f18ea932a8046489f58f30d2ac47685eacd9cedb626261d62f9817",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Delivery_Package_QA.json",
+      "bytes": 1294,
+      "sha256": "7b6436780fc1a96fc19397427ec0afdfc8b655300973131d4b6bca8093836b8f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Delivery_Preflight_QA.json",
+      "bytes": 752,
+      "sha256": "6cc02a34f941e4b9a09ebf73a97c2fa38893c888f2d874d640dae64fcbb87908",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Editable_Local_Native_QA.json",
+      "bytes": 648,
+      "sha256": "aaefc87c5249e79e2ab4e2a9a027e7ddeacfb55ec98f772de31c3cb1e42644b6",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Editable_Rhino_Alignment_QA.json",
+      "bytes": 3421,
+      "sha256": "6a14e007e9eaf314d555c8f6e7205e9277638fac91fc2ad0066443769b212d36",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Editable_Rhino_Kernel_QA.json",
+      "bytes": 161,
+      "sha256": "13fdb0f5e927d478e38bd9295149751799fe08b84cc802a209d405acbabebb24",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Final_Merged_Interior_QA.json",
+      "bytes": 24847,
+      "sha256": "90a036a50103a8f1f457c68deb8f40cadb5cd965c19db56f0bbb6950c8fb8c4f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 94
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Independent_Terrain_Clearance_QA.json",
+      "bytes": 1717,
+      "sha256": "b19497d381269f36baa107cf60d658c6af59761887fe5d09d0f287e3adb8e4a7",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 13
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Independent_V8_QA.json",
+      "bytes": 169091,
+      "sha256": "828997c3e9e034eb4b8350d2131a489ca73eedcd601b5b6a83f20167f206392f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 1344
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Interior_QA_V8.json",
+      "bytes": 3809,
+      "sha256": "fbb9c6c2188ce57699154142123e034ceb52421ebee32c2b373d238eb194d44b",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 41
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Local_Source_Contact_Cleanup_QA.json",
+      "bytes": 2581,
+      "sha256": "8f128cc2f80d470c96dd3f97576e8a0d710261c105a420f57a6ea3d943cfa974",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Native_Embedded_Texture_QA.json",
+      "bytes": 2018,
+      "sha256": "62853ae71cc118e468ccf99bbf633ae7a3172e10e8d5a05f9d8f0cef2cdd81c8",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Native_Hybrid_QA.json",
+      "bytes": 639,
+      "sha256": "4ba65050c8817d6392dc1755f0526fb7f814ee4feaeb2500e45e7b17592f05a9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/Terrain_Clearance_QA.json",
+      "bytes": 3538,
+      "sha256": "eff6cd940fbc005dd79de68288972ecdf8d2cbe25ff67f5e81b88a23e20bc99e",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_V8_Reports/V8_补测上传说明.md",
+      "bytes": 878,
+      "sha256": "1c043c6a3c0de86f6b7260d5160811c30ebe3f25023700699892144e2b4b6a75",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Prior_使用说明.md",
+      "bytes": 1512,
+      "sha256": "bb17dbf5f36252ac11b671ae1ab021fb5308f61a67a762fc86d68f19ef3a6592",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/Independent_Terrain_Clearance_QA.json",
+      "bytes": 1717,
+      "sha256": "b19497d381269f36baa107cf60d658c6af59761887fe5d09d0f287e3adb8e4a7",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 13
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/Terrain_Clearance/Terrain_Clearance_QA.json",
+      "bytes": 3538,
+      "sha256": "eff6cd940fbc005dd79de68288972ecdf8d2cbe25ff67f5e81b88a23e20bc99e",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_eave_layers/Final_Layer_Support_QA.json",
+      "bytes": 66039,
+      "sha256": "3aa4ec1377315c3559829871f00f5635f0ed53b4d4ea6f1b3a667b0b55357b05",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 467
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_eave_layers/Geometry_QA.json",
+      "bytes": 2597,
+      "sha256": "250b49255e8a6080cba2ae48efe03da0a3ad95ab2ae63639fd81ecf20135139f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_reference_audit/Final_V9_Reference_QA.json",
+      "bytes": 33173,
+      "sha256": "93bcfe7cec5ac7e281fe77f38077fba3045a7e6fa56c52da44a2720be6c5e442",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 14
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_reference_audit/Final_V9_Reference_QA.md",
+      "bytes": 4778,
+      "sha256": "665662eed538dc02676f656ac6ec379130092e5e0756b769f9bdb3ba7d90f329",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_roof_relation/Final_Review_QA.json",
+      "bytes": 2954,
+      "sha256": "5592c326f2e3ff0717922e384713f0ca2f635c508843440dbcfa249924014561",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 13
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/07_Evidence/v9_roof_relation/Geometry_QA.json",
+      "bytes": 249334,
+      "sha256": "daba1138ee815d89f928f6e6089ebbb605a4e409ba3f0f932fb9447bcb5ce610",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 2050
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V9_Hybrid/使用说明.md",
+      "bytes": 2778,
+      "sha256": "52fb2e7a542aa8879e7bd38f86b3e2982ea0e01183c8fa8a973862747362bc24",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_current_baseline_check.json",
+      "bytes": 663,
+      "sha256": "b80e97778e8cb5705762312635d1ebf9fa6ffea6cf8387f52301989a8d87da9d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_eave_layers/Final_Layer_Support_QA.json",
+      "bytes": 66039,
+      "sha256": "3aa4ec1377315c3559829871f00f5635f0ed53b4d4ea6f1b3a667b0b55357b05",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 467
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_eave_layers/Geometry_QA.json",
+      "bytes": 2597,
+      "sha256": "250b49255e8a6080cba2ae48efe03da0a3ad95ab2ae63639fd81ecf20135139f",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_eave_layers/Mutation.json",
+      "bytes": 4910475,
+      "sha256": "0c11dbb6a2568778ea16480dca00737e4138c56261f13124df8c7e93c3ff8f41",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_reference_audit/Final_V9_Reference_QA.json",
+      "bytes": 33173,
+      "sha256": "93bcfe7cec5ac7e281fe77f38077fba3045a7e6fa56c52da44a2720be6c5e442",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 14
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_reference_audit/Final_V9_Reference_QA.md",
+      "bytes": 4778,
+      "sha256": "665662eed538dc02676f656ac6ec379130092e5e0756b769f9bdb3ba7d90f329",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_reference_audit/V8_Independent_Reference_Audit.json",
+      "bytes": 5261,
+      "sha256": "2404ac8cc416ccd5eb92b6f282c0e670fd71e7d91427d60b91abbe2a6b4b1477",
+      "status": "READ_ONLY_V8_AUDIT",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_roof_relation/Final_Review_QA.json",
+      "bytes": 2954,
+      "sha256": "5592c326f2e3ff0717922e384713f0ca2f635c508843440dbcfa249924014561",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 13
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_roof_relation/Geometry_QA.json",
+      "bytes": 249334,
+      "sha256": "daba1138ee815d89f928f6e6089ebbb605a4e409ba3f0f932fb9447bcb5ce610",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 2050
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_roof_relation/Mutation.json",
+      "bytes": 14363460,
+      "sha256": "c01651020b7b2624ad04d3d537f978b593cb9aff9af26742393244497dc0538e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v9_roof_relation/Repair_Scope.json",
+      "bytes": 1349,
+      "sha256": "c94cbc893c73d844728cc0c02b1256c0acd3601187fb87662cf3ee22f45389b7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

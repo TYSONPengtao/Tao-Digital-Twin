@@ -1,0 +1,32 @@
+{
+  "review_date": "2026-11-11",
+  "kind": "read-only arithmetic and matrix checks on archived inputs; no new model execution or field measurement",
+  "rotation": {
+    "source": "JIA/Rebuild_V23/02_Data/Coordinate.json",
+    "source_sha256": "5041530d46925d142864ddd9ec572131cba2e51c2a2b373b07a5ae2bf02159e4",
+    "json_path": "local_to_survey[0:3,0:3]",
+    "determinant": 1.0,
+    "maximum_orthogonality_error": 2.1159872162426013e-17,
+    "criterion": "row-vector inverse is valid here because the rotation is orthogonal; no absolute coordinates published"
+  },
+  "registration_pixel_scale": {
+    "source_code": "source-code/v24-34/project/Sources/v24_34_match.py#L13",
+    "ortho_extent_m": 156,
+    "ortho_width_px": 2560,
+    "metres_per_pixel": 0.0609375,
+    "ransac_threshold_px": 4,
+    "nominal_planar_threshold_m": 0.24375,
+    "interpretation": "image-domain selection scale, not final 3D RMS"
+  },
+  "floor_volume": {
+    "source": "JIA/Rebuild_V26_20/Reports/V26_20_Changes.json",
+    "source_sha256": "df369a6d407038f7a4d78c843c4a70a89df136dc72e543ab17e2c0f55b98c89c",
+    "json_path": "proof.floor",
+    "area_m2": 46.97309224485148,
+    "rise_m": 0.15000000596046448,
+    "area_times_rise_m3": 7.04596411670917,
+    "reported_net_added_volume_m3": 7.043785172007119,
+    "difference_m3": 0.0021789447020506003,
+    "interpretation": "extrusion estimate and Boolean union volume delta are different quantities; no independent field accuracy inferred"
+  }
+}

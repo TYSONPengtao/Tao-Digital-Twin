@@ -1,0 +1,1652 @@
+{
+  "version": "V26.1",
+  "source_folder": "Rebuild_V26_1",
+  "primary": {
+    "relative": "Rebuild_V26_1/README_先看这里.md",
+    "sha256": "ab756909de6ddadc67d8faa602d3befb9ccb5d0df8bd4fac8e8aa7ac34ba688b"
+  },
+  "source_files": 27,
+  "trace": [
+    {
+      "file": "project/Sources/Scripts/v26_1_planes.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 37,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 10,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "intersection",
+          "line": 33,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "np.load",
+          "line": 10
+        },
+        {
+          "call": "write_text",
+          "line": 35
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Geometry_Index.json",
+          "line": 8
+        },
+        {
+          "name": "Coplanar_Audit.json",
+          "line": 35
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Sources/Scripts/v26_1_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 15,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        },
+        {
+          "call": "write_text",
+          "line": 6
+        },
+        {
+          "call": "write_text",
+          "line": 13
+        },
+        {
+          "call": "write_text",
+          "line": 13
+        },
+        {
+          "call": "write_text",
+          "line": 15
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V26.blend",
+          "line": 5
+        },
+        {
+          "name": "Before_Snapshot.json",
+          "line": 6
+        },
+        {
+          "name": "Inventory.json",
+          "line": 13
+        },
+        {
+          "name": "Geometry_Index.json",
+          "line": 13
+        },
+        {
+          "name": "Base.json",
+          "line": 15
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Sources/Scripts/v26_1_extra_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 15,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 4
+        },
+        {
+          "call": "write_text",
+          "line": 9
+        },
+        {
+          "call": "np.save",
+          "line": 14
+        },
+        {
+          "call": "write_text",
+          "line": 15
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V26.blend",
+          "line": 4
+        },
+        {
+          "name": "Extra_Index.json",
+          "line": 9
+        },
+        {
+          "name": "Extra_Probe.json",
+          "line": 15
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Sources/Scripts/v26_1_build.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 109,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 9,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "me.from_pydata",
+          "line": 17,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "me.polygons.foreach_set",
+          "line": 19,
+          "meaning": "批量写入属性"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 87,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 109,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 8
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "np.load",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 74
+        },
+        {
+          "call": "write_text",
+          "line": 94
+        },
+        {
+          "call": "write_text",
+          "line": 95
+        },
+        {
+          "call": "read_text",
+          "line": 95
+        },
+        {
+          "call": "write_text",
+          "line": 99
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 109
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V26.blend",
+          "line": 4
+        },
+        {
+          "name": "Architecture_Complete_V26_1.blend",
+          "line": 4
+        },
+        {
+          "name": "V26_1_Outer_Wall_Photo_Strata.json",
+          "line": 70
+        },
+        {
+          "name": "V26_Collision_Index.json",
+          "line": 74
+        },
+        {
+          "name": "V26_1_Collision_Index.json",
+          "line": 92
+        },
+        {
+          "name": "Views.json",
+          "line": 99
+        },
+        {
+          "name": "V26_1_Changes.json",
+          "line": 101
+        },
+        {
+          "name": "V26_1_Build.json",
+          "line": 109
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 6,
+          "end": 7
+        },
+        {
+          "name": "write",
+          "line": 8,
+          "end": 8
+        },
+        {
+          "name": "shader_group",
+          "line": 34,
+          "end": 56
+        },
+        {
+          "name": "append",
+          "line": 75,
+          "end": 76
+        }
+      ]
+    },
+    {
+      "file": "project/Sources/Scripts/v26_1_geometry_qa.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 62,
+      "operations": [
+        {
+          "call": "checks.append",
+          "line": 4,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "np.cross",
+          "line": 26,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "old.ray_cast",
+          "line": 31,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 3
+        },
+        {
+          "call": "np.load",
+          "line": 5
+        },
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "write_text",
+          "line": 62
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Geometry_Index.json",
+          "line": 3
+        },
+        {
+          "name": "Prepared_Railing.json",
+          "line": 11
+        },
+        {
+          "name": "Architecture_Complete_V26_1.blend",
+          "line": 60
+        },
+        {
+          "name": "V26_1_Saved_Geometry_QA.json",
+          "line": 62
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 4,
+          "end": 4
+        },
+        {
+          "name": "read",
+          "line": 5,
+          "end": 5
+        },
+        {
+          "name": "closed",
+          "line": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "file": "project/Sources/Scripts/v26_1_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 76,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "write_text",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 54
+        },
+        {
+          "call": "write_text",
+          "line": 59
+        },
+        {
+          "call": "write_text",
+          "line": 60
+        },
+        {
+          "call": "write_text",
+          "line": 72
+        },
+        {
+          "call": "write_text",
+          "line": 76
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V26_1.blend",
+          "line": 3
+        },
+        {
+          "name": "V26_1_Build.json",
+          "line": 6
+        },
+        {
+          "name": "V26_1_Native_Readback_QA.json",
+          "line": 7
+        },
+        {
+          "name": "V26_1_Saved_Geometry_QA.json",
+          "line": 7
+        },
+        {
+          "name": "V26_1_Interior_Physics_QA.json",
+          "line": 7
+        },
+        {
+          "name": "Views.json",
+          "line": 10
+        },
+        {
+          "name": "_State.json",
+          "line": 12
+        },
+        {
+          "name": "Before_Stair.png",
+          "line": 13
+        },
+        {
+          "name": "Before_V26_Stair.png",
+          "line": 13
+        },
+        {
+          "name": "Before_Terrace.png",
+          "line": 13
+        },
+        {
+          "name": "Before_V26_Terrace.png",
+          "line": 13
+        },
+        {
+          "name": "Before_Screen.png",
+          "line": 13
+        },
+        {
+          "name": "Before_V26_Screenwall.png",
+          "line": 13
+        },
+        {
+          "name": "Before_Gate_Floor.png",
+          "line": 13
+        },
+        {
+          "name": "Before_V26_Gate_Floor.png",
+          "line": 13
+        },
+        {
+          "name": "Base.json",
+          "line": 16
+        },
+        {
+          "name": "Prepared_House.json",
+          "line": 16
+        },
+        {
+          "name": "Prepared_Railing.json",
+          "line": 16
+        },
+        {
+          "name": "Prepared_Site.json",
+          "line": 16
+        },
+        {
+          "name": "Prepared_Context_Trim.json",
+          "line": 16
+        },
+        {
+          "name": "Last_Joint.json",
+          "line": 16
+        },
+        {
+          "name": "V26_1_Coplanar_Candidates.json",
+          "line": 17
+        },
+        {
+          "name": "Coplanar_Audit.json",
+          "line": 17
+        },
+        {
+          "name": "V26_1_Delivery_QA.json",
+          "line": 72
+        },
+        {
+          "name": "Manifest_SHA256.json",
+          "line": 75
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 4,
+          "end": 5
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "PD6446D48",
+      "source_sha256": "d6446d48aaf950d84d0a464f13cf749be053132b0ad600e84eb62337134fd337",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 015559.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P18EF38BC",
+      "source_sha256": "18ef38bc878570e31712ed0f67feaf51693e260b97b18917c5003e9a1f9253e1",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 015632.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PF35493BB",
+      "source_sha256": "f35493bb358a4c49db0b3b5d1ab66e71f3d47316c05fab3bdac19edf7a0b0ec2",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 015726.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA5AABA91",
+      "source_sha256": "a5aaba9179f13b29741d52677c01db1d7363898b7ee3df880f3643a9214b7e12",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 015859.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P3A93A80B",
+      "source_sha256": "3a93a80b26a7f7fb84223abbc326478d62a444d370f9dc9014c3d5a883989222",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 015914.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA8D2E913",
+      "source_sha256": "a8d2e91324fb39ff781eb25453c267224a9bbede70fb79ca3af859181eaaa71b",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020006.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P5DE6C68F",
+      "source_sha256": "5de6c68feeea223ffe2fa47c583fd5509c1abbe114be7bff4e8a473388d95e06",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020049.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PAABDA887",
+      "source_sha256": "aabda8876510f32f93ccae2238bc8391939dd45eab337f87b329842b2d3a0049",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020115.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P041B96F3",
+      "source_sha256": "041b96f3d0cfa7eba162819130d2ce90516aa23aa055ce2b92bd7814ec1ad731",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020141.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P2365FF48",
+      "source_sha256": "2365ff486e7b7094087817594a915c76c30fe8a424af5d60ac6cc794d99916f8",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020200.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P9ED8CEC7",
+      "source_sha256": "9ed8cec7219c986d4934a9f342b46299c4974cc94fc9cc8a8ead456eac945412",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020444.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PF6B65F88",
+      "source_sha256": "f6b65f88287bc100a31f357a77f7bab7e8644c9ef273b6a4fb82b00239db3690",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 020742.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P8A91622A",
+      "source_sha256": "8a91622a907cb1311d06edf4c9fc45d87abfde9d3cae903e4cdbe397ca5388a1",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/References/屏幕截图 2026-10-23 021028.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P6EC59825",
+      "source_sha256": "6ec59825fc4c439a3d617d15ecbe2db94228f67e0dfa141a2870d3ad122bafcb",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Before_V26_Gate_Floor.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v26_1/Before_Gate_Floor.png"
+        }
+      ]
+    },
+    {
+      "id": "P244F34B5",
+      "source_sha256": "244f34b570f2ccbadf8cfbb3320a55c5fb2f8e3481031932cbfdec800e1a878e",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Before_V26_Screenwall.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v26_1/Before_Screen.png"
+        }
+      ]
+    },
+    {
+      "id": "PDEA64C13",
+      "source_sha256": "dea64c1325ef518d43dfd576ec5b8fab89267ebb34a0b3431c7ae3979a071bb6",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Before_V26_Stair.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v26_1/Before_Stair.png"
+        }
+      ]
+    },
+    {
+      "id": "P4FC5CD5F",
+      "source_sha256": "4fc5cd5f52752b7fbbcd5d083946a1d94848a7bdc68274fd8d8109ed8a39bdd9",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-02.md",
+        "sheet": "locate-006.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Before_V26_Terrace.png"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v26_1/Before_Terrace.png"
+        }
+      ]
+    },
+    {
+      "id": "P08C89FDC",
+      "source_sha256": "08c89fdcb4d4e386669d8c86b1ca9ebafa566eafc68b29d41a45183ef099bdda",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_01_Stair_Flush_Treads.png"
+        }
+      ]
+    },
+    {
+      "id": "P54D924E8",
+      "source_sha256": "54d924e87afc3a0e9f329775c2ebfea12e58de2a3e73392b3d3ac95aa0f19c45",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_02_Half_Landing_Wreath.png"
+        }
+      ]
+    },
+    {
+      "id": "PFF3ECF0E",
+      "source_sha256": "ff3ecf0e13f3c8fca042e37ac8ff02832f4176fd1cbd5da179beec1af72502e1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_04_Stair_White_Corner.png"
+        }
+      ]
+    },
+    {
+      "id": "P9BE753E2",
+      "source_sha256": "9be753e249c902dbb55ed3151b738de664d601cb71c0a6ead6684cc7835b3026",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_05_Terrace_Flush_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "P2470CA23",
+      "source_sha256": "2470ca23ac264bc11d9d00de8a2693cf82d7f3ab550b4dc35a4506df42bd1f4e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_07_Reference_Screenwall.png"
+        }
+      ]
+    },
+    {
+      "id": "P9C7A311B",
+      "source_sha256": "9c7a311bd6385c7efcd8eaeaae06c5ff5a843aa69ff5219d6b8b6c551fbec11d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_08_Gate_Floor.png"
+        }
+      ]
+    },
+    {
+      "id": "PB12BBE89",
+      "source_sha256": "b12bbe896321b26e79d183ef4b2871eb7efe2fe72e7aaae0c74fba943c7b31db",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_09_White_Wall_Ground.png"
+        }
+      ]
+    },
+    {
+      "id": "PCC02880F",
+      "source_sha256": "cc02880fe2b7708613230af97f1977d44aa30cc787996dabc6467098c6342689",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/Draft_V26_1_10_West_Courtyard_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "P88722420",
+      "source_sha256": "887224207b4d0cef6d69c77698f4a487d9b781bd156ff55b6179d5e88a9e837a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_01_Stair_Flush_Treads.png"
+        }
+      ]
+    },
+    {
+      "id": "P9F7767E9",
+      "source_sha256": "9f7767e9974757b751f5fc5c112ec13567d40eabc5fbf3fd120dfdd6310e33f3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_02_Half_Landing_Wreath.png"
+        }
+      ]
+    },
+    {
+      "id": "PF80FA623",
+      "source_sha256": "f80fa62357581a8ecd4f59f2f28514c7fcd390e34c2f29073fe6fc5fe7a0f12e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_03_Floor_Newel_Sockets.png"
+        }
+      ]
+    },
+    {
+      "id": "P39BD7C45",
+      "source_sha256": "39bd7c45ec4e0c9059e0cc64e880af791aa1a1e48b7a172d5ec8c010cc9a6452",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-04.md",
+        "sheet": "rebuild-020.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_04_Stair_White_Corner.png"
+        }
+      ]
+    },
+    {
+      "id": "PE7A36A70",
+      "source_sha256": "e7a36a70285986b0ad6629747027791a44fb6ad56e3ac0d99fa6083c16d87d66",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_05_Terrace_Flush_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "P2B60CDBF",
+      "source_sha256": "2b60cdbf0f1f8e1ea9a019469fe1087a71281d3447a8d3fc170c17227706adf3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_06_F3_Guard_Base.png"
+        }
+      ]
+    },
+    {
+      "id": "PBC4F40D0",
+      "source_sha256": "bc4f40d064497def46278da5d0fd7273fe877966364cee4f0dac7fec31b8f17a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_07_Reference_Screenwall.png"
+        }
+      ]
+    },
+    {
+      "id": "P43F716E2",
+      "source_sha256": "43f716e2440041089ec13d1987161a664d4624b72316b5adcf5f174b56c747a1",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_08_Gate_Floor.png"
+        }
+      ]
+    },
+    {
+      "id": "PB4522EAA",
+      "source_sha256": "b4522eaab7c9d9939ff65dd71d22ce46d2cf54d3c0271953144353216e0f74b0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_09_White_Wall_Ground.png"
+        }
+      ]
+    },
+    {
+      "id": "P54518FDB",
+      "source_sha256": "54518fdbcc717ace564e0adfba62a671dbde063d98513d2d8e7f423e6f1339e4",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_10_West_Courtyard_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "P472FCA5A",
+      "source_sha256": "472fca5ae5fb4a3d160309c95dbb2df1772ae9d7d8ad0d8ef7a98995053ff7e4",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_11_House_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "P81107619",
+      "source_sha256": "81107619345eacfef3883a5dfc923214633171da68790f886508c1806da25d21",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 2,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_12_Original_Entrance_Ramp.png"
+        }
+      ]
+    },
+    {
+      "id": "P243BBAEE",
+      "source_sha256": "243bbaee4bf50c662f56e303d6fc506511fdf6e44727ed2870e6a6eb84b9d9d8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-021.jpg",
+        "row": 2,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V26_1/Reports/V26_1_13_Stair_Flush_Glazing_Jamb.png"
+        }
+      ]
+    },
+    {
+      "id": "P8C8FA8C6",
+      "source_sha256": "8c8fa8c6356e5295ec71adc5c7d879c8bca3748e0316cb1df9a418e1b933dfe4",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-04.md",
+        "sheet": "locate-016.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v26_1/Before_West_Wall.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/README_先看这里.md",
+      "bytes": 733,
+      "sha256": "ab756909de6ddadc67d8faa602d3befb9ccb5d0df8bd4fac8e8aa7ac34ba688b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_01_Stair_Flush_Treads_State.json",
+      "bytes": 288,
+      "sha256": "9d2503efb0e24faa7e4e6b41ef1db939b3bb193e6d2f1b3236c11ba1b5a4722d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_02_Half_Landing_Wreath_State.json",
+      "bytes": 290,
+      "sha256": "e87d487746125b301eed077502903253077480978efd1d271b5ce1d2c60487e1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_04_Stair_White_Corner_State.json",
+      "bytes": 288,
+      "sha256": "93d247b87d82d024c40483478b6d8ed9c50848a97f3eaa2e390e2164f95ebb26",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_05_Terrace_Flush_Wall_State.json",
+      "bytes": 288,
+      "sha256": "fc51538686e4f3c247770cc5e6219f1bff979c7b234ae438bbad74a60914fa79",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_07_Reference_Screenwall_State.json",
+      "bytes": 293,
+      "sha256": "c72443f6d4b07630f122c86de9ca5aa999fea4a7b116ec7a1a81dd373bff68bc",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_08_Gate_Floor_State.json",
+      "bytes": 272,
+      "sha256": "d5bea75f11ddf053daf53da5c7b477de129387401c474e78bd2dcc11f51486a6",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_09_White_Wall_Ground_State.json",
+      "bytes": 287,
+      "sha256": "2d318610d7621beaa36ee2ad49c1908bfeb8dabc897acb1c40363f66b4c755b7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/Draft_V26_1_10_West_Courtyard_Wall_State.json",
+      "bytes": 291,
+      "sha256": "6cb554d2f426fab714f0029f226e516a02c1baff3a67309adf47cff3044f6066",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_01_Stair_Flush_Treads_State.json",
+      "bytes": 283,
+      "sha256": "37d2311e4190e19ec9d59645ae9476aa5e3210a3ed2d31773181825f9ed57e82",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_02_Half_Landing_Wreath_State.json",
+      "bytes": 285,
+      "sha256": "a89241e38f2613f59db962e1163b71c74f3a2b91981b6f4731add0654b2ad224",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_03_Floor_Newel_Sockets_State.json",
+      "bytes": 285,
+      "sha256": "ba122dfdb910fa3824c5ebb49a2dd7eeabc80577d4e69cd9124836b95cdb1319",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_04_Stair_White_Corner_State.json",
+      "bytes": 283,
+      "sha256": "c8dbb0ef7006e1248339aeb0c878245e9b151964b9db5d4c7987c50c5f59d811",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_05_Terrace_Flush_Wall_State.json",
+      "bytes": 283,
+      "sha256": "5b5c551a71ed08e0eff9e4cb4407e844e69b5da704023f40a5cd34aca6a1aad1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_06_F3_Guard_Base_State.json",
+      "bytes": 273,
+      "sha256": "31a6ab84ee3382b3a651af178513f4f6cb1595e74ebf52b39c762e8bf1df53a8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_07_Reference_Screenwall_State.json",
+      "bytes": 288,
+      "sha256": "8696d685db355f76b03c960fba5d06d4a1e6e234caa45d15c9c545cd237bc737",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_08_Gate_Floor_State.json",
+      "bytes": 267,
+      "sha256": "51c9c3ece8f1c4b51caca8a248422aba36bacb5a134de1e58b92ae8bb5684350",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_09_White_Wall_Ground_State.json",
+      "bytes": 281,
+      "sha256": "4602aed2635a023f331c4009335d321f51d59766537ab0bd30a8a2f40f2f8983",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_10_West_Courtyard_Wall_State.json",
+      "bytes": 285,
+      "sha256": "f89145e40bc05dff64507d50abf24a01ee14af6ba6f70639c2ff1357a64367d1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_11_House_Exterior_State.json",
+      "bytes": 276,
+      "sha256": "4190587faf46da465f45244920e7134c9346ffe241cb6d88f8c96a54c6a2c836",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_12_Original_Entrance_Ramp_State.json",
+      "bytes": 292,
+      "sha256": "d2a8c0ab88d725ef31266952ec03ed18586eda6b44f2f34b4725680b4fedb63f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_13_Stair_Flush_Glazing_Jamb_State.json",
+      "bytes": 295,
+      "sha256": "d12e624267117e5cdf7e00b97d1b11f7c03386572787f6eb8a447285fe4db2b3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Build.json",
+      "bytes": 493,
+      "sha256": "61791b492edfd5c21b06cb177da1f63e8585bfd9410295a150368c775143ef14",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Changes.json",
+      "bytes": 159252,
+      "sha256": "714e8aa75bb53f0da604b036274965421bc53fba077b853d81a99cca4f0eea9e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Collision_Index.json",
+      "bytes": 94602,
+      "sha256": "c4991f90f9edab8b4b78ff247d76e813e49dd9cd22db8b114b4d53431f81bfbe",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Coplanar_Candidates.json",
+      "bytes": 820486,
+      "sha256": "fff1eafbbbf213fb21080ef58e180a68b4b1a09b0695bdfc0488047132b28b0a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Delivery_QA.json",
+      "bytes": 22453,
+      "sha256": "22dda0e1288eb93373170b220532f56e17522e0e43431d243ba2f3000cecc587",
+      "status": "PASS",
+      "failure_count": null,
+      "check_count": 97
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Interior_Physics_QA.json",
+      "bytes": 147827,
+      "sha256": "8a2273cda3d6dd934351ec01169844079c621b4cd5b4610c57a2467ea5f2a1a9",
+      "status": "PASS_ACTUAL_MODEL_ROAM_PHYSICS",
+      "failure_count": 0,
+      "check_count": 52
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Native_Readback_QA.json",
+      "bytes": 2394,
+      "sha256": "14129cfd3985e7c777abf368a8337d77d1e6fb257ed4ed0149c7962a8235be1c",
+      "status": "PASS",
+      "failure_count": 0,
+      "check_count": 19
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Outer_Wall_Photo_Strata.json",
+      "bytes": 461,
+      "sha256": "8e838e6ea499d24df6abd69a5e8b6727b4fdcd8dbc568422bf085c9b398bdb55",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_Saved_Geometry_QA.json",
+      "bytes": 22885,
+      "sha256": "ed6f6d8825cc59b1461d20f01c8724c8a16e7d4db95bff02b8b3d89546d32235",
+      "status": "PASS",
+      "failure_count": 0,
+      "check_count": 26
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/V26_1_修正对比.html",
+      "bytes": 4926,
+      "sha256": "d9e30f5a6eb0d269e72b284deeb3258458bdeb7a8a45c0d9d0e954bfd6379b73",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V26_1/Reports/修正说明与预览.md",
+      "bytes": 5172,
+      "sha256": "ab4cbacdc50b5fcdd9c770bf5f9c2be9e3a6023e370e27eb7d5ba9cbbb1f554b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Base.json",
+      "bytes": 228,
+      "sha256": "49b223043e837bfe1b52c11f2fec5e8ff94e8de198f0f21b293d0a16176a1ee1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Before_Snapshot.json",
+      "bytes": 1181373,
+      "sha256": "3b102efec0e7f66e6e729eab48d2b5fd6ebb4d81c05e6c4c7df911891c8c0d09",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Coplanar_Audit.json",
+      "bytes": 1879122,
+      "sha256": "98ebf9d0d1ed2a202fcd134200a427e0b6ef1c418887b49c26908af0e64e7291",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Extra_Index.json",
+      "bytes": 44065,
+      "sha256": "57276811f77f613282848114d2320171ba63ade7f7721c219f3485221e1c0ff5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Extra_Probe.json",
+      "bytes": 18120,
+      "sha256": "68780830068badff165ac2300d2ac33e52d0d80c1b9ecf8a45ecb88876da77f1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Final/Coplanar_Audit.json",
+      "bytes": 758996,
+      "sha256": "528c38d4e4a804f616df53be5a5df0f61bf27002696be8760f45054eac001a83",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Final/Geometry_Index.json",
+      "bytes": 125038,
+      "sha256": "53e2fbf8864e0f737240fe2b423441bb07e586380bc55a453d1187cb9f9a4789",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Geometry_Index.json",
+      "bytes": 307965,
+      "sha256": "35d3b70a9e5780a8b5c885d1948274238ddfeeac3ef8008426bd99b4d3b9c288",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Inventory.json",
+      "bytes": 1023721,
+      "sha256": "2a9a1ce897fc6d02f546729fd9456ff62349c95dfd7321c55b2377134d2b1b0b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Last_Joint.json",
+      "bytes": 1646,
+      "sha256": "2dbb4959fbda17d6d34f966b314d306b2d2ddd2e96038605a1080f9dd2d2a470",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Prepared_Context_Trim.json",
+      "bytes": 46374,
+      "sha256": "84b3a2568f8d5ba26b69e965d17b76e6bed8ed78e10f1aef15dd6f3a72adb6d7",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Prepared_House.json",
+      "bytes": 35815,
+      "sha256": "bcee70ac5204b08dc53d82b3315fa393ba49dadfac8215cdae8f9f1c6d506ba1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Prepared_Railing.json",
+      "bytes": 96226,
+      "sha256": "53b1245f59b30af264d737bfe6adc212c9704e8376335bbb626d5fbda0bc24ed",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Prepared_Site.json",
+      "bytes": 20668,
+      "sha256": "e735beacddc10818c8c4d8009880e94f6b9b1bf10160ca19bb45d2dfcbb63e7a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v26_1/Views.json",
+      "bytes": 878,
+      "sha256": "a20feac1803b10a07ba540fe99e8638ba499f5117d49bc531dd498c519dcf01e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

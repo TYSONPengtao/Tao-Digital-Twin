@@ -1,0 +1,1042 @@
+{
+  "version": "V24.06",
+  "source_folder": "Rebuild_V24_06",
+  "primary": {
+    "relative": "Rebuild_V24_06/README_V24_06.txt",
+    "sha256": "04bc4801dd5b50d5174eb5280bc31f617b598ca84d21f485d89090d693ca3ec1"
+  },
+  "source_files": 13,
+  "trace": [
+    {
+      "file": "history/v24_06_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 30,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 6,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 14,
+          "meaning": "网格与实体转换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 6
+        },
+        {
+          "call": "write_text",
+          "line": 11
+        },
+        {
+          "call": "write_text",
+          "line": 29
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_05.blend",
+          "line": 6
+        },
+        {
+          "name": "Inventory.json",
+          "line": 11
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/v24_06_probe_pit.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 17,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "ids.intersection",
+          "line": 14,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 16
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_06_Pit_Probe.json",
+          "line": 15
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "history/v24_06_detail_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 47,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "np.linalg.lstsq",
+          "line": 30,
+          "meaning": "最小二乘求解"
+        },
+        {
+          "call": "t.ray_cast",
+          "line": 42,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        },
+        {
+          "call": "write_text",
+          "line": 24
+        },
+        {
+          "call": "write_text",
+          "line": 45
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_05.blend",
+          "line": 5
+        },
+        {
+          "name": "Kitchen_Contact_Heights.json",
+          "line": 24
+        },
+        {
+          "name": "Floor_Samples.json",
+          "line": 45
+        },
+        {
+          "name": "Before_Front_Plan.png",
+          "line": 47
+        }
+      ],
+      "functions": [
+        {
+          "name": "clip",
+          "line": 6,
+          "end": 12
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_06_roof.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 275,
+      "operations": [
+        {
+          "call": "t.cross",
+          "line": 67,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "me.from_pydata",
+          "line": 224,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 228,
+          "meaning": "网格与实体转换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 241
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_06_Roof_Geometry.json",
+          "line": 241
+        }
+      ],
+      "functions": [
+        {
+          "name": "fitted_bearing_z",
+          "line": 12,
+          "end": 16
+        },
+        {
+          "name": "apply_v24_xieshan_roof",
+          "line": 18,
+          "end": 242
+        },
+        {
+          "name": "xieshan_clearance_mesh_data",
+          "line": 244,
+          "end": 275
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_06_build.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 111,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 11,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 111,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 11
+        },
+        {
+          "call": "read_text",
+          "line": 15
+        },
+        {
+          "call": "bpy.data.libraries.load",
+          "line": 16
+        },
+        {
+          "call": "write_text",
+          "line": 104
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 111
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_06_Before_Snapshot.json",
+          "line": 11
+        },
+        {
+          "name": "V24_05_Changes.json",
+          "line": 15
+        },
+        {
+          "name": "Architecture_Complete_V24_02.blend",
+          "line": 16
+        },
+        {
+          "name": "V24_06_Roof_Balance_and_Clearance.json",
+          "line": 77
+        },
+        {
+          "name": "V24_06_Wall_Centerline.json",
+          "line": 89
+        },
+        {
+          "name": "V24_06_Passage_Paving.json",
+          "line": 90
+        },
+        {
+          "name": "V24_06_Kitchen_Timber.json",
+          "line": 91
+        },
+        {
+          "name": "V24_06_Changes.json",
+          "line": 95
+        },
+        {
+          "name": "V24_06_Build.json",
+          "line": 111
+        }
+      ],
+      "functions": [
+        {
+          "name": "clip",
+          "line": 37,
+          "end": 43
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_06_verify.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 109,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 7,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "checks.append",
+          "line": 9,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "ev.to_mesh",
+          "line": 29,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "st.ray_cast",
+          "line": 85,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_06_Before_Snapshot.json",
+          "line": 8
+        },
+        {
+          "name": "V24_06_Changes.json",
+          "line": 8
+        },
+        {
+          "name": "V24_06_Build.json",
+          "line": 8
+        },
+        {
+          "name": "V24_06_Passage_Paving.json",
+          "line": 8
+        },
+        {
+          "name": "V24_06_Fresh_Blend_QA.json",
+          "line": 108
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 9,
+          "end": 9
+        },
+        {
+          "name": "clip",
+          "line": 42,
+          "end": 48
+        },
+        {
+          "name": "components",
+          "line": 94,
+          "end": 102
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_06_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 60,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 49
+        },
+        {
+          "call": "write_text",
+          "line": 54
+        },
+        {
+          "call": "write_text",
+          "line": 60
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_06.blend",
+          "line": 4
+        },
+        {
+          "name": "V24_06_Fresh_Blend_QA.json",
+          "line": 7
+        },
+        {
+          "name": "V24_06_Preview_States.json",
+          "line": 7
+        },
+        {
+          "name": "V24_06_Build.json",
+          "line": 7
+        },
+        {
+          "name": "屏幕截图 2026-10-17 081038.jpg",
+          "line": 12
+        },
+        {
+          "name": "01_Roof_Side_Review.jpg",
+          "line": 12
+        },
+        {
+          "name": "屏幕截图 2026-10-17 081244.jpg",
+          "line": 13
+        },
+        {
+          "name": "02_Eave_Underside_Review.jpg",
+          "line": 13
+        },
+        {
+          "name": "屏幕截图 2026-10-17 081609.jpg",
+          "line": 14
+        },
+        {
+          "name": "03_Trees_and_Passage_Review.jpg",
+          "line": 14
+        },
+        {
+          "name": "屏幕截图 2026-10-17 081859.jpg",
+          "line": 15
+        },
+        {
+          "name": "04_Wall_Centerline_Review.jpg",
+          "line": 15
+        },
+        {
+          "name": "屏幕截图 2026-10-17 082046.jpg",
+          "line": 16
+        },
+        {
+          "name": "05_Kitchen_Facade_Review.jpg",
+          "line": 16
+        },
+        {
+          "name": "屏幕截图 2026-10-15 172938.jpg",
+          "line": 17
+        },
+        {
+          "name": "06_Real_Timber_Underside.jpg",
+          "line": 17
+        },
+        {
+          "name": "DJI_0156.JPG",
+          "line": 18
+        },
+        {
+          "name": "07_Real_Timber_DJI_0156.JPG",
+          "line": 18
+        },
+        {
+          "name": "DJI_0157.JPG",
+          "line": 19
+        },
+        {
+          "name": "08_Real_Timber_DJI_0157.JPG",
+          "line": 19
+        },
+        {
+          "name": "Gate_Carving_HeightAtlas.png",
+          "line": 23
+        },
+        {
+          "name": "_Draft_States.json",
+          "line": 52
+        },
+        {
+          "name": "V24_06_Manifest.json",
+          "line": 52
+        },
+        {
+          "name": "V24_06_Bundle_QA.json",
+          "line": 52
+        },
+        {
+          "name": "V24_06_Pit_Probe.json",
+          "line": 52
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 5,
+          "end": 6
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P7BCD93EB",
+      "source_sha256": "7bcd93eb8aef5a7267f08df4176e79a012bff3159d15b65c01213d02b06af0e0",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Textures/Gate_Carving_HeightAtlas.png"
+        }
+      ]
+    },
+    {
+      "id": "P222E1C92",
+      "source_sha256": "222e1c92e681192e8825d434609698565832104dba85392e9a72c735b00a07d8",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/References/01_Roof_Side_Review.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P9A1DAB80",
+      "source_sha256": "9a1dab8086b2da35634289ea4a38f47313198ef9bd80ba54a36d59bced8904ef",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/References/02_Eave_Underside_Review.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA12EA1C9",
+      "source_sha256": "a12ea1c9771db7c97db54ed3cb37aec15eec61a90a1a8550c986bcb5fbc36caf",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/References/03_Trees_and_Passage_Review.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P21D0FDF4",
+      "source_sha256": "21d0fdf4ee4358a255da5c17ad90a3f424407b85c98e2c899d89dab544e52a4a",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/References/04_Wall_Centerline_Review.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P3DF981E8",
+      "source_sha256": "3df981e83488bc72bade8757a415ef70de489d7ccaa3b1a56bd845c60c67fd2c",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/References/05_Kitchen_Facade_Review.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P9B41EA6E",
+      "source_sha256": "9b41ea6e57c6101166bda46fc3ba7e55d470aca50cfd533aeb84c7b9bc24441a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-008.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Balanced_Side.png"
+        }
+      ]
+    },
+    {
+      "id": "P750F739F",
+      "source_sha256": "750f739fd00d1dd7852d832d1b1379b70403fd5ecd47b7d447403c568864aa40",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-008.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Gate_Courtyard.png"
+        }
+      ]
+    },
+    {
+      "id": "P98BFD697",
+      "source_sha256": "98bfd6975f5b0d335d770f4887c3de6f005e1c57bef1df91adfcba95e9396c24",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Gate_Kitchen_Clearance.png"
+        }
+      ]
+    },
+    {
+      "id": "P1B49F3DF",
+      "source_sha256": "1b49f3dfab00a67cc91ac051030db0909aba74bb21393b9217245d05881764a0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Gate_Roof_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P42FE46A5",
+      "source_sha256": "42fe46a58aa18d2c6b34bf3777088828aab3f5cd93e8f112c1f0da40ae47153d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Kitchen_Timber.png"
+        }
+      ]
+    },
+    {
+      "id": "P715DC93F",
+      "source_sha256": "715dc93fcf517d3f669a4bbcdf64ca8eea53cf0bd8e0853e44f325224fefb422",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/Draft_Passage_Paved.png"
+        }
+      ]
+    },
+    {
+      "id": "P1B0DBB22",
+      "source_sha256": "1b0dbb22e179ec219df0959e02a6871ce6bb5f911073e9834999269acca63a23",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Balanced_Side.png"
+        }
+      ]
+    },
+    {
+      "id": "PDA7B3F32",
+      "source_sha256": "da7b3f3236258d8a8c902ac364280b9600cea09fdc4130278bb78ca74e256d79",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Gate_Courtyard.png"
+        }
+      ]
+    },
+    {
+      "id": "P0F38C882",
+      "source_sha256": "0f38c882fc5a96c783dbe8f5ad6f9d061517d3556fcd79067db464d7dfafc1b8",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Gate_Kitchen_Clearance.png"
+        }
+      ]
+    },
+    {
+      "id": "P5E1D8EDB",
+      "source_sha256": "5e1d8edbb00929be08f958b552a9bac6272364df6f12309939088eb2d9883ab7",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Gate_Roof_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P1C3A716D",
+      "source_sha256": "1c3a716d17b3e00d3a6a0028e09aabb91a967f3b92cac20876a8fe7024133415",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Kitchen_Timber.png"
+        }
+      ]
+    },
+    {
+      "id": "PD3B61B30",
+      "source_sha256": "d3b61b30c1372553a2cad024785d48c78ed1eaf7949a95af2b5f095b34d75d21",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 2,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_06/Reports/V24_06_Passage_Paved.png"
+        }
+      ]
+    },
+    {
+      "id": "P8927849C",
+      "source_sha256": "8927849c1b06ce41dc36f76177cb685003ace5678a1384a7494038ae9178a433",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-015.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_06_probe/Before_Front_Plan.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/README_V24_06.txt",
+      "bytes": 932,
+      "sha256": "04bc4801dd5b50d5174eb5280bc31f617b598ca84d21f485d89090d693ca3ec1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Before_Snapshot.json",
+      "bytes": 1384204,
+      "sha256": "17d61764da3859522ed83f712988f7a9c61e878ed1c8354ec1a886e797282a2e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Build.json",
+      "bytes": 9815,
+      "sha256": "0a593f184bee3a1dba2db4cfb338230dfa89228d05439e3b36594358ac65fec0",
+      "status": "SAVED",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Changes.json",
+      "bytes": 26975,
+      "sha256": "1f78a2530d5aff69ad7d1f018b8d1b05bd84b9f3180e7be2476d5bafab56d1c8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Draft_States.json",
+      "bytes": 432,
+      "sha256": "340d6c679f6e4462a592ff5f64ec6d0270775ad92d428578b569eb6866f151a9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Fresh_Blend_QA.json",
+      "bytes": 607537,
+      "sha256": "fd4da2554e8b9719662c90000c2d515aa6624775073facf6633367f66323d4ca",
+      "status": "PASS_V24_06_FRESH_BLEND_QA",
+      "failure_count": 0,
+      "check_count": 5355
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Kitchen_Timber.json",
+      "bytes": 956,
+      "sha256": "9e9f683a7062e01b0fb468e4c7481815cb63e5e3162ac2da2a01a2e1e92082a2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Passage_Paving.json",
+      "bytes": 162464,
+      "sha256": "147a8fb1b3d391ab05111b51283d8f493893335ab4136712baae61fc1c3f5117",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Pit_Probe.json",
+      "bytes": 127523,
+      "sha256": "b06d3b5b0cd95da4a5d48899226eaf8c81ee8c3f6a7c9efe235bb9c2a4e30093",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Preview_States.json",
+      "bytes": 1813,
+      "sha256": "974d364ef040bb49a2821955b2d859595454b2f3355869d94d646743792c5a3c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Resolved_Issues.md",
+      "bytes": 2401,
+      "sha256": "3b4c40433554fb4eb61ad99627c66eca82e60034b46a98c8e9ec3b181fd1257c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Roof_Balance_and_Clearance.json",
+      "bytes": 1788,
+      "sha256": "af32d25e942a496d5e016d1927767ac4d9e756c47ea04907d07577985770847b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Roof_Geometry.json",
+      "bytes": 12614,
+      "sha256": "2fd738381d8f0291d84b00e1a084b4f5f63c9a3e34836cb31f5def94cd562f46",
+      "status": "PASS_XIESHAN_REAL_GEOMETRY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/Reports/V24_06_Wall_Centerline.json",
+      "bytes": 6128,
+      "sha256": "f84fbe8973720df5bbb7bab600be8c35cc2e0caae60c1d84bf751aa76381442a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_06/V24_06_Bundle_QA.json",
+      "bytes": 430,
+      "sha256": "3ba9d3a9ac00dd7ef5254ac94a6e1e1de8d7d2b7fd86c0b2e2bec4e86022a794",
+      "status": "PASS_BUNDLE_CRC_AND_MODEL_SHA",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/Floor_Samples.json",
+      "bytes": 6496,
+      "sha256": "011381265dfb190c1b4205367b14462b347b5f55ccd09ce6bbc750ceea92070b",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/Inventory.json",
+      "bytes": 210404,
+      "sha256": "1d8f8c815b2962ee98ac009986379befa858fdba979cf21999d41f3860d766ea",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/Kitchen_Contact_Heights.json",
+      "bytes": 724,
+      "sha256": "6adcf27e5603ead1e8a3f6ee7d61be4e763f54d31feeb88e9fffb3a6c3337b88",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/SITE_KITCHEN_V12_LONGITUDINAL_ROUND_PURLINS_Geometry.json",
+      "bytes": 1545,
+      "sha256": "93d2768a599dbe0a49a2820b0c896647135aa7d5a35b47f9e9886398d0c3df4c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/SITE_KITCHEN_V12_TRADITIONAL_EXPOSED_TIMBER_FRAMES_Geometry.json",
+      "bytes": 12228,
+      "sha256": "95284fc9aa78e8193d1613f4e3dd84c4a85a143b86be1343dd469169c5e69722",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_06_probe/SITE_V22_KITCHEN_TRANSVERSE_EAVE_TIES_AND_HANGING_ENDS_Geometry.json",
+      "bytes": 974,
+      "sha256": "d0dd93feb3f2bc8b1a7c73372a9d44e6e2635a0d890b48e89c3024fa7169812c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

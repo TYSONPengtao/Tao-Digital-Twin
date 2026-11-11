@@ -1,0 +1,975 @@
+{
+  "version": "V16",
+  "source_folder": "Rebuild_V16",
+  "primary": {
+    "relative": "Rebuild_V16/README_V16_请先阅读.txt",
+    "sha256": "ac4ed4691c12713eb320fe821f97c4cbd0b82e1221304b7e58dfa46f09424180"
+  },
+  "source_files": 16,
+  "trace": [
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_soil_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 7,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 5,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "np.load",
+          "line": 5
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "NATIVE_SITE_V16_GRADED_INTERIOR_SOIL.npz",
+          "line": 5
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 39,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 20,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "np.load",
+          "line": 20
+        },
+        {
+          "call": "im.save",
+          "line": 33
+        },
+        {
+          "call": "write_text",
+          "line": 34
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V15.json",
+          "line": 10
+        },
+        {
+          "name": "Native_Readback_Index_V15.json",
+          "line": 11
+        },
+        {
+          "name": "Before_Height_Map.png",
+          "line": 33
+        },
+        {
+          "name": "Probe.json",
+          "line": 34
+        }
+      ],
+      "functions": [
+        {
+          "name": "xy",
+          "line": 14,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_source_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 10,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "np.load",
+          "line": 9
+        }
+      ],
+      "file_literals": [],
+      "functions": []
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_geometry.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 218,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 18,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "interior.difference",
+          "line": 72,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "intersection",
+          "line": 76,
+          "meaning": "交集限域"
+        },
+        {
+          "call": "manifold",
+          "line": 168,
+          "meaning": "实体运算对象"
+        },
+        {
+          "call": "source_checks.append",
+          "line": 216,
+          "meaning": "判据与回归检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "np.load",
+          "line": 14
+        },
+        {
+          "call": "load",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 68
+        },
+        {
+          "call": "read_text",
+          "line": 69
+        },
+        {
+          "call": "write_text",
+          "line": 98
+        },
+        {
+          "call": "read_text",
+          "line": 102
+        },
+        {
+          "call": "load",
+          "line": 130
+        },
+        {
+          "call": "read_text",
+          "line": 160
+        },
+        {
+          "call": "write_text",
+          "line": 171
+        },
+        {
+          "call": "write_text",
+          "line": 171
+        },
+        {
+          "call": "load",
+          "line": 187
+        },
+        {
+          "call": "write_text",
+          "line": 218
+        },
+        {
+          "call": "write_text",
+          "line": 218
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V15.json",
+          "line": 10
+        },
+        {
+          "name": "Native_Readback_Index_V15.json",
+          "line": 10
+        },
+        {
+          "name": "SITE_PERIMETER_JOINED_RETAINING_WALL_0_centerline.json",
+          "line": 68
+        },
+        {
+          "name": "SITE_PERIMETER_JOINED_RETAINING_WALL_1_centerline.json",
+          "line": 69
+        },
+        {
+          "name": "Soil_Domain.json",
+          "line": 98
+        },
+        {
+          "name": "Drain_Profiles.json",
+          "line": 102
+        },
+        {
+          "name": "Drain_Mask.json",
+          "line": 171
+        },
+        {
+          "name": "Drain_Segments.json",
+          "line": 171
+        },
+        {
+          "name": "Mutation.json",
+          "line": 218
+        },
+        {
+          "name": "Geometry_QA.json",
+          "line": 218
+        }
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "line": 12,
+          "end": 15
+        },
+        {
+          "name": "polys",
+          "line": 16,
+          "end": 16
+        },
+        {
+          "name": "tops",
+          "line": 17,
+          "end": 19
+        },
+        {
+          "name": "footprint",
+          "line": 20,
+          "end": 20
+        },
+        {
+          "name": "put",
+          "line": 21,
+          "end": 24
+        },
+        {
+          "name": "refine",
+          "line": 25,
+          "end": 48
+        },
+        {
+          "name": "volume_from_domain",
+          "line": 49,
+          "end": 63
+        },
+        {
+          "name": "surface_z",
+          "line": 78,
+          "end": 82
+        },
+        {
+          "name": "height",
+          "line": 83,
+          "end": 93
+        },
+        {
+          "name": "combine",
+          "line": 161,
+          "end": 165
+        },
+        {
+          "name": "edge_contact",
+          "line": 176,
+          "end": 180
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_compact.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 25,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "write_text",
+          "line": 20
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Probe.json",
+          "line": 6
+        },
+        {
+          "name": "Architecture_Scene_V15.json",
+          "line": 9
+        },
+        {
+          "name": "Native_Readback_Index_V15.json",
+          "line": 10
+        },
+        {
+          "name": "_centerline.json",
+          "line": 20
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_readback_qa.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 56,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7,
+          "meaning": "Rhino 原生读写"
+        },
+        {
+          "call": "np.cross",
+          "line": 14,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "checks.append",
+          "line": 17,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "domain.intersection",
+          "line": 23,
+          "meaning": "交集限域"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "np.load",
+          "line": 14
+        },
+        {
+          "call": "np.load",
+          "line": 19
+        },
+        {
+          "call": "load",
+          "line": 20
+        },
+        {
+          "call": "load",
+          "line": 22
+        },
+        {
+          "call": "load",
+          "line": 27
+        },
+        {
+          "call": "read_text",
+          "line": 40
+        },
+        {
+          "call": "load",
+          "line": 43
+        },
+        {
+          "call": "P.read_bytes",
+          "line": 55
+        },
+        {
+          "call": "write_text",
+          "line": 56
+        },
+        {
+          "call": "write_text",
+          "line": 56
+        },
+        {
+          "call": "write_text",
+          "line": 56
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V16_ALIGNED_ENU.3dm",
+          "line": 7
+        },
+        {
+          "name": "V16_Assembly_QA.json",
+          "line": 7
+        },
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 7
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 7
+        },
+        {
+          "name": "Drain_Segments.json",
+          "line": 40
+        },
+        {
+          "name": "V16_Native_Readback_QA.json",
+          "line": 56
+        },
+        {
+          "name": "V16_Ground_Drain_QA.json",
+          "line": 56
+        }
+      ],
+      "functions": [
+        {
+          "name": "gh",
+          "line": 8,
+          "end": 8
+        },
+        {
+          "name": "load",
+          "line": 19,
+          "end": 19
+        },
+        {
+          "name": "query",
+          "line": 31,
+          "end": 35
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V16_Scripts/v16_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 58,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 18
+        },
+        {
+          "call": "write_text",
+          "line": 22
+        },
+        {
+          "call": "write_text",
+          "line": 41
+        },
+        {
+          "call": "mp.write_text",
+          "line": 51
+        },
+        {
+          "call": "write_text",
+          "line": 58
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V16_ALIGNED_ENU.3dm",
+          "line": 5
+        },
+        {
+          "name": "V16_Native_Readback_QA.json",
+          "line": 11
+        },
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 18
+        },
+        {
+          "name": "Delivery_QA.json",
+          "line": 22
+        },
+        {
+          "name": "Probe.json",
+          "line": 44
+        },
+        {
+          "name": "File_Manifest_SHA256.json",
+          "line": 47
+        },
+        {
+          "name": "Bundle_QA.json",
+          "line": 47
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 6,
+          "end": 10
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "PE06669FE",
+      "source_sha256": "e06669fe7be418d29189d3da2937334ba14bd67b942e3d408e6d92c89855017e",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/03_Textures/V15_Surface_Finishes/Flat_Microheight.png"
+        }
+      ]
+    },
+    {
+      "id": "P6A9399BF",
+      "source_sha256": "6a9399bf3408aa0ffeabae03e31662e5a303c8df4e9e677c6aaf238bbe902218",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/03_Textures/V16_Soil_Drain/Earth_Microheight.png"
+        }
+      ]
+    },
+    {
+      "id": "P5689193E",
+      "source_sha256": "5689193e6d310589f4f2cb617a37331fdc4434dcc1c1fa82fd8c205ecdfcc3b6",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-002.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Entry_Route.png"
+        }
+      ]
+    },
+    {
+      "id": "P388E490F",
+      "source_sha256": "388e490f2578eb957000994a6ebef9fae92eb5a0ff254bc8200c62e48ef3a697",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Graded_Courtyard.png"
+        }
+      ]
+    },
+    {
+      "id": "PA9794174",
+      "source_sha256": "a97941748bcec1f3c578f5d475acced477b3847870468a3b92b775a94939bc7c",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Outer_Storage_Base.png"
+        }
+      ]
+    },
+    {
+      "id": "P75C89F06",
+      "source_sha256": "75c89f06091063d03195e64ecbbeb31d7e294a95faa4613faf6a44128d68de77",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Screenwall_Inside.png"
+        }
+      ]
+    },
+    {
+      "id": "P1FCF507E",
+      "source_sha256": "1fcf507e825b8fec27bcf5b5e16e5cacb254d822ca0381f2ceb1858741da32aa",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_South_Wall_Drain.png"
+        }
+      ]
+    },
+    {
+      "id": "P0DA5B0BB",
+      "source_sha256": "0da5b0bb615c816c9ebd265fc3ca638b7c00c2a8a7d478e39279f83d1e1d1f09",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P6682D13A",
+      "source_sha256": "6682d13a6f4415688cf5906f3706fe4bc6920b322b5a0e58ad1dde016431c184",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_West_Wall_Drain.png"
+        }
+      ]
+    },
+    {
+      "id": "PBE155360",
+      "source_sha256": "be155360892c9ebaed6618faae72e11bc809b2b69fe63e4e8dd6ab99658aec34",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/06_Report/V16_Native_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "PDBFF75A6",
+      "source_sha256": "dbff75a65f34b58f9aa08204fae6a47a9825ce7d1ed8e926f484b77cc6529edf",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-002.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V16/07_Reference/屏幕截图 2026-10-12 110221.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P37474ACD",
+      "source_sha256": "37474acda4b4268458eb7ecfbc82d47752f6d3ba42b76a899dfb219b589dfb7e",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-015.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v16/Before_Height_Map.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/Bundle_QA.json",
+      "bytes": 396,
+      "sha256": "fd94fd5174ff71b8ea25aa2323b532e5a658b901438abd231c7ea55cae878114",
+      "status": "PASS_ZIP_CRC",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/Delivery_QA.json",
+      "bytes": 1600,
+      "sha256": "009b7f1800d78ef7fa61d8f1b63bda9f2d0aa0ef9e686354fea4acdc11d5fb45",
+      "status": "PASS_DELIVERY_FILES",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/Preview_View_States.json",
+      "bytes": 231,
+      "sha256": "2f8b5fc98b418ad1140e424c6b6524abc9ceda2ed6036a09c7d26b303cf3dd28",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Assembly_QA.json",
+      "bytes": 4654790,
+      "sha256": "f0a88d5e5a5ffd4c21f4e02b638f92f020deada17e4c8d813acb465f2d8a4866",
+      "status": "PASS_NATIVE_READBACK_AND_GROUND_DRAIN_CONTACT",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Design_Control.json",
+      "bytes": 75893,
+      "sha256": "2518c93ae35854be6073ed73c6ac82c2abd56b9125d1079c44e5c2a20c5a08df",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Ground_Drain_QA.json",
+      "bytes": 4513,
+      "sha256": "5084cd827fffddeff11ca70e7011a27ecb96842f6bf22494683fd466421ee621",
+      "status": "PASS_NATIVE_READBACK_AND_GROUND_DRAIN_CONTACT",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Junction_Extent_QA.json",
+      "bytes": 2713,
+      "sha256": "5865fe4bb45d420ee8d6961fdca557ceb500015216350e02c413d4da598eab72",
+      "status": "PASS_FINAL_NATIVE_READBACK_AND_EXTENT_LIMIT",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Native_Readback_QA.json",
+      "bytes": 8539,
+      "sha256": "303a2f26e4d85e207d1187bc51e08620fa96ee68ff7354b9aa79faea1f5e7e44",
+      "status": "PASS_NATIVE_READBACK_AND_GROUND_DRAIN_CONTACT",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Soil_Quality_QA.json",
+      "bytes": 840,
+      "sha256": "d3c04f1951853bb5cd0f81e2cbead9c7da2bfbf94ffbfe20ec88deb4965f86de",
+      "status": "PASS_FRESH_NATIVE_READBACK",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/06_Report/V16_Stitched_Edge_QA.json",
+      "bytes": 1467,
+      "sha256": "4d12700c65ae44f15748084923bb6f9a0d0f943c31194a27617026618230bf56",
+      "status": "PASS_FRESH_NATIVE_READBACK",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V16/README_V16_请先阅读.txt",
+      "bytes": 2495,
+      "sha256": "ac4ed4691c12713eb320fe821f97c4cbd0b82e1221304b7e58dfa46f09424180",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Court_Edge_Infill.json",
+      "bytes": 268,
+      "sha256": "2117c8777e6d97fbe1adf75fe111d12a5bf2443a362685c13e6583eadb352e3e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Drain_Mask.json",
+      "bytes": 11089,
+      "sha256": "4ccadbb393bb6d5caaea8d8ad6f952bd8f683c3ab7d9fd0ff2bdb13890e6de1e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Drain_Profiles.json",
+      "bytes": 61632,
+      "sha256": "84e15b872b79a28f079980e81d97a9f8c1988f2f1174478ff34f24fafdcb5f2e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Drain_Segments.json",
+      "bytes": 52995,
+      "sha256": "392ca16b5915c607c1861c2b572c5cfcc435cba63194e053024e769057c9c544",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Geometry_QA.json",
+      "bytes": 75532,
+      "sha256": "f4f197bb22ca4d164e798861f47f40edde4fe9301fc9000b70ea21f4ccaac617",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Mutation.json",
+      "bytes": 19728871,
+      "sha256": "f6aab1a90d2aea42a4583695d7c85efcbe7610d2ecf58d55028cfd30b0861bdb",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Probe.json",
+      "bytes": 164089,
+      "sha256": "6eab81de0da53f62566a127d848df8fbf98aa1ab3290ac9700633e9339f17069",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/SITE_PERIMETER_JOINED_RETAINING_WALL_0_centerline.json",
+      "bytes": 9330,
+      "sha256": "6ab923dbfdcdf1629d510c116638a17d9deab8123a30cd3c00199c342c171279",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/SITE_PERIMETER_JOINED_RETAINING_WALL_1_centerline.json",
+      "bytes": 1894,
+      "sha256": "a13f777ece28170d9fa12ff0b17b19c269298528c3d8a4d7dcc6efcfab92eb15",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v16/Soil_Domain.json",
+      "bytes": 14835,
+      "sha256": "1957860d6934069744bb616865ffec8e324b3f995b76a29f3b905834c6ceb68f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

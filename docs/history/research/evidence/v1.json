@@ -1,0 +1,739 @@
+{
+  "version": "V1",
+  "source_folder": "Rebuild",
+  "primary": {
+    "relative": "Rebuild/09_Report/Model_Report.md",
+    "sha256": "1f7e3830a5cfb59567799cdd89c85d9ccbf128dd1f800f29e5d1d72041aa0001"
+  },
+  "source_files": 9,
+  "trace": [
+    {
+      "file": "history/register_reality.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 33,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 18,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [],
+      "file_literals": [
+        {
+          "name": "Reality_Geometry.npz",
+          "line": 20
+        },
+        {
+          "name": "Registration_ROI.npz",
+          "line": 33
+        }
+      ],
+      "functions": [
+        {
+          "name": "find_peaks",
+          "line": 5,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/roof_diagnostics.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 23,
+      "operations": [
+        {
+          "call": "np.linalg.lstsq",
+          "line": 22,
+          "meaning": "最小二乘求解"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "np.load",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "im.save",
+          "line": 12
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Reality_Geometry.npz",
+          "line": 6
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 6
+        },
+        {
+          "name": "Roof_Local_Height.png",
+          "line": 12
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/build_scene.py",
+      "publication": "site-coordinate-redacted",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 273,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 200,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "np.load",
+          "line": 233
+        },
+        {
+          "call": "write_text",
+          "line": 270
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Reality_Geometry.npz",
+          "line": 233
+        },
+        {
+          "name": "Architecture_Scene.json",
+          "line": 270
+        },
+        {
+          "name": "Element_Register.csv",
+          "line": 271
+        }
+      ],
+      "functions": [
+        {
+          "name": "box",
+          "line": 22,
+          "end": 22
+        },
+        {
+          "name": "prism",
+          "line": 23,
+          "end": 23
+        },
+        {
+          "name": "polyz",
+          "line": 24,
+          "end": 24
+        },
+        {
+          "name": "cylinder",
+          "line": 25,
+          "end": 25
+        },
+        {
+          "name": "add",
+          "line": 26,
+          "end": 27
+        },
+        {
+          "name": "part",
+          "line": 28,
+          "end": 28
+        },
+        {
+          "name": "instance",
+          "line": 29,
+          "end": 30
+        },
+        {
+          "name": "transform_points",
+          "line": 31,
+          "end": 32
+        },
+        {
+          "name": "wall",
+          "line": 33,
+          "end": 49
+        },
+        {
+          "name": "win_def",
+          "line": 50,
+          "end": 64
+        },
+        {
+          "name": "door_def",
+          "line": 65,
+          "end": 73
+        },
+        {
+          "name": "opening_instance",
+          "line": 74,
+          "end": 76
+        },
+        {
+          "name": "railing",
+          "line": 77,
+          "end": 85
+        },
+        {
+          "name": "panel",
+          "line": 199,
+          "end": 202
+        },
+        {
+          "name": "sitez",
+          "line": 234,
+          "end": 236
+        },
+        {
+          "name": "sitepoly",
+          "line": 237,
+          "end": 238
+        },
+        {
+          "name": "sitewall",
+          "line": 244,
+          "end": 247
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/export_models.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 208,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 10,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "ex.Transform",
+          "line": 63,
+          "meaning": "图像或几何变换"
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 127,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "model.Write",
+          "line": 126
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 127
+        },
+        {
+          "call": "write_text",
+          "line": 208
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene.json",
+          "line": 6
+        },
+        {
+          "name": "Production_1QK_Local_REFERENCE.3dm",
+          "line": 123
+        },
+        {
+          "name": "Native_Model_QA.json",
+          "line": 208
+        }
+      ],
+      "functions": [
+        {
+          "name": "triangulate",
+          "line": 9,
+          "end": 25
+        },
+        {
+          "name": "solid_data",
+          "line": 26,
+          "end": 41
+        },
+        {
+          "name": "native",
+          "line": 42,
+          "end": 69
+        },
+        {
+          "name": "world_part",
+          "line": 70,
+          "end": 73
+        },
+        {
+          "name": "rh_transform",
+          "line": 74,
+          "end": 75
+        },
+        {
+          "name": "expand_parts",
+          "line": 76,
+          "end": 76
+        },
+        {
+          "name": "split_surface_parts",
+          "line": 77,
+          "end": 85
+        },
+        {
+          "name": "rhino_parts",
+          "line": 86,
+          "end": 94
+        },
+        {
+          "name": "make_rhino",
+          "line": 95,
+          "end": 134
+        },
+        {
+          "name": "extra_su_bind",
+          "line": 135,
+          "end": 137
+        },
+        {
+          "name": "make_skp",
+          "line": 138,
+          "end": 182
+        },
+        {
+          "name": "export_obj",
+          "line": 183,
+          "end": 201
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/skp_api.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 67,
+      "operations": [
+        {
+          "call": "ck",
+          "line": 30,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "Transform",
+          "line": 45,
+          "meaning": "图像或几何变换"
+        }
+      ],
+      "io_calls": [],
+      "file_literals": [],
+      "functions": [
+        {
+          "name": "bind",
+          "line": 11,
+          "end": 12
+        },
+        {
+          "name": "ck",
+          "line": 27,
+          "end": 28
+        },
+        {
+          "name": "new",
+          "line": 29,
+          "end": 30
+        },
+        {
+          "name": "count",
+          "line": 31,
+          "end": 32
+        },
+        {
+          "name": "fill",
+          "line": 33,
+          "end": 42
+        },
+        {
+          "name": "transform",
+          "line": 43,
+          "end": 45
+        },
+        {
+          "name": "fill_edges",
+          "line": 46,
+          "end": 50
+        },
+        {
+          "name": "group",
+          "line": 51,
+          "end": 54
+        },
+        {
+          "name": "readback_door_width",
+          "line": 55,
+          "end": 62
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/check_geometry.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 46,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 14,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 29,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 29
+        },
+        {
+          "call": "np.load",
+          "line": 33
+        },
+        {
+          "call": "write_text",
+          "line": 46
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Solid_Geometry_QA.csv",
+          "line": 23
+        },
+        {
+          "name": "Reality_Geometry.npz",
+          "line": 33
+        },
+        {
+          "name": "Source_Inventory.csv",
+          "line": 41
+        },
+        {
+          "name": "Geometry_QA.json",
+          "line": 46
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/check_exchange.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 21,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 21
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Exchange_Readback_QA.json",
+          "line": 21
+        }
+      ],
+      "functions": []
+    }
+  ],
+  "figures": [
+    {
+      "id": "P0862A7B7",
+      "source_sha256": "0862a7b73693f9c912f67556cca25a27898a3ddde4885cc2cc113d6e7950ada9",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 1,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/09_Report/ARCH_CAM_02_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "P49402142",
+      "source_sha256": "49402142a8e08dab6ef3ced7be3bfa45da8d9c949263bdd18ceab2a1582b6571",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/09_Report/VIS_CAM_02_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "PFB6CAF7F",
+      "source_sha256": "fb6caf7ffb8cf4791dd5f6615290bf825f421fdabd08738f38a430180b2def55",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/09_Report/VIS_CAM_03_Back.png"
+        }
+      ]
+    },
+    {
+      "id": "P76D6537E",
+      "source_sha256": "76d6537e8568661565bac29ae8593540d07df20fffca7231a9e714a17b79108b",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-01.md",
+        "sheet": "rebuild-001.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/09_Report/VIS_CAM_05_Aerial.png"
+        }
+      ]
+    },
+    {
+      "id": "P0D746ECE",
+      "source_sha256": "0d746ece549a073497d73aa5bfd3c96c8817ab678e507cf6c00dec1dd5cdeb33",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-05.md",
+        "sheet": "rebuild-025.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "Roof_Local_Height.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild/05_Intermediate/Scripts/README.md",
+      "bytes": 1150,
+      "sha256": "f0fc8bc089a883842393086e4af7d09aec7c0c0e31d5bd5ca323353ce36bb7d8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Blender_ARCH_Export_QA.json",
+      "bytes": 404,
+      "sha256": "38e7fb82f280212b85ab0da2845c682920703e30ecf1bf11f766e46df5229e42",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Blender_VIS_Export_QA.json",
+      "bytes": 404,
+      "sha256": "1f71ad5f831bcfb77557637ec3de23a09d4142af3975d47e2a98ed6da395d337",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Coordinate_System_Report.md",
+      "bytes": 2166,
+      "sha256": "f799a14727286a0a0371b5e83ad4135b68b405c57407f93ec434b16249514609",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Drawing_Index.csv",
+      "bytes": 8296,
+      "sha256": "ad615b0345d61163d862003025e14d0d733c063eab4b852d08a4837e5704876a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Drawing_vs_Reality_Report.md",
+      "bytes": 2354,
+      "sha256": "6688b200a8a95e9cbdf991f940f812c2f2332ffd87d7d372b545d3dc1de48626",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Element_Register.csv",
+      "bytes": 30035,
+      "sha256": "067dbad87fc17a17afa8aa72212706c16987409798581ea3db0dffca5cc18822",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Exchange_Readback_QA.json",
+      "bytes": 1904,
+      "sha256": "6ccc945282a0302e4e51341f2a9ce235edf1fec222c389b90821ca9bfefda940",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Geometry_QA.json",
+      "bytes": 1628,
+      "sha256": "9d2757689ae584033294e24e2ec2f5c86a7b4fdac104f5bea7e30a7967e1a646",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Material_Reference_Report.md",
+      "bytes": 1734,
+      "sha256": "3f8a3fb69ff7f35b18036f7fd91429a85b1fcfde8bec86669dc27ad39decf9fa",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Material_Register.csv",
+      "bytes": 3419,
+      "sha256": "c1be6d03988647d44e574de2ec80761a197843eecc2b070ac0a3055e6c31384e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Model_Report.md",
+      "bytes": 8060,
+      "sha256": "1f7e3830a5cfb59567799cdd89c85d9ccbf128dd1f800f29e5d1d72041aa0001",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Native_Model_QA.json",
+      "bytes": 2485,
+      "sha256": "a1a95513283e719f22ffaf3f10b511c61d14f4f0915004fbd68e14448195319a",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/PDF_All_Files_Index.csv",
+      "bytes": 14389,
+      "sha256": "db8e1150927e6a02e11c6d3c6dccd2ce91887a6cdbea8a77ea07ac3a870476df",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Reference_QA.json",
+      "bytes": 1079,
+      "sha256": "64c4b7b7f387b4b2c4907e05d545f57e88fc3252d0f92d8dbea5d33bc3b242e8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Solid_Geometry_QA.csv",
+      "bytes": 75322,
+      "sha256": "d3a74091688de3c3477a4da2177e07de75af68984ae6896e5e753481ee4681e8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Source_Readme.md",
+      "bytes": 910,
+      "sha256": "fefa82effcff675fcb94900cd2f7f393eed3ac63b71ddaa250036d09539ac6e4",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Source_Summary.json",
+      "bytes": 8833,
+      "sha256": "25a17f218a8e8cd86854efafc2b0506e4a28329015309a8bf078f0b25c2e8d97",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/09_Report/Uncertainty_Log.csv",
+      "bytes": 3165,
+      "sha256": "70035795124c923a4619b5ca623a6e46aba99d08b6a58efee251b2fb7049cb31",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild/README.md",
+      "bytes": 803,
+      "sha256": "a329d5c8fd243d78d94b0e4f63a2a99ae69da8e7a775620b5b2ed1df9d0ff7e8",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

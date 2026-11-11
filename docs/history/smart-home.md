@@ -1,5 +1,7 @@
 # 智慧家模型与交互逐版台账
 
+跨软件交接、风场图和分析动画的结果边界另有[专业方法解释](research/methodology.md#8-从-blenderrhino-到-ue5-的交接)。
+
 已补入[五参考机位巡游与风场原过程动画](research/animations/README.md)。其中风场短片对应 2026-10-29 的 `annual_coarse` 室外基准，按原报告标为软件模拟，与后续全开门窗求解记录区分。
 
 记录“准备数学孪生智慧家庭模型”的本地过程。当前 `ModelSync/model_status.json` 将项目标为 `TEST_ITERATION`，活动主源为 Blender，住宅场景发布号为 **`20261030_025240_41748228`**，登记 **819** 个构件。下文路径均相对于智慧家过程目录 `Twin_Preparation`，发布号保留源记录的写法。

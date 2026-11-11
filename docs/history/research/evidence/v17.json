@@ -1,0 +1,1132 @@
+{
+  "version": "V17",
+  "source_folder": "Rebuild_V17",
+  "primary": {
+    "relative": "Rebuild_V17/README_V17_请先阅读.txt",
+    "sha256": "681e4a6b74962c7af4a78377a30ec26df7b2c56dec1e3731ac2d5534f3621b6e"
+  },
+  "source_files": 19,
+  "trace": [
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_height_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 12,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 8,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 5
+        },
+        {
+          "call": "np.load",
+          "line": 8
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 5
+        },
+        {
+          "name": "Local_Original_Ground.npz",
+          "line": 9
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_local_audit.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 41,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 20,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "np.load",
+          "line": 20
+        },
+        {
+          "call": "im.save",
+          "line": 35
+        },
+        {
+          "call": "write_text",
+          "line": 35
+        },
+        {
+          "call": "read_text",
+          "line": 40
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V16.json",
+          "line": 9
+        },
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 10
+        },
+        {
+          "name": "Local_Wall_Plan_Before.png",
+          "line": 35
+        },
+        {
+          "name": "Local_Parts.json",
+          "line": 35
+        },
+        {
+          "name": "_centerline.json",
+          "line": 40
+        }
+      ],
+      "functions": [
+        {
+          "name": "px",
+          "line": 13,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 32,
+      "operations": [
+        {
+          "call": "np.cross",
+          "line": 18,
+          "meaning": "叉积／面法线"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "np.load",
+          "line": 16
+        },
+        {
+          "call": "im.save",
+          "line": 28
+        },
+        {
+          "call": "write_text",
+          "line": 28
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V16.json",
+          "line": 9
+        },
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 9
+        },
+        {
+          "name": "Junction_Plan_Before.png",
+          "line": 28
+        },
+        {
+          "name": "Bounds.json",
+          "line": 28
+        }
+      ],
+      "functions": [
+        {
+          "name": "px",
+          "line": 10,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_storage_geometry.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 145,
+      "operations": [
+        {
+          "call": "manifold",
+          "line": 19,
+          "meaning": "实体运算对象"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 8
+        },
+        {
+          "call": "read_text",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "write_text",
+          "line": 145
+        },
+        {
+          "call": "write_text",
+          "line": 145
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V17.json",
+          "line": 7
+        },
+        {
+          "name": "Roof_Junction_QA.json",
+          "line": 10
+        },
+        {
+          "name": "Storage_Mutation.json",
+          "line": 145
+        },
+        {
+          "name": "Storage_Geometry_QA.json",
+          "line": 145
+        }
+      ],
+      "functions": [
+        {
+          "name": "ry",
+          "line": 12,
+          "end": 12
+        },
+        {
+          "name": "h",
+          "line": 13,
+          "end": 14
+        },
+        {
+          "name": "put",
+          "line": 15,
+          "end": 17
+        },
+        {
+          "name": "unite",
+          "line": 18,
+          "end": 19
+        },
+        {
+          "name": "member",
+          "line": 20,
+          "end": 20
+        },
+        {
+          "name": "column",
+          "line": 21,
+          "end": 22
+        },
+        {
+          "name": "stone_guard",
+          "line": 113,
+          "end": 141
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_geometry.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 166,
+      "operations": [
+        {
+          "call": "manifold",
+          "line": 23,
+          "meaning": "实体运算对象"
+        },
+        {
+          "call": "np.cross",
+          "line": 56,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "difference",
+          "line": 67,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "np.linalg.lstsq",
+          "line": 85,
+          "meaning": "最小二乘求解"
+        },
+        {
+          "call": "clipchecks.append",
+          "line": 161,
+          "meaning": "判据与回归检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 13
+        },
+        {
+          "call": "read_text",
+          "line": 15
+        },
+        {
+          "call": "np.load",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 63
+        },
+        {
+          "call": "np.load",
+          "line": 80
+        },
+        {
+          "call": "load",
+          "line": 127
+        },
+        {
+          "call": "write_text",
+          "line": 164
+        },
+        {
+          "call": "write_text",
+          "line": 165
+        },
+        {
+          "call": "write_text",
+          "line": 165
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Scene_V16.json",
+          "line": 12
+        },
+        {
+          "name": "Native_Readback_Index_V16.json",
+          "line": 13
+        },
+        {
+          "name": "DJI_0525.JPG",
+          "line": 14
+        },
+        {
+          "name": "DJI_0526.JPG",
+          "line": 14
+        },
+        {
+          "name": "Drain_Segments.json",
+          "line": 63
+        },
+        {
+          "name": "Local_Original_Ground.npz",
+          "line": 80
+        },
+        {
+          "name": "Mutation.json",
+          "line": 165
+        },
+        {
+          "name": "Geometry_QA.json",
+          "line": 165
+        }
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "line": 16,
+          "end": 19
+        },
+        {
+          "name": "polys",
+          "line": 20,
+          "end": 20
+        },
+        {
+          "name": "prism",
+          "line": 21,
+          "end": 22
+        },
+        {
+          "name": "poly_man",
+          "line": 23,
+          "end": 23
+        },
+        {
+          "name": "put",
+          "line": 24,
+          "end": 26
+        },
+        {
+          "name": "drain_z",
+          "line": 88,
+          "end": 93
+        },
+        {
+          "name": "garden_height",
+          "line": 94,
+          "end": 98
+        },
+        {
+          "name": "quality_volume",
+          "line": 100,
+          "end": 118
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_readback_qa.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 97,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7,
+          "meaning": "Rhino 原生读写"
+        },
+        {
+          "call": "checks.append",
+          "line": 9,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "np.cross",
+          "line": 25,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "intersection",
+          "line": 51,
+          "meaning": "交集限域"
+        },
+        {
+          "call": "mf.Manifold",
+          "line": 81,
+          "meaning": "实体运算对象"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "read_text",
+          "line": 7
+        },
+        {
+          "call": "np.load",
+          "line": 23
+        },
+        {
+          "call": "read_text",
+          "line": 50
+        },
+        {
+          "call": "read_text",
+          "line": 50
+        },
+        {
+          "call": "read_text",
+          "line": 64
+        },
+        {
+          "call": "read_text",
+          "line": 64
+        },
+        {
+          "call": "read_text",
+          "line": 64
+        },
+        {
+          "call": "write_text",
+          "line": 97
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V17_ALIGNED_ENU.3dm",
+          "line": 7
+        },
+        {
+          "name": "V17_Assembly_QA.json",
+          "line": 7
+        },
+        {
+          "name": "Native_Readback_Index_V17.json",
+          "line": 7
+        },
+        {
+          "name": "Coordinate.json",
+          "line": 7
+        },
+        {
+          "name": "V17_Design_Control.json",
+          "line": 64
+        },
+        {
+          "name": "Drain_Segments.json",
+          "line": 64
+        },
+        {
+          "name": "V17_Native_Readback_QA.json",
+          "line": 97
+        }
+      ],
+      "functions": [
+        {
+          "name": "check",
+          "line": 8,
+          "end": 10
+        },
+        {
+          "name": "gh",
+          "line": 11,
+          "end": 11
+        },
+        {
+          "name": "sh",
+          "line": 12,
+          "end": 16
+        },
+        {
+          "name": "arrays",
+          "line": 17,
+          "end": 22
+        },
+        {
+          "name": "data",
+          "line": 23,
+          "end": 23
+        },
+        {
+          "name": "top",
+          "line": 24,
+          "end": 25
+        },
+        {
+          "name": "footprint",
+          "line": 26,
+          "end": 26
+        },
+        {
+          "name": "z_at",
+          "line": 27,
+          "end": 32
+        },
+        {
+          "name": "garden_height",
+          "line": 65,
+          "end": 73
+        },
+        {
+          "name": "man_mesh",
+          "line": 80,
+          "end": 81
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V17_Scripts/v17_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 61,
+      "operations": [
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12,
+          "meaning": "Rhino 原生读写"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 11
+        },
+        {
+          "call": "rh.File3dm.Read",
+          "line": 12
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "read_text",
+          "line": 18
+        },
+        {
+          "call": "read_text",
+          "line": 20
+        },
+        {
+          "call": "write_text",
+          "line": 23
+        },
+        {
+          "call": "write_text",
+          "line": 45
+        },
+        {
+          "call": "mp.write_text",
+          "line": 54
+        },
+        {
+          "call": "write_text",
+          "line": 61
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V17_ALIGNED_ENU.3dm",
+          "line": 5
+        },
+        {
+          "name": "V17_Native_Readback_QA.json",
+          "line": 11
+        },
+        {
+          "name": "Native_Readback_Index_V17.json",
+          "line": 17
+        },
+        {
+          "name": "Preview_View_States.json",
+          "line": 18
+        },
+        {
+          "name": "V17_Assembly_QA.json",
+          "line": 20
+        },
+        {
+          "name": "Delivery_QA.json",
+          "line": 23
+        },
+        {
+          "name": "File_Manifest_SHA256.json",
+          "line": 50
+        },
+        {
+          "name": "Bundle_QA.json",
+          "line": 50
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 6,
+          "end": 10
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "PE06669FE",
+      "source_sha256": "e06669fe7be418d29189d3da2937334ba14bd67b942e3d408e6d92c89855017e",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/03_Textures/V15_Surface_Finishes/Flat_Microheight.png"
+        }
+      ]
+    },
+    {
+      "id": "P6A9399BF",
+      "source_sha256": "6a9399bf3408aa0ffeabae03e31662e5a303c8df4e9e677c6aaf238bbe902218",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/03_Textures/V16_Soil_Drain/Earth_Microheight.png"
+        }
+      ]
+    },
+    {
+      "id": "P4ACA140E",
+      "source_sha256": "4aca140eda903ee34d3be8470c1131e22ac6477dec85a18a0adc3e9709081bb9",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Concave_Corner.png"
+        }
+      ]
+    },
+    {
+      "id": "P8EE2AF43",
+      "source_sha256": "8ee2af43ffc1a5c0c60ec0679f76d717222c3cab2188da39cd01405c5bdfcb1f",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Junction_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P66BE1EBF",
+      "source_sha256": "66be1ebf487c9f014373ab33e024b148ba844ecd71751b193232bfc2ebb41b5f",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Lower_Garden_Junction.png"
+        }
+      ]
+    },
+    {
+      "id": "PC988E2FA",
+      "source_sha256": "c988e2fa8c69bdcbbe0fa4d8f7ce653a45b2436fe419a1bbca63084e1a1c1225",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Outer_Storage_Base.png"
+        }
+      ]
+    },
+    {
+      "id": "P8D703A38",
+      "source_sha256": "8d703a382d9adb3cfecb0f1c4734270fcdd25238c73cbedc00e0bc57ae7070c4",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Screenwall_Inside.png"
+        }
+      ]
+    },
+    {
+      "id": "P975906BE",
+      "source_sha256": "975906be807c898aca18ed437a20979a196c7350e02b0c068a39fe0d86bb115c",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 6,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Storage_Eave_Gallery.png"
+        }
+      ]
+    },
+    {
+      "id": "P4EE91C4D",
+      "source_sha256": "4ee91c4d18759875da4eed698edb886e75ebc70fef8a97637179fc787abe6865",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Storage_Return.png"
+        }
+      ]
+    },
+    {
+      "id": "P30E36C80",
+      "source_sha256": "30e36c802f485f45cc6a47ced6cc09c5e3ce8d22ab45cc2d9f19d137047869cc",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Storage_Stone_Guard_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "PBA5249AF",
+      "source_sha256": "ba5249afd7aa27f80ad70a46e8bbbd5ff6bd494ed393f73ae9329a76d6c652fd",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Storage_Timber_Interior.png"
+        }
+      ]
+    },
+    {
+      "id": "P3C437E82",
+      "source_sha256": "3c437e829f774cfb79a84ae996bf52fd24ac9696788791a403498c11404fb714",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "PD873A9C8",
+      "source_sha256": "d873a9c8bbcf9caebdba17c478ac95df48686837a73a3de8ae44f7cfd917cea8",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_West_Wall_Drain.png"
+        }
+      ]
+    },
+    {
+      "id": "PC7550718",
+      "source_sha256": "c7550718d2434f6892ddb2918e66f0989f2bf971fef61fb9597dd34a5c4d7476",
+      "kind": "handoff",
+      "gallery": {
+        "page": "handoff-01.md",
+        "sheet": "handoff-001.jpg",
+        "row": 7,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/06_Report/V17_Native_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "P7609A653",
+      "source_sha256": "7609a6532739538d5b24661f99bece1a85245e3124580b60636cb44b8ed9f124",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-002.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/07_Reference/屏幕截图 2026-10-12 112805.jpg"
+        }
+      ]
+    },
+    {
+      "id": "PA20AE216",
+      "source_sha256": "a20ae216fa94887f7df985e70d17e43405f74fbedfbcf9fcc615288b5af01e88",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-002.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V17/07_Reference/屏幕截图 2026-10-12 125511.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P777C8A8B",
+      "source_sha256": "777c8a8be578c27e6c9f43516c35b9180b7bc7992cd583cc6e06642c9699759a",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-015.jpg",
+        "row": 1,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v17/Junction_Plan_Before.png"
+        }
+      ]
+    },
+    {
+      "id": "P847266AD",
+      "source_sha256": "847266add91ad28806108b4af691f7f9b1b36c397dd3e682af9424c27ee55ba1",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-015.jpg",
+        "row": 1,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v17/Local_Wall_Plan_Before.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/Bundle_QA.json",
+      "bytes": 409,
+      "sha256": "202dac8b31fa2b493a7da86797bbaedc6880290cc3404a0adcc3e6b5a7376168",
+      "status": "PASS_ZIP_CRC",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/Delivery_QA.json",
+      "bytes": 1828,
+      "sha256": "0b819e38eeab7ca6cfd6837da22fed33c022485c59fa4e4a9f5cc3453246dd95",
+      "status": "PASS_DELIVERY_FILES",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/Preview_View_States.json",
+      "bytes": 665,
+      "sha256": "7ac0c349058972ecce6a4c320a142ccc86d2c80ccddf2b975ecbac131dbe5e18",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Assembly_QA.json",
+      "bytes": 4743884,
+      "sha256": "bea7b303688067d382ff8003e7346e34b519d16c7bc28931d7633b776bfb1462",
+      "status": "AWAITING_FRESH_READBACK",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Connected_Solids_QA.json",
+      "bytes": 680,
+      "sha256": "900a7a0a5fd12bb800a48fc7fe84f869c73fc882c3dbd739c2cbc12b65c8ebe9",
+      "status": "PASS_CONTACT_UNION_GEOMETRY",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Design_Control.json",
+      "bytes": 2855,
+      "sha256": "cd28be79767594a977f7bc1e03f22bff68adfb7c05659f5c110bdf54b8956966",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Native_Readback_QA.json",
+      "bytes": 49400,
+      "sha256": "7d0df069895e363089a7ac71354e952147cce25aa9b87ab511791a77c74f4826",
+      "status": "PASS_FRESH_NATIVE_GEOMETRY_AND_JUNCTION_QA",
+      "failure_count": null,
+      "check_count": 354
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Storage_Design_Control.json",
+      "bytes": 6194,
+      "sha256": "74532eaf9ae0883f7e2dc5689fef91c30fcafe1fe5fe579b351e3fe694ed9ac0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/06_Report/V17_Timber_Valley_Clip_QA.json",
+      "bytes": 793,
+      "sha256": "755d40f18809a355fa9dfefc85fe3f54ff92f4d11bc1c727bc5a88faae22d976",
+      "status": "PASS_TIMBER_FITS_RETAINED_ROOF_PLAN",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V17/README_V17_请先阅读.txt",
+      "bytes": 3099,
+      "sha256": "681e4a6b74962c7af4a78377a30ec26df7b2c56dec1e3731ac2d5534f3621b6e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Bounds.json",
+      "bytes": 32520,
+      "sha256": "248e7dbb2e843ba27304d89807efd75be901159c226975741f25ee2d58fea06c",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Geometry_QA.json",
+      "bytes": 2855,
+      "sha256": "cd28be79767594a977f7bc1e03f22bff68adfb7c05659f5c110bdf54b8956966",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Local_Parts.json",
+      "bytes": 62302,
+      "sha256": "1f8bc08dd9e2132d9254e301c5ac14d767391ca68cbe333c7a5ba96687664a49",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Mutation.json",
+      "bytes": 109751609,
+      "sha256": "3d9f9beddcbcd017ab40a6378e959ae8250128efc448a018938a3df64174f8f0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Storage_Geometry_QA.json",
+      "bytes": 6194,
+      "sha256": "74532eaf9ae0883f7e2dc5689fef91c30fcafe1fe5fe579b351e3fe694ed9ac0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v17/Storage_Mutation.json",
+      "bytes": 2263705,
+      "sha256": "98b7781c0987d69edefeb1a282838dc24e1b9ab27cc0b389167d0a93eb1aa992",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

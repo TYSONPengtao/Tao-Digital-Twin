@@ -1,0 +1,993 @@
+{
+  "version": "V24.14",
+  "source_folder": "Rebuild_V24_14",
+  "primary": {
+    "relative": "Rebuild_V24_14/README_V24_14.md",
+    "sha256": "19f0465694893ba60e318087460b1b06a6b534d00244fd14de85a242e633e8e3"
+  },
+  "source_files": 14,
+  "trace": [
+    {
+      "file": "project/Source/v24_14_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 17,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        },
+        {
+          "call": "write_text",
+          "line": 7
+        },
+        {
+          "call": "write_text",
+          "line": 17
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_13.blend",
+          "line": 5
+        },
+        {
+          "name": "Before_Snapshot.json",
+          "line": 7
+        },
+        {
+          "name": "Inventory.json",
+          "line": 17
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Source/v24_14_prepare.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 95,
+      "operations": [
+        {
+          "call": "mf.Manifold",
+          "line": 10,
+          "meaning": "实体运算对象"
+        },
+        {
+          "call": "np.cross",
+          "line": 13,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "m.to_mesh64",
+          "line": 19,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "extrude",
+          "line": 23,
+          "meaning": "截面挤出"
+        },
+        {
+          "call": "transform",
+          "line": 24,
+          "meaning": "图像或几何变换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "np.load",
+          "line": 17
+        },
+        {
+          "call": "load",
+          "line": 33
+        },
+        {
+          "call": "write_text",
+          "line": 95
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Prepared_Geometry.json",
+          "line": 95
+        }
+      ],
+      "functions": [
+        {
+          "name": "solid",
+          "line": 9,
+          "end": 15
+        },
+        {
+          "name": "load",
+          "line": 16,
+          "end": 17
+        },
+        {
+          "name": "put",
+          "line": 18,
+          "end": 20
+        },
+        {
+          "name": "cube",
+          "line": 21,
+          "end": 21
+        },
+        {
+          "name": "union",
+          "line": 22,
+          "end": 22
+        },
+        {
+          "name": "extrude",
+          "line": 23,
+          "end": 23
+        },
+        {
+          "name": "yzprofile",
+          "line": 24,
+          "end": 24
+        },
+        {
+          "name": "beam",
+          "line": 25,
+          "end": 26
+        },
+        {
+          "name": "under",
+          "line": 27,
+          "end": 30
+        },
+        {
+          "name": "strip_roof",
+          "line": 31,
+          "end": 32
+        },
+        {
+          "name": "terminal",
+          "line": 71,
+          "end": 72
+        },
+        {
+          "name": "th",
+          "line": 75,
+          "end": 78
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_14_build.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 95,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 15,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "me.from_pydata",
+          "line": 25,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "BVHTree.FromPolygons",
+          "line": 35,
+          "meaning": "空间加速结构"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 95,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 14
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 15
+        },
+        {
+          "call": "read_text",
+          "line": 17
+        },
+        {
+          "call": "np.load",
+          "line": 35
+        },
+        {
+          "call": "np.load",
+          "line": 53
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 95
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_13.blend",
+          "line": 11
+        },
+        {
+          "name": "Architecture_Complete_V24_14.blend",
+          "line": 11
+        },
+        {
+          "name": "V24_14_Before_Snapshot.json",
+          "line": 15
+        },
+        {
+          "name": "Prepared_Geometry.json",
+          "line": 17
+        },
+        {
+          "name": "V24_14_Changes.json",
+          "line": 94
+        },
+        {
+          "name": "V24_14_Corrections.json",
+          "line": 94
+        },
+        {
+          "name": "V24_14_Build.json",
+          "line": 95
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 12,
+          "end": 13
+        },
+        {
+          "name": "write",
+          "line": 14,
+          "end": 14
+        },
+        {
+          "name": "metric",
+          "line": 18,
+          "end": 23
+        },
+        {
+          "name": "replace",
+          "line": 24,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_14_render.py",
+      "publication": "verbatim",
+      "role": "过程出图",
+      "reading_order": 3,
+      "line_count": 14,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        },
+        {
+          "call": "dest.write_text",
+          "line": 13
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_14.blend",
+          "line": 4
+        },
+        {
+          "name": "V24_14_Draft_States.json",
+          "line": 13
+        },
+        {
+          "name": "V24_14_Preview_States.json",
+          "line": 13
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Source/v24_14_solids.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 37,
+      "operations": [
+        {
+          "call": "mf.Manifold",
+          "line": 7,
+          "meaning": "实体运算对象"
+        },
+        {
+          "call": "np.cross",
+          "line": 10,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "checks.append",
+          "line": 16,
+          "meaning": "判据与回归检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 5
+        },
+        {
+          "call": "np.load",
+          "line": 14
+        },
+        {
+          "call": "write_text",
+          "line": 23
+        },
+        {
+          "call": "write_text",
+          "line": 33
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Solid_Export_Index.json",
+          "line": 5
+        },
+        {
+          "name": "V24_14_Independent_Solid_QA.json",
+          "line": 23
+        },
+        {
+          "name": "V24_14_Independent_Clearance_QA.json",
+          "line": 33
+        }
+      ],
+      "functions": [
+        {
+          "name": "solid",
+          "line": 6,
+          "end": 12
+        },
+        {
+          "name": "ck",
+          "line": 16,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_14_verify.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 68,
+      "operations": [
+        {
+          "call": "BVHTree.FromPolygons",
+          "line": 11,
+          "meaning": "空间加速结构"
+        },
+        {
+          "call": "checks.append",
+          "line": 13,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 14,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "rt.ray_cast",
+          "line": 40,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 14
+        },
+        {
+          "call": "read_text",
+          "line": 14
+        },
+        {
+          "call": "read_text",
+          "line": 14
+        },
+        {
+          "call": "read_text",
+          "line": 62
+        },
+        {
+          "call": "write_text",
+          "line": 67
+        },
+        {
+          "call": "write_text",
+          "line": 67
+        },
+        {
+          "call": "read_text",
+          "line": 67
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_14.blend",
+          "line": 7
+        },
+        {
+          "name": "V24_14_Before_Snapshot.json",
+          "line": 14
+        },
+        {
+          "name": "V24_14_Changes.json",
+          "line": 14
+        },
+        {
+          "name": "QA_Obstacle_Index.json",
+          "line": 62
+        },
+        {
+          "name": "Solid_Export_Index.json",
+          "line": 67
+        },
+        {
+          "name": "V24_14_Fresh_Blend_QA.json",
+          "line": 67
+        },
+        {
+          "name": "V24_14_Build.json",
+          "line": 67
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 8,
+          "end": 9
+        },
+        {
+          "name": "tree",
+          "line": 10,
+          "end": 11
+        },
+        {
+          "name": "ck",
+          "line": 13,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_14_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 58,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "write_text",
+          "line": 24
+        },
+        {
+          "call": "write_text",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 50
+        },
+        {
+          "call": "write_text",
+          "line": 58
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_14.blend",
+          "line": 3
+        },
+        {
+          "name": "V24_14_Fresh_Blend_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V24_14_Independent_Solid_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V24_14_Independent_Clearance_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V24_14_Preview_States.json",
+          "line": 6
+        },
+        {
+          "name": "V24_14_Build.json",
+          "line": 6
+        },
+        {
+          "name": "Before_Snapshot.json",
+          "line": 12
+        },
+        {
+          "name": "Inventory.json",
+          "line": 12
+        },
+        {
+          "name": "Prepared_Geometry.json",
+          "line": 12
+        },
+        {
+          "name": "Solid_Export_Index.json",
+          "line": 12
+        },
+        {
+          "name": "SITE_V17_STORAGE_CONNECTED_TIMBER_ASSEMBLY_Geometry.npz",
+          "line": 12
+        },
+        {
+          "name": "SITE_V14_INNER_STORAGE_RIDGE_CAPS_Geometry.npz",
+          "line": 12
+        },
+        {
+          "name": "QA_Obstacle_Index.json",
+          "line": 15
+        },
+        {
+          "name": "屏幕截图 2026-10-18 101233.jpg",
+          "line": 20
+        },
+        {
+          "name": "11_Screenwall_Roof_Fork_101233.jpg",
+          "line": 20
+        },
+        {
+          "name": "实景三维场景模型.3dm",
+          "line": 21
+        },
+        {
+          "name": "Original_AsBuilt_Model_UNMODIFIED.3dm",
+          "line": 21
+        },
+        {
+          "name": "AsBuilt_Fit.json",
+          "line": 22
+        },
+        {
+          "name": "AsBuilt_Plan.json",
+          "line": 22
+        },
+        {
+          "name": "AsBuilt_Reference.json",
+          "line": 22
+        },
+        {
+          "name": "Reference_Index.json",
+          "line": 24
+        },
+        {
+          "name": "V24_14_Manifest.json",
+          "line": 48
+        },
+        {
+          "name": "V24_14_Bundle_QA.json",
+          "line": 48
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 4,
+          "end": 5
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "PC25BD226",
+      "source_sha256": "c25bd22603c61819974a896e4425f842a0b7d319ae43684f6d1e450ea4657669",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/Draft_V24_14_Gallery.png"
+        }
+      ]
+    },
+    {
+      "id": "P14DB7939",
+      "source_sha256": "14db79391bee935cf16a627d641260451f365c39346ac6e69c9cc3883450b581",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/Draft_V24_14_Sealed_Gable.png"
+        }
+      ]
+    },
+    {
+      "id": "P1E5248A4",
+      "source_sha256": "1e5248a4432add0e2a8ef1d60d010d81836df08093d8941c9c0bc3ca99960483",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/Draft_V24_14_Secondary_End.png"
+        }
+      ]
+    },
+    {
+      "id": "P085FE2AA",
+      "source_sha256": "085fe2aa9e830bc77662d3a98d3398f499600beb39a90bf7bcc942caf170e6e8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/Draft_V24_14_User_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "P51EFD5EC",
+      "source_sha256": "51efd5eceec9e1922fa43114669c7a086af3659a333b3c68d532bdb3a57bfd18",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Gallery.png"
+        }
+      ]
+    },
+    {
+      "id": "PC7D0B18F",
+      "source_sha256": "c7d0b18f227fd797773207995ff3340054e90e20a065dfc3b7fd7cd4c844c035",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Screenwall_Roof.png"
+        }
+      ]
+    },
+    {
+      "id": "P6DDB82F4",
+      "source_sha256": "6ddb82f4942f099200c4676d6772a32a8320412324577b10d9e37cc0cbc5ab7a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Sealed_Gable.png"
+        }
+      ]
+    },
+    {
+      "id": "P4557889C",
+      "source_sha256": "4557889c334fce1405aa1f1c67a85ea10785bb5c0759fdffcf4db5b70fcc7dd4",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Secondary_End.png"
+        }
+      ]
+    },
+    {
+      "id": "PEB0CF1C8",
+      "source_sha256": "eb0cf1c840877f63c4ad7938471b93f7789f28cc1373d7dcf809b52a3fe3201a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "P1088A433",
+      "source_sha256": "1088a4336ad02bb195d8b3a59c1e5228f35c7437a1b34522fe11573bbee153e3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_User_Front.png"
+        }
+      ]
+    },
+    {
+      "id": "P951B8598",
+      "source_sha256": "951b859845e2fa3d1ab8ccfe317d99a93dd58e0d00fa94b244c1c11077f1161a",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-03.md",
+        "sheet": "rebuild-011.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_14/Reports/V24_14_Whole_Site.png"
+        }
+      ]
+    },
+    {
+      "id": "PBFBCDD3E",
+      "source_sha256": "bfbcdd3e536f120bb03c7c09b703451b0152a1d265de4640aa77d070028d7c55",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-03.md",
+        "sheet": "locate-015.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_14/Timber_Sections.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/README_V24_14.md",
+      "bytes": 2470,
+      "sha256": "19f0465694893ba60e318087460b1b06a6b534d00244fd14de85a242e633e8e3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Before_Snapshot.json",
+      "bytes": 1592641,
+      "sha256": "8575cbd09722485c38f92fbf3f9676fb59e02af241cacd9faf5e22e4efaa0688",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Build.json",
+      "bytes": 349,
+      "sha256": "81ef99a5ffdf17dd898e23e09598ce4af32e8f1abb55b49023be02b30e381c73",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Changes.json",
+      "bytes": 1281,
+      "sha256": "e9a76a32f30c054402bb63c5b0f25bf1a683a5acd03347317f6d07ff3e76a36f",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Corrections.json",
+      "bytes": 1106,
+      "sha256": "842415f68a191ac87688528ee1e8b3229d0e3c5c4591bde5eea8cb20684189b2",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Draft_States.json",
+      "bytes": 467,
+      "sha256": "8925ef86a88ee867781b1f78300444400a69a3d3c1cc46aabbf4158d7f0c1e47",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Fresh_Blend_QA.json",
+      "bytes": 836863,
+      "sha256": "750a10e4f61ffb7c964ba0e48de2662ba7c6ae56db695116938227bb1bbd7e5c",
+      "status": "PASS_FRESH_NATIVE_QA",
+      "failure_count": 0,
+      "check_count": 7795
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Independent_Clearance_QA.json",
+      "bytes": 1268,
+      "sha256": "3f94df25eb0a05b75df983bf91e67245c3c2c703f45fe2eee7d9c14d2639f1fa",
+      "status": "PASS_INDEPENDENT_CLEARANCE",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Independent_Solid_QA.json",
+      "bytes": 9620,
+      "sha256": "7e08a21bb6687e71dcfcf046699507230fa6d01ae77232f87e0af42e5ead19fa",
+      "status": "PASS_INDEPENDENT_SAVED_SOLIDS",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Preview_States.json",
+      "bytes": 893,
+      "sha256": "bc2cd8890afa6bdfb16a22a7e5e0f3b346337fd579a08d87d7351e7f98d80596",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/Reports/V24_14_Resolved_Issues.md",
+      "bytes": 2470,
+      "sha256": "19f0465694893ba60e318087460b1b06a6b534d00244fd14de85a242e633e8e3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_14/V24_14_Bundle_QA.json",
+      "bytes": 433,
+      "sha256": "ca716e43e3eac8f5525d1e8476fcc2d09b85fa1e2996805014147407d8e289e2",
+      "status": "PASS_BUNDLE_CRC_AND_ALL_FILE_SHA256",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_14/Before_Snapshot.json",
+      "bytes": 1592641,
+      "sha256": "8575cbd09722485c38f92fbf3f9676fb59e02af241cacd9faf5e22e4efaa0688",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_14/Inventory.json",
+      "bytes": 106099,
+      "sha256": "34ff4e76552cc6c5219d7327afa3cc3e475af19f6ed78b692b62f410e4469631",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_14/Prepared_Geometry.json",
+      "bytes": 1221654,
+      "sha256": "ef7837108358e53b40876021d32d118d85e41e57990860f5fad3e590a3514294",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_14/Solid_Export_Index.json",
+      "bytes": 4146,
+      "sha256": "d4767bc0018c2da2c9451e3af6bf2666d00d30a22be8643fd183251b450b9c42",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

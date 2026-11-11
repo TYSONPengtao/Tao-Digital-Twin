@@ -1,0 +1,612 @@
+{
+  "version": "V24.02",
+  "source_folder": "Rebuild_V24",
+  "primary": {
+    "relative": "Rebuild_V24/README_V24.txt",
+    "sha256": "48cb54bb63e02e14198f845d78b6662cef6dbc1d32256f14453172338c79113b"
+  },
+  "source_files": 5,
+  "trace": [
+    {
+      "file": "project/Source/v24_roof_detail_blender.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 251,
+      "operations": [
+        {
+          "call": "me.vertices.foreach_set",
+          "line": 58,
+          "meaning": "批量写入属性"
+        },
+        {
+          "call": "BVHTree.FromPolygons",
+          "line": 64,
+          "meaning": "空间加速结构"
+        },
+        {
+          "call": "tree.ray_cast",
+          "line": 72,
+          "meaning": "射线命中检查"
+        },
+        {
+          "call": "data.from_pydata",
+          "line": 105,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 110,
+          "meaning": "网格与实体转换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 250
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_Roof_Detail_Report.json",
+          "line": 250
+        }
+      ],
+      "functions": [
+        {
+          "name": "apply_v24_roof_detail",
+          "line": 10,
+          "end": 251
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_update_top.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 48,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 12,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 45,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 12
+        },
+        {
+          "call": "write_text",
+          "line": 33
+        },
+        {
+          "call": "write_text",
+          "line": 44
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 45
+        },
+        {
+          "call": "write_text",
+          "line": 47
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_02.blend",
+          "line": 8
+        },
+        {
+          "name": "Architecture_Complete_V24.blend",
+          "line": 9
+        },
+        {
+          "name": "V24_Roof_Detail_Report.json",
+          "line": 21
+        },
+        {
+          "name": "V24_Kitchen_Junction_QA.json",
+          "line": 21
+        },
+        {
+          "name": "V24_02_Expected_Mesh_Readback.json",
+          "line": 44
+        },
+        {
+          "name": "V24_02_Build.json",
+          "line": 47
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 10,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_kitchen_junction_blender.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 261,
+      "operations": [
+        {
+          "call": "np.linalg.lstsq",
+          "line": 70,
+          "meaning": "最小二乘求解"
+        },
+        {
+          "call": "np.cross",
+          "line": 104,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "me.from_pydata",
+          "line": 112,
+          "meaning": "写入网格拓扑"
+        },
+        {
+          "call": "checks.append",
+          "line": 153,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 172,
+          "meaning": "网格与实体转换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 256
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "DJI_0101.JPG",
+          "line": 254
+        },
+        {
+          "name": "DJI_0102.JPG",
+          "line": 254
+        },
+        {
+          "name": "DJI_0103.JPG",
+          "line": 254
+        },
+        {
+          "name": "屏幕截图 2026-10-16 124233.jpg",
+          "line": 254
+        },
+        {
+          "name": "屏幕截图 2026-10-16 124258.jpg",
+          "line": 254
+        },
+        {
+          "name": "V24_Kitchen_Junction_Module_QA.json",
+          "line": 256
+        }
+      ],
+      "functions": [
+        {
+          "name": "_obj",
+          "line": 20,
+          "end": 24
+        },
+        {
+          "name": "_curve",
+          "line": 26,
+          "end": 42
+        },
+        {
+          "name": "_offset",
+          "line": 44,
+          "end": 49
+        },
+        {
+          "name": "_base_z",
+          "line": 51,
+          "end": 55
+        },
+        {
+          "name": "_front_uv_fit",
+          "line": 57,
+          "end": 74
+        },
+        {
+          "name": "_closed_prism",
+          "line": 76,
+          "end": 122
+        },
+        {
+          "name": "_trim_sheathing_parts",
+          "line": 124,
+          "end": 165
+        },
+        {
+          "name": "_trim_roof_mesh",
+          "line": 167,
+          "end": 227
+        },
+        {
+          "name": "apply_v24_kitchen_junction",
+          "line": 229,
+          "end": 257
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_qa_blender.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 146,
+      "operations": [
+        {
+          "call": "bm.from_mesh",
+          "line": 71,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "np.cross",
+          "line": 96,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "checks.append",
+          "line": 109,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "BVHTree.FromObject",
+          "line": 126,
+          "meaning": "空间加速结构"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 144
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_Fresh_Blend_QA.json",
+          "line": 144
+        }
+      ],
+      "functions": [
+        {
+          "name": "_plain",
+          "line": 8,
+          "end": 12
+        },
+        {
+          "name": "_jsonhash",
+          "line": 14,
+          "end": 14
+        },
+        {
+          "name": "_bulk",
+          "line": 15,
+          "end": 16
+        },
+        {
+          "name": "_matrix",
+          "line": 17,
+          "end": 17
+        },
+        {
+          "name": "_mesh_hash",
+          "line": 19,
+          "end": 23
+        },
+        {
+          "name": "_material",
+          "line": 25,
+          "end": 35
+        },
+        {
+          "name": "_image",
+          "line": 37,
+          "end": 41
+        },
+        {
+          "name": "_curves",
+          "line": 43,
+          "end": 50
+        },
+        {
+          "name": "_action",
+          "line": 52,
+          "end": 55
+        },
+        {
+          "name": "_animation",
+          "line": 57,
+          "end": 60
+        },
+        {
+          "name": "_world",
+          "line": 62,
+          "end": 63
+        },
+        {
+          "name": "_wing_weight",
+          "line": 65,
+          "end": 67
+        },
+        {
+          "name": "_wing_reference",
+          "line": 69,
+          "end": 83
+        },
+        {
+          "name": "baseline_snapshot",
+          "line": 85,
+          "end": 93
+        },
+        {
+          "name": "_stats",
+          "line": 95,
+          "end": 97
+        },
+        {
+          "name": "_panel_plan",
+          "line": 99,
+          "end": 102
+        },
+        {
+          "name": "validate_v24",
+          "line": 104,
+          "end": 146
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_02_verify_render.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 48,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 9,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "qa_module.validate_v24",
+          "line": 13,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 23,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "BVHTree.FromPolygons",
+          "line": 27,
+          "meaning": "空间加速结构"
+        },
+        {
+          "call": "roof.ray_cast",
+          "line": 31,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 9
+        },
+        {
+          "call": "read_text",
+          "line": 10
+        },
+        {
+          "call": "read_text",
+          "line": 12
+        },
+        {
+          "call": "write_text",
+          "line": 39
+        },
+        {
+          "call": "write_text",
+          "line": 47
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_02.blend",
+          "line": 8
+        },
+        {
+          "name": "V24_02_Expected_Mesh_Readback.json",
+          "line": 10
+        },
+        {
+          "name": "Baseline_V23_Snapshot.json",
+          "line": 12
+        },
+        {
+          "name": "V24_02_Fresh_Blend_QA.json",
+          "line": 39
+        },
+        {
+          "name": "V24_02_Preview_States.json",
+          "line": 47
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 15,
+          "end": 17
+        },
+        {
+          "name": "tree",
+          "line": 26,
+          "end": 27
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P260ADB7C",
+      "source_sha256": "260adb7c66bcca4fdb3669b7ed8ea626c4a1f8bcfdc2e283ef5b5502572cfe7f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-008.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Reports/V24_02_Carving_Closeup.png"
+        }
+      ]
+    },
+    {
+      "id": "PAEF3F2DF",
+      "source_sha256": "aef3f2df955de998da8078a15b842cd09ed4f9c007d1d4f28856f2810cdef78b",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Reports/V24_02_Front_Real_Materials.png"
+        }
+      ]
+    },
+    {
+      "id": "P4465FDC2",
+      "source_sha256": "4465fdc26c9baf33f3d719d764947bb421b790f621af2cd92dd8e2f97f842e58",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-008.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Reports/V24_02_Kitchen_Gate_Junction.png"
+        }
+      ]
+    },
+    {
+      "id": "P099CB62E",
+      "source_sha256": "099cb62e54b72785da62baf0b49ee0338ee9b684e204024336c709c3e63564c0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-008.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Reports/V24_02_Ridge_Top.png"
+        }
+      ]
+    },
+    {
+      "id": "PB3128514",
+      "source_sha256": "b31285148a866c618005f8230092f538faf88570faca993e30ef473d8895071c",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Reports/V24_02_Roof_Real_Materials.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Build.json",
+      "bytes": 7161,
+      "sha256": "065db6422a4cc8d7d92dc29a3e6d22dfa5d608eaa69f48b36c6810b4aba49034",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Coordinate_Inventory.json",
+      "bytes": 21053,
+      "sha256": "84bcea7d73226aa6f86e5a5d297e0d2b1b01925135f13b0be9fe9586d91956d0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Expected_Mesh_Readback.json",
+      "bytes": 2878,
+      "sha256": "34fedc0e5c0472dbb253fe126db95641ec6f65ab411c9193449e5a5d7c5c33dd",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Fresh_Blend_QA.json",
+      "bytes": 263663,
+      "sha256": "00bd27e68bb21bc55b6509c2bbb86ba04dd5472d7a4674358fe7dcd5fbf89f19",
+      "status": "PASS_V24_02_FRESH_BLEND_QA",
+      "failure_count": 0,
+      "check_count": 1953
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Preview_States.json",
+      "bytes": 852,
+      "sha256": "25ad1779deb3c9cd764a3dacfc7f54adca78ad702c3d42a7c55ad43079ec623e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24/Reports/V24_02_Reference_Review.md",
+      "bytes": 4116,
+      "sha256": "fc12a4f95a6e6263be3a34d942358b0830292f3d080dcffe28235cdf969d67df",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}

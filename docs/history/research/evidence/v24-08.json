@@ -1,0 +1,1187 @@
+{
+  "version": "V24.08",
+  "source_folder": "Rebuild_V24_08",
+  "primary": {
+    "relative": "Rebuild_V24_08/README_V24_08.txt",
+    "sha256": "88ead73198970de21f06dba564ade16c7cc64595d1bcdbca641268f7937a5fc0"
+  },
+  "source_files": 11,
+  "trace": [
+    {
+      "file": "history/v24_08_probe.py",
+      "publication": "verbatim",
+      "role": "定位与诊断",
+      "reading_order": 0,
+      "line_count": 35,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 6,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "bm.from_mesh",
+          "line": 13,
+          "meaning": "网格与实体转换"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 6
+        },
+        {
+          "call": "write_text",
+          "line": 9
+        },
+        {
+          "call": "write_text",
+          "line": 22
+        },
+        {
+          "call": "write_bytes",
+          "line": 28
+        },
+        {
+          "call": "write_text",
+          "line": 29
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_07.blend",
+          "line": 6
+        },
+        {
+          "name": "Inventory.json",
+          "line": 9
+        },
+        {
+          "name": "Components.json",
+          "line": 22
+        },
+        {
+          "name": "Materials.json",
+          "line": 29
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Source/v24_08_geometry.py",
+      "publication": "verbatim",
+      "role": "参数与几何处理",
+      "reading_order": 1,
+      "line_count": 167,
+      "operations": [
+        {
+          "call": "bm.from_mesh",
+          "line": 49,
+          "meaning": "网格与实体转换"
+        },
+        {
+          "call": "t.cross",
+          "line": 96,
+          "meaning": "叉积／面法线"
+        },
+        {
+          "call": "tr.ray_cast",
+          "line": 137,
+          "meaning": "射线命中检查"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 45
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Facade_Segments.json",
+          "line": 45
+        }
+      ],
+      "functions": [
+        {
+          "name": "dx",
+          "line": 7,
+          "end": 7
+        },
+        {
+          "name": "move_mesh",
+          "line": 8,
+          "end": 15
+        },
+        {
+          "name": "setback",
+          "line": 17,
+          "end": 41
+        },
+        {
+          "name": "exterior_bands",
+          "line": 43,
+          "end": 66
+        },
+        {
+          "name": "metric_uv",
+          "line": 68,
+          "end": 75
+        },
+        {
+          "name": "finishes",
+          "line": 77,
+          "end": 91
+        },
+        {
+          "name": "tube",
+          "line": 93,
+          "end": 110
+        },
+        {
+          "name": "exhaust",
+          "line": 112,
+          "end": 131
+        },
+        {
+          "name": "east_eave_tiles",
+          "line": 133,
+          "end": 167
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_08_build.py",
+      "publication": "verbatim",
+      "role": "构建或写入",
+      "reading_order": 2,
+      "line_count": 82,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 10,
+          "meaning": "打开保存的 Blender"
+        },
+        {
+          "call": "_difference",
+          "line": 60,
+          "meaning": "差集裁切"
+        },
+        {
+          "call": "tr.ray_cast",
+          "line": 69,
+          "meaning": "射线命中检查"
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 82,
+          "meaning": "另存 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 10
+        },
+        {
+          "call": "bpy.data.libraries.load",
+          "line": 17
+        },
+        {
+          "call": "write_text",
+          "line": 80
+        },
+        {
+          "call": "bpy.ops.wm.save_as_mainfile",
+          "line": 82
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_08_Before_Snapshot.json",
+          "line": 10
+        },
+        {
+          "name": "Architecture_Complete_V24_02.blend",
+          "line": 16
+        },
+        {
+          "name": "V24_08_Kitchen_Setback.json",
+          "line": 30
+        },
+        {
+          "name": "V24_08_Exterior_Bands.json",
+          "line": 31
+        },
+        {
+          "name": "V24_08_Exterior_Finishes.json",
+          "line": 31
+        },
+        {
+          "name": "V24_08_Exhaust_Detail.json",
+          "line": 46
+        },
+        {
+          "name": "V24_08_East_Eave_Tiles.json",
+          "line": 47
+        },
+        {
+          "name": "V24_08_Kitchen_Gate_Joint.json",
+          "line": 63
+        },
+        {
+          "name": "V24_08_Ground_Sections.json",
+          "line": 71
+        },
+        {
+          "name": "V24_08_Changes.json",
+          "line": 81
+        },
+        {
+          "name": "V24_08_Build.json",
+          "line": 82
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Source/v24_08_common.py",
+      "publication": "verbatim",
+      "role": "辅助实现",
+      "reading_order": 3,
+      "line_count": 10,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "write_text",
+          "line": 10
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_08.blend",
+          "line": 5
+        },
+        {
+          "name": "Architecture_Complete_V24_07.blend",
+          "line": 6
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 7,
+          "end": 8
+        },
+        {
+          "name": "write",
+          "line": 9,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_08_render.py",
+      "publication": "verbatim",
+      "role": "过程出图",
+      "reading_order": 3,
+      "line_count": 16,
+      "operations": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 5
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "_States.json",
+          "line": 16
+        }
+      ],
+      "functions": []
+    },
+    {
+      "file": "project/Source/v24_08_verify.py",
+      "publication": "verbatim",
+      "role": "保存后核验",
+      "reading_order": 4,
+      "line_count": 67,
+      "operations": [
+        {
+          "call": "checks.append",
+          "line": 7,
+          "meaning": "判据与回归检查"
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 8,
+          "meaning": "打开保存的 Blender"
+        }
+      ],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "bpy.ops.wm.open_mainfile",
+          "line": 8
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "V24_08_Before_Snapshot.json",
+          "line": 6
+        },
+        {
+          "name": "V24_08_Changes.json",
+          "line": 6
+        },
+        {
+          "name": "V24_08_Build.json",
+          "line": 6
+        },
+        {
+          "name": "V24_08_Fresh_Blend_QA.json",
+          "line": 66
+        }
+      ],
+      "functions": [
+        {
+          "name": "ck",
+          "line": 7,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_08_package.py",
+      "publication": "verbatim",
+      "role": "交付封装",
+      "reading_order": 5,
+      "line_count": 50,
+      "operations": [],
+      "io_calls": [
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "read_text",
+          "line": 6
+        },
+        {
+          "call": "write_text",
+          "line": 39
+        },
+        {
+          "call": "write_text",
+          "line": 44
+        },
+        {
+          "call": "write_text",
+          "line": 50
+        }
+      ],
+      "file_literals": [
+        {
+          "name": "Architecture_Complete_V24_08.blend",
+          "line": 3
+        },
+        {
+          "name": "V24_08_Fresh_Blend_QA.json",
+          "line": 6
+        },
+        {
+          "name": "V24_08_Preview_States.json",
+          "line": 6
+        },
+        {
+          "name": "V24_08_Build.json",
+          "line": 6
+        },
+        {
+          "name": "屏幕截图 2026-10-17 114129.jpg",
+          "line": 10
+        },
+        {
+          "name": "01_User_Exterior_Before.jpg",
+          "line": 10
+        },
+        {
+          "name": "DJI_0523.JPG",
+          "line": 10
+        },
+        {
+          "name": "02_Real_Kitchen_Exterior.jpg",
+          "line": 10
+        },
+        {
+          "name": "屏幕截图 2026-10-12 001208.jpg",
+          "line": 10
+        },
+        {
+          "name": "03_Reference_Scanned_Exterior.jpg",
+          "line": 10
+        },
+        {
+          "name": "DJI_0513.JPG",
+          "line": 10
+        },
+        {
+          "name": "04_Real_Exhaust_Wall.jpg",
+          "line": 10
+        },
+        {
+          "name": "DJI_0516.JPG",
+          "line": 10
+        },
+        {
+          "name": "05_Real_Perimeter_Wall.jpg",
+          "line": 10
+        },
+        {
+          "name": "DJI_0515.JPG",
+          "line": 10
+        },
+        {
+          "name": "06_Real_Perimeter_Return.jpg",
+          "line": 10
+        },
+        {
+          "name": "屏幕截图 2026-10-17 114951.jpg",
+          "line": 10
+        },
+        {
+          "name": "07_Real_Courtyard_Width.jpg",
+          "line": 10
+        },
+        {
+          "name": "屏幕截图 2026-10-17 115048.jpg",
+          "line": 10
+        },
+        {
+          "name": "08_User_Court_Before.jpg",
+          "line": 10
+        },
+        {
+          "name": "DJI_0011.JPG",
+          "line": 10
+        },
+        {
+          "name": "09_Real_Overhead_Courtyard.JPG",
+          "line": 10
+        },
+        {
+          "name": "V24_07_Fresh_Blend_QA.json",
+          "line": 14
+        },
+        {
+          "name": "V24_07_Marked_Height.json",
+          "line": 14
+        },
+        {
+          "name": "V24_07_Doors.json",
+          "line": 14
+        },
+        {
+          "name": "V24_03_Dimension_Audit.json",
+          "line": 15
+        },
+        {
+          "name": "Existing_Reference_Registration.json",
+          "line": 15
+        },
+        {
+          "name": "_Draft_States.json",
+          "line": 42
+        },
+        {
+          "name": "V24_08_Manifest.json",
+          "line": 42
+        },
+        {
+          "name": "V24_08_Bundle_QA.json",
+          "line": 42
+        }
+      ],
+      "functions": [
+        {
+          "name": "sha",
+          "line": 4,
+          "end": 5
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "P8C51D276",
+      "source_sha256": "8c51d276c09b04128ee2276ceabe3eddd4d92b448ad99c63c112dbb788306472",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 1,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Photo_Rubble_Microheight.png"
+        }
+      ]
+    },
+    {
+      "id": "P954030FC",
+      "source_sha256": "954030fc0b9fccb6e375c8d29d57738f09ba0aab40c289fc675294bc5ab5f68d",
+      "kind": "materials",
+      "gallery": {
+        "page": "materials-01.md",
+        "sheet": "materials-001.jpg",
+        "row": 2,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Photo_Rubble_Stone.png"
+        }
+      ]
+    },
+    {
+      "id": "P2626B42C",
+      "source_sha256": "2626b42c80a9ff968006f80406d6d4b144efaafb3aa78dcf50004a96f82d8472",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/References/01_User_Exterior_Before.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P7F68ABB6",
+      "source_sha256": "7f68abb64faba3e8b33f00d1183bcbc3cf3932e29983a011bcbaa770eadbdc10",
+      "kind": "locate",
+      "gallery": {
+        "page": "locate-01.md",
+        "sheet": "locate-003.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/References/08_User_Court_Before.jpg"
+        }
+      ]
+    },
+    {
+      "id": "P0EBF1B3B",
+      "source_sha256": "0ebf1b3b3ce44f51a43ac7d6fd574426afd7f826ecf79d0dbd53e90ec69eef1f",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Court.png"
+        }
+      ]
+    },
+    {
+      "id": "P70C649FD",
+      "source_sha256": "70c649fdf7acacc3ab8a02d752b2b42ebaff7114d9e74212d16021057e09dd47",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Court_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "PDFA819CF",
+      "source_sha256": "dfa819cf066dbedcdc45f6eb3c70a2bfa3145fb57ad0e545cebcd8fc6d231fd3",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "PEF0D7F20",
+      "source_sha256": "ef0d7f20f4e31525149f982b88a72c1925891958e37eeb7f4b4c3f090f342553",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Exterior_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "PE8085DB8",
+      "source_sha256": "e8085db8e6ecc669d4cf49212eaa7d88c00ce9d1ec5d2af2e566854d95203deb",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Gate_Junction.png"
+        }
+      ]
+    },
+    {
+      "id": "P19862711",
+      "source_sha256": "1986271193aece887a2f581100efb6cfa329cf5883ff57ff8be7c31f2a6f196c",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/Draft_Kitchen_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "P02D65C01",
+      "source_sha256": "02d65c01b34e3a0f9b9cd352559edac456f60d278c7932d8e2e9290ccd46eea7",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Court.png"
+        }
+      ]
+    },
+    {
+      "id": "P4F3A0A45",
+      "source_sha256": "4f3a0a452fb8e3fad2bed83a557185cc311e43803c18ec1a6623918014a92bb0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Court_Plan.png"
+        }
+      ]
+    },
+    {
+      "id": "P1D0B115D",
+      "source_sha256": "1d0b115db9c4f8876a7b1823845cd7791206b32d2da7d7d7428e528b42533923",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "PBD0D2F3A",
+      "source_sha256": "bd0d2f3a6af0e3b14e5e006304c398786d522d6e945409688d173381edbb4476",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 5,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Exterior_Wall.png"
+        }
+      ]
+    },
+    {
+      "id": "PF48896A9",
+      "source_sha256": "f48896a964deb6020c0d77343851894d071d9208b0333ac576c3c6490d690fd0",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 6,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Gate_Junction.png"
+        }
+      ]
+    },
+    {
+      "id": "PEBDCE112",
+      "source_sha256": "ebdce11276df1fd9d730da83e70719bb7452a1b3d7afe6752e76abc079408641",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-02.md",
+        "sheet": "rebuild-009.jpg",
+        "row": 6,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_08/Reports/V24_08_Kitchen_Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "P52CA4A22",
+      "source_sha256": "52ca4a22b496d6c19f56b290df2736707004b169d6ea2771dbe193ad7e611908",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Court.png"
+        }
+      ]
+    },
+    {
+      "id": "PDB840F48",
+      "source_sha256": "db840f488f479c466224c5f05a27a33793e4201dfafb04bda20ff472cff78a3d",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Exterior.png"
+        }
+      ]
+    },
+    {
+      "id": "P9AD74FF8",
+      "source_sha256": "9ad74ff8d71342e159b9608ce011d0c0c7bf6e76323ea98e0f4f3c3069b61879",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Grey_Brick_1m.png"
+        }
+      ]
+    },
+    {
+      "id": "PF5A27959",
+      "source_sha256": "f5a279599e2ab8bc6eceb285e088ad722f955e27d13097de7ac73054bcdf81d8",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Grey_Brick_Height.png"
+        }
+      ]
+    },
+    {
+      "id": "PE5DD3D81",
+      "source_sha256": "e5dd3d816260f5de789035cc54aa0f6527e5cbac885b55e6e91a37be1ee46878",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Kitchen_North.png"
+        }
+      ]
+    },
+    {
+      "id": "PF0C01FDC",
+      "source_sha256": "f0c01fdcd43c82fb6740fe8770f20ebc8104364e4c2ddcba7a8c98e1e773df1e",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 3,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Pale_Limewash_Band.png"
+        }
+      ]
+    },
+    {
+      "id": "P8A2BC4CE",
+      "source_sha256": "8a2bc4cee2bef6a02c1724b615e33e55d20d0afd34bbfe1a4012473153a043f2",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 1
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Pale_Limewash_Band_Height.png"
+        }
+      ]
+    },
+    {
+      "id": "P70DA1665",
+      "source_sha256": "70da1665eebdd23dbcc24a8800bb4b6bcd05a7d64efcae1fbf85a3841b1d68c9",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 2
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Perimeter_Actual_Dark_Stone.png"
+        }
+      ]
+    },
+    {
+      "id": "PBA1463A9",
+      "source_sha256": "ba1463a938602260427ea48e76c85abc395665b7083f2acad06d012e614293c6",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 3
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Perimeter_Actual_Dark_Stone_Height.png"
+        }
+      ]
+    },
+    {
+      "id": "PDC3DB9D2",
+      "source_sha256": "dc3db9d2eb664cca477cfbaea7460f5192e527b62be11d1d8a1458ecf3e5b0bd",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 4
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Perimeter_Actual_Gray_Brick.png"
+        }
+      ]
+    },
+    {
+      "id": "P95972914",
+      "source_sha256": "959729141f671d6425ee38e5d337bbb57a3508c369cca8eb9165a2b891ad5677",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 5
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Perimeter_Actual_Gray_Brick_Height.png"
+        }
+      ]
+    },
+    {
+      "id": "PF745B293",
+      "source_sha256": "f745b2939f1428afa832beb4a2c2f67e6d049c6ad0036b9820fb87983128d452",
+      "kind": "rebuild",
+      "gallery": {
+        "page": "rebuild-06.md",
+        "sheet": "rebuild-029.jpg",
+        "row": 4,
+        "column": 6
+      },
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_08_probe/Plan.png"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/README_V24_08.txt",
+      "bytes": 639,
+      "sha256": "88ead73198970de21f06dba564ade16c7cc64595d1bcdbca641268f7937a5fc0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Before_Snapshot.json",
+      "bytes": 1389396,
+      "sha256": "a9feedbc283062492a007c9ea2ebcc07340f79d937914199b7c3eb9323f5e63e",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Build.json",
+      "bytes": 328,
+      "sha256": "ed40c9564094189b5747dce1f45bb6125705d4dcabb41c973a71a8385f47f801",
+      "status": "SAVED",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Changes.json",
+      "bytes": 61019,
+      "sha256": "5189de1c6fe18885877fc0f975d052d2282f2fbbfa0c634e3d356082a63e3cf1",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Draft_States.json",
+      "bytes": 377,
+      "sha256": "facd14aad01dd9d9789cc798f53da8300253ad00f64bd61af6fc8e628a9af787",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_East_Eave_Tiles.json",
+      "bytes": 360,
+      "sha256": "3fb0a01960f246ed73d98168c4a3bd257ddf298fb2c319e41f0047eeb2e108be",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Exhaust_Detail.json",
+      "bytes": 1580,
+      "sha256": "d688ac41a404cc55d76fbd7ff498d5a219a2416911832f660818d6b7bb5abe9d",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Exterior_Bands.json",
+      "bytes": 466,
+      "sha256": "4721d72e553873cd42f7e43ecd9ff0fa2b24d52cba02599a8bd807445e186c01",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Exterior_Finishes.json",
+      "bytes": 551,
+      "sha256": "f8897975668bf7d93152ca0f8de0a80fd0c1e633e50397806af4869d267fb937",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Fresh_Blend_QA.json",
+      "bytes": 537845,
+      "sha256": "6071f85d231e5ffe671e6f0ea61c3960242271b5c404462767f2e5d1fab90d1d",
+      "status": "PASS_V24_08_FRESH_BLEND_QA",
+      "failure_count": 0,
+      "check_count": 4358
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Ground_Sections.json",
+      "bytes": 1247,
+      "sha256": "06199407edcf0a349a1d6b59c03daaddc2a7efe16f072eb07642ba76375e8799",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Kitchen_Gate_Joint.json",
+      "bytes": 359,
+      "sha256": "c2df56e7dfcd0de2d4d6c5abf21e119d7c923f401640b5d625beb7d4fc1ad786",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Kitchen_Setback.json",
+      "bytes": 31412,
+      "sha256": "55f35d5783f99da504381fabbaa227eceb3691dd01cea6719b634985fa4796f3",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Preview_States.json",
+      "bytes": 818,
+      "sha256": "3de315cbe9ff0af9ca5a7998357c1b8162e677010388a762b4f660ac811f6bac",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/Reports/V24_08_Resolved_Issues.md",
+      "bytes": 3259,
+      "sha256": "4207149dbcb3d7ea9cf9e189b15bd3f73e6bbaff1cbe637441c898cb4a487bd5",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia",
+      "relative": "Rebuild_V24_08/V24_08_Bundle_QA.json",
+      "bytes": 429,
+      "sha256": "87fbc71aa65dfea7278bf72470fffc5fa2071372ffcbc0618548e37378f15b07",
+      "status": "PASS_BUNDLE_CRC_AND_MODEL_SHA",
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_08_probe/Components.json",
+      "bytes": 909663,
+      "sha256": "7a6e889569ec5667cbb243ee3352a3e1bb001b86962a983153cfe1d7e7eeb992",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_08_probe/Inventory.json",
+      "bytes": 211305,
+      "sha256": "332780caec9f2eadd44d983ada092433aa5a20819c7d4f37c33f725cb29c54f0",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    },
+    {
+      "root": "jia-work",
+      "relative": "v24_08_probe/Materials.json",
+      "bytes": 18382,
+      "sha256": "7a1789ca1dc6f6b5e13b5cd155ff25317c8ebf5a95ed6235a72a2f5bde5248b9",
+      "status": null,
+      "failure_count": null,
+      "check_count": null
+    }
+  ]
+}
