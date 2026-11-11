@@ -1,5 +1,7 @@
 # 建筑重建逐版台账
 
+[82 版独立技术文章](research/versions/README.md) · [每版原实现脚本](research/source-code/README.md) · [原过程动画与动态核验](research/animations/README.md)
+
 这张表追溯同一住宅和院落的可编辑模型。每行以“整理建筑重建资料”的交付说明、改动文件或保存后核验为依据。源文件列相对于重建资料的 `JIA` 目录，是原项目的定位索引。
 
 每个版本旁都有对应过程图，点缩略图可看大图。图片所示部位见图注。[配图出处](media/README.md#建筑重建版本)

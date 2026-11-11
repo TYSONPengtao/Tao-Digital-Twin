@@ -1,0 +1,9 @@
+import bpy,sys,json,hashlib
+from pathlib import Path
+from mathutils import Vector
+W=Path(__file__).parent;sys.path.insert(0,str(W));from v26_12_fast_display import apply
+D=W/'v26_13/Review';D.mkdir(exist_ok=True);ver=sys.argv[sys.argv.index('--version')+1]if'--version'in sys.argv else'V26_13';P=Path('E:/jz/JIA/Rebuild_'+ver+'/Blender/Architecture_Complete_'+ver+'.blend');bpy.ops.wm.open_mainfile(filepath=str(P));sc=bpy.context.scene;sc.frame_set(40);bpy.context.view_layer.update();apply();sc.render.resolution_x=1200;sc.render.resolution_y=1000;sc.render.resolution_percentage=100;sc.render.image_settings.file_format='PNG';sc.eevee.taa_render_samples=24
+views=[('01_Gate_Whole',(6.6,-16.8,1.9),(6.6,-11.6,1.55),26),('02_Left_Three_Faces',(4.45,-14.30,1.30),(5.35,-11.79,1.30),38),('03_Right_Three_Faces',(8.85,-14.30,1.30),(7.85,-11.79,1.30),38),('04_Low_Plinth_And_Sill',(6.6,-14.8,.8),(6.6,-11.6,-.42),30),('05_Faceted_Carving_Close',(4.78,-12.55,1.1),(5.1,-11.82,1.1),35)]
+for tag,pos,aim,lens in views:
+ if'--only'in sys.argv and tag not in sys.argv[sys.argv.index('--only')+1:]:continue
+ cam=bpy.data.objects.new('Review_'+tag,bpy.data.cameras.new('Review_'+tag));sc.collection.objects.link(cam);cam.location=pos;cam.rotation_euler=(Vector(aim)-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=lens;cam.data.clip_start=.025;sc.camera=cam;name=ver+'_'+tag;sc.render.filepath=str(D/(name+'.png'));bpy.ops.render.render(write_still=True);(D/(name+'.json')).write_text(json.dumps({'model':str(P),'model_sha256':hashlib.sha256(P.read_bytes()).hexdigest(),'camera':[pos,aim,lens],'engine':sc.render.engine,'overcast_world':sc.world.name,'temporary_lights':0,'display_profile':'Same V26.12 fast overcast with local AO','model_file_modified':False},indent=2),'utf8');bpy.data.objects.remove(cam,do_unlink=True);print('RENDERED',name,flush=True)

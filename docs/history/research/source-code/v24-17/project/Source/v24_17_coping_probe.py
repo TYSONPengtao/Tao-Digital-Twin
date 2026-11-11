@@ -1,0 +1,3 @@
+import bpy,json,numpy as np
+from pathlib import Path
+D=Path(__file__).parent/'v24_17';bpy.ops.wm.open_mainfile(filepath='E:/jz/JIA/Rebuild_V24_16/Blender/Architecture_Complete_V24_16.blend');n='SITE_PERIMETER_JOINED_RETAINING_WALL_0_TILE_COPING_Geometry';o=bpy.data.objects[n];me=o.data;me.calc_loop_triangles();v=np.array([o.matrix_world@p.co for p in me.vertices]);f=np.array([t.vertices[:]for t in me.loop_triangles]);q=v[f].mean(1);sel=(q[:,0]>10.6)&(q[:,0]<13.6)&(q[:,1]>-17.5)&(q[:,1]<-16.0)&(q[:,2]>2.0);ids=np.unique(f[sel]);ix=np.full(len(v),-1);ix[ids]=np.arange(len(ids));np.savez_compressed(D/'Secondary_Original_Coping.npz',v=v[ids],f=ix[f[sel]]);print('SECONDARY ORIGINAL COPING',sel.sum(),len(ids),v[ids].min(0),v[ids].max(0),flush=True)

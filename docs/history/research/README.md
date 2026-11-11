@@ -1,5 +1,7 @@
 # 家庭数字孪生研究方法逐版记录
 
+[82 版技术文章](versions/README.md) · [逐版原实现脚本附件](source-code/README.md) · [过程动画](animations/README.md)
+
 按原工程迭代补齐研究图的实现过程。建筑重建从 V1 排到 V26.20，随后接到 Rhino、Datasmith、UE5 与环境分析。每轮都可查它用了什么数据，怎样定位、取样或计算，结果怎样改变模型，以及保存后如何核对。 [建筑各版技术记录](versions/README.md)
 
 | 顺序 | 覆盖范围 | 记录 |

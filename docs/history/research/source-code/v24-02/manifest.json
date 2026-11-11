@@ -1,0 +1,80 @@
+{
+  "version": "V24.02",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "project/Source/v24_02_verify_render.py",
+      "source_sha256": "181cf8b4fd3c94264997227481d9368783a31193f1c14d11e960e600458694ac",
+      "published_sha256": "181cf8b4fd3c94264997227481d9368783a31193f1c14d11e960e600458694ac",
+      "bytes": 4015,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_02_verify_render.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_02_verify_render.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_kitchen_junction_blender.py",
+      "source_sha256": "ed88fd5ceace148c145add90e698baa68714d6382873e760bf547b48c366bb46",
+      "published_sha256": "ed88fd5ceace148c145add90e698baa68714d6382873e760bf547b48c366bb46",
+      "bytes": 34441,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_kitchen_junction_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_qa_blender.py",
+      "source_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "published_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "bytes": 13258,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_qa_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_roof_detail_blender.py",
+      "source_sha256": "359f047041366fdc44efa5ac4759632dfe16361bb8ce2334ab5231b7a35befd2",
+      "published_sha256": "359f047041366fdc44efa5ac4759632dfe16361bb8ce2334ab5231b7a35befd2",
+      "bytes": 14974,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_roof_detail_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_update_top.py",
+      "source_sha256": "d1e68cf7ae435dfa6ddefd8c914d88cc50706f129e0d5dfc72891c0937ebe3d0",
+      "published_sha256": "d1e68cf7ae435dfa6ddefd8c914d88cc50706f129e0d5dfc72891c0937ebe3d0",
+      "bytes": 4367,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_update_top.py"
+        }
+      ]
+    }
+  ]
+}

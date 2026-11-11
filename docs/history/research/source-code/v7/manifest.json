@@ -1,0 +1,374 @@
+{
+  "version": "V7",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "history/align_editable_rhino_v7.py",
+      "source_sha256": "45adf52d0dc88b05952c213d7e44e67b3f4b96b59f08ab9ec6a1bd4eee797293",
+      "published_sha256": "45adf52d0dc88b05952c213d7e44e67b3f4b96b59f08ab9ec6a1bd4eee797293",
+      "bytes": 3287,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "align_editable_rhino_v7.py"
+        }
+      ]
+    },
+    {
+      "file": "history/blender_v7_hybrid.py",
+      "source_sha256": "cdde30e79226030c30e004ae14723d3291591224b94592f4e77ceaa93de7cc33",
+      "published_sha256": "cdde30e79226030c30e004ae14723d3291591224b94592f4e77ceaa93de7cc33",
+      "bytes": 7924,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "blender_v7_hybrid.py"
+        }
+      ]
+    },
+    {
+      "file": "history/build_scene_v7.py",
+      "source_sha256": "071f061fcc2c2b2fd6447a36cee0f91b429e0ae7105d67f4076a88972aaa3f5c",
+      "published_sha256": "071f061fcc2c2b2fd6447a36cee0f91b429e0ae7105d67f4076a88972aaa3f5c",
+      "bytes": 15936,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "build_scene_v7.py"
+        }
+      ]
+    },
+    {
+      "file": "history/build_v7_patch.py",
+      "source_sha256": "596190aa10c1967bcd1bf146dc27c4dcc2452cb437c9d289856efe1790a8761e",
+      "published_sha256": "596190aa10c1967bcd1bf146dc27c4dcc2452cb437c9d289856efe1790a8761e",
+      "bytes": 6544,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "build_v7_patch.py"
+        }
+      ]
+    },
+    {
+      "file": "history/check_v7_delivery.py",
+      "source_sha256": "7984428948b9faaa02b39b70c481e22589a20e2c359767694b4950d3c5289682",
+      "published_sha256": "7984428948b9faaa02b39b70c481e22589a20e2c359767694b4950d3c5289682",
+      "bytes": 7627,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "check_v7_delivery.py"
+        }
+      ]
+    },
+    {
+      "file": "history/check_v7_exchange_photos.py",
+      "source_sha256": "1e89306d007cd26f6ef453e1fad9171f784f65cc2fdf3af10db944cd1e445da0",
+      "published_sha256": "1e89306d007cd26f6ef453e1fad9171f784f65cc2fdf3af10db944cd1e445da0",
+      "bytes": 11151,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "check_v7_exchange_photos.py"
+        }
+      ]
+    },
+    {
+      "file": "history/clean_v7_white_finishes.py",
+      "source_sha256": "129c8df77f422add9715ecd0b1542ae9cb79e79ba840b35d5215f7e878de5c6c",
+      "published_sha256": "129c8df77f422add9715ecd0b1542ae9cb79e79ba840b35d5215f7e878de5c6c",
+      "bytes": 2050,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "clean_v7_white_finishes.py"
+        }
+      ]
+    },
+    {
+      "file": "history/export_v7_editable.py",
+      "source_sha256": "8cfc8fc0138f00f1c65e65596778ee94a3741cf56169b6cb53171d6937a808f0",
+      "published_sha256": "8cfc8fc0138f00f1c65e65596778ee94a3741cf56169b6cb53171d6937a808f0",
+      "bytes": 619,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "export_v7_editable.py"
+        }
+      ]
+    },
+    {
+      "file": "history/export_v7_native.py",
+      "source_sha256": "e8dfc8493292d5cca254cfc969c5788a73c9db382d5e5ece7ef417ea5f87b731",
+      "published_sha256": "20d87a846c2a581481fc6a7d2c270989b8fbf7ace134f6fbb7c61d36a522a984",
+      "bytes": 5916,
+      "publication": "site-coordinate-redacted",
+      "redacted_original_lines": [
+        53
+      ],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "export_v7_native.py"
+        }
+      ]
+    },
+    {
+      "file": "history/finalize_v7_views.py",
+      "source_sha256": "be6354fd23a3808670018ce6e65ee4ebe5f8a2ae62622cfa83e5412c20a3b25f",
+      "published_sha256": "be6354fd23a3808670018ce6e65ee4ebe5f8a2ae62622cfa83e5412c20a3b25f",
+      "bytes": 1213,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "finalize_v7_views.py"
+        }
+      ]
+    },
+    {
+      "file": "history/finish_v7_ridge.py",
+      "source_sha256": "c8756c0b606239bb15c07cffd1c1f6cc522f6b1bcb29a23be4e28bc697a2b65e",
+      "published_sha256": "c8756c0b606239bb15c07cffd1c1f6cc522f6b1bcb29a23be4e28bc697a2b65e",
+      "bytes": 1412,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "finish_v7_ridge.py"
+        }
+      ]
+    },
+    {
+      "file": "history/fix_v7_gable_joint.py",
+      "source_sha256": "488c0ba8635fbb808180f2014b00d1752db62bdfc74aeb675677e80b629ea81f",
+      "published_sha256": "488c0ba8635fbb808180f2014b00d1752db62bdfc74aeb675677e80b629ea81f",
+      "bytes": 987,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "fix_v7_gable_joint.py"
+        }
+      ]
+    },
+    {
+      "file": "history/index_v7_target_photos.py",
+      "source_sha256": "3f28c24664a67aa4b705faeb95ba728b5f456b64df8b7c010c1f5247bb5fcbe3",
+      "published_sha256": "3f28c24664a67aa4b705faeb95ba728b5f456b64df8b7c010c1f5247bb5fcbe3",
+      "bytes": 1757,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "index_v7_target_photos.py"
+        }
+      ]
+    },
+    {
+      "file": "history/inspect_v7_bounds.py",
+      "source_sha256": "1fc05fcd7d5c2d0171ea71eada482ad7f870d799857d8fe0730c3fbb167e9b53",
+      "published_sha256": "1fc05fcd7d5c2d0171ea71eada482ad7f870d799857d8fe0730c3fbb167e9b53",
+      "bytes": 1105,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "inspect_v7_bounds.py"
+        }
+      ]
+    },
+    {
+      "file": "history/inspect_v7_interior_camera.py",
+      "source_sha256": "083a77fcb4ec8c706340dd3b17d10d011d705d1aa0474885706d4ed250bacc62",
+      "published_sha256": "083a77fcb4ec8c706340dd3b17d10d011d705d1aa0474885706d4ed250bacc62",
+      "bytes": 660,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "inspect_v7_interior_camera.py"
+        }
+      ]
+    },
+    {
+      "file": "history/inspect_v7_materials.py",
+      "source_sha256": "b009e9dd4c6d3784876f519b1b7316abd35b47738431dcbb20a987986e7401f9",
+      "published_sha256": "b009e9dd4c6d3784876f519b1b7316abd35b47738431dcbb20a987986e7401f9",
+      "bytes": 619,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "inspect_v7_materials.py"
+        }
+      ]
+    },
+    {
+      "file": "history/inspect_v7_scene.py",
+      "source_sha256": "c1d55db898494dda94801f8fc4252646db778b4e26f4850ddd352a87efe4d525",
+      "published_sha256": "c1d55db898494dda94801f8fc4252646db778b4e26f4850ddd352a87efe4d525",
+      "bytes": 655,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "inspect_v7_scene.py"
+        }
+      ]
+    },
+    {
+      "file": "history/map_v7_gable_photo.py",
+      "source_sha256": "2255b37854969946da2522dd414b3e813a951dc3619718a1c31190f4e1ad1421",
+      "published_sha256": "2255b37854969946da2522dd414b3e813a951dc3619718a1c31190f4e1ad1421",
+      "bytes": 2725,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "map_v7_gable_photo.py"
+        }
+      ]
+    },
+    {
+      "file": "history/package_v7_rhino.py",
+      "source_sha256": "4a87a4bfb9eca08e5d906b04fec19a5c9970c4eca204ca5282c02e3ebd1e39ed",
+      "published_sha256": "4a87a4bfb9eca08e5d906b04fec19a5c9970c4eca204ca5282c02e3ebd1e39ed",
+      "bytes": 4749,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "package_v7_rhino.py"
+        }
+      ]
+    },
+    {
+      "file": "history/prepare_v7_exports.py",
+      "source_sha256": "d1e35e531a5268143926946704b5d529023e9551ea841f5f8e2ab1fa683e8a3d",
+      "published_sha256": "d1e35e531a5268143926946704b5d529023e9551ea841f5f8e2ab1fa683e8a3d",
+      "bytes": 2171,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "prepare_v7_exports.py"
+        }
+      ]
+    },
+    {
+      "file": "history/prepare_v7_final_qa.py",
+      "source_sha256": "a6d98b8a2006e6c7392b03387680b7d20cb9ef8f4d7511c230ce19009d6cd149",
+      "published_sha256": "a6d98b8a2006e6c7392b03387680b7d20cb9ef8f4d7511c230ce19009d6cd149",
+      "bytes": 2195,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "prepare_v7_final_qa.py"
+        }
+      ]
+    },
+    {
+      "file": "history/refine_v7_center_glazing.py",
+      "source_sha256": "cc88c2d1299f74b9e359c2d77e11f93de84c021cbb58ddea9b03839f676d8325",
+      "published_sha256": "cc88c2d1299f74b9e359c2d77e11f93de84c021cbb58ddea9b03839f676d8325",
+      "bytes": 2546,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "refine_v7_center_glazing.py"
+        }
+      ]
+    },
+    {
+      "file": "history/refine_v7_visible_detail.py",
+      "source_sha256": "47eab828ecf1263e9d31ba73f2774da8b04e9b86ef1ef244ba3bd6c6303d381f",
+      "published_sha256": "47eab828ecf1263e9d31ba73f2774da8b04e9b86ef1ef244ba3bd6c6303d381f",
+      "bytes": 5871,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "refine_v7_visible_detail.py"
+        }
+      ]
+    },
+    {
+      "file": "history/rhino_validate_v7.py",
+      "source_sha256": "e63f9d786a84f2efb81125594e8a81992d7f4f4d1a2e4279d62f372733d4525b",
+      "published_sha256": "e63f9d786a84f2efb81125594e8a81992d7f4f4d1a2e4279d62f372733d4525b",
+      "bytes": 1780,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "rhino_validate_v7.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v6_alignment_audit/check_rim_3d_v7.py",
+      "source_sha256": "a79616644d5a6785765cb35c5e5f73ceb6553d117dfa75276b43867f317402fc",
+      "published_sha256": "a79616644d5a6785765cb35c5e5f73ceb6553d117dfa75276b43867f317402fc",
+      "bytes": 3968,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v6_alignment_audit/check_rim_3d_v7.py"
+        }
+      ]
+    },
+    {
+      "file": "history/write_v7_reports.py",
+      "source_sha256": "bf92f12330b8cb0a63c893120d7eb9658e4a104493342cd339082c4589e0590e",
+      "published_sha256": "7df558641eb5b546e2e310c35acb2247f0072ea6c746e2197fc0cb03c3dffd92",
+      "bytes": 9445,
+      "publication": "site-coordinate-redacted",
+      "redacted_original_lines": [
+        70
+      ],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "write_v7_reports.py"
+        }
+      ]
+    }
+  ]
+}

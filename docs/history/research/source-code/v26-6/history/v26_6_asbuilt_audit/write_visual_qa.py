@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,hashlib
+W=Path(__file__).resolve().parent.parent;O=Path('E:/jz/JIA/Rebuild_V26_6');P=O/'Blender/Architecture_Complete_V26_6.blend';R=O/'Reports';D=W/'v26_6/Review'
+def sha(p):
+ with p.open('rb')as f:return hashlib.file_digest(f,'sha256').hexdigest()
+h=sha(P);assert h=='ea7cd20cb3c30cf2b5984c1e262ca182fa3c168a8a16fd7201ef428267bf05b7'
+notes={
+ 'After_07_F3_Terrace_Open_Alcove_Cycles.png':['The former opaque crosswall is absent across the alcove entry.','The retained white structural header spans the open connection.','Both adjacent original black window frames and glazing are visible.','The photographed alcove ceiling appears as a continuous white flat plane.'],
+ 'After_08_F3_Alcove_Window_Heads_Cycles.png':['Rear and west window head finishes meet the white ceiling cleanly.','The former narrow hanging eave sliver and stepped head fragments are absent.','The visible glass apertures remain free of new opaque head infill.'],
+ 'After_09_F3_Alcove_Reverse_Opening_Cycles.png':['The reverse view confirms full-width connection from the window alcove to the metal-roof terrace.','The original header and side supports remain visible.','The existing tiled house wall, terrace metal roof and pierced parapet remain visible.']}
+images=[]
+for name,observations in notes.items():
+ im=D/name;meta_path=im.with_suffix('.json');meta=json.loads(meta_path.read_text('utf8'));assert meta['model_sha256']==h and meta['saved_model_unmodified'];images.append({'image':str(im),'image_sha256':sha(im),'render_metadata':str(meta_path),'metadata_sha256':sha(meta_path),'model_sha256':meta['model_sha256'],'camera':meta['camera'],'observations':observations,'visual_result':'PASS_TARGETED_REPAIR','temporary_review_fill_watts':meta['temporary_review_fill_watts'],'fill_not_saved_in_model':True})
+checks=[{'check':'All three native render metadata records match the final saved model hash','pass':True},{'check':'Photo-supported F3 opening is visibly clear in forward and reverse native views','pass':True},{'check':'Original structural header and side supports remain visible','pass':True},{'check':'White flat alcove ceiling and plain window heads have no visible former hanging eave sliver','pass':True},{'check':'Original glazing and black frames remain visible without head infill obscuring their panes','pass':True}]
+report={'status':'PASS_TARGETED_VISUAL_REVIEW','model':str(P),'model_sha256':h,'review_method':'Independent visual inspection of tool-displayed native Cycles renders after verifying saved model hashes; compared with actual uncalibrated INSV perspective frames. No model or image edits were made.','checks':checks,'failures':[],'images':images,'photo_reference_source':'E:/jz/VID_20260507_152114_00_001.insv','photo_reference_frames':[{'seconds':170,'lens':0},{'seconds':175,'lens':0},{'seconds':180,'lens':1},{'seconds':200,'lens':0},{'seconds':205,'lens':1}],'photo_findings':str(W/'v26_6_asbuilt_audit/AsBuilt_F3_Terrace_Crosswall_Findings.json'),'scope':'Confirms the specific photographed F3 west terrace alcove opening, retained supports, window heads and white flat ceiling. It does not assert that unrelated exterior scenery, existing canopy details or furniture are reconstructed from these frames. Absolute dimensions remain model-derived.'}
+fn=R/'V26_6_AsBuilt_Terrace_Visual_QA.json';fn.write_text(json.dumps(report,ensure_ascii=False,indent=2),'utf8');print('VISUAL_QA_DONE',report['status'],len(checks),'MODEL',h)
+for i in images:print(Path(i['image']).name,i['image_sha256'])

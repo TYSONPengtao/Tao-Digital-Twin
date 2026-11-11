@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "file": "courtyard-main-house.jpg",
+      "caption": "瓦檐望主楼",
+      "source": "用户于 2026-11-10 提供的 UE5 编辑器截图",
+      "original_filename": "aac833a5355a144fb1272ee51ee776d.jpg",
+      "source_sha256": "f4ac0692f4183b8143faf8265967af47f97e227162db134faeee72c0099f8930",
+      "published_sha256": "f4ac0692f4183b8143faf8265967af47f97e227162db134faeee72c0099f8930",
+      "processing": "原字节复制；无 EXIF/GPS；保留原有编辑器提示与图标"
+    },
+    {
+      "file": "outer-gate.jpg",
+      "caption": "外围铁门入口",
+      "source": "用户于 2026-11-10 提供的 UE5 编辑器截图",
+      "original_filename": "b7b7ed3b81a1c9787799776e90616ff.jpg",
+      "source_sha256": "a3b59e1110109663ca4148074414119f77514f00c1c5cad0220818c8fa8029f3",
+      "published_sha256": "a3b59e1110109663ca4148074414119f77514f00c1c5cad0220818c8fa8029f3",
+      "processing": "原字节复制；无 EXIF/GPS；保留原有编辑器提示与图标"
+    },
+    {
+      "file": "carved-gate.jpg",
+      "caption": "雕花门楼正面",
+      "source": "用户于 2026-11-10 提供的 UE5 编辑器截图",
+      "original_filename": "390918e957dc6a1914ee2aab019777d.jpg",
+      "source_sha256": "9b3c056edb5008e1b872cce11a7a49c08572b7f38f2e2123779d0aa3706b41db",
+      "published_sha256": "9b3c056edb5008e1b872cce11a7a49c08572b7f38f2e2123779d0aa3706b41db",
+      "processing": "原字节复制；无 EXIF/GPS；保留原有编辑器提示与图标"
+    },
+    {
+      "file": "ground-floor-window.jpg",
+      "caption": "一层室内望庭院",
+      "source": "用户于 2026-11-10 提供的 UE5 编辑器截图",
+      "original_filename": "a8ef9cb4535cbe7bd893af2d9e5d1f9.jpg",
+      "source_sha256": "1ed7a685e7b0bd458f8c6b00c0a112fc295ce8f55983d8513eb05551e7387742",
+      "published_sha256": "1ed7a685e7b0bd458f8c6b00c0a112fc295ce8f55983d8513eb05551e7387742",
+      "processing": "原字节复制；无 EXIF/GPS；保留原有编辑器提示与图标"
+    },
+    {
+      "file": "upper-floor-window.jpg",
+      "caption": "二层窗边望庭院",
+      "source": "用户于 2026-11-10 提供的 UE5 编辑器截图",
+      "original_filename": "8aea5a92a1121b826bfd3b2e8e5a6d7.jpg",
+      "source_sha256": "509cd2036d2e6c5f20f5bf600198ba8dd701982083c41c6ae81b9d2bf71a68f6",
+      "published_sha256": "509cd2036d2e6c5f20f5bf600198ba8dd701982083c41c6ae81b9d2bf71a68f6",
+      "processing": "原字节复制；无 EXIF/GPS；保留原有编辑器提示与图标"
+    }
+  ]
+}

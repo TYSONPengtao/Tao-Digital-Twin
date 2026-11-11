@@ -1,0 +1,450 @@
+{
+  "version": "V23",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "history/v23_independent_review.py",
+      "source_sha256": "5701c0b0f29f9dec332bbcffbc3895ba7dd7396048530a96e2dc186fac497cc2",
+      "published_sha256": "5701c0b0f29f9dec332bbcffbc3895ba7dd7396048530a96e2dc186fac497cc2",
+      "bytes": 15323,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v23_independent_review.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/export_v5.py",
+      "source_sha256": "c68847cbb9b412e770eb588ae0307f1dba34bc07e7bdd9990917021ecc3cbc0d",
+      "published_sha256": "c68847cbb9b412e770eb588ae0307f1dba34bc07e7bdd9990917021ecc3cbc0d",
+      "bytes": 20136,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/export_v5.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v11_wall_junction/mutation.py",
+      "source_sha256": "1239f6e2c7d6d882d6142bab05aaef55a607bf770392cb5fd04de326dc321443",
+      "published_sha256": "1239f6e2c7d6d882d6142bab05aaef55a607bf770392cb5fd04de326dc321443",
+      "bytes": 29693,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v11_wall_junction/mutation.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v19_design.py",
+      "source_sha256": "8abbe50740320fe7c9bd825ea1309a3ecbf5d2e665e520700cca72528f68cca9",
+      "published_sha256": "8abbe50740320fe7c9bd825ea1309a3ecbf5d2e665e520700cca72528f68cca9",
+      "bytes": 21624,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v19_design.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_apply_ceiling_finish.py",
+      "source_sha256": "06f98d3b2b62f76b395bed3cc050b0c30557044ca78bd3a9b6b05e79e61d57b4",
+      "published_sha256": "06f98d3b2b62f76b395bed3cc050b0c30557044ca78bd3a9b6b05e79e61d57b4",
+      "bytes": 3731,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_apply_ceiling_finish.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_apply_ceiling_finish.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_apply_roof_refit.py",
+      "source_sha256": "7278ceb08aca1e3dd41e7cf87d33178e8d342685a3efd560a53352d298117328",
+      "published_sha256": "7278ceb08aca1e3dd41e7cf87d33178e8d342685a3efd560a53352d298117328",
+      "bytes": 4364,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_apply_roof_refit.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_apply_roof_refit.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_assemble.py",
+      "source_sha256": "817b024fbc34a27bd36ce73a5302490c753cbc1af0a74c5b8d62582218236d22",
+      "published_sha256": "817b024fbc34a27bd36ce73a5302490c753cbc1af0a74c5b8d62582218236d22",
+      "bytes": 11756,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_assemble.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_assemble.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_common.py",
+      "source_sha256": "42bee93f998357be167945f987a9b4d40b831839338e71be97a79b6d07913699",
+      "published_sha256": "42bee93f998357be167945f987a9b4d40b831839338e71be97a79b6d07913699",
+      "bytes": 5516,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_common.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_common.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_delivery_preflight.py",
+      "source_sha256": "40feca419bf7d54b6faff2d0c07a1ab1e008552fe2e134511a02022bd8f5e255",
+      "published_sha256": "40feca419bf7d54b6faff2d0c07a1ab1e008552fe2e134511a02022bd8f5e255",
+      "bytes": 4583,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_delivery_preflight.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_delivery_preflight.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_door_native_review.py",
+      "source_sha256": "e4f8cbbeb0cf5c9e6e28469dcf36b3f94b84c4c784e62a1cac1ff3ce77a28e31",
+      "published_sha256": "e4f8cbbeb0cf5c9e6e28469dcf36b3f94b84c4c784e62a1cac1ff3ce77a28e31",
+      "bytes": 5966,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_door_native_review.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_door_native_review.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_final_review.py",
+      "source_sha256": "2dbeda6b56fac327483304c5e9b1e9e9f757af19357906a3c6ce7fe34bc17156",
+      "published_sha256": "2dbeda6b56fac327483304c5e9b1e9e9f757af19357906a3c6ce7fe34bc17156",
+      "bytes": 4481,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_final_review.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_final_review.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_finalize_compact.py",
+      "source_sha256": "13e0cb6440672c8c8c539aee23d1bc1b0ab8ab2a05781a596f9834c231fcc3f3",
+      "published_sha256": "13e0cb6440672c8c8c539aee23d1bc1b0ab8ab2a05781a596f9834c231fcc3f3",
+      "bytes": 2725,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_finalize_compact.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_finalize_compact.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_junction.py",
+      "source_sha256": "358b087188a5f321d167cd3be027614ccaa507558ef1858d84d2e156b78efb9d",
+      "published_sha256": "358b087188a5f321d167cd3be027614ccaa507558ef1858d84d2e156b78efb9d",
+      "bytes": 4202,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_junction.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_junction.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_relief.py",
+      "source_sha256": "85f218f53c342a67cbbe43c7d81b8b12cd36024e407357a148c1d3365349f116",
+      "published_sha256": "85f218f53c342a67cbbe43c7d81b8b12cd36024e407357a148c1d3365349f116",
+      "bytes": 10160,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_relief.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_relief.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_roof.py",
+      "source_sha256": "839d90d1153ae286debb8071a432580311d8a5f908447b199b2fc5e35de572c9",
+      "published_sha256": "839d90d1153ae286debb8071a432580311d8a5f908447b199b2fc5e35de572c9",
+      "bytes": 10510,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_roof.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_roof.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_roof_finish.py",
+      "source_sha256": "4810051fbfb7b393857e868bcdc5663f95b4504b1357d0861b31718a47ea8fd4",
+      "published_sha256": "4810051fbfb7b393857e868bcdc5663f95b4504b1357d0861b31718a47ea8fd4",
+      "bytes": 2221,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_roof_finish.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_roof_finish.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_roof_refit.py",
+      "source_sha256": "a3894be55c9a3b8a9c2db4d16830437405c0ae2938344177b0f8430b6fce30bd",
+      "published_sha256": "a3894be55c9a3b8a9c2db4d16830437405c0ae2938344177b0f8430b6fce30bd",
+      "bytes": 4630,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_roof_refit.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_roof_refit.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_gate_wood.py",
+      "source_sha256": "007cd59adb201e57e2af738c449b5c166aee8e014b7a5552575f7c6c9f037050",
+      "published_sha256": "007cd59adb201e57e2af738c449b5c166aee8e014b7a5552575f7c6c9f037050",
+      "bytes": 7908,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_gate_wood.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_gate_wood.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_independent_review.py",
+      "source_sha256": "814a7835f5c75574fc22e02e5102bb7781185aa614a423306663e91ca348866b",
+      "published_sha256": "814a7835f5c75574fc22e02e5102bb7781185aa614a423306663e91ca348866b",
+      "bytes": 14917,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_independent_review.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_merge.py",
+      "source_sha256": "0f3b2ab74479ff8138b091154f103125be5ec6b67610f8fe906bf52816e0fa9e",
+      "published_sha256": "0f3b2ab74479ff8138b091154f103125be5ec6b67610f8fe906bf52816e0fa9e",
+      "bytes": 1828,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_merge.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_merge.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_native_overlap_probe.py",
+      "source_sha256": "d29f1c1eafd41b58f5f0d0a5f71bda03f8f46136b390750f41e8fc2bf8aa0360",
+      "published_sha256": "d29f1c1eafd41b58f5f0d0a5f71bda03f8f46136b390750f41e8fc2bf8aa0360",
+      "bytes": 1709,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_native_overlap_probe.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_native_overlap_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_native_qa.py",
+      "source_sha256": "21ea945e3fa5d578a1af9333c32f9579b58f360e579b326d682f385b315ef587",
+      "published_sha256": "21ea945e3fa5d578a1af9333c32f9579b58f360e579b326d682f385b315ef587",
+      "bytes": 5895,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_native_qa.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_native_qa.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_overlap_probe.py",
+      "source_sha256": "59473f2d6e3398c2f3f43c325f845a3c82048cecea9307b9086dd0586607be96",
+      "published_sha256": "59473f2d6e3398c2f3f43c325f845a3c82048cecea9307b9086dd0586607be96",
+      "bytes": 1192,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_overlap_probe.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_overlap_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_package.py",
+      "source_sha256": "d12b49bd726c156f0150f7a7ad67ee5fa179497015dd8f1a91db681455c0c56d",
+      "published_sha256": "d12b49bd726c156f0150f7a7ad67ee5fa179497015dd8f1a91db681455c0c56d",
+      "bytes": 11065,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_package.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_package.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v23_render_native.py",
+      "source_sha256": "ee582979f5e4d975f5331e93c4473fd5e52192062fb1ff6052ed0ef630d3d54e",
+      "published_sha256": "ee582979f5e4d975f5331e93c4473fd5e52192062fb1ff6052ed0ef630d3d54e",
+      "bytes": 8808,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v23_render_native.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v23_render_native.py"
+        }
+      ]
+    },
+    {
+      "file": "project/08_Editable_Source/V23_Scripts/v2_geometry.py",
+      "source_sha256": "220da004f15cfdd44596d04ce67392208468483d8101e6bf0dd0fae6de7f0c0d",
+      "published_sha256": "220da004f15cfdd44596d04ce67392208468483d8101e6bf0dd0fae6de7f0c0d",
+      "bytes": 4090,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V23/08_Editable_Source/V23_Scripts/v2_geometry.py"
+        }
+      ]
+    }
+  ]
+}

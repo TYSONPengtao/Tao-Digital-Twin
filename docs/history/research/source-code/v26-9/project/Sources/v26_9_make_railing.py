@@ -1,0 +1,10 @@
+from pathlib import Path
+W=Path(__file__).parent;D=W/'v26_9_railing';D.mkdir(exist_ok=True)
+code=(W/'v26_8_railing/build_candidate.py').read_text('utf8').replace("D=W/'v26_8_railing'","D=W/'v26_9_railing'")
+code=code.replace("y=7.215;pts=[[4.035,y,h],[7.88,y,h]]", "y=7.215;front_h=h-.15;pts=[[4.035,y,front_h],[7.88,y,front_h]]")
+code=code.replace("post(7.88,y,z,h,'F3 front guard end')","post(7.88,y,z,front_h,'F3 front guard end')")
+code=code.replace("spindle(float(x),y,z,h,'F3 front guard')","spindle(float(x),y,z,front_h,'F3 front guard')")
+code=code.replace("'tag':'F3 front','axis_y_m':y,'slab_edge_y_m':7.30,'rail_top_above_floor_m':1.204", "'tag':'F3 front','axis_y_m':y,'slab_edge_y_m':7.30,'rail_top_above_floor_m':1.054,'lowered_m':.15")
+code=code.replace("meta['closed_assemblies']=", "meta['V26_9_front_guard_only_lowered_m']=.15;meta['all_sloping_grip_paths_and_rear_guard_retained']=True;meta['closed_assemblies']=")
+(D/'build_candidate.py').write_text(code,'utf8')
+exec(compile(code,str(D/'build_candidate.py'),'exec'),{'__file__':str(D/'build_candidate.py')})

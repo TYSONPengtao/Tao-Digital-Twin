@@ -1,0 +1,2 @@
+from pathlib import Path
+W=Path(__file__).parent;p=W/'v24_37_launcher_smoke.py';s=p.read_text('utf8');s=s.replace("position=list(op.walker.p));tap('SPACE');stage=88;", "position=list(op.walker.p));move_start=op.walker.p.copy();tap('SPACE');stage=88;");s=s.replace('not op.walker.grounded and op.walker.vz>0','not op.walker.grounded and op.walker.p.z-move_start.z>.25');compile(s,str(p),'exec');p.write_text(s,encoding='utf8');print('GUI_JUMP_ASSERTS_USE_ACTUAL_FOOT_LIFT_INSTEAD_OF_TIMING_SENSITIVE_VELOCITY_SIGN')

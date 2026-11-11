@@ -1,0 +1,432 @@
+{
+  "version": "V24.20",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "history/v24_20_diagnostics.py",
+      "source_sha256": "b76220f2dfbdbb19b717d1e22b9389c843c2d629d3f82b44fb8440a3edc4943a",
+      "published_sha256": "b76220f2dfbdbb19b717d1e22b9389c843c2d629d3f82b44fb8440a3edc4943a",
+      "bytes": 1964,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_diagnostics.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_junction_probe.py",
+      "source_sha256": "f07e0642511c31adb550b0d5d811d8539cd73b0b92af54c10ea3a570dd052eab",
+      "published_sha256": "f07e0642511c31adb550b0d5d811d8539cd73b0b92af54c10ea3a570dd052eab",
+      "bytes": 603,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_junction_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_layout_data.py",
+      "source_sha256": "001eed3212bf64807e61e1fe782094c4927136a0eddee60672fb8159b27f1052",
+      "published_sha256": "001eed3212bf64807e61e1fe782094c4927136a0eddee60672fb8159b27f1052",
+      "bytes": 1187,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_layout_data.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_plan.py",
+      "source_sha256": "d91e556a8c8b35cd83fa550b30429b913f875a1aad9f204c529be080ff27426c",
+      "published_sha256": "d91e556a8c8b35cd83fa550b30429b913f875a1aad9f204c529be080ff27426c",
+      "bytes": 1634,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_plan.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_plot_kitchen.py",
+      "source_sha256": "ce1bc3f85034ca696d704552572e4096e4f908ee2b770d75b37a32b47ffc7f40",
+      "published_sha256": "ce1bc3f85034ca696d704552572e4096e4f908ee2b770d75b37a32b47ffc7f40",
+      "bytes": 805,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_plot_kitchen.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_pre18_walls.py",
+      "source_sha256": "ecfbd5066787d2b0db46fcad34b705a38097957c45be400464dbf2a7d2b06033",
+      "published_sha256": "ecfbd5066787d2b0db46fcad34b705a38097957c45be400464dbf2a7d2b06033",
+      "bytes": 688,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_pre18_walls.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_ray_probe.py",
+      "source_sha256": "872c708fc25aa30c44ab890c51305ee5731ec51b7ba41d8c769680c35777418a",
+      "published_sha256": "872c708fc25aa30c44ab890c51305ee5731ec51b7ba41d8c769680c35777418a",
+      "bytes": 997,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_ray_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_roof_analysis.py",
+      "source_sha256": "a5ca872d7772c31ff21db09eeadf43829cfe9bb167289f9e6afb1fe7d841e573",
+      "published_sha256": "a5ca872d7772c31ff21db09eeadf43829cfe9bb167289f9e6afb1fe7d841e573",
+      "bytes": 1429,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_roof_analysis.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_20_uv_probe.py",
+      "source_sha256": "0682b5286d4718477f27ee3bc20fecb2b404b3af80f8eda457960ced77dc0212",
+      "published_sha256": "0682b5286d4718477f27ee3bc20fecb2b404b3af80f8eda457960ced77dc0212",
+      "bytes": 767,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_20_uv_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_03_junction_blender.py",
+      "source_sha256": "996404075f59ae1e4012bd7f6ad0d3fdf72e01ab0867212e27cc3135afbdef49",
+      "published_sha256": "996404075f59ae1e4012bd7f6ad0d3fdf72e01ab0867212e27cc3135afbdef49",
+      "bytes": 11313,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_03_junction_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_06_common.py",
+      "source_sha256": "763307a4377c6832de22b442935eac7d210b621978bd99ea9930b3870c3e2165",
+      "published_sha256": "763307a4377c6832de22b442935eac7d210b621978bd99ea9930b3870c3e2165",
+      "bytes": 1416,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_06_common.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_11_geometry.py",
+      "source_sha256": "8693ec580c2d7be175e1d34af32053f4d9bc2bde6cf10119350b8652215d2583",
+      "published_sha256": "8693ec580c2d7be175e1d34af32053f4d9bc2bde6cf10119350b8652215d2583",
+      "bytes": 2466,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_11_geometry.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_16_common.py",
+      "source_sha256": "0dd13933d6883aaedb047a2f5b8af32e943c8b916b97f5db46ff0a9a7d915cf4",
+      "published_sha256": "0dd13933d6883aaedb047a2f5b8af32e943c8b916b97f5db46ff0a9a7d915cf4",
+      "bytes": 4148,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_16_common.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_18_finish.py",
+      "source_sha256": "cd7282ce089bff8403155070ba6132e69adb8bf120ff74c85dbe71c2ba1d2fee",
+      "published_sha256": "cd7282ce089bff8403155070ba6132e69adb8bf120ff74c85dbe71c2ba1d2fee",
+      "bytes": 6815,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_18_finish.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_build.py",
+      "source_sha256": "6247406d043f8d112c2e912f1f379ec82828b4ad5e53a69d6363430f4acfe465",
+      "published_sha256": "6247406d043f8d112c2e912f1f379ec82828b4ad5e53a69d6363430f4acfe465",
+      "bytes": 15084,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_build.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_build.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_common.py",
+      "source_sha256": "6c09dd16d33ec7307f7e56c2630d97d4a84b6310ce4a5dd71d443bfaa8d087c3",
+      "published_sha256": "6c09dd16d33ec7307f7e56c2630d97d4a84b6310ce4a5dd71d443bfaa8d087c3",
+      "bytes": 580,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_common.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_common.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_package.py",
+      "source_sha256": "244679f7dc9be4e84c7c994402cee6bf41de72113578a9b258750973683f4475",
+      "published_sha256": "244679f7dc9be4e84c7c994402cee6bf41de72113578a9b258750973683f4475",
+      "bytes": 9828,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_package.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_package.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_plans.py",
+      "source_sha256": "a20f337e326eb12b32fa59b6ead4c072cf571ea3155c2ab14d0a81b4839d0975",
+      "published_sha256": "a20f337e326eb12b32fa59b6ead4c072cf571ea3155c2ab14d0a81b4839d0975",
+      "bytes": 4504,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_plans.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_plans.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_posts.py",
+      "source_sha256": "957b02c860785a87999204f5243d428eb24262fea98faca8529961c91564b65d",
+      "published_sha256": "957b02c860785a87999204f5243d428eb24262fea98faca8529961c91564b65d",
+      "bytes": 2310,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_posts.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_posts.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_prepare.py",
+      "source_sha256": "1cae1bf5f46d5b2778e3d586384c379ac07c7de37bc37a9961ce04059945e636",
+      "published_sha256": "1cae1bf5f46d5b2778e3d586384c379ac07c7de37bc37a9961ce04059945e636",
+      "bytes": 9247,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_prepare.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_prepare.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_probe.py",
+      "source_sha256": "3d34c25b44c0a5b624ff8be692f3332c416fbcf59058e51dbb53b8defaac8587",
+      "published_sha256": "3d34c25b44c0a5b624ff8be692f3332c416fbcf59058e51dbb53b8defaac8587",
+      "bytes": 3015,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_probe.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_render.py",
+      "source_sha256": "2388b2dfe38b8ea86487a0f6e44c88852f7b64dce8d973bc53cf4916ec07fc30",
+      "published_sha256": "2388b2dfe38b8ea86487a0f6e44c88852f7b64dce8d973bc53cf4916ec07fc30",
+      "bytes": 2401,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_render.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_render.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_roofs.py",
+      "source_sha256": "370862922873c6b83ea2e3aab337166ce012ac9b2eb34b3fdab1eab60c9545a9",
+      "published_sha256": "370862922873c6b83ea2e3aab337166ce012ac9b2eb34b3fdab1eab60c9545a9",
+      "bytes": 10337,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_roofs.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_roofs.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_solids.py",
+      "source_sha256": "5cc1739fbaa5a5e7eff3106a56cffa179ef89c6dc713d7669d3d98fe8a86cfee",
+      "published_sha256": "5cc1739fbaa5a5e7eff3106a56cffa179ef89c6dc713d7669d3d98fe8a86cfee",
+      "bytes": 4558,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_solids.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_solids.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_verify.py",
+      "source_sha256": "9a145747b80cec44f24d6192f06c06ed38ca828886ccb5e35fba4c7ff9cb3cc7",
+      "published_sha256": "9a145747b80cec44f24d6192f06c06ed38ca828886ccb5e35fba4c7ff9cb3cc7",
+      "bytes": 10325,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_verify.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_verify.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_20_wc.py",
+      "source_sha256": "a049146166c413ccaad9ca92778978147c0c7e95ee466e61403a98f741206997",
+      "published_sha256": "a049146166c413ccaad9ca92778978147c0c7e95ee466e61403a98f741206997",
+      "bytes": 1886,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_20_wc.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_20_wc.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_qa_blender.py",
+      "source_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "published_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "bytes": 13258,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24_20/Source/v24_qa_blender.py"
+        }
+      ]
+    }
+  ]
+}

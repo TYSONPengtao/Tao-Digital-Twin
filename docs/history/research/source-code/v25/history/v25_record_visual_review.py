@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib
+O=Path('E:/jz/JIA/Rebuild_V25');R=O/'Reports';build=json.loads((R/'V25_Rhino_Build_QA.json').read_text('utf8'));desktop=json.loads((R/'V25_Rhino_Desktop_QA.json').read_text('utf8'));assert desktop['mesh_triangles']==build['triangles']
+images=[]
+for c in desktop['captures']:
+ p=Path(c['file']);images.append({'file':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'named_view':c['named_view']})
+r={'status':'PASS_VISUAL_REVIEW','native_file_sha256':build['files'][0]['sha256'],'images':images,'reviewed':['Actual Rhino Rendered view of the reconstructed house, courtyard and original and supplemental photo meshes','Full exterior expansion remains one retained context with original photographic detail','Kitchen and storage blue brick, white finish, stone foundation, roof tiles and pipes retain their material regions','Retained photo textures display with correct geometry and UV; original missing scan areas remain missing data','Rhino white background and PBR illumination differ from the Blender preview; baked albedo excludes lighting'],'scope':'Visual review of native Rhino conversion. Geometry, material-face partitions, coordinate transform and texture bytes verified independently.'};(R/'V25_Visual_Review.json').write_text(json.dumps(r,ensure_ascii=False,indent=2),encoding='utf8');print('V25_VISUAL_REVIEW_RECORDED',len(images),flush=True)

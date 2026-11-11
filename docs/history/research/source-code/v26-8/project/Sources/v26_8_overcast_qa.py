@@ -1,0 +1,11 @@
+from pathlib import Path
+import bpy,json,hashlib,numpy as np
+W=Path(__file__).parent;O=Path('E:/jz/JIA/Rebuild_V26_8');P=O/'Blender/Architecture_Complete_V26_8.blend';bpy.ops.wm.open_mainfile(filepath=str(P));sc=bpy.context.scene;checks=[]
+def ck(n,v,**q):checks.append({'check':n,'pass':bool(v),**q});print(n,bool(v),q if not v else'',flush=True)
+world=sc.world;bg=next(n for n in world.node_tree.nodes if n.type=='BACKGROUND');ck('Saved world is neutral uniform overcast ambient',world.name=='V26_8_Overcast_Soft_Even_Daylight' and abs(bg.inputs['Strength'].default_value-.75)<1e-6 and max(bg.inputs['Color'].default_value[:3])-min(bg.inputs['Color'].default_value[:3])<.025,color=list(bg.inputs['Color'].default_value),strength=bg.inputs['Strength'].default_value)
+suns=[o for o in sc.objects if o.type=='LIGHT'and o.data.type=='SUN'];ck('All direct suns disabled',all(o.data.energy==0 for o in suns),suns=len(suns))
+spots=[o for o in sc.objects if o.type=='LIGHT'and o.data.type=='POINT'and o.data.energy>0];ck('Remaining interior point sources have broad soft shadows',all(o.data.shadow_soft_size>=1.39 and o.data.energy<=100.01 for o in spots),points=len(spots))
+areas=[o for o in sc.objects if o.type=='LIGHT'and o.name.startswith('V26_8_Overcast_Interior')];ck('12 broad saved interior fill areas give even room lighting',len(areas)==12 and all(o.data.size>=2.79 for o in areas),count=len(areas))
+spaces=[a.spaces.active.shading for scr in bpy.data.screens for a in scr.areas if a.type=='VIEW_3D'];ck('Every saved Material Preview space uses scene overcast world and soft lights',all(s.type=='MATERIAL' and s.use_scene_world and s.use_scene_lights for s in spaces),spaces=len(spaces))
+ck('Saved display uses low contrast AgX',sc.view_settings.view_transform=='AgX'and sc.view_settings.look=='AgX - Medium Low Contrast')
+fail=[r for r in checks if not r['pass']];out={'model_sha256':hashlib.sha256(P.read_bytes()).hexdigest(),'status':'PASS'if not fail else'FAIL','checks':checks,'failures':fail,'basis':'Freshly reopened native world lights color management and every saved viewport; overcast is a requested display setup rather than measured site illumination.'};(O/'Reports/V26_8_Overcast_QA.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),'utf8');print('OVERCAST_QA',len(checks),'FAIL',len(fail))

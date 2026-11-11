@@ -1,0 +1,264 @@
+{
+  "animations": [
+    {
+      "id": "v24-17-exterior-orbit",
+      "title": "V24.17 · 外景环绕",
+      "kind": "模型复核",
+      "note": "原过程相机环绕，用于观察山墙、镬耳和屋面交接；不是误差量化或实物检测。",
+      "article": "versions/v24-17.md",
+      "source": {
+        "root": "jia",
+        "relative": "Rebuild_V24_17/Reports/V24_17_Exterior_Orbit.mp4",
+        "sha256": "4831a054c49e1937c32faafb75aaa6e7564580780bc7958e92c9ec9e405f9ae2",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 960,
+              "height": 720,
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "3.000000",
+            "size": "1192725"
+          }
+        }
+      },
+      "video": {
+        "file": "v24-17-exterior-orbit.mp4",
+        "sha256": "4831a054c49e1937c32faafb75aaa6e7564580780bc7958e92c9ec9e405f9ae2",
+        "processing": "原字节复制",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 960,
+              "height": 720,
+              "r_frame_rate": "24/1",
+              "nb_read_frames": "72"
+            }
+          ],
+          "format": {
+            "duration": "3.000000",
+            "size": "1192725"
+          }
+        }
+      },
+      "preview": {
+        "file": "v24-17-exterior-orbit.gif",
+        "sha256": "2a3c79fd38da804e227806ba88e2418cf4edcfe7a52c6f942b181fe5f6ac68d6",
+        "processing": "完整时长缩放到 520 像素宽、8 fps、96 色循环 GIF；仅为预览"
+      }
+    },
+    {
+      "id": "v24-18-outward-windows",
+      "title": "V24.18 · 外开窗动作",
+      "kind": "模型动作演示",
+      "note": "原过程窗扇动作，用于观察外开方向和可动层级；不代表实物电机或传感器已连接。",
+      "article": "versions/v24-18.md",
+      "source": {
+        "root": "jia",
+        "relative": "Rebuild_V24_18/Reports/V24_18_Outward_Windows.mp4",
+        "sha256": "a3468b3274b4c00678bc8dbd37066c3c92935aa16bea462e1583db8eba22f15c",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 960,
+              "height": 720,
+              "r_frame_rate": "12/1"
+            }
+          ],
+          "format": {
+            "duration": "3.334000",
+            "size": "298956"
+          }
+        }
+      },
+      "video": {
+        "file": "v24-18-outward-windows.mp4",
+        "sha256": "a3468b3274b4c00678bc8dbd37066c3c92935aa16bea462e1583db8eba22f15c",
+        "processing": "原字节复制",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 960,
+              "height": 720,
+              "r_frame_rate": "12/1",
+              "nb_read_frames": "40"
+            }
+          ],
+          "format": {
+            "duration": "3.334000",
+            "size": "298956"
+          }
+        }
+      },
+      "preview": {
+        "file": "v24-18-outward-windows.gif",
+        "sha256": "74b7747343b31550d715f76b6c533a0a42b94a53144d307b59353b181b248f73",
+        "processing": "完整时长缩放到 520 像素宽、8 fps、96 色循环 GIF；仅为预览"
+      }
+    },
+    {
+      "id": "v26-8-stair-oblique",
+      "title": "V26.8 · 楼梯贴墙斜视",
+      "kind": "模型复核",
+      "note": "12 帧斜视复核短片，用于检查台阶与墙体交接；不是人物步行、碰撞或施工验收。",
+      "article": "versions/v26-8.md",
+      "source": {
+        "root": "jia",
+        "relative": "Rebuild_V26_8/Reports/楼梯斜视复核/楼梯贴墙斜视复核.mp4",
+        "sha256": "24e8b1e47740ec32286cf6cb8f7750c55b9ae308eb634bc0fcc0ee0cf1a9a20f",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "8/1"
+            }
+          ],
+          "format": {
+            "duration": "1.500000",
+            "size": "98628"
+          }
+        }
+      },
+      "video": {
+        "file": "v26-8-stair-oblique.mp4",
+        "sha256": "24e8b1e47740ec32286cf6cb8f7750c55b9ae308eb634bc0fcc0ee0cf1a9a20f",
+        "processing": "原字节复制",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 640,
+              "height": 480,
+              "r_frame_rate": "8/1",
+              "nb_read_frames": "12"
+            }
+          ],
+          "format": {
+            "duration": "1.500000",
+            "size": "98628"
+          }
+        }
+      },
+      "preview": {
+        "file": "v26-8-stair-oblique.gif",
+        "sha256": "6e99107ab0eef4c5cf21a13fe8fca71d897dc959325f011b6890c4b22ff7b290",
+        "processing": "完整时长缩放到 520 像素宽、8 fps、96 色循环 GIF；仅为预览"
+      }
+    },
+    {
+      "id": "ue-wind-annual-coarse",
+      "title": "UE5 · 旧室外基准风场",
+      "kind": "软件模拟",
+      "note": "annual_coarse 稳态求解结果的 UE 原生流线时间演示，原报告 display_revision 为 season_controls_20261029；与当前全开门窗工况区分。",
+      "article": "../smart-home.md",
+      "source": {
+        "root": "ue",
+        "relative": "WindAnalysis/Reports/wind_demo.mp4",
+        "sha256": "c18586334b37bcd2959ee45a7fc9ac531c8e0259dc69f93ec4e95986cfe9b57e",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1280,
+              "height": 800,
+              "r_frame_rate": "12/1"
+            }
+          ],
+          "format": {
+            "duration": "8.000000",
+            "size": "10498348"
+          }
+        }
+      },
+      "video": {
+        "file": "ue-wind-annual-coarse.mp4",
+        "sha256": "5eed7178c8adf357c0adb8301caf45e50351d9941a3bfad509c72a88fc06fc53",
+        "processing": "完整时长 H.264 CRF26 转码，移除容器元数据，无裁剪或改序",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1280,
+              "height": 800,
+              "r_frame_rate": "12/1",
+              "nb_read_frames": "96"
+            }
+          ],
+          "format": {
+            "duration": "8.000000",
+            "size": "3132650"
+          }
+        }
+      },
+      "preview": {
+        "file": "ue-wind-annual-coarse.gif",
+        "sha256": "a7ebea5b0431f112ff82b9d0c98786f5fb3c58de442b15ba2733febaa85822fe",
+        "processing": "完整时长缩放到 520 像素宽、8 fps、96 色循环 GIF；仅为预览"
+      }
+    },
+    {
+      "id": "ue-five-view-tour",
+      "title": "UE5 · 五参考机位巡游",
+      "kind": "软件场景预览",
+      "note": "原序列按 04→02→03→05→07 巡游，543 帧；用于场景观察，不是实物确认。",
+      "article": "../smart-home.md",
+      "source": {
+        "root": "ue",
+        "relative": "InteractionUpgrade/ReferenceViews/智慧家_五个参考视角.mp4",
+        "sha256": "071e3ef40700e5e0328c3a833418fc64ebc3449a467313bed53333e17827619b",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "width": 1280,
+              "height": 720,
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "18.100000",
+            "size": "19892451"
+          }
+        }
+      },
+      "video": {
+        "file": "ue-five-view-tour.mp4",
+        "sha256": "a2342167fc68a0500bcc24d927953154a95e1751081ca13b117956010d03b3e4",
+        "processing": "完整时长 H.264 CRF26 转码，移除容器元数据，无裁剪或改序",
+        "metadata": {
+          "programs": [],
+          "streams": [
+            {
+              "width": 1280,
+              "height": 720,
+              "r_frame_rate": "30/1",
+              "nb_read_frames": "543"
+            }
+          ],
+          "format": {
+            "duration": "18.100000",
+            "size": "4265488"
+          }
+        }
+      },
+      "preview": {
+        "file": "ue-five-view-tour.gif",
+        "sha256": "8940f2d8d6954f21078d67a6543051ca9c6cb6a2df37f2ed2ffe4d8cc7bf8d41",
+        "processing": "完整时长缩放到 520 像素宽、8 fps、96 色循环 GIF；仅为预览"
+      }
+    }
+  ]
+}

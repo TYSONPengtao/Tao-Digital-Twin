@@ -1,0 +1,135 @@
+{
+  "version": "V1",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "history/register_reality.py",
+      "source_sha256": "1779fe3c42625a6047a4e7c34d89661b6385b10bfd87dfc4fa7ae06f3d867fc9",
+      "published_sha256": "1779fe3c42625a6047a4e7c34d89661b6385b10bfd87dfc4fa7ae06f3d867fc9",
+      "bytes": 2286,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "register_reality.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/blender_export.py",
+      "source_sha256": "e5f675f752391093fad4ea9a480611ee33c4e6746a191b711b8fd53e6861bafa",
+      "published_sha256": "e5f675f752391093fad4ea9a480611ee33c4e6746a191b711b8fd53e6861bafa",
+      "bytes": 6529,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/blender_export.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/build_scene.py",
+      "source_sha256": "2196c9f61feeafff17468d547c95d250cd87a1651db96685d6446e1d09c22e43",
+      "published_sha256": "83f409969efc1557527ae3883d72a72ce760514d4e0b0eb1a12e1381ed43cb45",
+      "bytes": 24118,
+      "publication": "site-coordinate-redacted",
+      "redacted_original_lines": [
+        9,
+        258
+      ],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/build_scene.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/check_exchange.py",
+      "source_sha256": "d7db3c6a79c8213bc9503ae41addcf5e1dca7830356590c1afd187120088ed71",
+      "published_sha256": "d7db3c6a79c8213bc9503ae41addcf5e1dca7830356590c1afd187120088ed71",
+      "bytes": 1945,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/check_exchange.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/check_geometry.py",
+      "source_sha256": "ac43a0068b401af4e3d7d3017b7fe285c401a4d3bbab2da8aee0362a83a7bd06",
+      "published_sha256": "ac43a0068b401af4e3d7d3017b7fe285c401a4d3bbab2da8aee0362a83a7bd06",
+      "bytes": 5149,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/check_geometry.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/export_models.py",
+      "source_sha256": "2b27e5faad85782d9c5d739953c0659c2c05815f49e8ad39f7eced1d709af273",
+      "published_sha256": "2b27e5faad85782d9c5d739953c0659c2c05815f49e8ad39f7eced1d709af273",
+      "bytes": 19262,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/export_models.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/finish_references.py",
+      "source_sha256": "ea4fbeb50556f35f7cc042e1eed8af12dec8f3ca795581f8e2abfea894cc45b8",
+      "published_sha256": "ea4fbeb50556f35f7cc042e1eed8af12dec8f3ca795581f8e2abfea894cc45b8",
+      "bytes": 6097,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/finish_references.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/roof_diagnostics.py",
+      "source_sha256": "63673c03e7c8a36aa46a2f474361e44f1cadd26b45ed2ed7a371477b923842eb",
+      "published_sha256": "63673c03e7c8a36aa46a2f474361e44f1cadd26b45ed2ed7a371477b923842eb",
+      "bytes": 2081,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/roof_diagnostics.py"
+        }
+      ]
+    },
+    {
+      "file": "project/05_Intermediate/Scripts/skp_api.py",
+      "source_sha256": "ac40ad7fec88689e0ada9b6615a86ce70cba91a6d60b6804fd1b5c402132c73e",
+      "published_sha256": "ac40ad7fec88689e0ada9b6615a86ce70cba91a6d60b6804fd1b5c402132c73e",
+      "bytes": 6811,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild/05_Intermediate/Scripts/skp_api.py"
+        }
+      ]
+    }
+  ]
+}

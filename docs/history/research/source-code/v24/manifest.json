@@ -1,0 +1,440 @@
+{
+  "version": "V24",
+  "sources_read_only": true,
+  "files": [
+    {
+      "file": "history/v24_boundary_inspect.py",
+      "source_sha256": "5d782f568ff2cebb24e71aede0ca237e0b2f9614f9414d5d41c390cb3400e233",
+      "published_sha256": "5d782f568ff2cebb24e71aede0ca237e0b2f9614f9414d5d41c390cb3400e233",
+      "bytes": 595,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_boundary_inspect.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_column_components.py",
+      "source_sha256": "7b43b82c0741bc0090c88a337c2da8726fee0a0eaf44c273048f5bff60804498",
+      "published_sha256": "7b43b82c0741bc0090c88a337c2da8726fee0a0eaf44c273048f5bff60804498",
+      "bytes": 1289,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_column_components.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_junction_coordinate_review.py",
+      "source_sha256": "5fb7d1c38d8dd44a3d73d0d5d8421d38d98fe718d8320b0ad0c85323c2d5b16c",
+      "published_sha256": "5fb7d1c38d8dd44a3d73d0d5d8421d38d98fe718d8320b0ad0c85323c2d5b16c",
+      "bytes": 1902,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_junction_coordinate_review.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_kitchen_inspect.py",
+      "source_sha256": "774505330e90e3471585694b2ad47c9ac60e18f90994b7dab21121862ea8e41d",
+      "published_sha256": "774505330e90e3471585694b2ad47c9ac60e18f90994b7dab21121862ea8e41d",
+      "bytes": 1049,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_kitchen_inspect.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_kitchen_junction_probe.py",
+      "source_sha256": "ae7e3cb8fcb65ea1e7065cd73b0a0faf8c3f05c72c55041858c3f85b843e6c81",
+      "published_sha256": "ae7e3cb8fcb65ea1e7065cd73b0a0faf8c3f05c72c55041858c3f85b843e6c81",
+      "bytes": 1130,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_kitchen_junction_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_qa_probe.py",
+      "source_sha256": "8f50924f25b6bdca5ac4db6765358a35f3e5c3dfd5348cd3794d13625b3292d5",
+      "published_sha256": "8f50924f25b6bdca5ac4db6765358a35f3e5c3dfd5348cd3794d13625b3292d5",
+      "bytes": 533,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_qa_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_qa_selftest.py",
+      "source_sha256": "39afe3bf3f52ad050363d7a499b1f72f5f5a879b7b39641dec898811f8836b69",
+      "published_sha256": "39afe3bf3f52ad050363d7a499b1f72f5f5a879b7b39641dec898811f8836b69",
+      "bytes": 698,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_qa_selftest.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_3d_features.py",
+      "source_sha256": "710a32c4eab71268f39a483d541b9c5e5efada2cb56e63158b625a6747e192a4",
+      "published_sha256": "710a32c4eab71268f39a483d541b9c5e5efada2cb56e63158b625a6747e192a4",
+      "bytes": 2139,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_3d_features.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_feature_sweep.py",
+      "source_sha256": "75cff9a26ba0d5d20343641d8d53315c3b78b391cbd874a247bca2984746bc05",
+      "published_sha256": "75cff9a26ba0d5d20343641d8d53315c3b78b391cbd874a247bca2984746bc05",
+      "bytes": 1623,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_feature_sweep.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_features.py",
+      "source_sha256": "19154fa4a83acbb539acc64246f3314dc3085b208a5ab61ad9a7d362c0395ef9",
+      "published_sha256": "19154fa4a83acbb539acc64246f3314dc3085b208a5ab61ad9a7d362c0395ef9",
+      "bytes": 1506,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_features.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_icp.py",
+      "source_sha256": "06ec248ce7b8557c5daeb34f285356244d9ed7023d1b8c3b021a899f02277a70",
+      "published_sha256": "06ec248ce7b8557c5daeb34f285356244d9ed7023d1b8c3b021a899f02277a70",
+      "bytes": 2393,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_icp.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_landmarks.py",
+      "source_sha256": "fc11b4725b914a2da1d1dac2db9934bbd6543f770abe0edaded69a9e1295ac35",
+      "published_sha256": "fc11b4725b914a2da1d1dac2db9934bbd6543f770abe0edaded69a9e1295ac35",
+      "bytes": 1307,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_landmarks.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_register_reference.py",
+      "source_sha256": "5f334215952438862ad8a3054aad52c8edbcaa01ccc6a2d2607a4dbf80967cd0",
+      "published_sha256": "5f334215952438862ad8a3054aad52c8edbcaa01ccc6a2d2607a4dbf80967cd0",
+      "bytes": 3486,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_register_reference.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_roof_detail_blender.py",
+      "source_sha256": "c3e9ef68492e34fab362b8002687f7db0d7aca4decd291fc31164137993d74b1",
+      "published_sha256": "c3e9ef68492e34fab362b8002687f7db0d7aca4decd291fc31164137993d74b1",
+      "bytes": 15158,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_roof_detail_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_roof_detail_probe.py",
+      "source_sha256": "f39af5468772d1c02cf8cc7189be306ff53d5e17c9657e561abf68b2cab3480b",
+      "published_sha256": "f39af5468772d1c02cf8cc7189be306ff53d5e17c9657e561abf68b2cab3480b",
+      "bytes": 1158,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_roof_detail_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_roof_probe.py",
+      "source_sha256": "8137c436f0f1e9e4c5b041c37f758701c06f6876ec404e0f50304746219ee256",
+      "published_sha256": "8137c436f0f1e9e4c5b041c37f758701c06f6876ec404e0f50304746219ee256",
+      "bytes": 1825,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_roof_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_sculpt_probe.py",
+      "source_sha256": "1ace380605487959c97051bcaa4c8e5995ca5356fe6cef89e9eef0af1ef68ad4",
+      "published_sha256": "1ace380605487959c97051bcaa4c8e5995ca5356fe6cef89e9eef0af1ef68ad4",
+      "bytes": 1135,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_sculpt_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_verify_render.py",
+      "source_sha256": "7086e8af08e0e6c55325a83308b4b86539a701f4af9f8f4b6100ab7475589c08",
+      "published_sha256": "7086e8af08e0e6c55325a83308b4b86539a701f4af9f8f4b6100ab7475589c08",
+      "bytes": 1836,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_verify_render.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_xieshan_probe.py",
+      "source_sha256": "546fbd8b7996cbe087b34f621cfab9d6255f6461287d7392d4ac9a7daf10b519",
+      "published_sha256": "546fbd8b7996cbe087b34f621cfab9d6255f6461287d7392d4ac9a7daf10b519",
+      "bytes": 1047,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_xieshan_probe.py"
+        }
+      ]
+    },
+    {
+      "file": "history/v24_xieshan_roof_blender.py",
+      "source_sha256": "190bf84e39514807a5522e22f6f80bdeda4a18727554af74f449b11cc21ff13d",
+      "published_sha256": "190bf84e39514807a5522e22f6f80bdeda4a18727554af74f449b11cc21ff13d",
+      "bytes": 16257,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia-work",
+          "relative": "v24_xieshan_roof_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_02_verify_render.py",
+      "source_sha256": "181cf8b4fd3c94264997227481d9368783a31193f1c14d11e960e600458694ac",
+      "published_sha256": "181cf8b4fd3c94264997227481d9368783a31193f1c14d11e960e600458694ac",
+      "bytes": 4015,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_02_verify_render.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_build_blender.py",
+      "source_sha256": "c9f8319efe668c40e69a528f15e99eb34443f76f54b7cb1311f98047fc9bea9f",
+      "published_sha256": "c9f8319efe668c40e69a528f15e99eb34443f76f54b7cb1311f98047fc9bea9f",
+      "bytes": 4881,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_build_blender.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_build_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_kitchen_junction_blender.py",
+      "source_sha256": "ed88fd5ceace148c145add90e698baa68714d6382873e760bf547b48c366bb46",
+      "published_sha256": "ed88fd5ceace148c145add90e698baa68714d6382873e760bf547b48c366bb46",
+      "bytes": 34441,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_kitchen_junction_blender.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_kitchen_junction_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_package.py",
+      "source_sha256": "47e9655773f5db8a73152859e425f5b63584457328e1f01e37b3c747cfa6fdbe",
+      "published_sha256": "47e9655773f5db8a73152859e425f5b63584457328e1f01e37b3c747cfa6fdbe",
+      "bytes": 3821,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_package.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_package.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_qa_blender.py",
+      "source_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "published_sha256": "7996c15aaf838c8e088979fcbf53ed6bd3b95bc3429e494a6acc9ae76801af67",
+      "bytes": 13258,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_qa_blender.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_qa_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_relief_blender.py",
+      "source_sha256": "a6be4ca271d1284948db0f959586cc12e699c68361a840649869b4fce845ae47",
+      "published_sha256": "a6be4ca271d1284948db0f959586cc12e699c68361a840649869b4fce845ae47",
+      "bytes": 14680,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_relief_blender.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_relief_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_roof_detail_blender.py",
+      "source_sha256": "359f047041366fdc44efa5ac4759632dfe16361bb8ce2334ab5231b7a35befd2",
+      "published_sha256": "359f047041366fdc44efa5ac4759632dfe16361bb8ce2334ab5231b7a35befd2",
+      "bytes": 14974,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_roof_detail_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_sculpt_blender.py",
+      "source_sha256": "4cacbb7eb22cf231f0c3a368667181b2d9a9d0cb5e7f9d04537d1023467c03f7",
+      "published_sha256": "4cacbb7eb22cf231f0c3a368667181b2d9a9d0cb5e7f9d04537d1023467c03f7",
+      "bytes": 11115,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_sculpt_blender.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_sculpt_blender.py"
+        }
+      ]
+    },
+    {
+      "file": "project/Source/v24_update_top.py",
+      "source_sha256": "d1e68cf7ae435dfa6ddefd8c914d88cc50706f129e0d5dfc72891c0937ebe3d0",
+      "published_sha256": "d1e68cf7ae435dfa6ddefd8c914d88cc50706f129e0d5dfc72891c0937ebe3d0",
+      "bytes": 4367,
+      "publication": "verbatim",
+      "redacted_original_lines": [],
+      "source_locations": [
+        {
+          "root": "jia",
+          "relative": "Rebuild_V24/Source/v24_update_top.py"
+        },
+        {
+          "root": "jia-work",
+          "relative": "v24_update_top.py"
+        }
+      ]
+    }
+  ]
+}

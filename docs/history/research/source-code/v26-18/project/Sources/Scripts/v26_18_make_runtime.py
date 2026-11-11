@@ -1,0 +1,10 @@
+from pathlib import Path
+W=Path(__file__).parent;s=(W/'v26_17_native_viewport_review.py').read_text('utf8').replace('v26_17','v26_18').replace('V26_17','V26_18').replace('V26.17','V26.18')
+s=s.replace('manual=[VIEWS[i]for i in[1,3,6,2]]','manual=[VIEWS[i]for i in[2,5,0]]')
+s=s.replace('running.walker.place((10.7,3.,-.449999988));running.yaw=math.atan2(-1.5,-.95);running.pitch=-.85','running.walker.place((7.15,9.10,.10));running.yaw=math.atan2(1.,-.45);running.pitch=-1.0')
+s=s.replace('Viewport_01_F1_Right_Window_Tour','Viewport_01_Stair_Underside_Tour').replace('Delivered first-person tour inside first-floor right bedroom','Delivered first-person tour looking up at the repaired first stair/slab soffit')
+s=s.replace("person_m=list(running.walker.p),controller_hud_label", "person_m=list(running.walker.p),grounded=running.walker.grounded,controller_hud_label")
+s=s.replace('Delivered Fast first-person tour runs inside the first-floor right bedroom','Delivered Fast first-person tour runs on the actual first stair')
+s=s.replace("records[0]['tour_running']and abs(records[0]['person_m'][2]+.449999988)<.01", "records[0]['tour_running']and records[0]['grounded']and abs(records[0]['person_m'][0]-7.15)<.01 and abs(records[0]['person_m'][1]-9.10)<.01")
+s=s.replace('All five captures','All four captures').replace('len(records)==5','len(records)==4')
+(W/'v26_18_native_viewport_review.py').write_text(s,'utf8');print('RUNTIME_REVIEW_READY')
